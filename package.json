@@ -17,6 +17,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/bulma": "^1.2.1",
     "@nuxtjs/pwa": "^2.6.0",
+    "@types/koa": "^2.0.48",
     "cross-env": "^5.2.0",
     "koa": "^2.6.2",
     "nuxt-ts-edge": "latest",
