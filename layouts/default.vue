@@ -1,39 +1,26 @@
 <template>
   <div>
-    <header id="global-header">
-      <h1 class="title">GoCon 2019<span>summer in Fukuoka</span></h1>
-      <h2 class="subtitle">\ʕ◔ϖ◔ʔ/<span>   🍜  </span>\ʕ◔ϖ◔ʔ/ </h2>
-    </header>
+    <TheHeader />
     <nuxt />
+    <TheFooter />
   </div>
 </template>
 
-<style>
-#global-header {
-  padding: 3em 0 2em;
-  font-family: 'Arvo', serif;
-  text-align: center;
-}
-#global-header .title {
-  font-size: 8em;
-  letter-spacing: .03em;
-}
-#global-header .title span {
-  font-size: .6em;
-  display: block;
-  letter-spacing: 0;
-}
-#global-header .subtitle {
-  font-size: 2em;
-  color: #3399FF;
-  font-weight: bold;
-  padding: 1em;
-}
-#global-header .subtitle span {
-  font-size: 3em;
-  display: inline-block;
-}
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
+import TheHeader from '~/components/TheHeader.vue'
+import TheFooter from '~/components/TheFooter.vue'
 
+@Component({
+  components: {
+    TheHeader,
+    TheFooter
+  }
+})
+export default class DefaultLayout extends Vue {}
+</script>
+
+<style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
