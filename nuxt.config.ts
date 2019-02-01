@@ -1,11 +1,29 @@
+const name = 'GoCon 2019 in Fukuoka'
+const url = 'https://fukuoka.gocon.jp'
+const desc = 'Conference of Golang in Fukuoka'
+
 export default {
   mode: 'universal',
   head: {
-    title: 'GoCon 2019 in Fukuoka',
+    title: name,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: desc },
+      { name: 'keywords', content: '' },
+      { property: 'og:title', content: name },
+      { property: 'og:type', content: 'article' },
+      { property: 'og:url', content: url },
+      { property: 'og:image', content: `${url}/ogimage.png` },
+      { property: 'og:description', content: desc },
+      { property: 'og:site_name', content: name },
+      { property: 'og:locale', content: 'ja_JP' },
+      { property: 'twitter:card', content: 'summary' },
+      { property: 'twitter:site', content: '#fukuokago' },
+      { property: 'twitter:title', content: name },
+      { property: 'twitter:description', content: desc },
+      { property: 'twitter:url', content: url },
+      { property: 'twitter:image', content: `${url}/ogimage.png` },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
