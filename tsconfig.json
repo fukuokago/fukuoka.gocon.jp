@@ -6,5 +6,9 @@
       "@types/node",
       "@nuxt/vue-app-edge"
     ]
-  }
+  },
+  "exclude": [
+    "test",
+    "node_modules"
+  ]
 }
