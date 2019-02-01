@@ -1,57 +1,56 @@
 <template>
   <section class="container">
     <div class="inner">
-      <p>毎年東京で開催されているGo Conferenceが、ついに今年は福岡開催があります。
-      会場は天神あたりで７月を予定しております。</p>
+      <Hello/>
     </div>
-
     <div class="inner">
-       <TimeTable/>
+      <TimeTable/>
     </div>
-
-    <div class="inner wait">
-      <h2>Call for Papers</h2>
-      <p>𝝣GO 𝝣GO 𝝣GO</p>
+    <div class="inner">
+      <CallForPapers/>
     </div>
-
-    <div class="inner wait">
-      <h2>Talks</h2>
-      <p>𝝣GO 𝝣GO 𝝣GO</p>
+    <div class="inner">
+      <Talks/>
     </div>
-
-    <div class="inner wait">
-      <h2>Scholarships</h2>
-      <p>𝝣GO 𝝣GO 𝝣GO</p>
+    <div class="inner">
+      <Scholarships/>
     </div>
-
-    <div class="inner wait">
-      <h2>Code of Conduct</h2>
-      <p>𝝣GO 𝝣GO 𝝣GO</p>
-    </div>
-
-    <div class="inner wait">
-      <h2>Sponsors</h2>
-      <p>𝝣GO 𝝣GO 𝝣GO</p>
+    <CodeOfConduct/>
+    <div class="inner">
+      <Sponsors/>
     </div>
   </section>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import Hello from '~/components/Hello.vue'
 import TimeTable from '~/components/TimeTable.vue'
-// import Logo from '~/components/Logo.vue'
+import CallForPapers from '~/components/CallForPapers.vue'
+import Talks from '~/components/Talks.vue'
+import Scholarships from '~/components/Scholarships.vue'
+import CodeOfConduct from '~/components/CodeOfConduct.vue'
+import Sponsors from '~/components/Sponsors.vue'
 
 @Component({
   components: {
-    TimeTable
+    Hello,
+    TimeTable,
+    CallForPapers,
+    Talks,
+    Scholarships,
+    CodeOfConduct,
+    Sponsors
   }
 })
-export default class Home extends Vue {}
+export default class Index extends Vue {
+  title = '🍜 GoCon 2019 in Fukuoka'
+}
 </script>
 
 <style>
 .container {
-    width: 800px;
+    width: 1000px;
     margin: 1em auto;
 }
 .container p {
@@ -67,7 +66,7 @@ export default class Home extends Vue {}
   padding: 0 0 2em;
   text-align: center;
 }
-.wait p {
+.inner p {
   text-align: center;
   color: #BBB;
   font-weight: bold;
