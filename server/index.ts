@@ -1,4 +1,4 @@
-const Koa = require('koa')
+import Koa from 'koa'
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
 
@@ -23,10 +23,10 @@ async function start() {
     await builder.build()
   }
 
-  app.use(ctx => {
+  app.use((ctx: Koa.Context) => {
     ctx.status = 200
-    ctx.respond = false // Bypass Koa's built-in response handling
-    ctx.req.ctx = ctx // This might be useful later on, e.g. in nuxtServerInit or with nuxt-stash
+    // Bypass Koa's built-in response handling
+    ctx.respond = false
     nuxt.render(ctx.req, ctx.res)
   })
 
