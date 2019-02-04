@@ -4,7 +4,7 @@
       <Hello/>
     </div>
     <div class="inner">
-      <TimeTable/>
+      <Schedule/>
     </div>
     <div class="inner">
       <CallForPapers/>
@@ -25,7 +25,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import Hello from '~/components/Hello.vue'
-import TimeTable from '~/components/TimeTable.vue'
+import Schedule from '~/components/Schedule.vue'
 import CallForPapers from '~/components/CallForPapers.vue'
 import Talks from '~/components/Talks.vue'
 import Scholarships from '~/components/Scholarships.vue'
@@ -35,7 +35,7 @@ import Sponsors from '~/components/Sponsors.vue'
 @Component({
   components: {
     Hello,
-    TimeTable,
+    Schedule,
     CallForPapers,
     Talks,
     Scholarships,
