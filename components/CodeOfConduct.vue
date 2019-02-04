@@ -1,12 +1,13 @@
 <template>
   <div class="code-of-conduct">
     <h2>Code of Conduct</h2>
+    <p>私たちGo Communityの行動規範はGoオフィシャルに定められている以下の通りです。</p>
     <ul>
       <li>Treat everyone with respect and kindness.</li>
       <li>Be thoughtful in how you communicate.</li>
       <li>Don’t be destructive or inflammatory.</li>
     </ul>
-    <p>More: <a ref="https://golang.org/conduct">https://golang.org/conduct</a></p>
+    <p>More read: <a ref="https://golang.org/conduct">https://golang.org/conduct</a></p>
   </div>
 </template>
 
@@ -17,17 +18,24 @@ h2 {
   padding: 0 0 1.5em;
   text-align: center;
 }
-ul {
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 1em;
-  font-size: 1em;
-}
-p {
-  text-align: center;
-  font-size: 1em;
-}
 .code-of-conduct {
-  margin-bottom: 3em;
+  margin-bottom: 2em;
+}
+.code-of-conduct p {
+  margin-bottom: 1em;
+}
+.code-of-conduct ul {
+  font-size: 1.3em;
+  list-style-type: circle;
+  padding-left: 1em;
+  padding-bottom: 1em;
+}
+.code-of-conduct li {
+  line-height: 1.7;
+  color: #888;
+}
+.code-of-conduct p a {
+  color: #888;
+  border-bottom: 1px solid #888;
 }
 </style>
