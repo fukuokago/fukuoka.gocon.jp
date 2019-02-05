@@ -12,9 +12,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 @Component
-export default class Header extends Vue {
-  name = 'Header'
-}
+export default class Header extends Vue {}
 </script>
 
 <style scoped>
@@ -41,8 +39,35 @@ export default class Header extends Vue {
   font-weight: bold;
   padding: 1em;
   position: absolute;
+  margin-left: 50%;
   top: -1.7em;
-  left: 2em;
+  left: -13em;
   color: #555759;
+}
+@media (min-width: 401px) and (max-width: 500px) {
+  .title {
+    font-size: 2.5em;
+  }
+  .title span {
+    margin-top: .5em;
+  }
+  .gopher {
+    font-size: 1em;
+    top: -2em;
+    left: -12em;
+  }
+}
+@media (max-width: 400px) {
+  .title {
+    font-size: 1.8em;
+  }
+  .title span {
+    margin-top: .5em;
+  }
+  .gopher {
+    font-size: 1em;
+    top: -2em;
+    left: -9em;
+  }
 }
 </style>

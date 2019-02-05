@@ -1,9 +1,7 @@
 <template>
   <footer class="footer">
-    <div class="container">
-      <div class="content has-text-centered is-info">
-        <p>&copy; Go Conference 2019</p>
-      </div>
+    <div>
+      <p>&copy; Go Conference 2019</p>
     </div>
   </footer>
 </template>
@@ -18,12 +16,15 @@ export default class Footer extends Vue {
 
 <style scoped>
 .footer {
+  margin-top: 10em;
+  padding: 1em;
+  background-color: #00758D;
+}
+.footer p {
   font-size: .9em;
   font-family: 'Arvo', serif;
-  margin-top: 10em;
   padding: .1em;
-  /*background-color: #00ADD8;*/
-  background-color: #00758D;
   color: #fff;
+  text-align: center;
 }
 </style>

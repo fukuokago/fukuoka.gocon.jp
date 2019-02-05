@@ -1,23 +1,26 @@
 <template>
   <section class="container">
-    <Hello/>
+    <About/>
     <Schedule/>
     <CallForPapers/>
     <Registration/>
-    <div class="inner">
+    <div class="draft">
       <Talks/>
     </div>
-    <div class="inner">
+    <div class="draft">
       <Scholarships/>
     </div>
     <CodeOfConduct/>
     <Sponsors/>
+    <div class="draft">
+      <Team/>
+    </div>
   </section>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import Hello from '~/components/Hello.vue'
+import About from '~/components/About.vue'
 import Schedule from '~/components/Schedule.vue'
 import CallForPapers from '~/components/CallForPapers.vue'
 import Registration from '~/components/Registration.vue'
@@ -25,36 +28,45 @@ import Talks from '~/components/Talks.vue'
 import Scholarships from '~/components/Scholarships.vue'
 import CodeOfConduct from '~/components/CodeOfConduct.vue'
 import Sponsors from '~/components/Sponsors.vue'
+import Team from '~/components/Team.vue'
 
 @Component({
   components: {
-    Hello,
+    About,
     Schedule,
     CallForPapers,
     Registration,
     Talks,
     Scholarships,
     CodeOfConduct,
-    Sponsors
+    Sponsors,
+    Team
   }
 })
-export default class Index extends Vue {
-  title = '🍜 Go Conference 2019 Summer in Fukuoka'
-}
+export default class Index extends Vue {}
 </script>
 
 <style>
 .container {
-    width: 1000px;
-    margin: 1em auto;
+  margin: 1em auto;
+  padding: 0 1em;
+}
+a {
+  color: #00ADD8;
+  border-bottom: 1px solid #00ADD8;
+}
+a:hover {
+  color: #000;
+  border: none;
 }
 .container p {
-    font-size: 1.5em;
-    line-height: 1.5;
+  font-size: 1.5em;
+  line-height: 1.5;
 }
 h2 {
   font-size: 2em;
   font-family: 'Arvo', serif;
+  font-weight: bold;
   padding: 2em 0 2em;
   text-align: center;
 }
@@ -84,10 +96,10 @@ li {
   line-height: 1.7;
   color: #888;
 }
-.inner {
-    margin-bottom: 5em;
+.draft {
+  margin-bottom: 5em;
 }
-.inner p {
+.draft p {
   text-align: center;
   color: #BBB;
   font-weight: bold;

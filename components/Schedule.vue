@@ -134,4 +134,14 @@ export default class Schedule extends Vue {}
 .schedule .common td p {
   color: #888;
 }
+@media (min-width: 401px) and (max-width: 500px) {
+  .schedule table {
+    font-size: .6em;
+  }
+}
+@media (max-width: 400px) {
+  .schedule table {
+    font-size: .5em;
+  }
+}
 </style>
