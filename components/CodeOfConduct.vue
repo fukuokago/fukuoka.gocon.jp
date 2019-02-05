@@ -34,8 +34,4 @@ h2 {
   line-height: 1.7;
   color: #888;
 }
-.code-of-conduct p a {
-  color: #888;
-  border-bottom: 1px solid #888;
-}
 </style>

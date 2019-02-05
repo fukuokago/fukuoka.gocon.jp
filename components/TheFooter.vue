@@ -21,8 +21,9 @@ export default class Footer extends Vue {
   font-size: .9em;
   font-family: 'Arvo', serif;
   margin-top: 10em;
-  padding: 0.2em;
-  background-color: #00ADD8;
+  padding: .1em;
+  /*background-color: #00ADD8;*/
+  background-color: #00758D;
   color: #fff;
 }
 </style>
