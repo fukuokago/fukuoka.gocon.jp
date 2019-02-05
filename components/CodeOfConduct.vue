@@ -7,7 +7,7 @@
       <li>Be thoughtful in how you communicate.</li>
       <li>Don’t be destructive or inflammatory.</li>
     </ul>
-    <p>More read: <a ref="https://golang.org/conduct">https://golang.org/conduct</a></p>
+    <p>More read: <a href="https://golang.org/conduct">https://golang.org/conduct</a></p>
   </div>
 </template>
 
