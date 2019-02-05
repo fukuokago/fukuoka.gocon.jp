@@ -34,6 +34,7 @@ export default {
   css: [],
   plugins: [],
   modules: [
+    ['@nuxtjs/google-analytics', { id: 'UA-328462-17' }],
     '@nuxtjs/axios',
     '@nuxtjs/bulma',
     '@nuxtjs/pwa'
