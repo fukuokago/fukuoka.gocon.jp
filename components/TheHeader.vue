@@ -2,7 +2,7 @@
   <header class="header">
     <div class="container">
       <div>
-        <h1 class="title">GoCon 2019<span>Summer in Fukuoka</span></h1>
+        <h1 class="title">Go Conference 2019<span>Summer in Fukuoka</span></h1>
         <p class="gopher">\ʕ◔ϖ◔ʔ/</p>
       </div>
     </div>

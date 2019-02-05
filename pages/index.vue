@@ -44,7 +44,7 @@ import Sponsors from '~/components/Sponsors.vue'
   }
 })
 export default class Index extends Vue {
-  title = '🍜 GoCon 2019 in Fukuoka'
+  title = '🍜 Go Conference 2019 Summer in Fukuoka'
 }
 </script>
 
