@@ -7,6 +7,7 @@
     <ul>
       <li>Keynote style presentations; 20 minute time limit</li>
       <li>Tutorial style presentations; 40 minute time limit</li>
+      <li>Lightning talk style presentations; 5 minute time limit</li>
     </ul>
 
     <h3>The selection criteria</h3>
