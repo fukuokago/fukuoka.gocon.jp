@@ -23,28 +23,4 @@
 </template>
 
 <style scoped>
-.call-for-papers p {
-  text-align: left;
-  font-weight: normal;
-  padding-bottom: 1em;
-  color: #888;
-}
-.call-for-papers h3 {
-  font-size: 2em;
-  padding-bottom: .5em;
-}
-.call-for-papers ul {
-  font-size: 1.3em;
-  list-style-type: circle;
-  padding-left: 1em;
-  padding-bottom: 1em;
-}
-.call-for-papers ol {
-  font-size: 1.3em;
-  padding-left: 1em;
-}
-.call-for-papers li {
-  line-height: 1.7;
-  color: #888;
-}
 </style>

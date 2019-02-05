@@ -1,7 +1,7 @@
 <template>
   <div class="schedule">
-    <h2 class="schedule">Schedule</h2>
-    <table class="schedule"><tbody>
+    <h2>Schedule</h2>
+    <table><tbody>
       <tr class="c18">
         <th class="c32 c27" colspan="1" rowspan="1"><p class="c4"><span class="c5">Time</span></p></th>
         <th class="c0 c27" colspan="1" rowspan="1"><p class="c4"><span class="c5">Room1</span></p></th>
@@ -88,12 +88,17 @@ export default class Schedule extends Vue {}
 </script>
 
 <style scopd>
-div.schedule {
+.schedule {
   padding: 3em 0 0;
 }
-table.schedule {
+.schedule table {
   width: 100%;
   font-size: .8em;
+}
+.schedule p {
+  text-align: center;
+  color: #BBB;
+  font-weight: bold;
 }
 .schedule td,
 .schedule th {
@@ -107,7 +112,7 @@ table.schedule {
 .schedule td p,
 .schedule th p {
   font-weight: normal;
-  color: #000;
+  color: #555;
   padding-top: .4em;
   padding-bottom: .3em;
 }
@@ -127,6 +132,6 @@ table.schedule {
   background-color: #fff;
 }
 .schedule .common td p {
-  color: #000;
+  color: #888;
 }
 </style>

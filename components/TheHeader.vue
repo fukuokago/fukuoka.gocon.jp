@@ -43,5 +43,6 @@ export default class Header extends Vue {
   position: absolute;
   top: -1.7em;
   left: 2em;
+  color: #555759;
 }
 </style>

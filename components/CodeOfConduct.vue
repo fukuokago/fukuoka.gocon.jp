@@ -12,12 +12,6 @@
 </template>
 
 <style scoped>
-h2 {
-  font-size: 2em;
-  font-family: 'Arvo', serif;
-  padding: 0 0 1.5em;
-  text-align: center;
-}
 .code-of-conduct {
   margin-bottom: 2em;
 }
