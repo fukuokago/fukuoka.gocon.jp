@@ -19,19 +19,22 @@ export default class Header extends Vue {
 
 <style scoped>
 .header {
+  border-top: 20px solid #00758D;
   padding: 3em 0 2em;
   font-family: 'Arvo', serif;
   text-align: center;
 }
 .title {
-  font-size: 8em;
-  letter-spacing: .03em;
+  font-size: 6em;
+  letter-spacing: -.07em;
+  color: #555759;
 }
 .title span {
   font-size: .6em;
   display: block;
   letter-spacing: 0;
   margin-top: -.3em;
+  color: #666;
 }
 .gopher {
   font-size: 2em;
