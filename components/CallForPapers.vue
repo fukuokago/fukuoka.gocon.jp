@@ -1,7 +1,8 @@
 <template>
   <div class="call-for-papers">
     <h2>Call for Papers</h2>
-    <p>もうすぐGoCon2019 Summer in Fukuokaの登壇者を募集を開始します。Twitterなどでアナウンスしますのでしばらくお待ちください。</p>
+    <p>もうすぐ登壇者を募集を開始します。Twitterなどでアナウンスしますのでしばらくお待ちください。
+    なお、CFPへ応募は、<a href="https://www.papercall.io/gocon-jp-2019-fukuoka">PaperCall.io</a>を利用します。</p>
 
     <h3>Talk types</h3>
     <ul>
