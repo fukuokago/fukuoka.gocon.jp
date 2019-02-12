@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div>
     <p>「<strong>Go Conference</strong>」は、世界的に見ても初期から行われており、Goコミュニティにとって意義のあるイベントです。カンファレンスでは毎年数百名のGopherが参加しGoにまつわる多様なセッションを通した交流が行われています。</p>
     <p>今回、ついに、このカンファレンスを福岡で開催します。<em>エンジニアにとって魅力ある土地、福岡で、今注目を集めるプログラミング言語Goを通じて様々な技術の話をし、学び合い、楽しい時間を過ごし、開発者同士の交流を深めましょう！</em></p>
 
@@ -15,7 +15,6 @@
 <style scoped>
 .about p {
   color: #666;
-  text-align: left;
   padding-bottom: 1em;
   text-indent: 1em;
   font-weight: normal;
@@ -28,8 +27,8 @@
   font-style: normal;
 }
 .meta {
-    width: 30%;
-    margin: 3em auto 0;
+    width: 70%;
+    margin: 3em 0 0;
     font-size: 1.4em;
     border-bottom: 1px solid #888;
 }

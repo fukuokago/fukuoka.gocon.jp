@@ -2,10 +2,11 @@ const name = 'Go Conference 2019 Summer in Fukuoka'
 const url = 'https://fukuoka.gocon.jp'
 const desc = 'The conference of Golang in Fukuoka, Japan'
 
-export default {
+const config = {
   mode: 'universal',
   head: {
     title: name,
+    titleTemplate: `%s - ${name}`,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -58,3 +59,6 @@ export default {
     }
   }
 }
+
+// @ts-ignore: for editor
+export = config

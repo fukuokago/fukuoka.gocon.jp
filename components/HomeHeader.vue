@@ -1,0 +1,143 @@
+<template>
+  <header class="header">
+    <div class="container">
+      <div class="gopher">
+        <Gopher/>
+      </div>
+      <div class="title">
+        <h1 class="title-text">Go Conference 2019<span>Summer in Fukuoka</span></h1>
+        <p class="gopher-text">\ʕ◔ϖ◔ʔ/</p>
+      </div>
+      <div class="about">
+        <About/>
+      </div>
+    </div>
+  </header>
+</template>
+
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
+import Gopher from '~/components/Gopher.vue'
+import About from '~/components/About.vue'
+
+@Component({
+  components: {
+    Gopher,
+    About
+  }
+})
+export default class HomeHeader extends Vue {}
+</script>
+
+<style scoped>
+.header {
+  border-top: 20px solid #00758D;
+  padding: 3em 0 2em;
+  font-family: 'Arvo', serif;
+  display: flow-root;
+}
+.gopher {
+  float: left;
+  width: 40%;
+  padding-right: 20px;
+}
+.title {
+  margin: 3em 0;
+  float: left;
+  width: 60%;
+  color: #00758D;
+}
+.about {
+  float: left;
+  width: 60%;
+}
+.title-text {
+  font-size: 2.8em;
+  letter-spacing: -.07em;
+  line-height: 1;
+}
+.title-text span {
+  font-size: .6em;
+  display: block;
+  letter-spacing: 0;
+}
+.gopher-text {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 1em;
+  position: absolute;
+  margin-left: 50%;
+  top: -1.7em;
+  left: -13em;
+  color: #555759;
+  display: none;
+}
+@media (min-width: 801px) and (max-width: 1300px) {
+  .title-text {
+    font-size: 2em;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  .title {
+    margin: 2em 0;
+  }
+  .title-text {
+    font-size: 2em;
+  }
+  .about {
+    float: none;
+    clear: both;
+    width: 100%;
+  }
+}
+@media (min-width: 401px) and (max-width: 500px) {
+  .title-text {
+    font-size: 1.5em;
+  }
+  .title-text span {
+    margin-top: .5em;
+  }
+  .gopher-text {
+    font-size: 1em;
+    top: -2em;
+    left: -12em;
+  }
+  .about {
+    float: none;
+    clear: both;
+    width: 100%;
+  }
+  .header {
+    padding: 3em 0 0;
+  }
+}
+@media (max-width: 400px) {
+  .gopher {
+    padding-right: 10px;
+    width: 30%;
+  }
+  .title {
+    margin: 1em 0 2em;
+    width: 70%;
+  }
+  .title-text {
+    font-size: 1em;
+  }
+  .title-text span {
+    margin-top: .5em;
+  }
+  .gopher-text {
+    font-size: 1em;
+    top: -2em;
+    left: -9em;
+  }
+  .about {
+    float: none;
+    clear: both;
+    width: 100%;
+  }
+  .header {
+    padding: 3em 0 0;
+  }
+}
+</style>
