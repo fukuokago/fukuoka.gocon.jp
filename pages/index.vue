@@ -1,7 +1,9 @@
 <template>
   <section class="container">
-    <Schedule/>
+    <News/>
+    <Fukuoka/>
     <CallForPapers/>
+    <Schedule/>
     <Registration/>
     <div class="draft">
       <Talks/>
@@ -19,6 +21,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import News from '~/components/News.vue'
+import Fukuoka from '~/components/Fukuoka.vue'
 import Schedule from '~/components/Schedule.vue'
 import CallForPapers from '~/components/CallForPapers.vue'
 import Registration from '~/components/Registration.vue'
@@ -36,6 +40,8 @@ import Team from '~/components/Team.vue'
     }
   },
   components: {
+    News,
+    Fukuoka,
     Schedule,
     CallForPapers,
     Registration,
