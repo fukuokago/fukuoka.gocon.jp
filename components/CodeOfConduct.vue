@@ -1,13 +1,13 @@
 <template>
   <div class="code-of-conduct">
     <h2>Code of Conduct</h2>
-    <p>私たちGo Communityの行動規範はGoオフィシャルに定められている以下の通りです。</p>
+    <p>私たちGo Communityの行動規範はGoオフィシャルに定められている以下の通りです。
+    注意：これらはサマリーです。すべての内容を読むにはこちらからお願いします。 <a href="https://golang.org/conduct">https://golang.org/conduct</a></p>
     <ul>
-      <li>Treat everyone with respect and kindness.</li>
-      <li>Be thoughtful in how you communicate.</li>
-      <li>Don’t be destructive or inflammatory.</li>
+      <li>みんなに敬意を払い優しく接しましょう</li>
+      <li>伝達には配慮しましょう</li>
+      <li>物事を壊そうとしたり煽ったりしてはいけません</li>
     </ul>
-    <p>More read: <a href="https://golang.org/conduct">https://golang.org/conduct</a></p>
   </div>
 </template>
 
