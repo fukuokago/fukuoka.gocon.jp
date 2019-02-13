@@ -28,7 +28,7 @@ const config = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Arvo' }
+      { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Arvo:400,700' }
     ]
   },
   loading: { color: '#666' },
