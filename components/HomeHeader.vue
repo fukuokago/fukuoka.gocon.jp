@@ -5,7 +5,7 @@
         <Gopher/>
       </div>
       <div class="title">
-        <h1 class="title-text">Go Conference 2019<span>Summer in Fukuoka</span></h1>
+          <h1 class="title-text"><span class="go">Go</span> Conference <sup>‘19</sup><span class="location">Summer in Fukuoka</span></h1>
         <p class="gopher-text">\ʕ◔ϖ◔ʔ/</p>
       </div>
       <div class="about">
@@ -56,10 +56,22 @@ export default class HomeHeader extends Vue {}
   letter-spacing: -.07em;
   line-height: 1;
 }
-.title-text span {
-  font-size: .6em;
-  display: block;
+.title-text span.go {
+  font-weight: bold;
+  margin-right: -.12em;
+}
+.title-text sup {
+  font-size: .4em;
   letter-spacing: 0;
+  margin-left: -.6em;
+  position: relative;
+  top: -.3em;
+}
+.title-text span.location {
+  font-size: .4em;
+  display: block;
+  letter-spacing: .2em;
+  margin-left: .3em;
 }
 .gopher-text {
   font-size: 2em;
@@ -79,10 +91,10 @@ export default class HomeHeader extends Vue {}
 }
 @media (min-width: 501px) and (max-width: 800px) {
   .title {
-    margin: 2em 0;
+    margin: 4.7em 0 7em;
   }
   .title-text {
-    font-size: 2em;
+    font-size: 1.4em;
   }
   .about {
     float: none;
@@ -91,10 +103,16 @@ export default class HomeHeader extends Vue {}
   }
 }
 @media (min-width: 401px) and (max-width: 500px) {
-  .title-text {
-    font-size: 1.5em;
+  .gopher {
+    padding-right: 0;
   }
-  .title-text span {
+  .title {
+    margin: 4em 0 5em;
+  }
+  .title-text {
+    font-size: 1em;
+  }
+  .title-text span.location {
     margin-top: .5em;
   }
   .gopher-text {
@@ -113,17 +131,17 @@ export default class HomeHeader extends Vue {}
 }
 @media (max-width: 400px) {
   .gopher {
-    padding-right: 10px;
+    padding-right: 0;
     width: 30%;
   }
   .title {
-    margin: 1em 0 2em;
+    margin: 2.4em 0 3em;
     width: 70%;
   }
   .title-text {
-    font-size: 1em;
+    font-size: .9em;
   }
-  .title-text span {
+  .title-text span.location {
     margin-top: .5em;
   }
   .gopher-text {
