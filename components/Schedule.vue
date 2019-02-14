@@ -97,14 +97,14 @@ export default class Schedule extends Vue {}
 }
 .schedule p {
   text-align: center;
-  color: #BBB;
+  color: #000;
   font-weight: bold;
 }
 .schedule td,
 .schedule th {
   text-align: center;
   background-color: #eee;
-  border-top: 1px solid #fff;
+  border-top: 1px solid #e5e5e5;
 }
 .schedule th {
   background-color: #eee;
@@ -112,7 +112,7 @@ export default class Schedule extends Vue {}
 .schedule td p,
 .schedule th p {
   font-weight: normal;
-  color: #555;
+  color: #333;
   padding-top: .4em;
   padding-bottom: .3em;
 }
@@ -129,10 +129,10 @@ export default class Schedule extends Vue {}
   background-color: #f5f5f5;
 }
 .schedule .common td {
-  background-color: #fff;
+  background-color: #e5e5e5;
 }
 .schedule .common td p {
-  color: #888;
+  color: #666;
 }
 @media (min-width: 401px) and (max-width: 500px) {
   .schedule table {

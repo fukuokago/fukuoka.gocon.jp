@@ -39,6 +39,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  background-color: #e5e5e5;
 }
 
 *,
@@ -75,5 +76,106 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.container {
+  margin: 1em auto;
+  padding: 0 1em;
+}
+a {
+  color: #CE3262;
+  border-bottom: 1px solid #CE3262;
+}
+a:hover {
+  color: #000;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+h2 {
+  font-size: 2em;
+  font-family: 'Arvo', serif;
+  font-weight: bold;
+  padding: 2em 0 2em;
+  text-align: center;
+  color: #00ADD8;
+}
+h3 {
+  font-size: 1.7em;
+  font-family: 'Arvo', serif;
+  padding-bottom: .5em;
+  padding-top: 1em;
+  color: #000;
+}
+p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: normal;
+  padding-bottom: 1em;
+  color: #666;
+}
+ul {
+  font-size: 1.3em;
+  list-style-type: circle;
+  padding-left: 1em;
+  padding-bottom: 1em;
+}
+ol {
+  font-size: 1.3em;
+  padding-left: 1em;
+}
+li {
+  line-height: 1.8;
+}
+.draft {
+  margin-bottom: 5em;
+}
+.draft p {
+  text-align: center;
+  color: #BBB;
+  font-weight: bold;
+}
+
+@media (min-width: 801px) and (max-width: 1300px) {
+  h2 {
+    font-size: 1.7em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+  ul, ol {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  h2 {
+    font-size: 1.6em;
+  }
+  h3 {
+    font-size: 1.4em;
+  }
+  p {
+    font-size: 1.1em;
+  }
+  ul, ol {
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.3em;
+  }
+  p {
+    font-size: 1em;
+  }
+  ul, ol {
+    font-size: 1em;
+  }
 }
 </style>

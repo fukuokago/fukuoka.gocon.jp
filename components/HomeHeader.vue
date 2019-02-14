@@ -31,7 +31,7 @@ export default class HomeHeader extends Vue {}
 
 <style scoped>
 .header {
-  border-top: 20px solid #00758D;
+  border-top: 20px solid #00ADD8;
   padding: 3em 0 2em;
   font-family: 'Arvo', serif;
   display: flow-root;
@@ -39,17 +39,17 @@ export default class HomeHeader extends Vue {}
 .gopher {
   float: left;
   width: 40%;
-  padding-right: 20px;
+  margin-right: 3%;
 }
 .title {
   margin: 3em 0;
   float: left;
-  width: 60%;
-  color: #00758D;
+  width: 57%;
+  color: #00ADD8;
 }
 .about {
   float: left;
-  width: 60%;
+  width: 57%;
 }
 .title-text {
   font-size: 2.8em;
@@ -104,10 +104,12 @@ export default class HomeHeader extends Vue {}
 }
 @media (min-width: 401px) and (max-width: 500px) {
   .gopher {
-    padding-right: 0;
+    width: 30%;
+    margin-right: 5%;
   }
   .title {
-    margin: 4em 0 5em;
+    margin: 2.5em 0 4em;
+    width: 65%;
   }
   .title-text {
     font-size: 1em;
@@ -131,12 +133,11 @@ export default class HomeHeader extends Vue {}
 }
 @media (max-width: 400px) {
   .gopher {
-    padding-right: 0;
-    width: 30%;
+    width: 25%;
   }
   .title {
-    margin: 2.4em 0 3em;
-    width: 70%;
+    margin: 1.2em 0 3em;
+    width: 72%;
   }
   .title-text {
     font-size: .9em;

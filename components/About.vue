@@ -14,39 +14,37 @@
 
 <style scoped>
 .about p {
-  color: #666;
   padding-bottom: 1em;
-  text-indent: 1em;
-  font-weight: normal;
 }
 .about strong {
   font-weight: bold;
+  color: #666;
 }
 .about em {
-  font-weight: bold;
   font-style: normal;
+  color: #000;
 }
 .meta {
-    width: 70%;
-    margin: 3em 0 0;
-    font-size: 1.4em;
-    border-bottom: 1px solid #888;
+  width: 70%;
+  margin: 3em 0 0;
+  font-size: 1.4em;
+  border-bottom: 1px solid #888;
 }
 .meta dt {
-    font-weight: bold;
-    width: 5em;
-    float: left;
-    border-top: 1px solid #888;
-    padding-top: .3em;
-    padding-bottom: .2em;
-    text-align: center;
-    letter-spacing: 1em;
+  font-weight: bold;
+  width: 5em;
+  float: left;
+  border-top: 1px solid #888;
+  padding-top: .3em;
+  padding-bottom: .2em;
+  text-align: center;
+  letter-spacing: 1em;
 }
 .meta dd {
-    padding-left: 30%;
-    border-top: 1px solid #888;
-    padding-top: .3em;
-    padding-bottom: .2em;
+  padding-left: 30%;
+  border-top: 1px solid #888;
+  padding-top: .3em;
+  padding-bottom: .2em;
 }
 .meta dd:after {
   content: '';

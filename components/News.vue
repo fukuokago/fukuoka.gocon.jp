@@ -25,18 +25,10 @@
   margin-top: -.5em;
   margin-bottom: .2em;
   font-weight: bold;
-  color: #ccc;
+  color: #bbb;
   font-family: 'Arvo', serif;
 }
 .news p {
   margin-bottom: .5em;
-}
-.news ul {
-  list-style-type: circle;
-  padding-left: 1em;
-}
-.news li {
-  line-height: 1.8;
-  color: #888;
 }
 </style>

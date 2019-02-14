@@ -19,13 +19,11 @@
   margin-bottom: 1em;
 }
 .code-of-conduct ul {
-  font-size: 1.3em;
   list-style-type: circle;
   padding-left: 1em;
   padding-bottom: 1em;
 }
 .code-of-conduct li {
   line-height: 1.7;
-  color: #888;
 }
 </style>
