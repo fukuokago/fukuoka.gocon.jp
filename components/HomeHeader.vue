@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header is-clearfix">
     <div class="container">
       <div class="gopher">
         <Gopher/>
@@ -34,7 +34,6 @@ export default class HomeHeader extends Vue {}
   border-top: 20px solid #00ADD8;
   padding: 3em 0 2em;
   font-family: 'Arvo', serif;
-  display: flow-root;
 }
 .gopher {
   float: left;

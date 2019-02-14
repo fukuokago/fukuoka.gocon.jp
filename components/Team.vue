@@ -1,5 +1,5 @@
 <template>
-  <div class="team">
+  <div class="team is-clearfix">
     <h2>Team</h2>
     <div class="member">
         <img src="https://avatars3.githubusercontent.com/u/1661325?s=120&v=4" />
@@ -26,7 +26,7 @@
         <h3 class="name">@ymotongpoo</h3>
         <p class="role">Organizer</p>
     </div>
-    <div class="member is-clearfix">
+    <div class="member">
         <img src="https://avatars3.githubusercontent.com/u/2609671?s=120&v=4" />
         <h3 class="name">@yuji-otani</h3>
         <p class="role">Organizer</p>
@@ -35,9 +35,6 @@
 </template>
 
 <style scoped>
-.team {
-  display: flow-root;
-}
 .member {
   float: left;
   width: 270px;
