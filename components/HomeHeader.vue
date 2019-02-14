@@ -102,45 +102,23 @@ export default class HomeHeader extends Vue {}
     width: 100%;
   }
 }
-@media (min-width: 401px) and (max-width: 500px) {
-  .gopher {
-    width: 30%;
-    margin-right: 5%;
-  }
-  .title {
-    margin: 2.5em 0 4em;
-    width: 65%;
-  }
-  .title-text {
-    font-size: 1em;
-  }
-  .title-text span.location {
-    margin-top: .5em;
-  }
-  .gopher-text {
-    font-size: 1em;
-    top: -2em;
-    left: -12em;
-  }
-  .about {
-    float: none;
-    clear: both;
-    width: 100%;
-  }
+@media (max-width: 500px) {
   .header {
-    padding: 3em 0 0;
+    padding: 1em 0 0;
   }
-}
-@media (max-width: 400px) {
   .gopher {
-    width: 25%;
+    float: none;
+    width: 50%;
+    margin: 0 auto;
   }
   .title {
-    margin: 1.2em 0 3em;
-    width: 72%;
+    width: auto;
+    float: none;
+    margin: .5em auto 2em;
   }
   .title-text {
     font-size: .9em;
+    text-align: center;
   }
   .title-text span.location {
     margin-top: .5em;
@@ -154,9 +132,6 @@ export default class HomeHeader extends Vue {}
     float: none;
     clear: both;
     width: 100%;
-  }
-  .header {
-    padding: 3em 0 0;
   }
 }
 </style>

@@ -127,6 +127,9 @@ ol {
 li {
   line-height: 1.8;
 }
+dl {
+  font-size: 1.3em;
+}
 .draft {
   margin-bottom: 5em;
 }
@@ -143,10 +146,7 @@ li {
   h3 {
     font-size: 1.5em;
   }
-  p {
-    font-size: 1.2em;
-  }
-  ul, ol {
+  p, ul, ol, dl {
     font-size: 1.2em;
   }
 }
@@ -157,10 +157,7 @@ li {
   h3 {
     font-size: 1.4em;
   }
-  p {
-    font-size: 1.1em;
-  }
-  ul, ol {
+  p, ul, ol, dl {
     font-size: 1.1em;
   }
 }
@@ -171,10 +168,7 @@ li {
   h3 {
     font-size: 1.3em;
   }
-  p {
-    font-size: 1em;
-  }
-  ul, ol {
+  p, ul, ol, dl {
     font-size: 1em;
   }
 }
