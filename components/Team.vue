@@ -26,7 +26,7 @@
         <h3 class="name">@ymotongpoo</h3>
         <p class="role">Organizer</p>
     </div>
-    <div class="member">
+    <div class="member is-clearfix">
         <img src="https://avatars3.githubusercontent.com/u/2609671?s=120&v=4" />
         <h3 class="name">@yuji-otani</h3>
         <p class="role">Organizer</p>
