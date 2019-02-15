@@ -51,12 +51,17 @@
   margin-right: 1em;
 }
 .name {
+  font-size: .9em;
+  font-weight: bold;
   letter-spacing: -.05em;
-  font-size: .8em;
+}
+.name a {
+  border: none;
 }
 .role {
   letter-spacing: -.05em;
   font-size: 1em;
   text-align: left;
+  font-weight: normal;
 }
 </style>
