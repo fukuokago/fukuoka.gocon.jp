@@ -4,7 +4,7 @@
     <article>
       <h3>fmt.Println("Hello Gophers")</h3>
       <p class="date">Feb 15, 2019</p>
-      <p>Go Conference 2019 Summer in Fukuokaの開催が告知され、サイトが一般公開されました。
+      <p>Go Conference'19 Summer in Fukuokaの開催が告知され、サイトが一般公開されました。
       私たちはイベント開催まで以下のスケジュールを予定しています。
       また、今後何かお知らせがあれば、Twitterの<a href="https://twitter.com/golangjp">@golangjp</a>で
       アナウンスいたしますので是非フォローお願い致します。</p>
