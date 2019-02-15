@@ -11,7 +11,9 @@
     "generate": "nuxt-ts generate",
     "lint": "tslint --project .",
     "precommit": "npm run lint",
-    "test": "jest"
+    "test": "jest",
+    "dist": "gsutil cp -r dist/* gs://fukuoka-gocon-jp/",
+    "install:gsutil": "curl https://sdk.cloud.google.com | bash"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
