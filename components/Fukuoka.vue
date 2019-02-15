@@ -1,6 +1,14 @@
 <template>
   <section class="fukuoka">
     <h2>About Fukuoka</h2>
+
+    <picture>
+      <figure class="fukuoka-city">
+        <img class="eyecatch" src="~static/fukuoka.jpg" alt="fukuoka" />
+        <figcaption>Photo by <a rel="http://showcase.city.fukuoka.lg.jp/photo/img0683.html">Fukuoka City</a></figcaption>
+      </figure>
+    </picture>
+
     <p><a href="http://www.city.fukuoka.lg.jp/shisei/profile">福岡市</a>は、九州最大の都市でありながら中心部と空港の距離が近く、都市全体もコンパクトに収まっていています。
     また、気候は温暖であることから、アジアで最も住みやすい都市のひとつと言われています。
     福岡市は、<a ref="http://hakatanomiryoku.com/mamecategory/food">食文化</a>も発達していて、豚骨ラーメンやもつ鍋を筆頭に、水炊き、やきとり、餃子、明太子、などの福岡名物の食べ物が数多く存在します。
@@ -14,27 +22,26 @@
 </template>
 
 <style scoped>
-.news {
-  margin-bottom: 2em;
+.fukuoka-city {
+  position: relative;
 }
-.news p.date {
-  margin-top: -.5em;
-  margin-bottom: .2em;
+.fukuoka-city figcaption {
+  position: absolute;
+  top: 7px;
+  right: -4%;
+  color: #fff;
+  font-size: .7em;
   font-weight: bold;
-  color: #ccc;
-  font-family: 'Arvo', serif;
 }
-.news p {
-  margin-bottom: .5em;
+.fukuoka-city a {
+  color: #fff;
+  border-bottom: 1px solid #fff;
 }
-.news ul {
-  font-size: .8em;
-  list-style-type: circle;
-  padding-left: 1em;
-  padding-bottom: 1em;
-}
-.news li {
-  line-height: 1.8;
-  color: #888;
+img.eyecatch {
+  min-width: 110%;
+  height: auto;
+  margin-left: -5%;
+  overflow: visible;
+  padding-bottom: 2em;
 }
 </style>
