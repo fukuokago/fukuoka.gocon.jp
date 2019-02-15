@@ -13,9 +13,7 @@
     </div>
     <CodeOfConduct/>
     <Sponsors/>
-    <div class="draft">
-      <Team/>
-    </div>
+    <Team/>
   </section>
 </template>
 
