@@ -3,7 +3,7 @@ const url = 'https://fukuoka.gocon.jp'
 const desc = 'The conference of Golang in Fukuoka, Japan'
 
 const config = {
-  mode: 'universal',
+  mode: 'spa',
   head: {
     title: name,
     titleTemplate: `%s - ${name}`,
