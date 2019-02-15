@@ -1,9 +1,3 @@
-<template v=if="ng">
-  <div>
-    <TheHeader />
-  </div>
-</template>
-
 <template>
   <div>
     <HomeHeader />
