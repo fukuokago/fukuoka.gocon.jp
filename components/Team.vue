@@ -1,6 +1,12 @@
 <template>
   <div class="team is-clearfix">
     <h2>Team</h2>
+    <p>運営のお手伝いをしていただける方はお気軽にお声掛けください。Fukuoka.goのSlack TeamはこちらからJoinできます: https://slack.fukuokago.tech</p>
+    <div class="member">
+        <img src="https://avatars3.githubusercontent.com/u/1256183?s=120&v=4" />
+        <h3 class="name"><a href ="https://twitter.com/deeeet">@deeeet</a></h3>
+        <p class="role">Organizer</p>
+    </div>
     <div class="member">
         <img src="https://avatars3.githubusercontent.com/u/1661325?s=120&v=4" />
         <h3 class="name"><a href ="https://dribbble.com/keita_kawamoto">@keita_kawamoto</a></h3>
@@ -57,11 +63,12 @@
 }
 .name a {
   border: none;
+  cursor: pointer;
 }
 .role {
   letter-spacing: -.05em;
   font-size: 1em;
   text-align: left;
-  font-weight: normal;
+  font-weight: bold;
 }
 </style>
