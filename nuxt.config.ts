@@ -1,9 +1,9 @@
-const name = 'Go Conference 2019 Summer in Fukuoka'
+const name = 'Go Conference \'19 Summer in Fukuoka'
 const url = 'https://fukuoka.gocon.jp'
 const desc = 'The conference of Golang in Fukuoka, Japan'
 
 const config = {
-  mode: 'spa',
+  mode: 'universal',
   head: {
     title: name,
     titleTemplate: `%s - ${name}`,
@@ -28,7 +28,7 @@ const config = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Arvo:400,700' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Arvo:400,700' }
     ]
   },
   loading: { color: '#666' },

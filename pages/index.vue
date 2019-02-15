@@ -35,7 +35,7 @@ import Team from '~/components/Team.vue'
 @Component({
   head() {
     return {
-      title: 'Go Conference 2019 Summer in Fukuoka 🍜',
+      title: 'Go Conference‘19 Summer in Fukuoka 🍜',
       titleTemplate: '%s'
     }
   },
