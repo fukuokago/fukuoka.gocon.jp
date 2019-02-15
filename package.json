@@ -12,8 +12,8 @@
     "lint": "tslint --project .",
     "precommit": "npm run lint",
     "test": "jest",
-    "dist": "gsutil cp -r dist/* gs://fukuoka.gocon.jp/ && gsutil rm gs://fukuoka.gocon.jp/.nojekyll",
-    "install:gsutil": "curl https://sdk.cloud.google.com | bash"
+    "dist": "gsutil cp -r dist/* gs://fukuoka.gocon.jp/",
+    "install:gsutil": "curl https://sdk.cloud.google.com | bash && exec -l $SHELL && gcloud init"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
