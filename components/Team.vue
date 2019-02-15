@@ -1,7 +1,9 @@
 <template>
   <div class="team is-clearfix">
     <h2>Team</h2>
-    <p>運営のお手伝いをしていただける方はお気軽にお声掛けください。Fukuoka.goのSlack TeamはこちらからJoinできます: https://slack.fukuokago.tech</p>
+    <p>運営のお手伝いをしていただける方はお気軽にお声掛けください。
+    Fukuoka.goのSlack TeamはこちらからJoinできます: <a href="https://slack.fukuokago.tech/">https://slack.fukuokago.tech</a></p>
+
     <div class="member">
         <img src="https://avatars3.githubusercontent.com/u/1256183?s=120&v=4" />
         <h3 class="name"><a href ="https://twitter.com/deeeet">@deeeet</a></h3>
@@ -44,7 +46,8 @@
 .member {
   float: left;
   width: 270px;
-  height: 100px;
+  height: 80px;
+  margin: 2em 0 0 0;
 }
 .member img {
   display: inline-block;
