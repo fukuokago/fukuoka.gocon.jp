@@ -12,6 +12,7 @@
     "lint": "tslint --project .",
     "precommit": "npm run lint",
     "test": "jest",
+    "ci": "npm i && npm run lint && npm audit",
     "dist": "gsutil cp -r dist/* gs://fukuoka.gocon.jp/",
     "install:gsutil": "curl https://sdk.cloud.google.com | bash && exec -l $SHELL && gcloud init"
   },
