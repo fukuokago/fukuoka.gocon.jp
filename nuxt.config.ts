@@ -51,7 +51,9 @@ const config = {
   },
   loading: { color: '#666' },
   css: [],
-  plugins: [],
+  plugins: [
+    { src: '~plugins/redirect-ssl', ssr: false }
+  ],
   modules: [
     ['@nuxtjs/google-analytics', { id: 'UA-328462-17' }],
     '@nuxtjs/axios',
