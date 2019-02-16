@@ -4,7 +4,7 @@
 
     <picture>
       <figure class="fukuoka-city">
-        <img class="eyecatch" src="~static/fukuoka.jpg" alt="fukuoka" />
+        <img class="eyecatch" src="~static/img/fukuoka.jpg" alt="fukuoka" />
         <figcaption>Photo by <a rel="http://showcase.city.fukuoka.lg.jp/photo/img0683.html">Fukuoka City</a></figcaption>
       </figure>
     </picture>
