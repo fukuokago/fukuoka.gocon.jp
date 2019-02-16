@@ -32,13 +32,13 @@
     "vue-property-decorator": "^7.3.0"
   },
   "devDependencies": {
-    "tslint-config-standard": "^8.0.1",
-    "nodemon": "^1.18.9",
-    "prettier": "1.14.3",
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "^23.6.0",
-    "jest": "^23.6.0",
+    "babel-jest": "^24.1.0",
+    "jest": "^24.1.0",
+    "nodemon": "^1.18.9",
+    "prettier": "1.14.3",
+    "tslint-config-standard": "^8.0.1",
     "vue-jest": "^3.0.2"
   }
 }
