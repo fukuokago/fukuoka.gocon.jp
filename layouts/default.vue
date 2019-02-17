@@ -1,5 +1,6 @@
 <template>
   <div>
+    <TheNav />
     <HomeHeader />
     <nuxt />
     <TheFooter />
@@ -8,13 +9,13 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import TheHeader from '~/components/TheHeader.vue'
+import TheNav from '~/components/TheNav.vue'
 import HomeHeader from '~/components/HomeHeader.vue'
 import TheFooter from '~/components/TheFooter.vue'
 
 @Component({
   components: {
-    TheHeader,
+    TheNav,
     HomeHeader,
     TheFooter
   }
