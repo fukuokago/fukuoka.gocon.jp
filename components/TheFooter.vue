@@ -1,14 +1,18 @@
 <template>
   <footer class="footer">
-    <div>
-      <p>&copy; <span class="go">Go</span> Conference <sup>‘19</sup></p>
-    </div>
+    <p><span class="copy">&copy; 2019</span> <Logo color="white" /></p>
   </footer>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-@Component
+import Logo from '~/components/Logo.vue'
+
+@Component({
+  components: {
+    Logo
+  }
+})
 export default class Footer extends Vue {
   name = 'Footer'
 }
@@ -17,25 +21,16 @@ export default class Footer extends Vue {
 <style scoped>
 .footer {
   margin-top: 10em;
-  padding: 1em;
-  background-color: #00ADD8;
+  padding: 1em 0;
+  background-color: #000;
 }
 .footer p {
-  font-size: 1.2em;
-  font-family: 'Arvo', serif;
-  padding: .1em;
-  color: #fff;
+  font-size: .4em;
   text-align: center;
 }
-.footer span.go {
-  font-weight: bold;
-  margin-right: -.25em;
-}
-.footer sup {
-  font-size: .7em;
-  letter-spacing: 0;
-  margin-left: -.4em;
-  position: relative;
-  top: -.1em;
+.copy {
+  color: #fff;
+  font-size: 2em;
+  padding-right: .5em;
 }
 </style>

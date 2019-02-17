@@ -1,8 +1,8 @@
 <template>
-  <div :class="[color, 'logo']">
+  <span :class="[color, 'logo']">
     <nuxt-link to="/"><span class="go">Go</span> Conference <sup>‘19</sup></nuxt-link>
-    <span class="location" v-if="isSubtitle">Summer in Fukuoka</span>
-  </div>
+    <i class="location" v-if="isSubtitle">Summer in Fukuoka</i>
+  </span>
 </template>
 
 <script lang="ts">
@@ -50,7 +50,7 @@ export default class TheLogo extends Vue {
   position: relative;
   top: -.3em;
 }
-.logo span.location {
+.logo i.location {
   font-size: .4em;
   display: block;
   letter-spacing: .2em;

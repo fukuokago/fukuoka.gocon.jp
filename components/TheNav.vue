@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav" :class="{'sticky': position > 600}">
+  <nav class="nav" :class="{'sticky': position > 20}">
     <div class="nav--logo"><Logo color="white" /></div>
     <div class="hamburger" v-bind:class="{ active }" v-on:click="isActive()" >
       <span class="hamburger__top-bun"></span>
@@ -37,7 +37,8 @@ export default class TheNav extends Vue {
 
 <style scoped>
 .nav {
-  background-color: #000;
+  /*background-color: #00ADD8;*/
+  background: linear-gradient(-135deg, #00ADD8, #CE3262);
   position: absolute;
   width: 100%;
   display: none;
@@ -85,7 +86,7 @@ export default class TheNav extends Vue {
 }
 
 .hamburger:hover [class*="-bun"] {
-  background: #666;
+  background: #fff;
 }
 
 .hamburger__top-bun {
