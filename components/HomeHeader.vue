@@ -56,15 +56,15 @@ export default class HomeHeader extends Vue {}
 }
 @media (min-width: 801px) and (max-width: 1300px) {
   .title-text {
-    font-size: 2em;
+    font-size: .8em;
   }
 }
 @media (min-width: 501px) and (max-width: 800px) {
   .title {
-    margin: 4.7em 0 7em;
+    margin: 3em 0 6em;
   }
   .title-text {
-    font-size: 1.4em;
+    font-size: .5em;
   }
   .about {
     float: none;
@@ -87,7 +87,7 @@ export default class HomeHeader extends Vue {}
     margin: .5em auto 2em;
   }
   .title-text {
-    font-size: .9em;
+    font-size: .45em;
     text-align: center;
   }
   .title-text span.location {

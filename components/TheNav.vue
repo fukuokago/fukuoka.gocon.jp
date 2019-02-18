@@ -1,9 +1,19 @@
 <template>
-  <nav class="nav" :class="{'sticky': position > 20}">
+  <nav class="nav is-clearfix" :class="{'sticky': position > 300}">
     <div class="nav--logo"><Logo color="white" /></div>
-    <div class="hamburger" v-bind:class="{ active }" v-on:click="isActive()" >
-      <span class="hamburger__top-bun"></span>
-      <span class="hamburger__bottom-bun"></span>
+    <div class="nav--links">
+      <ul class=" is-clearfix">
+        <li v-for="(link, i) in links"><nuxt-link v-if="link.visible" :to=link.to>{{ link.label }}</nuxt-link> </li>
+      </ul>
+    </div>
+    <div class="drawer" v-bind:class="{ active }" v-on:click="isActive()" >
+      <span class="drawer__top-bun"></span>
+      <span class="drawer__bottom-bun"></span>
+    </div>
+    <div class="drawer--links" v-if="active">
+      <ul>
+        <li v-for="(link, i) in links"><nuxt-link :to=link.to>{{ link.label }}</nuxt-link> </li>
+      </ul>
     </div>
   </nav>
 </template>
@@ -15,17 +25,27 @@ import Logo from '~/components/Logo.vue'
 @Component({
   components: {
     Logo
-  },
-  data: {
-    isActive: false
   }
 })
 export default class TheNav extends Vue {
     public position = 0
     private active = false
+    public links = [
+      { visible: true, to: '/about', label: 'About' },
+      { visible: true, to: '/fukuoka', label: 'Fukuoka' },
+      { visible: true, to: '/cfp', label: 'Call for Papers' },
+      { visible: true, to: '/schedule', label: 'Schedule' },
+      { visible: true, to: '/registration', label: 'Registration' },
+      { visible: false, to: '/talks', label: 'Talks' },
+      { visible: false, to: '/scholarships', label: 'Scholarships' },
+      { visible: true, to: '/sponsers', label: 'Sponsers' },
+      { visible: true, to: '/team', label: 'Team' }
+    ]
+
     public isActive() {
       this.active = !this.active
     }
+
     public mounted() {
       document.onscroll = () => {
         this.position = document.documentElement.scrollTop || document.body.scrollTop
@@ -37,17 +57,74 @@ export default class TheNav extends Vue {
 
 <style scoped>
 .nav {
-  /*background-color: #00ADD8;*/
-  background: linear-gradient(-135deg, #00ADD8, #CE3262);
+  background: linear-gradient(270deg, #00ADD8, #CE3262);
   position: absolute;
   width: 100%;
   display: none;
   z-index: 9999;
 }
 .nav--logo {
-  font-size: .45em;
-  padding: 2em;
+  font-size: .4em;
+  padding: 2.5em;
+  width: auto;
+  display: inline-block;
+  float: left;
 }
+
+.nav--links ul {
+  padding: 0;
+  margin: 0;
+}
+.nav--links ul:before {
+  content: '|';
+  float: left;
+  display: inline-block;
+  padding: .4em 1em 0;
+  color: #fff;
+  opacity: 0.3;
+}
+.nav--links li {
+  float: left;
+  display: inline-block;
+}
+.nav--links a {
+  border: none;
+  font-family: 'Arvo', serif;
+  color: #fff;
+  font-size: .7em;
+  padding: .8em .8em;
+  display: block;
+  opacity: 0.7;
+}
+
+.drawer--links {
+  background-color: #000;
+}
+.drawer--links a {
+  opacity: 0.6;
+  border: none;
+  font-family: 'Arvo', serif;
+  color: #fff;
+  font-size: .7em;
+  display: block;
+  cursor: pointer;
+  padding: .8em 0;
+}
+.drawer--links a:hover {
+  opacity: 1;
+}
+.drawer--links ul {
+  padding: 0 .9em .25em;
+  margin: 0;
+  list-style-type: none;
+}
+.drawer--links li {
+  border-bottom: 1px solid #444;
+}
+.drawer--links li:last-child {
+  border: none;
+}
+
 .sticky {
   display: block;
   position: fixed;
@@ -62,40 +139,41 @@ export default class TheNav extends Vue {
   0% {opacity: 0}
   100% {opacity: 1}
 }
-.hamburger {
+.drawer {
   cursor: pointer;
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 48px;
-  height: 48px;
+  top: .3em;
+  right: .3em;
+  width: 40px;
+  height: 40px;
   transition: all 0.25s;
+  display: none;
 }
 
-.hamburger__top-bun,
-.hamburger__bottom-bun {
+.drawer__top-bun,
+.drawer__bottom-bun {
   content: '';
   display: block;
   position: absolute;
-  left: 15px;
-  width: 18px;
+  left: 12px;
+  width: 17px;
   height: 1px;
   background: #fff;
   transform: rotate(0);
   transition: all 0.25s;
 }
 
-.hamburger:hover [class*="-bun"] {
+.drawer:hover [class*="-bun"] {
   background: #fff;
 }
 
-.hamburger__top-bun {
-  top: 23px;
+.drawer__top-bun {
+  top: 19px;
   transform: translateY(-3px);
 }
 
-.hamburger__bottom-bun {
-  bottom: 23px;
+.drawer__bottom-bun {
+  bottom: 19px;
   transform: translateY(3px);
 }
 
@@ -103,15 +181,48 @@ export default class TheNav extends Vue {
   transform: rotate(90deg);
 }
 
-.active .hamburger__top-bun {
+.active .drawer__top-bun {
   transform:
     rotate(45deg)
     translateY(0px);
 }
 
-.active .hamburger__bottom-bun {
+.active .drawer__bottom-bun {
   transform:
     rotate(-45deg)
     translateY(0px);
+}
+@media (min-width: 801px) and (max-width: 1300px) {
+  .drawer {
+    display: block;
+  }
+  .nav--logo {
+    float: none;
+  }
+  .nav--links {
+    display: none;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  .drawer {
+    display: block;
+  }
+  .nav--logo {
+    float: none;
+  }
+  .nav--links {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .drawer {
+    display: block;
+  }
+  .nav--logo {
+    float: none;
+  }
+  .nav--links {
+    display: none;
+  }
 }
 </style>

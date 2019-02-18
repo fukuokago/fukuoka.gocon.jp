@@ -13,19 +13,17 @@ import Logo from '~/components/Logo.vue'
     Logo
   }
 })
-export default class Footer extends Vue {
-  name = 'Footer'
-}
+export default class Footer extends Vue {}
 </script>
 
 <style scoped>
 .footer {
   margin-top: 10em;
-  padding: 1em 0;
+  padding: 1em 0 .9em;
   background-color: #000;
 }
 .footer p {
-  font-size: .4em;
+  font-size: .35em;
   text-align: center;
 }
 .copy {
