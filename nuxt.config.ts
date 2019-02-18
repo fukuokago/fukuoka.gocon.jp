@@ -53,6 +53,7 @@ const config = {
   css: [],
   plugins: [
     { src: '~plugins/redirect-ssl', ssr: false },
+    { src: '~plugins/scroll', ssr: false },
     { src: '~/plugins/lazyload', ssr: false }
   ],
   modules: [
