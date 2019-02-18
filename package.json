@@ -30,6 +30,7 @@
     "tslint": "^5.12.1",
     "tslint-config-prettier": "^1.17.0",
     "typescript": "^3.2.4",
+    "vue-lazyload": "^1.2.6",
     "vue-property-decorator": "^7.3.0"
   },
   "devDependencies": {
