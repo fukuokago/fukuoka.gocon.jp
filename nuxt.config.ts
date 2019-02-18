@@ -1,6 +1,6 @@
 const name = 'Go Conference \'19 Summer in Fukuoka'
 const url = 'https://fukuoka.gocon.jp'
-const desc = 'The conference of Golang in Fukuoka, Japan'
+const desc = 'The conference of golang in fukuoka, Japan'
 
 const config = {
   mode: 'spa',
