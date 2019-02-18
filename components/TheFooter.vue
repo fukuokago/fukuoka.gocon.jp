@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <p><span class="copy">&copy; 2019</span> <Logo color="white" /></p>
+    <p><span class="copy">🍉🌴🏄   &copy; 2019</span> <Logo color="white" /> <span class="copy"> 🏄🌴🍉 </span></p>
   </footer>
 </template>
 
