@@ -5,8 +5,7 @@
         <Gopher/>
       </div>
       <div class="title">
-          <h1 class="title-text"><span class="go">Go</span> Conference <sup>‘19</sup><span class="location">Summer in Fukuoka</span></h1>
-        <p class="gopher-text">\ʕ◔ϖ◔ʔ/</p>
+        <h1 class="title-text"><Logo color="blue" isSubtitle="true" /></h1>
       </div>
       <div class="about">
         <About/>
@@ -17,11 +16,13 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import Logo from '~/components/Logo.vue'
 import Gopher from '~/components/Gopher.vue'
 import About from '~/components/About.vue'
 
 @Component({
   components: {
+    Logo,
     Gopher,
     About
   }
@@ -51,37 +52,7 @@ export default class HomeHeader extends Vue {}
   width: 57%;
 }
 .title-text {
-  font-size: 2.8em;
-  letter-spacing: -.07em;
-  line-height: 1;
-}
-.title-text span.go {
-  font-weight: bold;
-  margin-right: -.12em;
-}
-.title-text sup {
-  font-size: .4em;
-  letter-spacing: 0;
-  margin-left: -.6em;
-  position: relative;
-  top: -.3em;
-}
-.title-text span.location {
-  font-size: .4em;
-  display: block;
-  letter-spacing: .2em;
-  margin-left: .3em;
-}
-.gopher-text {
-  font-size: 2em;
-  font-weight: bold;
-  padding: 1em;
-  position: absolute;
-  margin-left: 50%;
-  top: -1.7em;
-  left: -13em;
-  color: #555759;
-  display: none;
+  font-size: 1em;
 }
 @media (min-width: 801px) and (max-width: 1300px) {
   .title-text {

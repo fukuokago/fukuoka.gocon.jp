@@ -17,21 +17,29 @@ export default class TheLogo extends Vue {
 </script>
 
 <style scoped>
+.logo a {
+  border: none;
+}
+.logo a:hover {
+  border: none;
+}
 .black a {
   color: #000;
-  border: none;
 }
 .black a:hover {
   color: #000;
-  border: none;
 }
 .white a {
   color: #fff;
-  border: none;
 }
 .white a:hover {
   color: #fff;
-  border: none;
+}
+.blue a {
+  color: #00ADD8;
+}
+.blue a:hover {
+  color: #00ADD8;
 }
 .logo {
   font-size: 2.8em;
@@ -55,5 +63,6 @@ export default class TheLogo extends Vue {
   display: block;
   letter-spacing: .2em;
   margin-left: .3em;
+  font-style: normal;
 }
 </style>
