@@ -30,6 +30,10 @@ const config = {
       { name: 'msapplication-TileImage', content: '/icons/ms-icon-144x144.png' },
       { name: 'theme-color', content: '#ffffff' }
     ],
+    script: [
+      { defer: 'defer', src: '//use.fontawesome.com/releases/v5.7.2/js/brands.js', integrity: 'sha384-zJ8/qgGmKwL+kr/xmGA6s1oXK63ah5/1rHuILmZ44sO2Bbq1V3p3eRTkuGcivyhD', crossorigin: 'anonymous' },
+      { defer: 'defer', src: '//use.fontawesome.com/releases/v5.7.2/js/fontawesome.js', integrity: 'sha384-xl26xwG2NVtJDw2/96Lmg09++ZjrXPc89j0j7JHjLOdSwHDHPHiucUjfllW0Ywrq', crossorigin: 'anonymous' }
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Arvo:400,700' },
