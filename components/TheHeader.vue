@@ -128,5 +128,8 @@ export default class TheHeader extends Vue {
   .attention {
     display: none;
   }
+  .logo {
+    float: none;
+  }
 }
 </style>

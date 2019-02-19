@@ -13,7 +13,7 @@
 
     <div class="vertical" v-if="drawer">
       <ul>
-        <li v-for="(link, i) in links" v-on:click="toggleDrawer()"><nuxt-link :to=link.to>{{ link.label }}</nuxt-link> </li>
+        <li v-for="(link, i) in links" v-on:click="toggleDrawer()"><nuxt-link v-if="link.visible" :to=link.to>{{ link.label }}</nuxt-link> </li>
       </ul>
     </div>
   </nav>
@@ -148,29 +148,7 @@ export default class TheNav extends Vue {
     translateY(0px);
 }
 
-@media (min-width: 801px) and (max-width: 1300px) {
-  .drawer {
-    display: block;
-  }
-  .logo {
-    float: none;
-  }
-  .horizontal {
-    display: none;
-  }
-}
-@media (min-width: 501px) and (max-width: 800px) {
-  .drawer {
-    display: block;
-  }
-  .logo {
-    float: none;
-  }
-  .horizontal {
-    display: none;
-  }
-}
-@media (max-width: 500px) {
+@media (max-width: 1300px) {
   .drawer {
     display: block;
   }
