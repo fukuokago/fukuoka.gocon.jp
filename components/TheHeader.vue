@@ -19,7 +19,7 @@
     </div>
 
     <div class="attention">
-      <p><nuxt-link title="disabled" disabled="disabled" class="button is-small is-primary is-inverted is-outlined" to="/sponsers">Become a Sponser</nuxt-link></p>
+      <p><nuxt-link class="button is-small is-primary is-inverted is-outlined" to="/sponsors">Become a Sponser</nuxt-link></p>
     </div>
   </header>
 </template>
