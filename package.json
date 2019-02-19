@@ -17,6 +17,7 @@
     "install:gsutil": "curl https://sdk.cloud.google.com | bash && exec -l $SHELL && gcloud init"
   },
   "dependencies": {
+    "@nuxt/vue-app": "^2.4.3",
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/bulma": "^1.2.1",
     "@nuxtjs/google-analytics": "^2.0.2",
@@ -30,7 +31,8 @@
     "tslint": "^5.12.1",
     "tslint-config-prettier": "^1.17.0",
     "typescript": "^3.2.4",
-    "vue-property-decorator": "^7.3.0"
+    "vue-property-decorator": "^7.3.0",
+    "vuex-class": "^0.3.1"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.27",

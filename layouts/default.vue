@@ -1,7 +1,6 @@
 <template>
   <div>
-    <TheNav />
-    <HomeHeader />
+    <TheHeader />
     <nuxt />
     <TheFooter />
   </div>
@@ -9,18 +8,16 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import TheNav from '~/components/TheNav.vue'
-import HomeHeader from '~/components/HomeHeader.vue'
+import TheHeader from '~/components/TheHeader.vue'
 import TheFooter from '~/components/TheFooter.vue'
 
 @Component({
   components: {
-    TheNav,
-    HomeHeader,
+    TheHeader,
     TheFooter
   }
 })
-export default class DefaultLayout extends Vue {}
+export default class LayoutDefault extends Vue {}
 </script>
 
 <style>

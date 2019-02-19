@@ -60,6 +60,11 @@ const config = {
     '@nuxtjs/bulma',
     '@nuxtjs/pwa'
   ],
+  router: {
+    middleware: [
+      'gopher'
+    ]
+  },
   axios: {
   },
   build: {

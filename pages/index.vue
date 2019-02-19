@@ -1,34 +1,20 @@
 <template>
   <section class="container">
+    <TheHome/>
     <News/>
     <Fukuoka/>
     <CallForPapers/>
     <Schedule/>
-    <Registration/>
-    <div class="draft">
-      <Talks/>
-    </div>
-    <div class="draft">
-      <Scholarships/>
-    </div>
-    <CodeOfConduct/>
-    <Sponsors/>
-    <Team/>
   </section>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import TheHome from '~/components/TheHome.vue'
 import News from '~/components/News.vue'
 import Fukuoka from '~/components/Fukuoka.vue'
-import Schedule from '~/components/Schedule.vue'
 import CallForPapers from '~/components/CallForPapers.vue'
-import Registration from '~/components/Registration.vue'
-import Talks from '~/components/Talks.vue'
-import Scholarships from '~/components/Scholarships.vue'
-import CodeOfConduct from '~/components/CodeOfConduct.vue'
-import Sponsors from '~/components/Sponsors.vue'
-import Team from '~/components/Team.vue'
+import Schedule from '~/components/Schedule.vue'
 
 @Component({
   head() {
@@ -38,16 +24,11 @@ import Team from '~/components/Team.vue'
     }
   },
   components: {
+    TheHome,
     News,
     Fukuoka,
-    Schedule,
     CallForPapers,
-    Registration,
-    Talks,
-    Scholarships,
-    CodeOfConduct,
-    Sponsors,
-    Team
+    Schedule
   }
 })
 export default class PageIndex extends Vue {}

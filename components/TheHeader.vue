@@ -1,73 +1,132 @@
 <template>
-  <header class="header">
-    <div class="container">
-      <div>
-        <h1 class="title">Go Conference 2019<span>Summer in Fukuoka</span></h1>
-        <p class="gopher">\ʕ◔ϖ◔ʔ/</p>
+  <header class="header is-clearfix">
+    <div v-if="gopher" :class="{'logogo': position > 10}">
+      <div class="logo transparent">
+        <h1><Logo color="white" /></h1>
       </div>
+      <div class="gopher">
+        <span>\ʕ◔ϖ◔ʔ/ < {{greeting()}}</span>
+      </div>
+    </div>
+    <div v-else>
+      <div class="logo">
+        <h1><Logo color="white" /></h1>
+      </div>
+    </div>
+
+    <div class="nav">
+      <TheNav/>
+    </div>
+
+    <div class="attention">
+      <p><nuxt-link title="disabled" disabled="disabled" class="button is-small is-primary is-inverted is-outlined" to="/sponsers">Become a Sponser</nuxt-link></p>
     </div>
   </header>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-@Component
-export default class Header extends Vue {}
+import { Getter } from 'vuex-class'
+import Logo from '~/components/Logo.vue'
+import TheNav from '~/components/TheNav.vue'
+
+@Component({
+  components: {
+    Logo,
+    TheNav
+  }
+})
+export default class TheHeader extends Vue {
+    @Getter('gopher/visible')
+    public gopher!: boolean
+
+    public position = 0
+
+    public greeting() {
+      const words = [
+        'hi!',
+        'yo-',
+        '𝝣GO',
+        '❤️',
+        '🇯',
+        '🍜',
+        '🍺',
+        '🍣'
+      ]
+      return words[Math.floor(Math.random() * words.length)]
+    }
+
+    public mounted() {
+      document.onscroll = () => {
+        this.position = document.documentElement.scrollTop || document.body.scrollTop
+      }
+    }
+}
 </script>
+
 
 <style scoped>
 .header {
-  border-top: 20px solid #00758D;
-  padding: 3em 0 2em;
-  font-family: 'Arvo', serif;
-  text-align: center;
-}
-.title {
-  font-size: 6em;
-  letter-spacing: -.07em;
-  color: #555759;
-}
-.title span {
-  font-size: .6em;
-  display: block;
-  letter-spacing: 0;
-  margin-top: -.3em;
-  color: #666;
-}
-.gopher {
-  font-size: 2em;
-  font-weight: bold;
-  padding: 1em;
+  background: linear-gradient(270deg, #00ADD8, #CE3262);
   position: absolute;
-  margin-left: 50%;
-  top: -1.7em;
-  left: -13em;
-  color: #555759;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  display: block;
+  position: fixed;
 }
-@media (min-width: 401px) and (max-width: 500px) {
-  .title {
-    font-size: 2.5em;
-  }
-  .title span {
-    margin-top: .5em;
-  }
-  .gopher {
-    font-size: 1em;
-    top: -2em;
-    left: -12em;
-  }
+
+.logo {
+  font-size: 1em;
+  padding: .5em;
+  width: auto;
+  float: left;
+  display: inline-block;
 }
-@media (max-width: 400px) {
-  .title {
-    font-size: 1.8em;
-  }
-  .title span {
-    margin-top: .5em;
-  }
-  .gopher {
-    font-size: 1em;
-    top: -2em;
-    left: -9em;
+
+.transparent {
+  opacity: 0;
+}
+
+.gopher {
+  color: #fff;
+  font-size: 1em;
+  padding: .8em;
+  width: auto;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  font-family: 'Courier New', Courier, Monaco, monospace;
+}
+
+.logogo .transparent {
+  opacity: 1;
+  animation: fadeIn 2s ease 0s 1 normal;
+  -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+.logogo .gopher {
+  display: none;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+.attention {
+  position: absolute;
+  top: .7em;
+  right: 1em;
+}
+
+@media (max-width: 1300px) {
+  .attention {
+    display: none;
   }
 }
 </style>
