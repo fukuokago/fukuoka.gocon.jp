@@ -1,17 +1,17 @@
 <template>
-  <header class="header is-clearfix">
+  <section class="home is-clearfix">
     <div class="container">
       <div class="gopher">
         <Gopher/>
       </div>
       <div class="title">
-        <h1 class="title-text"><Logo color="blue" isSubtitle="true" /></h1>
+        <p class="title-text"><Logo color="blue" isSubtitle="true" /></p>
       </div>
       <div class="about">
         <About/>
       </div>
     </div>
-  </header>
+  </section>
 </template>
 
 <script lang="ts">
@@ -27,11 +27,11 @@ import About from '~/components/About.vue'
     About
   }
 })
-export default class HomeHeader extends Vue {}
+export default class TheHome extends Vue {}
 </script>
 
 <style scoped>
-.header {
+.home {
   border-top: 20px solid #00ADD8;
   padding: 3em 0 2em;
   font-family: 'Arvo', serif;
@@ -73,7 +73,7 @@ export default class HomeHeader extends Vue {}
   }
 }
 @media (max-width: 500px) {
-  .header {
+  .home {
     padding: 1em 0 0;
   }
   .gopher {
