@@ -1,5 +1,5 @@
 <template>
-  <div class="sponsers">
+  <div class="sponsors">
     <h2>Sponsors</h2>
     <p>スポンサー募集の資料が出来次第公開いたします。追ってご報告いたします。</p>
   </div>
@@ -13,11 +13,11 @@
  */
 
 <style scoped>
-.sponsers dl {
+.sponsors dl {
   width: 100%;
   margin: 1em auto;
 }
-.sponsers dt {
+.sponsors dt {
   width: 30%;
   float: left;
   padding: .3em 0 .2em;
@@ -25,11 +25,11 @@
   white-space: nowrap;
   text-align: right;
 }
-.sponsers dd {
+.sponsors dd {
   padding: .3em 0 .2em;
   padding-left: 35%;
 }
-.sponsers dd:after {
+.sponsors dd:after {
   content: '';
   display: block;
   clear: both;
