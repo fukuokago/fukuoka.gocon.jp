@@ -45,7 +45,6 @@ export default class TheNav extends Vue {
 }
 </script>
 
-
 <style scoped>
 .horizontal ul {
   padding: 0;
