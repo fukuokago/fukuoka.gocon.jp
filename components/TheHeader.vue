@@ -45,12 +45,15 @@ export default class TheHeader extends Vue {
     public greeting() {
       const words = [
         'hi!',
-        'yo-',
+        'yo',
         '𝝣GO',
+        '💯',
         '❤️',
-        '🇯',
+        '🇯🇵',
         '🍜',
         '🍺',
+        '🌴',
+        '🚀',
         '🍣'
       ]
       return words[Math.floor(Math.random() * words.length)]
