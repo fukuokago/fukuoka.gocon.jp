@@ -1,10 +1,18 @@
 <template>
-  <section class="container">
-    <TheHome/>
-    <News/>
+  <section>
+    <div class="container">
+      <TheHome/>
+    </div>
+    <div class="container">
+      <News/>
+    </div>
     <Fukuoka/>
-    <CallForPapers/>
-    <Schedule/>
+    <div class="container">
+      <CallForPapers/>
+    </div>
+    <div class="container">
+      <Schedule/>
+    </div>
   </section>
 </template>
 

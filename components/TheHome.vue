@@ -73,7 +73,7 @@ export default class TheHome extends Vue {}
 }
 @media (max-width: 500px) {
   .home {
-    padding: 1em 0 0;
+    padding: 3em 0 0;
   }
   .gopher {
     float: none;
