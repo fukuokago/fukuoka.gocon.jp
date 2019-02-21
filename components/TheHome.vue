@@ -33,7 +33,6 @@ export default class TheHome extends Vue {}
 <style scoped>
 .home {
   padding: 3.5em 0 2em;
-  font-family: 'Arvo', serif;
 }
 .gopher {
   float: left;
