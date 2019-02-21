@@ -122,6 +122,14 @@ li {
 dl {
   font-size: 1.3em;
 }
+strong {
+  font-weight: bold;
+  color: #666;
+}
+em {
+  font-style: normal;
+  color: #000;
+}
 .draft {
   margin-bottom: 5em;
 }
