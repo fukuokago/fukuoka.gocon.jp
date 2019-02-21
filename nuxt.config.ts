@@ -62,6 +62,27 @@ const config = {
   ],
   modules: [
     ['@nuxtjs/google-analytics', { id: 'UA-328462-17' }],
+    ['nuxt-i18n', {
+      seo: false,
+      parsePages: false,
+      locales: [
+        { name: 'English', code: 'en', iso: 'en-US', file: 'en-US.js' },
+        { name: 'Japanese', code: 'ja', iso: 'ja_JP', file: 'ja-JP.js' }
+      ],
+      lazy: true,
+      langDir: 'lang/',
+      defaultLocale: 'en',
+      detectBrowserLanguage: {
+        useCookie: false,
+        cookieKey: 'i18n_redirected',
+        alwaysRedirect: false,
+        fallbackLocale: 'en'
+      },
+      vueI18n: {
+        fallbackLocale: 'en'
+      },
+      silentTranslationWarn: true
+    }],
     '@nuxtjs/axios',
     '@nuxtjs/bulma',
     '@nuxtjs/pwa'

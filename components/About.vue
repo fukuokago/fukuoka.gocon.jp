@@ -1,28 +1,33 @@
 <template>
   <div>
-    <p>「<strong>Go Conference</strong>」は、世界的に見ても初期から行われており、Goコミュニティにとって意義のあるイベントです。カンファレンスでは毎年数百名のGopherが参加しGoにまつわる多様なセッションを通した交流が行われています。</p>
-    <p>今回、ついに、このカンファレンスを福岡で開催します。<em>エンジニアにとって魅力ある土地、福岡で、今注目を集めるプログラミング言語Goを通じて様々な技術の話をし、学び合い、楽しい時間を過ごし、開発者同士の交流を深めましょう！</em></p>
-
-    <dl class="meta">
-      <dt>日時</dt>
-      <dd>2019年７月13日 土曜日</dd>
-      <dt>会場</dt>
-      <dd>福岡市天神付近を予定</dd>
-    </dl>
+    <p v-html="$t('about.messages.0')"></p>
+    <p v-html="$t('about.messages.1')"></p>
+    <div class="attention">
+        <p class="cfp"><nuxt-link class="button" to="/cfp" disabled><span>📝</span>{{ $t('callforpapers') }}</nuxt-link></p>
+      <p class="registration"><nuxt-link class="button" to="/registration" disabled><span>🎪</span>{{ $t('registration') }}</nuxt-link></p>
+    </div>
   </div>
 </template>
 
 <style scoped>
-.about p {
-  padding-bottom: 1em;
+.attention {
+  padding-top: 3em;
+  font-family: 'Arvo', serif;
 }
-.about strong {
-  font-weight: bold;
-  color: #666;
+.attention p {
+  display: inline-block;
 }
-.about em {
-  font-style: normal;
-  color: #000;
+.attention .cfp {
+  padding-right: 1em;
+}
+p .button {
+  background-color: #f5f5f5;
+  padding: 2em 1.5em;
+  cursor: pointer;
+}
+p .button span {
+  font-size: 2em;
+  padding-right: .5em;
 }
 .meta {
   width: 70%;

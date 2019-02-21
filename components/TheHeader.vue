@@ -21,6 +21,12 @@
     <div class="attention">
       <p><nuxt-link class="button is-small is-primary is-inverted is-outlined" to="/sponsors">Become a Sponsor</nuxt-link></p>
     </div>
+
+    <p class="day"><span class="date">{{$t('date')}}</span> <span class="place">{{$t('place')}}</span></p>
+
+    <div class="lang">
+      <p>Available Language: <nuxt-link v-for="l in availableLocales" :key="l.code" :to="switchLocalePath(l.code)">{{ l.name }}</nuxt-link></p>
+    </div>
   </header>
 </template>
 
@@ -34,6 +40,11 @@ import TheNav from '~/components/TheNav.vue'
   components: {
     Logo,
     TheNav
+  },
+  computed: {
+    availableLocales() {
+      return this.$i18n.locales.filter(l => l.code !== this.$i18n.locale)
+    }
   }
 })
 export default class TheHeader extends Vue {
@@ -127,12 +138,46 @@ export default class TheHeader extends Vue {
   right: 1em;
 }
 
+.day {
+  position: absolute;
+  bottom: -2.9em;
+  left: 1em;
+  font-size: .8em;
+  font-family: 'Arvo', serif;
+  color: #CE3262;
+}
+.date {
+  font-weight: bold;
+}
+
+.lang {
+  position: absolute;
+  bottom: -2.3em;
+  right: 1.2em;
+  font-size: 1em;
+  font-family: 'Arvo', serif;
+}
+.lang p {
+  font-size: .8em;
+  color: #999;
+}
+.lang p a {
+  color: #000;
+  border: none;
+}
+
 @media (max-width: 1300px) {
   .attention {
     display: none;
   }
   .logo {
     float: none;
+  }
+  .day {
+    display: none;
+  }
+  .lang {
+    display: none;
   }
 }
 </style>
