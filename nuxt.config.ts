@@ -76,7 +76,7 @@ const config = {
         useCookie: false,
         cookieKey: 'i18n_redirected',
         alwaysRedirect: false,
-        fallbackLocale: 'en'
+        fallbackLocale: 'ja'
       },
       vueI18n: {
         fallbackLocale: 'ja'
