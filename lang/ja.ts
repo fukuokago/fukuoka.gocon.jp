@@ -1,6 +1,4 @@
 export default {
-  date: 'July 13th, 2019',
-  place: '@Tenjin Fukuoka, Japan',
   callforpapers: 'Call for Papers',
   registration: 'Registration',
   about: {
