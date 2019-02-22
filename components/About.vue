@@ -1,10 +1,29 @@
+<i18n>
+en:
+  callforpapers: Call for Papers
+  registration: Registration
+  enjoy: "Let's talk about various technologies, learn from each other, have a good time, deepen interactions among developers through Fukuoka's attractive landscape for engineers through a programming language Go that is gaining attention now!"
+  background: '"{go}" is done from the beginning even if it is seen globally, it is a meaningful event for the Go community. Hundreds of Gophers participate in the conference every year and exchanges are made through various sessions related to Go.'
+  announce: 'At last this conference will be held in Fukuoka. {enjoy}'
+ja:
+  callforpapers: 登壇募集に応募する
+  registration: 参加登録をする
+  enjoy: 'エンジニアにとって魅力ある土地、福岡で、今注目を集めるプログラミング言語Goを通じて様々な技術の話をし、学び合い、楽しい時間を過ごし、開発者同士の交流を深めましょう！'
+  background: '「{go}」は、世界的に見ても初期から行われており、Goコミュニティにとって意義のあるイベントです。カンファレンスでは毎年数百名のGopherが参加しGoにまつわる多様なセッションを通した交流が行われています。'
+  announce: '今回、ついに、このカンファレンスを福岡で開催します。{enjoy}'
+</i18n>
+
 <template>
   <div>
-    <p v-html="$t('about.messages.0')"></p>
-    <p v-html="$t('about.messages.1')"></p>
+    <i18n path="background" tag="p">
+      <strong place="go" class="about--strong">Go Conference</strong>
+    </i18n>
+    <i18n path="announce" tag="p">
+      <em place="enjoy" class="about--em">{{ $t('enjoy') }}</em>
+    </i18n>
     <div class="attention">
-        <p class="cfp"><nuxt-link class="button" to="/cfp" disabled><span>📝</span>{{ $t('callforpapers') }}</nuxt-link></p>
-      <p class="registration"><nuxt-link class="button" to="/registration" disabled><span>🎪</span>{{ $t('registration') }}</nuxt-link></p>
+      <p class="cfp"><nuxt-link class="button" :to="localePath('cfp')" disabled><span>📝</span>{{ $t('callforpapers') }}</nuxt-link></p>
+      <p class="registration"><nuxt-link class="button" :to="localePath('registration')" disabled><span>🎪</span>{{ $t('registration') }}</nuxt-link></p>
     </div>
   </div>
 </template>
@@ -28,43 +47,5 @@ p .button {
 p .button span {
   font-size: 2em;
   padding-right: .5em;
-}
-.meta {
-  width: 70%;
-  margin: 3em 0 0;
-  font-size: 1.4em;
-  border-bottom: 1px solid #888;
-}
-.meta dt {
-  font-weight: bold;
-  width: 5em;
-  float: left;
-  border-top: 1px solid #888;
-  padding-top: .3em;
-  padding-bottom: .2em;
-  text-align: center;
-  letter-spacing: 1em;
-}
-.meta dd {
-  padding-left: 30%;
-  border-top: 1px solid #888;
-  padding-top: .3em;
-  padding-bottom: .2em;
-}
-.meta dd:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-@media (min-width: 401px) and (max-width: 500px) {
-  .meta {
-    width: 90%;
-  }
-}
-@media (max-width: 400px) {
-  .meta {
-    width: 96%;
-    font-size: 1em;
-  }
 }
 </style>

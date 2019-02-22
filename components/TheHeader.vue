@@ -1,3 +1,12 @@
+<i18n>
+en:
+  date: July 13th, 2019
+  place: "@Tenjin Fukuoka, Japan"
+ja:
+  date: July 13th, 2019
+  place: "@Tenjin Fukuoka, Japan"
+</i18n>
+
 <template>
   <header class="header is-clearfix">
     <div v-if="gopher" :class="{'logogo': position > 10}">
@@ -19,13 +28,13 @@
     </div>
 
     <div class="attention">
-      <p><nuxt-link class="button is-small is-primary is-inverted is-outlined" to="/sponsors">Become a Sponsor</nuxt-link></p>
+      <p><nuxt-link class="button is-small is-primary is-inverted is-outlined" :to="localePath('sponsors')">Become a Sponsor</nuxt-link></p>
     </div>
 
     <p class="day"><span class="date">{{$t('date')}}</span> <span class="place">{{$t('place')}}</span></p>
 
     <div class="lang">
-      <p>Available Language: <nuxt-link v-for="l in availableLocales" :key="l.code" :to="switchLocalePath(l.code)">{{ l.name }}</nuxt-link></p>
+      <Lang/>
     </div>
   </header>
 </template>
@@ -35,16 +44,13 @@ import { Component, Vue } from 'vue-property-decorator'
 import { Getter } from 'vuex-class'
 import Logo from '~/components/Logo.vue'
 import TheNav from '~/components/TheNav.vue'
+import Lang from '~/components/Lang.vue'
 
 @Component({
   components: {
     Logo,
-    TheNav
-  },
-  computed: {
-    availableLocales() {
-      return this.$i18n.locales.filter(l => l.code !== this.$i18n.locale)
-    }
+    TheNav,
+    Lang
   }
 })
 export default class TheHeader extends Vue {
@@ -153,17 +159,9 @@ export default class TheHeader extends Vue {
 .lang {
   position: absolute;
   bottom: -2.3em;
-  right: 1.2em;
+  right: 1em;
   font-size: 1em;
   font-family: 'Arvo', serif;
-}
-.lang p {
-  font-size: .8em;
-  color: #999;
-}
-.lang p a {
-  color: #000;
-  border: none;
 }
 
 @media (max-width: 1300px) {

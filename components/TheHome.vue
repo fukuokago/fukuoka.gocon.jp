@@ -40,10 +40,9 @@ export default class TheHome extends Vue {}
   margin-right: 3%;
 }
 .title {
-  margin: 3em 0;
+  margin: 3em 0 0;
   float: left;
   width: 57%;
-  color: #00ADD8;
 }
 .about {
   float: left;
@@ -59,7 +58,7 @@ export default class TheHome extends Vue {}
 }
 @media (min-width: 501px) and (max-width: 800px) {
   .title {
-    margin: 3em 0 6em;
+    margin: 3em 0 0;
   }
   .title-text {
     font-size: .5em;
@@ -82,7 +81,7 @@ export default class TheHome extends Vue {}
   .title {
     width: auto;
     float: none;
-    margin: .5em auto 2em;
+    margin: .5em auto 0;
   }
   .title-text {
     font-size: .45em;
