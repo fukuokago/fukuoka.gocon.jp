@@ -66,12 +66,12 @@ const config = {
       seo: false,
       parsePages: false,
       locales: [
-        { name: 'English', code: 'en', iso: 'en-US', file: 'en-US.js' },
-        { name: 'Japanese', code: 'ja', iso: 'ja_JP', file: 'ja-JP.js' }
+        { name: 'English', code: 'en', iso: 'en-US', file: 'en.ts' },
+        { name: '日本語', code: 'ja', iso: 'ja_JP', file: 'ja.ts' }
       ],
       lazy: true,
       langDir: 'lang/',
-      defaultLocale: 'en',
+      defaultLocale: 'ja',
       detectBrowserLanguage: {
         useCookie: false,
         cookieKey: 'i18n_redirected',
@@ -79,8 +79,9 @@ const config = {
         fallbackLocale: 'en'
       },
       vueI18n: {
-        fallbackLocale: 'en'
+        fallbackLocale: 'ja'
       },
+      vueI18nLoader: true,
       silentTranslationWarn: true
     }],
     '@nuxtjs/axios',
@@ -95,6 +96,13 @@ const config = {
   axios: {
   },
   build: {
+    extend(c: any) {
+      c.module.rules.push({
+        resourceQuery: /blockType=i18n/,
+        type: 'javascript/auto',
+        loader: ['@kazupon/vue-i18n-loader', 'yaml-loader'],
+      });
+    },
     postcss: {
       plugins: {
         'postcss-preset-env': {
