@@ -57,6 +57,18 @@ img.eyecatch {
   overflow: visible;
   padding-bottom: 3em;
 }
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+}
+.button {
+  padding: 1.7em 2em;
+  font-size: .7em;
+  margin-right: 1em;
+}
 @media (max-width: 600px) {
   .fukuoka-city figcaption {
     bottom: 1em;

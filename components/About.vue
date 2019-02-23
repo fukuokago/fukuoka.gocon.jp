@@ -22,8 +22,8 @@ ja:
       <em place="enjoy" class="about--em">{{ $t('enjoy') }}</em>
     </i18n>
     <div class="attention">
-      <p class="cfp"><nuxt-link class="button" :to="localePath('cfp')" disabled><span>📝</span>{{ $t('callforpapers') }}</nuxt-link></p>
-      <p class="registration"><nuxt-link class="button" :to="localePath('registration')" disabled><span>🎪</span>{{ $t('registration') }}</nuxt-link></p>
+      <p class="cfp"><nuxt-link class="button" :to="localePath('cfp')"><span>📝</span>{{ $t('callforpapers') }}</nuxt-link></p>
+      <p class="registration"><nuxt-link class="button" :to="localePath('registration')"><span>🎪</span>{{ $t('registration') }}</nuxt-link></p>
     </div>
   </div>
 </template>
@@ -40,12 +40,10 @@ ja:
   padding-right: 1em;
 }
 p .button {
-  background-color: #f5f5f5;
   padding: 2em 1.5em;
-  cursor: pointer;
 }
 p .button span {
-  font-size: 2em;
-  padding-right: .5em;
+  font-size: 1.8em;
+  padding-right: .3em;
 }
 </style>

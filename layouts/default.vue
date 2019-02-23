@@ -138,6 +138,14 @@ em {
   color: #BBB;
   font-weight: bold;
 }
+.button {
+  background-color: transparent;
+  cursor: pointer;
+  border-color: #000;
+}
+.button:hover {
+  border-color: #00ADD8;
+}
 
 @media (min-width: 801px) and (max-width: 1300px) {
   h2 {
