@@ -1,7 +1,15 @@
+<i18n>
+en:
+  schedule: 'July 13th, 2019 @ Tenjin Fukuoka, Japan'
+ja:
+  schedule: '2019年7月13日 福岡市天神某所で開催予定'
+</i18n>
+
 <template>
   <span :class="[color, 'logo']">
-    <nuxt-link to="/"><span class="go">Go</span> Conference <sup>‘19</sup></nuxt-link>
-    <i class="location" v-if="isSubtitle">Summer in Fukuoka</i>
+      <nuxt-link :to="localePath('index')"><span class="go">Go</span> <span class="one">Conference <sup>‘19</sup></span></nuxt-link>
+    <i class="subtitle" v-if="isSubtitle">Summer in Fukuoka</i>
+    <i class="schedule" v-if="isSubtitle">{{$t('schedule') }}</i>
   </span>
 </template>
 
@@ -17,8 +25,10 @@ export default class TheLogo extends Vue {
 </script>
 
 <style scoped>
-.logo a, .logo i {
+.logo a {
   border: none;
+  font-family: 'Arvo', serif;
+  letter-spacing: -.07em;
 }
 .logo a:hover {
   border: none;
@@ -36,9 +46,7 @@ export default class TheLogo extends Vue {
 
 .logo {
   font-size: 2.8em;
-  letter-spacing: -.07em;
   line-height: 1;
-  font-family: 'Arvo', serif;
 }
 .logo span.go {
   font-weight: bold;
@@ -51,11 +59,36 @@ export default class TheLogo extends Vue {
   position: relative;
   top: -.3em;
 }
-.logo i {
+.logo span.one {
+  white-space: nowrap;
+}
+.subtitle {
+  font-family: 'Arvo', serif;
   font-size: .4em;
   display: block;
   letter-spacing: .2em;
-  margin-left: .3em;
+  margin: 0 0 0 .3em;
   font-style: normal;
+}
+.logo i.schedule {
+  font-size: .17em;
+  display: inline-block;
+  margin: 0 0 0 .3em;
+  font-style: normal;
+  color: #f5f5f5;
+  font-weight: bold;
+  background-color: #CE3262;
+  padding: .8em 2.5em .8em 1em;
+  position: relative;
+}
+.logo i.schedule:after {
+  content: '';
+  border-top: 1.4em solid transparent;
+  border-right: 1.4em solid #e5e5e5;
+  border-bottom: 1.4em solid transparent;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 </style>

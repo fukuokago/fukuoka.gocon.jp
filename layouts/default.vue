@@ -122,6 +122,14 @@ li {
 dl {
   font-size: 1.3em;
 }
+strong {
+  font-weight: bold;
+  color: #666;
+}
+em {
+  font-style: normal;
+  color: #000;
+}
 .draft {
   margin-bottom: 5em;
 }
@@ -129,6 +137,14 @@ dl {
   text-align: center;
   color: #BBB;
   font-weight: bold;
+}
+.button {
+  background-color: transparent;
+  cursor: pointer;
+  border-color: #000;
+}
+.button:hover {
+  border-color: #00ADD8;
 }
 
 @media (min-width: 801px) and (max-width: 1300px) {

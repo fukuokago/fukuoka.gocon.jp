@@ -1,65 +1,49 @@
+<i18n>
+en:
+  callforpapers: Call for Papers
+  registration: Registration
+  enjoy: "Let's talk about various technologies, learn from each other, have a good time, deepen interactions among developers through Fukuoka's attractive landscape for engineers through a programming language Go that is gaining attention now!"
+  background: '"{go}" is done from the beginning even if it is seen globally, it is a meaningful event for the Go community. Hundreds of Gophers participate in the conference every year and exchanges are made through various sessions related to Go.'
+  announce: 'At last this conference will be held in Fukuoka. {enjoy}'
+ja:
+  callforpapers: 登壇募集に応募する
+  registration: 参加登録をする
+  enjoy: 'エンジニアにとって魅力ある土地、福岡で、今注目を集めるプログラミング言語Goを通じて様々な技術の話をし、学び合い、楽しい時間を過ごし、開発者同士の交流を深めましょう！'
+  background: '「{go}」は、世界的に見ても初期から行われており、Goコミュニティにとって意義のあるイベントです。カンファレンスでは毎年数百名のGopherが参加しGoにまつわる多様なセッションを通した交流が行われています。'
+  announce: '今回、ついに、このカンファレンスを福岡で開催します。{enjoy}'
+</i18n>
+
 <template>
   <div>
-    <p>「<strong>Go Conference</strong>」は、世界的に見ても初期から行われており、Goコミュニティにとって意義のあるイベントです。カンファレンスでは毎年数百名のGopherが参加しGoにまつわる多様なセッションを通した交流が行われています。</p>
-    <p>今回、ついに、このカンファレンスを福岡で開催します。<em>エンジニアにとって魅力ある土地、福岡で、今注目を集めるプログラミング言語Goを通じて様々な技術の話をし、学び合い、楽しい時間を過ごし、開発者同士の交流を深めましょう！</em></p>
-
-    <dl class="meta">
-      <dt>日時</dt>
-      <dd>2019年７月13日 土曜日</dd>
-      <dt>会場</dt>
-      <dd>福岡市天神付近を予定</dd>
-    </dl>
+    <i18n path="background" tag="p">
+      <strong place="go" class="about--strong">Go Conference</strong>
+    </i18n>
+    <i18n path="announce" tag="p">
+      <em place="enjoy" class="about--em">{{ $t('enjoy') }}</em>
+    </i18n>
+    <div class="attention">
+      <p class="cfp"><nuxt-link class="button" :to="localePath('cfp')"><span>📝</span>{{ $t('callforpapers') }}</nuxt-link></p>
+      <p class="registration"><nuxt-link class="button" :to="localePath('registration')"><span>🎪</span>{{ $t('registration') }}</nuxt-link></p>
+    </div>
   </div>
 </template>
 
 <style scoped>
-.about p {
-  padding-bottom: 1em;
+.attention {
+  padding-top: 3em;
+  font-family: 'Arvo', serif;
 }
-.about strong {
-  font-weight: bold;
-  color: #666;
+.attention p {
+  display: inline-block;
 }
-.about em {
-  font-style: normal;
-  color: #000;
+.attention .cfp {
+  padding-right: 1em;
 }
-.meta {
-  width: 70%;
-  margin: 3em 0 0;
-  font-size: 1.4em;
-  border-bottom: 1px solid #888;
+p .button {
+  padding: 2em 1.5em;
 }
-.meta dt {
-  font-weight: bold;
-  width: 5em;
-  float: left;
-  border-top: 1px solid #888;
-  padding-top: .3em;
-  padding-bottom: .2em;
-  text-align: center;
-  letter-spacing: 1em;
-}
-.meta dd {
-  padding-left: 30%;
-  border-top: 1px solid #888;
-  padding-top: .3em;
-  padding-bottom: .2em;
-}
-.meta dd:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-@media (min-width: 401px) and (max-width: 500px) {
-  .meta {
-    width: 90%;
-  }
-}
-@media (max-width: 400px) {
-  .meta {
-    width: 96%;
-    font-size: 1em;
-  }
+p .button span {
+  font-size: 1.8em;
+  padding-right: .3em;
 }
 </style>

@@ -26,6 +26,7 @@
     "@types/koa": "^2.0.48",
     "cross-env": "^5.2.0",
     "koa": "^2.6.2",
+    "nuxt-i18n": "^5.8.3",
     "nuxt-ts-edge": "latest",
     "package": "^1.0.1",
     "ts-loader": "^5.3.3",
@@ -34,7 +35,8 @@
     "typescript": "^3.2.4",
     "vue-lazyload": "^1.2.6",
     "vue-property-decorator": "^7.3.0",
-    "vuex-class": "^0.3.1"
+    "vuex-class": "^0.3.1",
+    "yaml-loader": "^0.5.0"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.27",

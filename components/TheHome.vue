@@ -33,7 +33,6 @@ export default class TheHome extends Vue {}
 <style scoped>
 .home {
   padding: 3.5em 0 2em;
-  font-family: 'Arvo', serif;
 }
 .gopher {
   float: left;
@@ -41,10 +40,9 @@ export default class TheHome extends Vue {}
   margin-right: 3%;
 }
 .title {
-  margin: 3em 0;
+  margin: 3em 0 1.4em;
   float: left;
   width: 57%;
-  color: #00ADD8;
 }
 .about {
   float: left;
@@ -53,14 +51,15 @@ export default class TheHome extends Vue {}
 .title-text {
   font-size: 1em;
 }
-@media (min-width: 801px) and (max-width: 1300px) {
+@media (min-width: 801px) and (max-width: 1000px) {
   .title-text {
     font-size: .8em;
   }
 }
 @media (min-width: 501px) and (max-width: 800px) {
   .title {
-    margin: 3em 0 6em;
+    font-size: 2.7em;
+    margin: 2em 0;
   }
   .title-text {
     font-size: .5em;
@@ -69,11 +68,12 @@ export default class TheHome extends Vue {}
     float: none;
     clear: both;
     width: 100%;
+    padding-top: 1em;
   }
 }
 @media (max-width: 500px) {
   .home {
-    padding: 3em 0 0;
+    padding: 3em 0;
   }
   .gopher {
     float: none;
@@ -83,7 +83,7 @@ export default class TheHome extends Vue {}
   .title {
     width: auto;
     float: none;
-    margin: .5em auto 2em;
+    margin: .5em auto .7em;
   }
   .title-text {
     font-size: .45em;

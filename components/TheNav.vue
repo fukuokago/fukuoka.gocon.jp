@@ -2,7 +2,7 @@
   <nav class="nav">
     <div class="horizontal">
       <ul class=" is-clearfix">
-        <li v-for="(link, i) in links"><nuxt-link v-if="link.visible" :to=link.to>{{ link.label }}</nuxt-link> </li>
+        <li v-for="(link, i) in links"><nuxt-link v-if="link.visible" :to="localePath(link.to)">{{ link.label }}</nuxt-link> </li>
       </ul>
     </div>
 
@@ -13,7 +13,7 @@
 
     <div class="vertical" v-if="drawer">
       <ul>
-        <li v-for="(link, i) in links" v-on:click="toggleDrawer()"><nuxt-link v-if="link.visible" :to=link.to>{{ link.label }}</nuxt-link> </li>
+        <li v-for="(link, i) in links" v-on:click="toggleDrawer()"><nuxt-link v-if="link.visible" :to="localePath(link.to)">{{ link.label }}</nuxt-link> </li>
       </ul>
     </div>
   </nav>
@@ -28,15 +28,15 @@ export default class TheNav extends Vue {
     private drawer = false
 
     public links = [
-      { visible: false, to: '/about', label: 'About' },
-      { visible: false, to: '/fukuoka', label: 'Fukuoka' },
-      { visible: true, to: '/cfp', label: 'Call for Papers' },
-      { visible: true, to: '/schedule', label: 'Schedule' },
-      { visible: true, to: '/registration', label: 'Registration' },
-      { visible: true, to: '/talks', label: 'Talks' },
-      { visible: true, to: '/scholarships', label: 'Scholarships' },
-      { visible: true, to: '/sponsors', label: 'Sponsors' },
-      { visible: true, to: '/team', label: 'Team' }
+      { visible: false, to: 'about', label: 'About' },
+      { visible: false, to: 'fukuoka', label: 'Fukuoka' },
+      { visible: true, to: 'cfp', label: 'Call for Papers' },
+      { visible: true, to: 'schedule', label: 'Schedule' },
+      { visible: true, to: 'registration', label: 'Registration' },
+      { visible: true, to: 'talks', label: 'Talks' },
+      { visible: true, to: 'scholarships', label: 'Scholarships' },
+      { visible: true, to: 'sponsors', label: 'Sponsors' },
+      { visible: true, to: 'team', label: 'Team' }
     ]
 
     public toggleDrawer() {

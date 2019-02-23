@@ -62,6 +62,28 @@ const config = {
   ],
   modules: [
     ['@nuxtjs/google-analytics', { id: 'UA-328462-17' }],
+    ['nuxt-i18n', {
+      seo: false,
+      parsePages: false,
+      locales: [
+        { name: 'English', code: 'en', iso: 'en-US', file: 'en.ts' },
+        { name: '日本語', code: 'ja', iso: 'ja_JP', file: 'ja.ts' }
+      ],
+      lazy: true,
+      langDir: 'lang/',
+      defaultLocale: 'ja',
+      detectBrowserLanguage: {
+        useCookie: false,
+        cookieKey: 'i18n_redirected',
+        alwaysRedirect: false,
+        fallbackLocale: 'ja'
+      },
+      vueI18n: {
+        fallbackLocale: 'ja'
+      },
+      vueI18nLoader: true,
+      silentTranslationWarn: true
+    }],
     '@nuxtjs/axios',
     '@nuxtjs/bulma',
     '@nuxtjs/pwa'
@@ -74,6 +96,13 @@ const config = {
   axios: {
   },
   build: {
+    extend(c: any) {
+      c.module.rules.push({
+        resourceQuery: /blockType=i18n/,
+        type: 'javascript/auto',
+        loader: ['@kazupon/vue-i18n-loader', 'yaml-loader'],
+      });
+    },
     postcss: {
       plugins: {
         'postcss-preset-env': {

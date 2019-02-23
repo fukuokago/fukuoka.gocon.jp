@@ -1,3 +1,12 @@
+<i18n>
+en:
+  date: July 13th, 2019
+  place: "@Tenjin Fukuoka, Japan"
+ja:
+  date: July 13th, 2019
+  place: "@Tenjin Fukuoka, Japan"
+</i18n>
+
 <template>
   <header class="header is-clearfix">
     <div v-if="gopher" :class="{'logogo': position > 10}">
@@ -19,7 +28,13 @@
     </div>
 
     <div class="attention">
-      <p><nuxt-link class="button is-small is-primary is-inverted is-outlined" to="/sponsors">Become a Sponsor</nuxt-link></p>
+      <p><nuxt-link class="button is-small is-primary is-inverted is-outlined" :to="localePath('sponsors')">Become a Sponsor</nuxt-link></p>
+    </div>
+
+    <p class="day"><span class="date">{{$t('date')}}</span> <span class="place">{{$t('place')}}</span></p>
+
+    <div class="lang">
+      <Lang/>
     </div>
   </header>
 </template>
@@ -29,11 +44,13 @@ import { Component, Vue } from 'vue-property-decorator'
 import { Getter } from 'vuex-class'
 import Logo from '~/components/Logo.vue'
 import TheNav from '~/components/TheNav.vue'
+import Lang from '~/components/Lang.vue'
 
 @Component({
   components: {
     Logo,
-    TheNav
+    TheNav,
+    Lang
   }
 })
 export default class TheHeader extends Vue {
@@ -127,12 +144,38 @@ export default class TheHeader extends Vue {
   right: 1em;
 }
 
+.day {
+  position: absolute;
+  bottom: -2.9em;
+  left: 1em;
+  font-size: .8em;
+  font-family: 'Arvo', serif;
+  color: #CE3262;
+}
+.date {
+  font-weight: bold;
+}
+
+.lang {
+  position: absolute;
+  bottom: -2.3em;
+  right: 1em;
+  font-size: 1em;
+  font-family: 'Arvo', serif;
+}
+
 @media (max-width: 1300px) {
   .attention {
     display: none;
   }
   .logo {
     float: none;
+  }
+  .day {
+    display: none;
+  }
+  .lang {
+    display: none;
   }
 }
 </style>

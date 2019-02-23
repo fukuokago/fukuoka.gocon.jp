@@ -88,9 +88,6 @@ export default class Schedule extends Vue {}
 </script>
 
 <style scopd>
-.schedule {
-  padding: 3em 0 0;
-}
 .schedule table {
   width: 100%;
   font-size: .8em;
