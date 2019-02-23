@@ -7,7 +7,7 @@ ja:
 
 <template>
   <span :class="[color, 'logo']">
-    <nuxt-link :to="localePath('index')"><span class="go">Go</span> Conference <sup>‘19</sup></nuxt-link>
+      <nuxt-link :to="localePath('index')"><span class="go">Go</span> <span class="one">Conference <sup>‘19</sup></span></nuxt-link>
     <i class="subtitle" v-if="isSubtitle">Summer in Fukuoka</i>
     <i class="schedule" v-if="isSubtitle">{{$t('schedule') }}</i>
   </span>
@@ -59,28 +59,36 @@ export default class TheLogo extends Vue {
   position: relative;
   top: -.3em;
 }
+.logo span.one {
+  white-space: nowrap;
+}
 .subtitle {
   font-family: 'Arvo', serif;
   font-size: .4em;
   display: block;
   letter-spacing: .2em;
-  margin-left: .3em;
+  margin: 0 0 0 .3em;
   font-style: normal;
-}
-.logo i.schedule:before,
-.logo i.schedule:after {
-  content: '-';
-  display: block;
-  margin: 1em 0;
-  padding: .5em 0;
-  color: #00ADD8;
 }
 .logo i.schedule {
-  font-size: .25em;
-  display: block;
-  letter-spacing: 1;
-  margin: 1em 0 0 .3em;
+  font-size: .17em;
+  display: inline-block;
+  margin: 0 0 0 .3em;
   font-style: normal;
-  color: #888;
+  color: #f5f5f5;
+  font-weight: bold;
+  background-color: #CE3262;
+  padding: .8em 2.5em .8em 1em;
+  position: relative;
+}
+.logo i.schedule:after {
+  content: '';
+  border-top: 1.4em solid transparent;
+  border-right: 1.4em solid #e5e5e5;
+  border-bottom: 1.4em solid transparent;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 </style>
