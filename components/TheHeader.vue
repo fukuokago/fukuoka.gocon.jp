@@ -28,13 +28,13 @@ ja:
     </div>
 
     <div class="attention">
-      <p><nuxt-link class="button is-small is-primary is-inverted is-outlined" :to="localePath('sponsors')">Become a Sponsor</nuxt-link></p>
+      <p><nuxt-link class="button is-small is-inverted is-outlined" :to="localePath('sponsors')">Become a Sponsor</nuxt-link></p>
     </div>
 
     <p class="day"><span class="date">{{$t('date')}}</span> <span class="place">{{$t('place')}}</span></p>
 
     <div class="lang">
-      <Lang/>
+      <Lang stylePClass="lang__undernav"/>
     </div>
   </header>
 </template>
@@ -143,6 +143,14 @@ export default class TheHeader extends Vue {
   top: .7em;
   right: 1em;
 }
+.attention .button {
+  color: #fff;
+  border-color: #fff;
+}
+.attention .button:hover {
+  color: #000;
+  border-color: #000;
+}
 
 .day {
   position: absolute;
@@ -158,10 +166,11 @@ export default class TheHeader extends Vue {
 
 .lang {
   position: absolute;
-  bottom: -2.3em;
-  right: 1em;
-  font-size: 1em;
+  bottom: -4.3em;
+  right: 2em;
+  font-size: .534em;
   font-family: 'Arvo', serif;
+  text-align: right;
 }
 
 @media (max-width: 1300px) {

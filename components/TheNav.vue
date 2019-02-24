@@ -13,16 +13,24 @@
 
     <div class="vertical" v-if="drawer">
       <ul>
-        <li v-for="(link, i) in links" v-on:click="toggleDrawer()"><nuxt-link v-if="link.visible" :to="localePath(link.to)">{{ link.label }}</nuxt-link> </li>
+        <li v-for="(link, i) in links" v-on:click="toggleDrawer()" v-if="link.visible"><nuxt-link v-if="link.visible" :to="localePath(link.to)">{{ link.label }}</nuxt-link> </li>
       </ul>
+
+      <div class="lang" v-on:click="toggleDrawer()">
+        <Lang stylePClass="lang__drawer" styleAClass="button is-inverted is-outlined"/>
+      </div>
     </div>
   </nav>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import Lang from '~/components/Lang.vue'
 
 @Component({
+  components: {
+    Lang
+  }
 })
 export default class TheNav extends Vue {
     private drawer = false
@@ -83,7 +91,7 @@ export default class TheNav extends Vue {
   font-size: .7em;
   display: block;
   cursor: pointer;
-  padding: .8em 0;
+  padding: 1em 0;
 }
 .vertical a:hover {
   opacity: 1;
@@ -96,8 +104,12 @@ export default class TheNav extends Vue {
 .vertical li {
   border-bottom: 1px solid #444;
 }
-.vertical li:last-child {
-  border: none;
+.vertical .lang {
+  font-size: .8em;
+  padding: 1em .9em 1em;
+}
+.vertical .lang p {
+  text-align: center;
 }
 
 .drawer {

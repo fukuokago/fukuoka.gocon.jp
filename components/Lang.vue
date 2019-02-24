@@ -1,9 +1,9 @@
 <template>
-  <p>Translations: <nuxt-link v-for="l in availableLocales" :key="l.code" :to="switchLocalePath(l.code)">{{l.name}}</nuxt-link></p>
+  <p :class="[stylePClass]">Translations: <nuxt-link :class="[styleAClass]" v-for="l in availableLocales" :key="l.code" :to="switchLocalePath(l.code)">{{l.name}}</nuxt-link></p>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue, Prop } from 'vue-property-decorator'
 import VueI18n from 'vue-i18n'
 
 interface LocaleObject {
@@ -22,16 +22,31 @@ interface LocaleObject {
     }
   }
 })
-export default class Lang extends Vue {}
+export default class Lang extends Vue {
+  @Prop() public stylePClass!: string
+  @Prop() public styleAClass!: string
+}
 </script>
 
 <style scoped>
-p {
-  font-size: .8em;
+.lang__undernav {
   color: #999;
 }
-p a {
+.lang__undernav a {
   color: #000;
   border: none;
+}
+.lang__drawer a {
+  color: #fff;
+  vertical-align: middle;
+  margin-left: .5em;
+}
+.lang__drawer .button {
+  border-color: #fff;
+  font-size: .9em;
+}
+.lang__drawer .button:hover {
+  color: #00ADD8;
+  border-color: #00ADD8;
 }
 </style>
