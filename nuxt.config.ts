@@ -73,7 +73,7 @@ const config = {
       langDir: 'lang/',
       defaultLocale: 'ja',
       detectBrowserLanguage: {
-        useCookie: false,
+        useCookie: true,
         cookieKey: 'i18n_redirected',
         alwaysRedirect: false,
         fallbackLocale: 'ja'
