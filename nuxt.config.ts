@@ -1,3 +1,5 @@
+const webp = require('imagemin-webp')
+
 const name = 'Go Conference \'19 Summer in Fukuoka'
 const url = 'https://fukuoka.gocon.jp'
 const desc = 'The conference of golang in fukuoka, Japan'
@@ -61,6 +63,7 @@ const config = {
     { src: '~/plugins/lazyload', ssr: false }
   ],
   modules: [
+    ['nuxt-imagemin', { plugins: [webp({quality: 50})] }],
     ['@nuxtjs/google-analytics', { id: 'UA-328462-17' }],
     ['nuxt-i18n', {
       seo: false,
@@ -101,7 +104,8 @@ const config = {
         resourceQuery: /blockType=i18n/,
         type: 'javascript/auto',
         loader: ['@kazupon/vue-i18n-loader', 'yaml-loader'],
-      });
+      })
+      c.performance.maxAssetSize = 500000
     },
     postcss: {
       plugins: {

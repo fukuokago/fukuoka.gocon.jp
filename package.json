@@ -25,6 +25,7 @@
     "@nuxtjs/pwa": "^2.6.0",
     "@types/koa": "^2.0.48",
     "cross-env": "^5.2.0",
+    "imagemin-webp": "^5.0.0",
     "koa": "^2.6.2",
     "nuxt-i18n": "^5.8.3",
     "nuxt-ts-edge": "latest",
@@ -44,6 +45,7 @@
     "babel-jest": "^24.1.0",
     "jest": "^24.1.0",
     "nodemon": "^1.18.9",
+    "nuxt-imagemin": "^1.0.0",
     "prettier": "1.14.3",
     "tslint-config-standard": "^8.0.1",
     "vue-jest": "^3.0.2"
