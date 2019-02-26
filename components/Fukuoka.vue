@@ -29,6 +29,7 @@ ja:
 
     <picture>
       <figure class="fukuoka-city">
+        <source type="image/webp" srcset="~static/img/fukuoka.webp">
         <img class="eyecatch" src="~assets/fukuoka.jpg" alt="fukuoka" />
         <figcaption>シーサイドももちにある福岡のランドマーク、福岡タワーとヤフオク!ドーム</figcaption>
         <small>Photo by <a rel="http://showcase.city.fukuoka.lg.jp/photo/img0683.html">Fukuoka City</a></small>

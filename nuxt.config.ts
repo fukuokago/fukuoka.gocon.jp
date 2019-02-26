@@ -1,5 +1,3 @@
-const webp = require('imagemin-webp')
-
 const name = 'Go Conference \'19 Summer in Fukuoka'
 const url = 'https://fukuoka.gocon.jp'
 const desc = 'The conference of golang in fukuoka, Japan'
@@ -17,7 +15,7 @@ const config = {
       { property: 'og:title', content: name },
       { property: 'og:type', content: 'article' },
       { property: 'og:url', content: url },
-      { property: 'og:image', content: `${url}/img/ogimage.png` },
+      { property: 'og:image', content: '/icons/ogimage.png' },
       { property: 'og:description', content: desc },
       { property: 'og:site_name', content: name },
       { property: 'og:locale', content: 'ja_JP' },
@@ -26,7 +24,7 @@ const config = {
       { property: 'twitter:title', content: name },
       { property: 'twitter:description', content: desc },
       { property: 'twitter:url', content: url },
-      { property: 'twitter:image', content: `${url}/img/ogimage.png` },
+      { property: 'twitter:image', content: '/icons/ogimage.png' },
       // Icons generated: https://www.favicon-generator.org/
       { name: 'msapplication-TileColor', content: '#ffffff' },
       { name: 'msapplication-TileImage', content: '/icons/ms-icon-144x144.png' },
@@ -63,7 +61,7 @@ const config = {
     { src: '~/plugins/lazyload', ssr: false }
   ],
   modules: [
-    ['nuxt-imagemin', { plugins: [webp({quality: 50})] }],
+    ['nuxt-imagemin'],
     ['@nuxtjs/google-analytics', { id: 'UA-328462-17' }],
     ['nuxt-i18n', {
       seo: false,
@@ -105,7 +103,8 @@ const config = {
         type: 'javascript/auto',
         loader: ['@kazupon/vue-i18n-loader', 'yaml-loader'],
       })
-      c.performance.maxAssetSize = 500000
+      // 5MB
+      c.performance.maxAssetSize = 5000000
     },
     postcss: {
       plugins: {
