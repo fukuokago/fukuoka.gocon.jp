@@ -18,7 +18,7 @@
     "install:gsutil": "curl https://sdk.cloud.google.com | bash && exec -l $SHELL && gcloud init"
   },
   "dependencies": {
-    "@nuxt/vue-app": "^2.4.3",
+    "@nuxt/vue-app": "^2.4.5",
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/bulma": "^1.2.1",
     "@nuxtjs/google-analytics": "^2.0.2",
