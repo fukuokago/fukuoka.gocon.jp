@@ -14,7 +14,7 @@ ja:
         <h1><Logo color="white" /></h1>
       </div>
       <div class="gopher">
-        <span>\ʕ◔ϖ◔ʔ/ < {{greeting()}}</span>
+        <span>\ʕ⊙౪⚆ʔ/ < {{greeting()}}</span>
       </div>
     </div>
     <div v-else>
