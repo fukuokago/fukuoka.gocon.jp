@@ -44,7 +44,8 @@ export default class TheNav extends Vue {
       { visible: true, to: 'talks', label: 'Talks' },
       { visible: true, to: 'scholarships', label: 'Scholarships' },
       { visible: true, to: 'sponsors', label: 'Sponsors' },
-      { visible: true, to: 'team', label: 'Team' }
+      { visible: true, to: 'team', label: 'Team' },
+      { visible: true, to: 'code-of-conduct', label: 'Code of Conduct' }
     ]
 
     public toggleDrawer() {
