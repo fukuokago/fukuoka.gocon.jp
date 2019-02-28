@@ -1,7 +1,7 @@
 fukuoka.gocon.jp
 ==
 
-This is for 2019.
+This is SPA by Nuxt.js for Go Conference'19 Summer in Fukuoka.
 
 Build Setup
 --
@@ -13,10 +13,11 @@ $ npm install
 # serve with hot reload at localhost:3000
 $ npm run dev
 
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
+# build and deploy to Google Cloud Storage
+$ npm run dist
 ```
+
+Style Guide
+--
+
+https://jp.vuejs.org/v2/style-guide/
