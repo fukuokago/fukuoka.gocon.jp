@@ -1,7 +1,14 @@
+<i18n>
+en:
+  description: 'We will make it available as soon as we have available materials for sponsorship. We will report it later.'
+ja:
+  description: 'スポンサー募集の資料が出来次第公開いたします。追ってご報告いたします。'
+</i18n>
+
 <template>
   <div class="sponsors">
     <h2>Sponsors</h2>
-    <p>スポンサー募集の資料が出来次第公開いたします。追ってご報告いたします。</p>
+    <p>{{ $t('description') }}</p>
   </div>
 </template>
 
