@@ -1,10 +1,24 @@
+<i18n>
+en:
+  description: |-
+    "Go Conference'19 Summer in Fukuoka" is managed by {fukuokago}, a Go community in Fukuoka and Tokyo {gocon} members. 
+    If you could help us manage our events, please contact @linyows or @monochromegane.
+    Join to the Fukuoka.go slack team from here. 👉 {slack}
+ja:
+  description: |-
+    "Go Conference'19 Summer in Fukuoka" は、東京の{gocon}メンバーと共に福岡のGoコミュニティである{fukuokago}によって運営いたします。
+    運営のお手伝いをしていただける方は、@linyows や @monochromegane へお気軽にお声掛けください。
+    Fukuoka.goのSlack TeamはこちらからJoinできます 👉 {slack}
+</i18n>
+
 <template>
   <div class="team is-clearfix">
     <h2>Team</h2>
-
-    <p>"Go Conference'19 Summer in Fukuoka" は、東京の<a href="https://gocon.connpass.com/">Go Conference</a>メンバーと共に福岡のGoコミュニティである<a href="https://fukuokago.tech/">Fukuoka.go</a>によって運営いたします。
-    運営のお手伝いをしていただける方は、@linyows や @monochromegane へお気軽にお声掛けください。
-    Fukuoka.goのSlack TeamはこちらからJoinできます 👉  <a href="https://slack.fukuokago.tech/">https://slack.fukuokago.tech</a></p>
+    <i18n path="description" tag="p">
+      <a place="gocon" href="https://gocon.connpass.com/">Go Conference</a>
+      <a place="fukuokago" href="https://fukuokago.tech/">Fukuoka.go</a>
+      <a place="slack" href="https://slack.fukuokago.tech/">https://slack.fukuokago.tech</a>
+    </i18n>
 
     <div v-for="(m, i) in members" class="member">
       <img :src=m.avatar />
