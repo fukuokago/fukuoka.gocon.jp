@@ -46,7 +46,7 @@ ja:
 
     <h3>{{ $t('types') }}</h3>
     <p>{{ $t('types_desc') }}</p>
-    <ul>
+    <ul class="colored">
       <li>{{ $t('talktype_1') }}</li>
       <li>{{ $t('talktype_2') }}</li>
       <li><del>{{ $t('talktype_3') }}</del> {{ $t('talktype_3_note') }}</li>
@@ -54,7 +54,7 @@ ja:
 
     <h3>{{ $t('criteria') }}</h3>
     <p>{{ $t('criteria_desc') }}</p>
-    <ol>
+    <ol class="colored">
       <li>{{ $t('criteria_1') }}</li>
       <li>{{ $t('criteria_2') }}</li>
       <li>{{ $t('criteria_3') }}</li>

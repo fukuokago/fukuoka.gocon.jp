@@ -111,10 +111,39 @@ ul {
   list-style-type: circle;
   padding-left: 1em;
   padding-bottom: 1em;
+  margin-left: 1em;
 }
 ol {
   font-size: 1.3em;
   padding-left: 1em;
+  margin-left: 1em;
+}
+ul.colored {
+  list-style-type: none;
+}
+ul.colored li:before {
+  content: "\2022";
+  color: #CE3262;
+  font-weight: bold;
+  vertical-align: top;
+  margin-left: -.8em;
+  margin-right: .5em;
+}
+ol.colored {
+  list-style-type: none;
+  counter-reset: li;
+}
+ol.colored li {
+  counter-increment: li
+}
+ol.colored li:before {
+  content: counter(li);
+  color: #CE3262;
+  font-weight: bold;
+  vertical-align: top;
+  margin-left: -.9em;
+  margin-right: .6em;
+  font-family: 'Arvo', serif;
 }
 li {
   line-height: 1.8;

@@ -8,7 +8,7 @@
       私たちはイベント開催まで以下のスケジュールを予定しています。
       また、今後何かお知らせがあれば、Twitterの<a href="https://twitter.com/golangjp">@golangjp</a>で
       アナウンスいたしますので是非フォローお願い致します。</p>
-      <ul>
+      <ul class="colored">
         <li>2月15日にサイト公開</li>
         <li>3月上旬にスポンサー募集開始</li>
         <li>3月末から4月30日までCFP期間</li>

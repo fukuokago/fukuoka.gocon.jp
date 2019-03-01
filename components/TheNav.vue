@@ -80,6 +80,9 @@ export default class TheNav extends Vue {
   display: block;
   opacity: 0.7;
 }
+.horizontal a:hover {
+  opacity: 1;
+}
 
 .vertical {
   background-color: #000;

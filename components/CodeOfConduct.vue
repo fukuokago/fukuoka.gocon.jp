@@ -17,7 +17,7 @@ ja:
   <div class="code-of-conduct">
     <h2>Code of Conduct</h2>
     <p>{{ $t('description') }}</p>
-    <ul>
+    <ul class="colored">
       <li>{{ $t('summary_1st') }}</li>
       <li>{{ $t('summary_2nd') }}</li>
       <li>{{ $t('summary_3rd') }}</li>
@@ -27,18 +27,4 @@ ja:
 </template>
 
 <style scoped>
-.code-of-conduct {
-  margin-bottom: 2em;
-}
-.code-of-conduct p {
-  margin-bottom: 1em;
-}
-.code-of-conduct ul {
-  list-style-type: circle;
-  padding-left: 1em;
-  padding-bottom: 1em;
-}
-.code-of-conduct li {
-  line-height: 1.7;
-}
 </style>

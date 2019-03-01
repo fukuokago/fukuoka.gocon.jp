@@ -61,10 +61,10 @@ export default class TheHeader extends Vue {
 
     public greeting() {
       const words = [
-        'hi!',
-        'yo',
+        'Hi!',
+        'Yo',
         '𝝣GO',
-        '💯',
+        '🍖',
         '❤️',
         '🇯🇵',
         '🍜',

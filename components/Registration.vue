@@ -11,7 +11,7 @@ ja:
     <p>{{ $t('description') }}</p>
 
     <h3>Registration types</h3>
-    <ul>
+    <ul class="colored">
       <li>Early Gopher</li>
       <li>Distant Gopher</li>
       <li>General Gopher</li>
