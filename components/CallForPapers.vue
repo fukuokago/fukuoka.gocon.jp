@@ -19,7 +19,7 @@ en:
   criteria_5: Impact. The goal of the talk. What new idea, technique, tool, or information will the audience leave your presentation with?
 ja:
   desc: |-
-    もうすぐ登壇発表の募集を開始します。募集への応募は、{papercall} を利用する予定です。
+    もうすぐ登壇の募集を開始します。募集への応募は、{papercall} を利用する予定です。
     PaperCall.ioを使うのは、入力フォーム内容が優れていることと、Organizerからのフィードバックをしやすいからです。
     PaperCall.ioを初めて利用される方にはお手数ですが、あらかじめアカウントを登録する必要があります。
   types: 発表種別
