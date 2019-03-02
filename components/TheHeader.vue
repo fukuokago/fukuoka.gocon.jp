@@ -28,7 +28,7 @@ ja:
     </div>
 
     <div class="attention">
-      <p><nuxt-link class="button is-small is-inverted is-outlined" :to="localePath('sponsors')">Become a Sponsor</nuxt-link></p>
+      <p><nuxt-link class="button is-small is-inverted is-outlined" :to="localePath('call-for-sponsors')">Become a Sponsor</nuxt-link></p>
     </div>
 
     <p class="day"><span class="date">{{$t('date')}}</span> <span class="place">{{$t('place')}}</span></p>
