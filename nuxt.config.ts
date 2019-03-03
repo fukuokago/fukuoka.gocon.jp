@@ -72,15 +72,15 @@ const config = {
       ],
       lazy: true,
       langDir: 'lang/',
-      defaultLocale: 'ja',
+      defaultLocale: 'en',
       detectBrowserLanguage: {
         useCookie: true,
         cookieKey: 'i18n_redirected',
         alwaysRedirect: false,
-        fallbackLocale: 'ja'
+        fallbackLocale: 'en'
       },
       vueI18n: {
-        fallbackLocale: 'ja'
+        fallbackLocale: 'en'
       },
       vueI18nLoader: true,
       silentTranslationWarn: true
