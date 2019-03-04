@@ -58,7 +58,8 @@ const config = {
   plugins: [
     { src: '~plugins/redirect-ssl', ssr: false },
     { src: '~plugins/scroll', ssr: false },
-    { src: '~/plugins/lazyload', ssr: false }
+    { src: '~plugins/parallax', ssr: false },
+    { src: '~plugins/lazyload', ssr: false }
   ],
   modules: [
     ['nuxt-imagemin'],
