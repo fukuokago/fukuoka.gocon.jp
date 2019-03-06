@@ -1,33 +1,8 @@
 <template>
   <div>
-    <picture class="mini-gopher airplane" v-bind:style="airplane">
-      <source type="image/webp" srcset="~static/img/gopher-airplane.webp">
-      <img src="~assets/gopher-airplane.png" v-parallax="0.2" >
-    </picture>
-
-    <picture class="mini-gopher balloons" v-bind:style="balloons">
-      <source type="image/webp" srcset="~static/img/gopher-balloons.webp">
-      <img src="~assets/gopher-balloons.png" v-parallax="0.2" >
-    </picture>
-
-    <picture class="mini-gopher sleeping" v-bind:style="sleeping">
-      <source type="image/webp" srcset="~static/img/gopher-sleeping.webp">
-      <img src="~assets/gopher-sleeping.png" v-parallax="0.2" >
-    </picture>
-
-    <picture class="mini-gopher backpack" v-bind:style="backpack">
-      <source type="image/webp" srcset="~static/img/gopher-backpack.webp">
-      <img src="~assets/gopher-backpack.png" v-parallax="0.2" >
-    </picture>
-
-    <picture class="mini-gopher reading" v-bind:style="reading">
-      <source type="image/webp" srcset="~static/img/gopher-reading.webp">
-      <img src="~assets/gopher-reading.png" v-parallax="0.2" >
-    </picture>
-
-    <picture class="mini-gopher sunglass" v-bind:style="sunglass">
-      <source type="image/webp" srcset="~static/img/gopher-sunglass.webp">
-      <img src="~assets/gopher-sunglass.png" v-parallax="0.2" >
+    <picture v-for="(gopher, i) in images" v-bind:class="['mini-gopher', gopher.name]" v-bind:style="gopher.style">
+      <source type="image/webp" :srcset="gopher.webp">
+      <img :src="gopher.raw" v-parallax="0.2" >
     </picture>
   </div>
 </template>
@@ -35,35 +10,128 @@
 <script lang="ts">
 import {Component, Vue} from 'vue-property-decorator'
 
+interface IStyle {
+  top: string,
+  left: string
+}
+
+interface IPosition {
+  x: number,
+  y: number
+}
+
+interface IImage {
+  name: string,
+  style: IStyle,
+  position: IPosition,
+  raw: string,
+  webp: string
+}
+
 @Component
 export default class MiniGophers extends Vue {
-  public randomX(): string {
-    const w = window.outerWidth
-    let x = Math.floor(Math.random() * w)
-    if (x > 300) {
-      x = x - 300
-    }
-    return `${x}px`
+  public baseSize: number = 200
+  public images: IImage[] = []
+
+  public reset() {
+    this.images = []
   }
 
-  public randomY(): string {
-    const h = window.outerHeight
-    let y = Math.floor(Math.random() * h)
-    if (y > 300) {
-      y = y - 300
+  public isOverlay(x: number, y: number): boolean {
+    for (let i of this.images) {
+      const tx = i.position.x
+      const ty = i.position.y
+      const txe = i.position.x + this.baseSize
+      const tye = i.position.y + this.baseSize
+
+      const xe = x + this.baseSize
+      const ye = y + this.baseSize
+
+      const isOverX = (tx <= x && x <= txe) || (tx <= xe && xe <= txe)
+      const isOverY = (ty <= y && y <= tye) || (ty <= ye && ye <= tye)
+
+      if (isOverX && isOverY) {
+        return true
+      }
     }
-    return `${y}px`
+
+    return false
   }
 
-  public data() {
-    console.debug(this.randomX())
+  public randomN(): string {
+    const list = [
+      'airplane',
+      'balloons',
+      'sleeping',
+      'backpack',
+      'reading',
+      'sunglass'
+    ]
+    const n = Math.floor(Math.random() * list.length)
+
+    return list[n]
+  }
+
+  public random(max: number): number {
+    return Math.floor(Math.random() * max)
+  }
+
+  public docWidth(): number {
+    return document.body.clientWidth || 0
+  }
+
+  public docHeight(): number  {
+    return document.body.clientHeight || 0
+  }
+
+  public position() {
+    let x = this.random(this.docWidth())
+    let y = this.random(this.docHeight())
+
+    const limit = 1000
+    let count = 0
+
+    while (count < limit) {
+      if (!this.isOverlay(x, y)) {
+        break
+      }
+      x = this.random(this.docWidth())
+      y = this.random(this.docHeight())
+      count++
+    }
+
+    console.debug(`${x}, ${y}: ${count}`)
+    return { x, y }
+  }
+
+  public gophers(): IImage[] {
+    this.reset()
+
+    const w = this.docWidth() - this.baseSize
+    const h = this.docHeight() - this.baseSize
+    const area = w * h
+    const baseArea = this.baseSize * this.baseSize
+    const num = Math.floor(area / baseArea * 0.3)
+
+    while (this.images.length < num) {
+      const n = this.randomN()
+      const position = this.position()
+
+      this.images.push({
+        name: n,
+        style: { top: `${position.y}px`, left: `${position.x}px` },
+        position: { x: position.x, y: position.y },
+        raw: require(`~/assets/gopher-${n}.png`),
+        webp: require(`~/static/img/gopher-${n}.webp`)
+      })
+    }
+
+    return this.images
+  }
+
+  public mounted() {
     return {
-      airplane: { top: this.randomX(), left: this.randomY() },
-      balloons: { top: this.randomX(), left: this.randomY() },
-      sleeping: { top: this.randomX(), left: this.randomY() },
-      backpack: { top: this.randomX(), left: this.randomY() },
-      reading:  { top: this.randomX(), left: this.randomY() },
-      sunglass: { top: this.randomX(), left: this.randomY() }
+      images: this.gophers()
     }
   }
 }
@@ -72,10 +140,10 @@ export default class MiniGophers extends Vue {
 <style scoped>
 .mini-gopher {
   position: absolute;
-  width: 300px;
-  height: auto;
-  z-index: 9999;
-  opacity: 0.1;
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+  opacity: 0.2;
 }
 
 .mini-gopher img {
