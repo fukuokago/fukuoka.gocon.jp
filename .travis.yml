@@ -1,9 +1,21 @@
+sudo: false
 language: node_js
 node_js:
-  - stable
-  - lts/*
+- stable
+- lts/*
 script:
-  - npm run ci
+- npm run ci
+deploy:
+  provider: gcs
+  access_key_id:
+    secure: pfr4J/ikZ+oNv2hNbC6TgvO/MLFS7/5Sy6sNtychC61xjI+MvbMoIxroHTmilmVBnCbCJufDTIkvvqgZ1IUdCh1ZHayUBXb/1vNATH/tBpIvKLAzZ+lDcX4L4jLZA5c1U13q6LU7q1nGDeb8wQApak3iFVtZjDxGr3oc42UkG/dHjd+oUXUxAM9lzAb5I2cRnfXriY0whbRIOASKYJCxbd1bowac09+gCmdNQ/SU+lN4igl+TPI1xT1G4BmUU/CwLWC5+UEWlCoaNKRpm/DIu/BHgFv7dmMeBw+Tbd9no6PqQGwq76y2HdKhnPYhJPpqUvrT7Fgq5r13mewafP+Vy9OBUmaLwFQMQy7Lsmou4WKorRJh4R1RmxZh2rH/yfojhDhBvm85f9pqepi+DWoIkrKTVKKuIXJo2SuNefmoM4JfC376qvM17Rk2nSqPOCEh8kVnv3Z65SR6cNTpjKtQE2yG59nwL1QinugdQOtfHa2nH+erWSMHQvLFKjjOoQ6aFNxChs9DkTrR2OKuTP3P5vyKq95GkwTiGaCLKPLQMZwnzksJ5H3H1fY4cU9ibXpL6p2PraMIC++lYjXVhXv6KWyughU6j6fbyNow20hh84c0JKJ+Pm42vF+V0ehuiGFhvZlzNTewKiRt24RKpzrpP2svhzWBpFGcUeBxC7ummuY=
+  secret_access_key:
+    secure: PR+HKnIqTI1mmQ9RUo1e4bWgxxzi8v7TVvhhyc61dSCcjXlHfBQ94aMg/AGBEo1H62LwqfFIVwqf9TBS9EVcdZ93D6gLgDc1XMxH9YpyeLP2MBRRHcsivh6Vp+cLbtKIroCeLHu5bY8quRWcKGmx+7xSZmBTLEMgLTIkZbAEqqcNMX4zBUmIekhaqC0xihjL4JAoUc8NLDk3JncT6oOlMvrdF8lJRC35JULNm59L5FAdNZHav5XdQt8c9aL+hlOv7H8jh1BTwTVOR1ADjaeL2O1Fy3DxMMtO8Sw6KYMRFip5VPaVbAGDbFzGj+8VDvZEPuVmR2b8OMlL1oP9nsNU4eRmbKlWuEFV7NffrQCwO0bkbWfnNc8vqgNri2xpDFzNyi4OnxE/Q3QquKVbX54vdM1sU1vQvz6p7wBchSBqqUdxojaI0p7WJAbMqrIN08qUFpo2uLEo1wUcZaSzAuaCjdCGhFFQSwXhu2DP+BiR1yVwt7As1wJ960rU1i1u5Lq0ckD8iKfdgt4aNoPN/jGJ9aTKp1FPb1e+sgvKOqqZ8tZO235/IYBRK/8xL4ANFSR4dXUXh7tVEYNBS3FpmqBaUJ33/pj3YLMER8mOdPFk1EEAexibU8aEe/ZMRB/pkXaMolDppOxLn4j3Zc0yJCa1H1nEb5SaLeIpUZT68GEGZ5A=
+  bucket: fukuoka.gocon.jp
+  skip_cleanup: true
+  local-dir: dist
+  on:
+    branch: master
 notifications:
   slack: linyows:2oeZ2qcLnaMjbnEYodwEXKTr
   email: false
