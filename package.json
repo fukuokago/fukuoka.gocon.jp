@@ -29,6 +29,7 @@
     "nuxt-i18n": "^5.8.3",
     "nuxt-ts-edge": "latest",
     "package": "^1.0.1",
+    "pattern-wall": "^1.0.1",
     "ts-loader": "^5.3.3",
     "tslint": "^5.12.1",
     "tslint-config-prettier": "^1.17.0",
