@@ -37,6 +37,7 @@ export default class Team extends Vue {
   public members = [
     { id: 'deeeet',         roles: ['Organizer'],               icon: 'twitter', link: 'https://twitter.com/deeeet', avatar: 'https://avatars3.githubusercontent.com/u/1256183?s=120&v=4' },
     { id: 'keita_kawamoto', roles: ['Illustrator', 'Designer'], icon: 'dribbble ', link: 'https://dribbble.com/keita_kawamoto', avatar: 'https://avatars3.githubusercontent.com/u/1661325?s=120&v=4' },
+    { id: 'kunit',          roles: ['Organizer'],               icon: 'twitter', link: 'https://twitter.com/kunit', avatar: 'https://avatars3.githubusercontent.com/u/405750?s=120&v=4' },
     { id: 'linyows',        roles: ['Organizer', 'Designer'],   icon: 'slack', link: 'https://fukuokago.slack.com/messages/@linyows/', avatar: 'https://avatars3.githubusercontent.com/u/72049?s=120&v=4' },
     { id: 'monochromegane', roles: ['Organizer'],               icon: 'slack', link: 'https://fukuokago.slack.com/messages/@monochromegane/', avatar: 'https://d19ta9rijs3cxg.cloudfront.net/wp-content/uploads/sites/2/2017/05/13692462_1013755355398990_5321412467621857881_n-e1494916040772.jpg' } ,
     { id: 'seike460',       roles: ['Organizer'],               icon: 'twitter', link: 'https://twitter.com/seike460', avatar: 'https://avatars2.githubusercontent.com/u/8141624?s=120&v=4' },
