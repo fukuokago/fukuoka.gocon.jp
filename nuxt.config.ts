@@ -57,8 +57,10 @@ const config = {
   css: [],
   plugins: [
     { src: '~plugins/redirect-ssl', ssr: false },
+    { src: '~plugins/pattern-wall', ssr: false },
     { src: '~plugins/scroll', ssr: false },
-    { src: '~/plugins/lazyload', ssr: false }
+    { src: '~plugins/parallax', ssr: false },
+    { src: '~plugins/lazyload', ssr: false }
   ],
   modules: [
     ['nuxt-imagemin'],
@@ -72,15 +74,15 @@ const config = {
       ],
       lazy: true,
       langDir: 'lang/',
-      defaultLocale: 'ja',
+      defaultLocale: 'en',
       detectBrowserLanguage: {
         useCookie: true,
         cookieKey: 'i18n_redirected',
         alwaysRedirect: false,
-        fallbackLocale: 'ja'
+        fallbackLocale: 'en'
       },
       vueI18n: {
-        fallbackLocale: 'ja'
+        fallbackLocale: 'en'
       },
       vueI18nLoader: true,
       silentTranslationWarn: true

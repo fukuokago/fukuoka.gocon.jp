@@ -1,6 +1,7 @@
 <template>
   <div>
     <TheHeader />
+    <PatternWall />
     <nuxt />
     <TheFooter />
   </div>
@@ -10,11 +11,13 @@
 import { Component, Vue } from 'vue-property-decorator'
 import TheHeader from '~/components/TheHeader.vue'
 import TheFooter from '~/components/TheFooter.vue'
+import PatternWall from '~/components/PatternWall.vue'
 
 @Component({
   components: {
     TheHeader,
-    TheFooter
+    TheFooter,
+    PatternWall
   }
 })
 export default class LayoutDefault extends Vue {}
@@ -87,15 +90,14 @@ h2 {
   font-size: 2em;
   font-family: 'Arvo', serif;
   font-weight: bold;
-  padding: 2em 0 2em;
+  padding: 3em 0 1em;
   text-align: center;
   color: #00ADD8;
 }
 h3 {
   font-size: 1.7em;
   font-family: 'Arvo', serif;
-  padding-bottom: .5em;
-  padding-top: 1em;
+  padding: 1em 0 .5em;
   color: #000;
 }
 p {
