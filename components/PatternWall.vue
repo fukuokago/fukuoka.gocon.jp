@@ -49,7 +49,7 @@ export default class MiniGophers extends Vue {
 
     const options = {
       width: document.body.clientWidth,
-      height: document.body.clientHeight,
+      height: document.body.clientHeight - 100,
       size: 200,
       ratio: 0.3
     }
