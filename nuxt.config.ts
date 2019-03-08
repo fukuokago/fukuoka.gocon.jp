@@ -93,8 +93,7 @@ const config = {
   ],
   router: {
     middleware: [
-      'gopher',
-      'pages'
+      'gopher'
     ]
   },
   axios: {

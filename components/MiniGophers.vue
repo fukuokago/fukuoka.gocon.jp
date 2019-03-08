@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="computedPageName">
     <picture v-for="(gopher, i) in gophers" v-bind:class="['mini-gopher', gopher.name]" v-bind:style="gopher.style">
       <source type="image/webp" :srcset="gopher.webp">
       <img :src="gopher.img" v-parallax="0.2" >
@@ -9,6 +9,7 @@
 
 <script lang="ts">
 import {Component, Vue} from 'vue-property-decorator'
+import {Getter} from 'vuex-class'
 import PatternWall from 'pattern-wall'
 
 interface IStyle {
@@ -25,10 +26,17 @@ interface IImage {
 
 @Component
 export default class MiniGophers extends Vue {
+  @Getter('pages/name')
+  public pageName!: string
   public gophers: IImage[] = []
 
-  public mounted() {
-    this.gophers = []
+  get computedPageName() {
+    this.gophers = this.patternWall()
+    return this.pageName
+  }
+
+  public patternWall() {
+    const gophers = []
 
     const names = [
       'airplane',
@@ -49,13 +57,19 @@ export default class MiniGophers extends Vue {
     const p = new PatternWall(names, options)
     const pattern = p.generate()
     for (const i of pattern) {
-      this.gophers.push({
+      gophers.push({
         name: i.name,
         style: { top: `${i.position.y}px`, left: `${i.position.x}px` },
         img: require(`~/assets/gopher-${i.name}.png`),
         webp: require(`~/static/img/gopher-${i.name}.webp`)
       })
     }
+
+    return gophers
+  }
+
+  public mounted() {
+    this.gophers = this.patternWall()
   }
 }
 </script>
