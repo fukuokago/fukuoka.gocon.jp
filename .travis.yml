@@ -1,9 +1,19 @@
 language: node_js
 node_js:
-  - stable
-  - lts/*
+- stable
 script:
-  - npm run ci
+- npm run ci
+deploy:
+  provider: gcs
+  access_key_id: GOOG7KQQ4DPPRHWEOTAXINYH
+  secret_access_key:
+    secure: UlVKLqw5G0urAi2RDVtUcIZN8LwVNRxAh21pADnMhVMncuVNjq0uJC6F3VhhCFug21jMvw0Kex/ooH9mTJE9PEJZS6cT3O3JJATEaIP0QlNFwbIuFYAAQ7I0b4JT/nM8vfO78dyV0pjNamvMc74p2zdgRcQ8xKUSCShs/mjZtgtF4u1vfYuU9i4dEKMJ7QxSTfGQrn46cJ1QnRCpeTK23MHg+6hHVv2sOImOx+WCgxB7Ov3pvpdMlHKzGZSly7kOuRAuCp6/0gCeazxVjkPvfR9kKdm/dvFwYyFFIykL8CqMxYjnn68F581ADe2kv7FdnJCkd6qp22tBK8iksIT+2R3gVabW11Ty+De8u+rnZky9fpiuUGjGbUyLwknnpn7QA/Eosb4FylbGj/UgZhK8fsRi6KLhyFpAaPGphk1oUWMW2fb7RP3qCCR8Mg8uor8vvfSP+EXB2IrCDhrxAnIMuX6Okzk9QL4fTw2BKQ9BybieYV8APZe9HoG7q4W51NiBhBMA+lP3dCzssqqhh1PFA2GefS0I+0paSMWlCiBWtFl8qUg1k2RaN5SbKHpsJkuq87B0sYB0xQJ/XYKohoMuCtapXyGqK60a0bc3JhSiPfh8zKqvpummx5+kxWMZEiIznyniTuWkTWUhd9iQKx4dllszi7tXZ0Jt7ReEyNmuvPg=
+  bucket: fukuoka.gocon.jp
+  skip_cleanup: true
+  local-dir: dist
+  on:
+    branch: master
+    repo: fukuokago/fukuoka.gocon.jp
 notifications:
-  slack: linyows:2oeZ2qcLnaMjbnEYodwEXKTr
+  slack: fukuokago:sNzKUS8uVK0biPlNoEU0AwIl
   email: false
