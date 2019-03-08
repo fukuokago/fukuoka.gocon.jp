@@ -1,7 +1,7 @@
 <template>
   <div>
     <TheHeader />
-    <MiniGophers />
+    <PatternWall />
     <nuxt />
     <TheFooter />
   </div>
@@ -11,13 +11,13 @@
 import { Component, Vue } from 'vue-property-decorator'
 import TheHeader from '~/components/TheHeader.vue'
 import TheFooter from '~/components/TheFooter.vue'
-import MiniGophers from '~/components/MiniGophers.vue'
+import PatternWall from '~/components/PatternWall.vue'
 
 @Component({
   components: {
     TheHeader,
     TheFooter,
-    MiniGophers
+    PatternWall
   }
 })
 export default class LayoutDefault extends Vue {}
