@@ -80,6 +80,17 @@ export default class MiniGophers extends Vue {
   width: 200px;
   height: 200px;
   z-index: -1;
+  opacity: 0.1;
+}
+
+.mini-gopher.sunglass {
+  width: 160px;
+}
+.mini-gopher.reading {
+  width: 180px;
+}
+.mini-gopher.balloons,
+.mini-gopher.sleeping {
   opacity: 0.2;
 }
 
