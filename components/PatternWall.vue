@@ -1,101 +1,76 @@
 <template>
-  <div :class="computedPageName">
-    <picture v-for="(gopher, i) in gophers" v-bind:class="['mini-gopher', gopher.name]" v-bind:style="gopher.style">
-      <source type="image/webp" :srcset="gopher.webp">
-      <img :src="gopher.img" v-parallax="0.2" >
-    </picture>
+  <div id="pattern-wall" :class="computedPageName" v-bind:style="style">
+    <div class="pattern-wall" v-parallax="0.2"></div>
   </div>
 </template>
 
 <script lang="ts">
 import {Component, Vue} from 'vue-property-decorator'
 import {Getter} from 'vuex-class'
-import PatternWall from 'pattern-wall'
 
 interface IStyle {
-  top: string,
-  left: string
-}
-
-interface IImage {
-  name: string,
-  style: IStyle,
-  img: string,
-  webp: string
+  height: string
 }
 
 @Component
-export default class MiniGophers extends Vue {
+export default class PatternWall extends Vue {
   @Getter('pages/name')
   public pageName!: string
-  public gophers: IImage[] = []
+  public style: IStyle = { height: '100%' }
 
   get computedPageName() {
-    this.gophers = this.patternWall()
+    this.style = this.genStyle()
     return this.pageName
   }
 
-  public patternWall() {
-    const gophers = []
-
-    const names = [
-      'airplane',
-      'balloons',
-      'sleeping',
-      'backpack',
-      'reading',
-      'sunglass'
-    ]
-
-    const options = {
-      width: document.body.clientWidth,
-      height: document.body.clientHeight - 100,
-      size: 200,
-      ratio: 0.3
-    }
-
-    const p = new PatternWall(names, options)
-    const pattern = p.generate()
-    for (const i of pattern) {
-      gophers.push({
-        name: i.name,
-        style: { top: `${i.position.y}px`, left: `${i.position.x}px` },
-        img: require(`~/assets/gopher-${i.name}.png`),
-        webp: require(`~/static/img/gopher-${i.name}.webp`)
-      })
-    }
-
-    return gophers
+  public mounted() {
+    this.style = this.genStyle()
   }
 
-  public mounted() {
-    this.gophers = this.patternWall()
+  public genStyle() {
+    return {
+      height: `${document.body.clientHeight}px`
+    }
   }
 }
 </script>
 
 <style scoped>
-.mini-gopher {
+#pattern-wall {
   position: absolute;
-  width: 200px;
-  height: 200px;
-  z-index: -1;
-  opacity: 0.1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-.mini-gopher.sunglass {
-  width: 160px;
-}
-.mini-gopher.reading {
-  width: 180px;
-}
-.mini-gopher.balloons,
-.mini-gopher.sleeping {
+.pattern-wall {
+  background-image: url(~assets/img/gophers.png);
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: 30% auto;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
   opacity: 0.2;
 }
 
-.mini-gopher img {
-  width: 100%;
-  height: auto;
+@media (min-width: 801px) and (max-width: 1300px) {
+  .pattern-wall {
+    background-size: 50% auto;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  .pattern-wall {
+    background-size: 70% auto;
+  }
+}
+@media (max-width: 500px) {
+  .pattern-wall {
+    background-size: 100% auto;
+  }
 }
 </style>
