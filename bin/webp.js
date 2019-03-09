@@ -3,7 +3,7 @@
 const imagemin = require('imagemin');
 const imageminWebp = require('imagemin-webp');
 
-imagemin(['assets/*.{jpg,png}'], 'static/img', {
+imagemin(['assets/img/*.{jpg,png}'], 'static/img', {
   use: [
     imageminWebp({quality: 50})
   ]
