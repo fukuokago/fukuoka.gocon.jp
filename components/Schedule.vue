@@ -2,12 +2,12 @@
 en:
   desc: |-
     The event is 1 day only and the number of tracks is two.
-    We will provide a map of the store for lunch.
+    We will provide a map of the store for nice lunch.
     From the afternoon we will have a Relax mode while drinking and snacks.
 ja:
   desc: |-
     イベントは、１日限りでトラック数は２つです。
-    ランチには、遠方の方もうれしいランチマップを作成いたします。
+    普段福岡または天神界隈にいない方のために、美味しいランチが食べれるお店をマッピングしたランチマップを作成いたします。
     午後からはアルコールや軽食をとりながらのRelaxモードを予定しています。
 </i18n>
 
