@@ -14,7 +14,8 @@
     "precommit": "npm run lint",
     "test": "jest",
     "ci": "npm i && nuxt-ts build && npm run lint && npm audit",
-    "dist": "npm run build && gsutil cp -r dist/* gs://fukuoka.gocon.jp/",
+    "dist": "npm run build && npm run dist:rsync",
+    "dist:rsync": "gsutil -m rsync -d -r dist gs://fukuoka.gocon.jp/",
     "install:gsutil": "curl https://sdk.cloud.google.com | bash && exec -l $SHELL && gcloud init"
   },
   "dependencies": {
