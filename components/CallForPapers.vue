@@ -10,13 +10,14 @@ en:
   talktype_2: "Tutorial style presentations; 40 minute time limit, questions at the presenter's discretion."
   talktype_3: Lightning talk style presentations; 5 minute time limit
   talktype_3_note: LT will be recruited separately
-  criteria: The Selection Criteria
-  criteria_desc: We have criteria for papers selection, So faireness.
+  criteria: Selection Criteria
+  criteria_desc: Proposals will be reviewed based on the selection criteria below.
   criteria_1: Relevance. The talk is relevant to the Go community. GoCon is not a general software conference, our audience wants to hear about topics that relate to the Go programming language.
   criteria_2: Clarity. You’ve clearly explained what you are going to talk about.
   criteria_3: Correctness. You’ve demonstrated knowledge of your topic. You don’t have to be an expert, but you are expected to be speaking from experience.
   criteria_4: Achievability. You’ve thought about how to present your material in the time available.
   criteria_5: Impact. The goal of the talk. What new idea, technique, tool, or information will the audience leave your presentation with?
+  criteria_note: "Note: This clear selection criterion is based on {gophercon}’s one. Thank you."
 ja:
   desc: |-
     もうすぐ登壇の募集を開始します。募集への応募は、{papercall} を利用する予定です。
@@ -29,12 +30,13 @@ ja:
   talktype_3: 'いわゆるLTタイプ（時間制限: 5分）'
   talktype_3_note: LTは別途募集予定
   criteria: 選択基準
-  criteria_desc: 登壇発表の応募を公平に選択するために以下の選択基準を設けています。
+  criteria_desc: 登壇発表の応募は以下の選択基準に基づきレビューされます。
   criteria_1: 関連性：Go言語に関連するトピックである（Go Conferenceは一般的なソフトウェアのカンファレンスではありません）
   criteria_2: 明快さ：発表内容を明確に説明している
   criteria_3: 正しさ：トピックに関する知見を持つこと証明している（専門家である必要はありませんが経験から話すことが期待されています）
   criteria_4: 達成可能性：発表材料を有効時間内にどのように提示するか考えている
   criteria_5: 影響力：プレゼンテーションのゴール（聴衆はプレゼンテーションを経てどんな新しいアイデア、テクニック、ツール、情報を持ちますか）
+  criteria_note: この明確な選択基準は{gophercon}のものを参考にさせていただきました。ありがとうございます。
 </i18n>
 
 <template>
@@ -61,6 +63,9 @@ ja:
       <li>{{ $t('criteria_4') }}</li>
       <li>{{ $t('criteria_5') }}</li>
     </ol>
+    <i18n path="criteria_note" tag="p">
+      <a place="gophercon" href="https://www.papercall.io/gophercon-2019">GopherCon</a>
+    </i18n>
   </div>
 </template>
 

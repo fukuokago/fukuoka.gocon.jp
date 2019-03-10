@@ -2,8 +2,8 @@
 en:
   callforpapers: Call for Papers
   registration: Registration
-  enjoy: "Let's talk about various technologies, learn from each other, have a good time, deepen interactions among developers through Fukuoka's attractive landscape for engineers through a programming language Go that is gaining attention now!"
-  background: '"{go}" is done from the beginning even if it is seen globally, it is a meaningful event for the Go community. Hundreds of Gophers participate in the conference every year and exchanges are made through various sessions related to Go.'
+  enjoy: "In Fukuoka, let's talk about various technologies through the Go programming language, learn from each other, have a good time, interact with developers! You will surely feel that Fukuoka is an attractive city for engineers by attending the conference."
+  background: '"{go}" is been held from early in comparison with other one in the world and a significant event for Go community. Every year several hundreds of gophers attend the conference and interact through various sessions of Go.'
   announce: 'At last this conference will be held in Fukuoka. {enjoy}'
 ja:
   callforpapers: 登壇募集に応募する
