@@ -41,10 +41,11 @@ export default class TheNav extends Vue {
       { visible: true, to: 'cfp', label: 'Call for Papers' },
       { visible: true, to: 'schedule', label: 'Schedule' },
       { visible: true, to: 'registration', label: 'Registration' },
-      { visible: true, to: 'talks', label: 'Talks' },
+      { visible: false, to: 'talks', label: 'Talks' },
       { visible: true, to: 'scholarships', label: 'Scholarships' },
       { visible: true, to: 'sponsors', label: 'Sponsors' },
       { visible: true, to: 'team', label: 'Team' },
+      { visible: true, to: 'brand', label: 'Brand' },
       { visible: true, to: 'code-of-conduct', label: 'Code of Conduct' }
     ]
 
