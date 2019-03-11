@@ -78,7 +78,8 @@ const config = {
       detectBrowserLanguage: {
         useCookie: true,
         cookieKey: 'i18n_redirected',
-        alwaysRedirect: false,
+        // keep their selected a locale
+        alwaysRedirect: true,
         fallbackLocale: 'en'
       },
       vueI18n: {
