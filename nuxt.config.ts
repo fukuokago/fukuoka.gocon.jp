@@ -50,7 +50,15 @@ const config = {
       { rel: 'apple-touch-icon', sizes: '120x120', href: '/icons/apple-icon-120x120.png' },
       { rel: 'apple-touch-icon', sizes: '144x144', href: '/icons/apple-icon-144x144.png' },
       { rel: 'apple-touch-icon', sizes: '152x152', href: '/icons/apple-icon-152x152.png' },
-      { rel: 'apple-touch-icon', sizes: '180x180', href: '/icons/apple-icon-180x180.png' }
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/icons/apple-icon-180x180.png' },
+      // Splash images: https://qiita.com/NaokiIshimura/items/2b18ce82c936399b695c
+      { rel: 'apple-touch-startup-image' href: '/splash/640x1136.png' media: '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)' },
+      { rel: 'apple-touch-startup-image' href: '/splash/750x1334.png' media: '(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)' },
+      { rel: 'apple-touch-startup-image' href: '/splash/1242x2208.png' media: '(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)' },
+      { rel: 'apple-touch-startup-image' href: '/splash/1125x2436.png' media: '(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)' },
+      { rel: 'apple-touch-startup-image' href: '/splash/1536x2048.png' media: '(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)' },
+      { rel: 'apple-touch-startup-image' href: '/splash/1668x2224.png' media: '(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)' },
+      { rel: 'apple-touch-startup-image' href: '/splash/2048x2732.png' media: '(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)' }
     ]
   },
   loading: { color: '#666' },
