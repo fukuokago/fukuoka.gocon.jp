@@ -93,7 +93,8 @@ const config = {
   ],
   router: {
     middleware: [
-      'gopher'
+      'gopher',
+      'trailing-slash'
     ]
   },
   axios: {
