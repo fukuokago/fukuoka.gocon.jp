@@ -14,9 +14,10 @@
     "precommit": "npm run lint",
     "test": "jest",
     "ci": "npm i && nuxt-ts build && npm run lint && npm audit",
-    "dist": "npm run build && npm run dist:rsync && npm run dist:attachment",
+    "dist": "npm run build && npm run dist:rsync && npm run dist:wallpaper && npm run dist:logo",
     "dist:rsync": "gsutil -m rsync -d -r dist gs://fukuoka.gocon.jp/",
-    "dist:attachment": "gsutil setmeta -h 'Content-Type:image/png' -h 'Cache-Control:public, max-age=3600' -h 'Content-Disposition: attachment' gs://fukuoka.gocon.jp/wallpaper/*.png",
+    "dist:wallpaper": "gsutil setmeta -h 'Content-Type:image/png' -h 'Cache-Control:public, max-age=3600' -h 'Content-Disposition: attachment' gs://fukuoka.gocon.jp/wallpaper/*.png",
+    "dist:logo": "gsutil setmeta -h 'Content-Type:image/png' -h 'Cache-Control:public, max-age=3600' -h 'Content-Disposition: attachment' gs://fukuoka.gocon.jp/logo/*.tar.gz",
     "install:gsutil": "curl https://sdk.cloud.google.com | bash && exec -l $SHELL && gcloud init"
   },
   "dependencies": {
