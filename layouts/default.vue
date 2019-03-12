@@ -108,17 +108,15 @@ p {
   padding-bottom: 1em;
   color: #666;
 }
-ul {
+ul,
+ol {
   font-size: 1.3em;
-  list-style-type: circle;
   padding-left: 1em;
   padding-bottom: 1em;
   margin-left: 1em;
 }
-ol {
-  font-size: 1.3em;
-  padding-left: 1em;
-  margin-left: 1em;
+ul {
+  list-style-type: circle;
 }
 ul.colored {
   list-style-type: none;

@@ -4,6 +4,7 @@ en:
     Call for paper is coming soon... We will use {papercall} for paper calling.
     The reason for using PaperCall.io has pros that form content is superior and organizer feedback is easy.
     To use PaperCall.io you need to create an account.
+  goto_papercall: Go to PaperCall.io
   types: Talk Types
   types_desc: There are 3 talk types. Please select the one that suits your presentation. Presentation will proceed on 2 tracks.
   talktype_1: "Keynote style presentations; 20 minute time limit, questions at the presenter's discretion."
@@ -20,9 +21,10 @@ en:
   criteria_note: "Note: This clear selection criterion is based on {gophercon}’s one. Thank you."
 ja:
   desc: |-
-    もうすぐ登壇の募集を開始します。募集への応募は、{papercall} を利用する予定です。
+    もうすぐ登壇の募集を開始します。募集への応募は、{papercall} を利用します。
     PaperCall.ioを使うのは、入力フォーム内容が優れていることと、Organizerからのフィードバックをしやすいからです。
     PaperCall.ioを初めて利用される方にはお手数ですが、あらかじめアカウントを登録する必要があります。
+  goto_papercall: PaperCall.ioへ
   types: 発表種別
   types_desc: 種別は3つありますので、プレゼンテーションにあったものを選択してください。なお、発表は2トラックで進行されます。
   talktype_1: 'テーマに基づくキーノートスタイルのプレゼンテーション（時間制限: 20分、質疑応答含む）'
@@ -46,6 +48,9 @@ ja:
       <a place="papercall" href="https://www.papercall.io/gocon-jp-2019-fukuoka">PaperCall.io</a>
     </i18n>
 
+
+    <p class="goto-papercall"><a class="button is-large" href="https://www.papercall.io/gocon-jp-2019-fukuoka">{{ $t('goto_papercall') }}</a></p>
+
     <h3>{{ $t('types') }}</h3>
     <p>{{ $t('types_desc') }}</p>
     <ul class="colored">
@@ -63,11 +68,15 @@ ja:
       <li>{{ $t('criteria_4') }}</li>
       <li>{{ $t('criteria_5') }}</li>
     </ol>
-    <i18n path="criteria_note" tag="p">
+
+    <i18n path="criteria_note" tag="p" class>
       <a place="gophercon" href="https://www.papercall.io/gophercon-2019">GopherCon</a>
     </i18n>
   </div>
 </template>
 
 <style scoped>
+.goto-papercall {
+  text-align: center;
+}
 </style>
