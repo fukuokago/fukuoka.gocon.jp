@@ -91,7 +91,10 @@ ja:
         <td class="roomA" colspan="1" rowspan="1"><p>Short talk</p></td>
         <td class="roomB" colspan="1" rowspan="1"><p>Short talk</p></td></tr>
       <tr class="common">
-        <td class="time" colspan="1" rowspan="1"><p>17:50-18:00</p></td>
+        <td class="time" colspan="1" rowspan="1"><p>17:50-18:50</p></td>
+        <td colspan="2" rowspan="1"><p>Networking 🍻</p></td></tr>
+      <tr class="common">
+        <td class="time" colspan="1" rowspan="1"><p>18:50-19:00</p></td>
         <td colspan="2" rowspan="1"><p>Close 🍽</p></td></tr>
     </tbody></table>
   </div>
