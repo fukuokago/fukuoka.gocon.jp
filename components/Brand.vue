@@ -16,7 +16,7 @@ ja:
 
     <div class="logo">
       <h3>Logo</h3>
-      <p><a class="button" href="/logo/go-conference-19-summer-in-fukuoka.tar.gz">Download Logo Assets</a></p>
+      <p><a class="button" href="/assets/logo.tar.gz">Download Logo Assets</a></p>
     </div>
 
     <div class="is-clearfix">
