@@ -4,22 +4,23 @@ en:
   registration: Registration
   enjoy: "In Fukuoka, let's talk about various technologies through the Go programming language, learn from each other, have a good time, interact with developers! You will surely feel that Fukuoka is an attractive city for engineers by attending the conference."
   background: '"{go}" is been held from early in comparison with other one in the world and a significant event for Go community. Every year several hundreds of gophers attend the conference and interact through various sessions of Go.'
-  announce: 'At last this conference will be held in Fukuoka. {enjoy}'
+  announce: 'At last this conference will be held in Fukuoka. {enjoy} {theme}'
 ja:
   callforpapers: 登壇募集に応募する
   registration: 参加登録をする
   enjoy: 'エンジニアにとって魅力ある土地、福岡で、今注目を集めるプログラミング言語Goを通じて様々な技術の話をし、学び合い、楽しい時間を過ごし、開発者同士の交流を深めましょう！'
   background: '「{go}」は、世界的に見ても初期から行われており、Goコミュニティにとって意義のあるイベントです。カンファレンスでは毎年数百名のGopherが参加しGoにまつわる多様なセッションを通した交流が行われています。'
-  announce: '今回、ついに、このカンファレンスを福岡で開催します。{enjoy}'
+  announce: '今回、ついに、このカンファレンスを福岡で開催します。{enjoy} {theme}'
 </i18n>
 
 <template>
   <div>
     <i18n path="background" tag="p">
-      <strong place="go" class="about--strong">Go Conference</strong>
+      <strong place="go" class="strong">Go Conference</strong>
     </i18n>
     <i18n path="announce" tag="p">
-      <em place="enjoy" class="about--em">{{ $t('enjoy') }}</em>
+      <em place="enjoy" class="em">{{ $t('enjoy') }}</em>
+      <strong place="theme">Go and Enjoy Fukuoka!</strong>
     </i18n>
     <div class="attention">
       <p class="cfp"><nuxt-link class="button" :to="localePath('cfp')"><span>📝</span>{{ $t('callforpapers') }}</nuxt-link></p>
