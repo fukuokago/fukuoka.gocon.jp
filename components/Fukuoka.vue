@@ -5,6 +5,7 @@ en:
   city: Fukuoka city
   food: food culture
   feature: Engineer frendly city
+  landmark: A landmark of Fukuoka at Seaside Momochi, Fukuoka Tower and Yahuoku! dome.
   desc: >-
     {city} is the largest city in Kyushu but the distance between the center and the airport is close, and the entire city is compact.
     Also, the climate is mild, it is said to be one of the most livable cities in Asia.
@@ -16,6 +17,7 @@ ja:
   city: 福岡市
   food: 食文化
   feature: エンジニアフレンドリーシティ
+  landmark: シーサイドももちにある福岡のランドマーク、福岡タワーとヤフオク!ドーム
   desc: >-
     {city}は、九州最大の都市でありながら中心部と空港の距離が近く、都市全体もコンパクトに収まっていています。
     また、気候は温暖であることから、アジアで最も住みやすい都市のひとつと言われています。
@@ -31,7 +33,7 @@ ja:
       <figure class="fukuoka-city">
         <source type="image/webp" srcset="~static/img/fukuoka.webp">
         <img class="eyecatch" src="~assets/img/fukuoka.jpg" alt="fukuoka" />
-        <figcaption>シーサイドももちにある福岡のランドマーク、福岡タワーとヤフオク!ドーム</figcaption>
+        <figcaption>{{ $t('landmark') }}</figcaption>
         <small>Photo by <a rel="http://showcase.city.fukuoka.lg.jp/photo/img0683.html">Fukuoka City</a></small>
       </figure>
     </picture>
