@@ -17,7 +17,7 @@ ja:
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component({
-  async asyncData({ params }) {
+  async asyncData({ params }: any) {
     const slug = params.slug
     return { assetsPath: require(`~/static/assets/${slug}.png`) }
   }
