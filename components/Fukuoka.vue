@@ -58,8 +58,7 @@ ja:
   position: relative;
 }
 .fukuoka-city figcaption {
-  position: absolute;
-  bottom: 2em;
+  padding-bottom: 1.5em;
   color: #666;
   font-size: .8em;
   font-weight: normal;
@@ -70,7 +69,7 @@ ja:
 }
 .fukuoka-city small {
   position: absolute;
-  bottom: 5.5em;
+  top: 1.5em;
   right: 1.5em;
   color: #fff;
   font-size: .7em;
@@ -84,7 +83,7 @@ img.eyecatch {
   width: 100%;
   height: auto;
   overflow: visible;
-  padding-bottom: 3em;
+  padding-bottom: .2em;
 }
 ul {
   list-style-type: none;
@@ -100,16 +99,12 @@ li {
 }
 @media (max-width: 600px) {
   .fukuoka-city figcaption {
-    bottom: 1em;
     font-size: .6em;
   }
   .fukuoka-city small {
     font-size: .5em;
+    top: 1em;
     right: 1em;
-    bottom: 4.5em;
-  }
-  img.eyecatch {
-    padding-bottom: 1.5em;
   }
 }
 </style>
