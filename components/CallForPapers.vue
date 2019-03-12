@@ -18,6 +18,7 @@ en:
   criteria_4: Achievability. You’ve thought about how to present your material in the time available.
   criteria_5: Impact. The goal of the talk. What new idea, technique, tool, or information will the audience leave your presentation with?
   criteria_note: "Note: This clear selection criterion is based on {gophercon}’s one. Thank you."
+  feedback: "You can fix your submission until the deadline after submitting. We recommend submitting early to receive early feedback from reviewers."
 ja:
   desc: |-
     もうすぐ登壇の募集を開始します。募集への応募は、{papercall} を利用する予定です。
@@ -37,6 +38,7 @@ ja:
   criteria_4: 達成可能性：発表材料を有効時間内にどのように提示するか考えている
   criteria_5: 影響力：プレゼンテーションのゴール（聴衆はプレゼンテーションを経てどんな新しいアイデア、テクニック、ツール、情報を持ちますか）
   criteria_note: この明確な選択基準は{gophercon}のものを参考にさせていただきました。ありがとうございます。
+  feedback: 投稿後も締め切りまで修正が可能です。レビュアーからのフィードバックを受けるため早めの投稿をオススメします。
 </i18n>
 
 <template>
@@ -66,6 +68,7 @@ ja:
     <i18n path="criteria_note" tag="p">
       <a place="gophercon" href="https://www.papercall.io/gophercon-2019">GopherCon</a>
     </i18n>
+    <p>{{ $t('feedback') }}</p>
   </div>
 </template>
 
