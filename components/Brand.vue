@@ -29,8 +29,8 @@ ja:
         </picture>
         <p>Gopher Noodle</p>
         <ul>
-          <li><a class="button" href="/wallpaper/gopher-noodle-phone.png">For Phone</a></li>
-          <li><a class="button" href="/wallpaper/gopher-noodle-laptop.png">For Laptop</a></li>
+          <li><nuxt-link class="button" :to="localePath({name: 'assets-slug', params: { slug: 'gopher-noodle-phone' }})">For Phone</nuxt-link></li>
+          <li><nuxt-link class="button" :to="localePath({name: 'assets-slug', params: { slug: 'gopher-noodle-laptop' }})">For Laptop</nuxt-link></li>
         </ul>
       </div>
 
@@ -41,8 +41,8 @@ ja:
         </picture>
         <p>Gophers Pattern</p>
         <ul>
-          <li><a class="button" href="/wallpaper/gophers-pattern-phone.png">For Phone</a></li>
-          <li><a class="button" href="/wallpaper/gophers-pattern-laptop.png">For Laptop</a></li>
+          <li><nuxt-link class="button" :to="localePath({name: 'assets-slug', params: { slug: 'gophers-pattern-phone' }})">For Phone</nuxt-link></li>
+          <li><nuxt-link class="button" :to="localePath({name: 'assets-slug', params: { slug: 'gophers-pattern-laptop' }})">For Laptop</nuxt-link></li>
         </ul>
       </div>
     </div>
