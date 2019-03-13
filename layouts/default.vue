@@ -180,6 +180,23 @@ em {
   margin-right: 1em;
 }
 
+.blog .title {
+  text-align: left;
+}
+.blog .title a {
+  border: none;
+}
+.blog .date {
+  margin-top: -.5em;
+  margin-bottom: .2em;
+  font-weight: bold;
+  color: #bbb;
+  font-family: 'Arvo', serif;
+}
+.blog p {
+  margin-bottom: .5em;
+}
+
 @media (min-width: 801px) and (max-width: 1300px) {
   h2 {
     font-size: 1.7em;

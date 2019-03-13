@@ -10,9 +10,6 @@
     <div class="container">
       <CallForPapers/>
     </div>
-    <div class="container">
-      <Schedule/>
-    </div>
   </section>
 </template>
 
@@ -22,7 +19,6 @@ import TheHome from '~/components/TheHome.vue'
 import News from '~/components/News.vue'
 import Fukuoka from '~/components/Fukuoka.vue'
 import CallForPapers from '~/components/CallForPapers.vue'
-import Schedule from '~/components/Schedule.vue'
 
 @Component({
   head() {
@@ -35,8 +31,7 @@ import Schedule from '~/components/Schedule.vue'
     TheHome,
     News,
     Fukuoka,
-    CallForPapers,
-    Schedule
+    CallForPapers
   }
 })
 export default class PageIndex extends Vue {}
