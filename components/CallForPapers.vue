@@ -28,7 +28,7 @@ en:
     list:
       - Nothing
   feedback:
-    title: Feedback from organizer
+    title: Feedback from reviewers
     body: |-
       You can fix your submission until the deadline after submitting.
       We recommend submitting early to receive early feedback from reviewers.
@@ -63,7 +63,7 @@ ja:
       - Description - プレゼンの説明でおもに内容を記述します
       - Note - 例えば、あなたがプレゼンをするのにふさわしい理由や背景または技術的な要件を記述してください
   feedback:
-    title: 主催者からのフィードバック
+    title: レビュアーからのフィードバック
     body: |-
       投稿後も締め切りまで修正が可能です。
       レビュアーからのフィードバックを受けるため早めの投稿をオススメします。
