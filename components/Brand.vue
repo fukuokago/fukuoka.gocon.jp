@@ -3,10 +3,12 @@ en:
   desc: |-
     These are the assets we use for the brand of "Go Conference'19 Summer in Fukuoka".
     Please download and use it.
+    Guidelines for assets using is nothing. So use freely.
 ja:
   desc: |-
-    これらは、Go Conference'19 Summer in Fukuokaを識別するために使っている統一ビジュアルです。
+    これらは、"Go Conference'19 Summer in Fukuoka" を識別するために使っている統一ビジュアルです。
     ダウンロードしてご利用ください。
+    なお、利用のためのガイドラインは設けいていないので自由に使って大丈夫です。
 </i18n>
 
 <template>
@@ -14,15 +16,19 @@ ja:
     <h2>Brand</h2>
     <p>{{ $t('desc') }}</p>
 
-    <div class="logo">
+    <div class="assets logo is-clearfix">
       <h3>Logo</h3>
-      <p><a class="button" href="/assets/logo.tar.gz">Download Logo Assets</a></p>
+
+      <div class="inner">
+        <p>Included format: ai, eps, pdf and svg</p>
+        <p><a class="button" href="/assets/logo.tar.gz">Download Logo Assets</a></p>
+      </div>
     </div>
 
-    <div class="is-clearfix">
+    <div class="assets wallpaper is-clearfix">
       <h3>Wallpaper</h3>
 
-      <div class="wallpaper">
+      <div class="inner">
         <picture class="eyecatch">
           <source type="image/webp" srcset="~static/img/gopher-noodle.webp">
           <img src="~assets/img/gopher-noodle.png" >
@@ -34,7 +40,7 @@ ja:
         </ul>
       </div>
 
-      <div class="wallpaper">
+      <div class="inner">
         <picture class="eyecatch">
           <source type="image/webp" srcset="~static/img/gophers-pattern.webp">
           <img src="~assets/img/gophers-pattern.png" >
@@ -50,11 +56,11 @@ ja:
 </template>
 
 <style scoped>
-.logo p {
-  padding-top: 2em;
+.assets {
+  padding-bottom: 2em;
 }
 
-.wallpaper {
+.inner {
   width: 400px;
   float: left;
   padding: 2em 1em 0 0;
@@ -68,10 +74,10 @@ ja:
   width: 194px;
   border: 3px solid #fff;
 }
-.wallpaper ul {
+.inner ul {
   list-style-type: none;
 }
-.wallpaper li {
+.inner li {
   margin-bottom: .5em;
 }
 </style>
