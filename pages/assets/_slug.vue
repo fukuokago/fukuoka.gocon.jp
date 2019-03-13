@@ -11,9 +11,9 @@ ja:
 
 <template>
   <section class="container assets">
-    <h2>Assets</h2>
+    <h2>Assets &#8811; {{ name }}</h2>
     <p>{{ $t('how') }}</p>
-    <p><a :href="assetsPath" class="assets-image"><img class="wallpaper" :src="assetsPath" /></a></p>
+    <p><a :href="downloadPath" class="assets-image"><img class="wallpaper" :src="assetsPath" /></a></p>
     <p class="backtohome"><nuxt-link :to="localePath('brand')" class="button">Back to Brand</nuxt-link></p>
   </section>
 </template>
@@ -23,8 +23,17 @@ import { Component, Vue } from 'vue-property-decorator'
 
 @Component({
   async asyncData({ params }: any) {
+    const kepabToPascal = ((s: string) => {
+      return s.replace(/(^\w|\-\w)/g, (m) => {
+        return m.length === 1 ? m[0].toUpperCase() : ` ${m[1].toUpperCase()}`
+      })
+    })
     const slug = params.slug
-    return { assetsPath: require(`~/static/assets/${slug}.png`) }
+    return {
+      name: kepabToPascal(slug),
+      assetsPath: require(`~/static/assets/${slug}.png`),
+      downloadPath: `/assets/${slug}.png`
+    }
   }
 })
 export default class PageAssets extends Vue {}
