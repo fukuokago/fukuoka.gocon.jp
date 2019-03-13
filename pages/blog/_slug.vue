@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <component v-bind:is="blog"></component>
+    <component v-bind:is="computedBlog"></component>
   </section>
 </template>
 
@@ -17,19 +17,20 @@ import BrandKitReleases from '~/components/blog/BrandKitReleases.vue'
   },
   async asyncData({ params }: any) {
     return { slug: params.slug }
-  },
-  computed: {
-    blog() {
-      switch (this.slug) {
-        case 'brand-kit-releases':
-          return BrandKitReleases
-        case 'hello-gophers':
-          return HelloGophers
-      }
-    }
   }
 })
-export default class PageBlog extends Vue {}
+export default class PageBlog extends Vue {
+  public slug!: string
+
+  get computedBlog() {
+    switch (this.slug) {
+      case 'brand-kit-releases':
+        return BrandKitReleases
+      case 'hello-gophers':
+        return HelloGophers
+    }
+  }
+}
 </script>
 
 <style scoped>
