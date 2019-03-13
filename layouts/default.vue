@@ -197,6 +197,11 @@ em {
   margin-bottom: .5em;
 }
 
+.external {
+  font-size: .7em;
+  opacity: 0.5;
+}
+
 @media (min-width: 801px) and (max-width: 1300px) {
   h2 {
     font-size: 1.7em;

@@ -1,7 +1,7 @@
 <i18n>
 en:
   desc: |-
-    Call for paper is coming soon... We will use {papercall} for paper calling.
+    Call for paper is coming soon... We will use {papercall} {external} for paper calling.
     The reason for using PaperCall.io has pros that form content is superior and organizer feedback is easy.
     To use PaperCall.io you need to create an account.
   goto_papercall: Go to PaperCall.io
@@ -22,7 +22,7 @@ en:
       - Correctness. You’ve demonstrated knowledge of your topic. You don’t have to be an expert, but you are expected to be speaking from experience.
       - Achievability. You’ve thought about how to present your material in the time available.
       - Impact. The goal of the talk. What new idea, technique, tool, or information will the audience leave your presentation with?
-    note: "Note: This clear selection criterion is based on {gophercon}’s one. Thank you."
+    note: "Note: This clear selection criterion is based on {gophercon} {external} 's one. Thank you."
   supplement:
     title: Supplement
     list:
@@ -34,7 +34,7 @@ en:
       We recommend submitting early to receive early feedback from reviewers.
 ja:
   desc: |-
-    もうすぐ登壇の募集を開始します。募集への応募は、{papercall} を利用します。
+    もうすぐ登壇の募集を開始します。募集への応募は、{papercall} {external} を利用します。
     PaperCall.ioを使うのは、入力フォーム内容が優れていることと、Organizerからのフィードバックをしやすいからです。
     PaperCall.ioを初めて利用される方にはお手数ですが、あらかじめアカウントを登録する必要があります。
   goto_papercall: PaperCall.ioへ
@@ -55,7 +55,7 @@ ja:
       - 正しさ：トピックに関する知見を持つこと証明している（専門家である必要はありませんが経験から話すことが期待されています）
       - 達成可能性：発表材料を有効時間内にどのように提示するか考えている
       - 影響力：プレゼンテーションのゴール（聴衆はプレゼンテーションを経てどんな新しいアイデア、テクニック、ツール、情報を持ちますか）
-    note: この明確な選択基準は{gophercon}のものを参考にさせていただきました。ありがとうございます。
+    note: この明確な選択基準は {gophercon} {external} のものを参考にさせていただきました。ありがとうございます。
   supplement:
     title: 入力フォームの補足
     list:
@@ -74,6 +74,7 @@ ja:
     <h2>Call for Papers</h2>
     <i18n path="desc" tag="p">
       <a place="papercall" href="https://www.papercall.io/">PaperCall.io</a>
+      <span class="external" place="external"><i class="fas fa-external-link-alt"></i></span>
     </i18n>
 
     <p class="goto-papercall"><a class="button large is-inverted is-outlined" href="https://www.papercall.io/gocon-jp-2019-fukuoka">{{ $t('goto_papercall') }}</a></p>
@@ -93,6 +94,7 @@ ja:
     </ol>
     <i18n path="criteria.note" tag="p">
       <a place="gophercon" href="https://www.papercall.io/gophercon-2019">GopherCon</a>
+      <span class="external" place="external"><i class="fas fa-external-link-alt"></i></span>
     </i18n>
 
     <h3>{{ $t('feedback.title') }}</h3>

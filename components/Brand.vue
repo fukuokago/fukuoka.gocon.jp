@@ -5,16 +5,16 @@ en:
     Please download and use it.
     Guidelines for assets using is nothing. So use freely.
   note: |-
-    The Go gopher was created by renowned illustrator {renee}.
-    Gophers on Go Conference'19 Summer in Fukuoka was written {kawamoto}.
+    The Go gopher was created by renowned illustrator {renee} {external}.
+    Gophers on Go Conference'19 Summer in Fukuoka was written {kawamoto} {external}.
 ja:
   desc: |-
     これらは、"Go Conference'19 Summer in Fukuoka" を識別するために使っている統一ビジュアルです。
     ダウンロードしてご利用ください。
     なお、利用のためのガイドラインは設けいていないので自由に使って大丈夫です。
   note: |-
-    Go Gopherは有名なイラストレーター {renee} によって作成されました。
-    Go Conference'19 Summer in Fukuoka のGopherは {kawamoto} によるものです。
+    Go Gopherは有名なイラストレーター {renee} {external} によって作成されました。
+    Go Conference'19 Summer in Fukuoka のGopherは {kawamoto} {external} によるものです。
 </i18n>
 
 <template>
@@ -24,7 +24,8 @@ ja:
 
     <i18n path="note" tag="p">
       <a place="renee" href="http://reneefrench.blogspot.com/">Renee French</a>
-      <a place="kawamoto" href="https://blog.orangebomb.org/">keita kawamoto</a>
+      <a place="kawamoto" href="https://blog.orangebomb.org/">Keita Kawamoto</a>
+      <span class="external" place="external"><i class="fas fa-external-link-alt"></i></span>
     </i18n>
 
     <div class="assets logo is-clearfix">
@@ -89,10 +90,13 @@ ja:
   width: 194px;
   border: 3px solid #fff;
 }
+.logo .inner {
+  width: auto;
+  float: none;
+  padding: 2em 1em 0 0;
+}
 .logo .eyecatch {
   width: 400px;
-  float: none;
-  padding: 0;
 }
 .logo .eyecatch img {
   width: 394px;
@@ -102,5 +106,20 @@ ja:
 }
 .inner li {
   margin-bottom: .5em;
+}
+@media (max-width: 400px) {
+  .inner,
+  .logo .inner {
+    width: 100%;
+    float: none;
+    padding-right: 0;
+  }
+  .logo .eyecatch {
+    width: 100%;
+    padding-right: 0;
+  }
+  .logo .eyecatch img {
+    width: 100%;
+  }
 }
 </style>
