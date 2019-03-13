@@ -175,6 +175,10 @@ em {
 .button:hover {
   border-color: #00ADD8;
 }
+.button.large {
+  padding: 1.7em 2em;
+  margin-right: 1em;
+}
 
 @media (min-width: 801px) and (max-width: 1300px) {
   h2 {

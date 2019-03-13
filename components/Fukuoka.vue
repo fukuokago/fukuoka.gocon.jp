@@ -46,8 +46,8 @@ ja:
       </i18n>
 
       <ul>
-        <li><a class="button is-inverted is-outlined" href="https://www.trivago.jp/?aDateRange%5Barr%5D=2019-02-22&aDateRange%5Bdep%5D=2019-02-23&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iPathId=90333&aGeoCode%5Blat%5D=33.590355&aGeoCode%5Blng%5D=130.401718&iGeoDistanceItem=0&aCategoryRange=0%2C1%2C2%2C3%2C4%2C5&aOverallLiking=1%2C2%2C3%2C4%2C5&sOrderBy=relevance%20desc&bTopDealsOnly=false&iRoomType=7&cpt=9033303&iIncludeAll=0&iViewType=0&bIsSeoPage=false&bIsSitemap=false&">{{ $t('hotel') }}</a></li>
-        <li><a class="button is-inverted is-outlined"  href="https://yokanavi.com/">{{ $t('guide') }}</a></li>
+        <li><a class="button large is-inverted is-outlined" href="https://www.trivago.jp/?aDateRange%5Barr%5D=2019-02-22&aDateRange%5Bdep%5D=2019-02-23&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iPathId=90333&aGeoCode%5Blat%5D=33.590355&aGeoCode%5Blng%5D=130.401718&iGeoDistanceItem=0&aCategoryRange=0%2C1%2C2%2C3%2C4%2C5&aOverallLiking=1%2C2%2C3%2C4%2C5&sOrderBy=relevance%20desc&bTopDealsOnly=false&iRoomType=7&cpt=9033303&iIncludeAll=0&iViewType=0&bIsSeoPage=false&bIsSitemap=false&">{{ $t('hotel') }}</a></li>
+        <li><a class="button large is-inverted is-outlined"  href="https://yokanavi.com/">{{ $t('guide') }}</a></li>
       </ul>
     </div>
   </section>
@@ -88,14 +88,13 @@ img.eyecatch {
 ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 li {
   display: inline-block;
 }
 .button {
-  padding: 1.7em 2em;
   font-size: .7em;
-  margin-right: 1em;
 }
 @media (max-width: 600px) {
   .fukuoka-city figcaption {
