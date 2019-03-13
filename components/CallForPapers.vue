@@ -73,7 +73,7 @@ ja:
   <div class="call-for-papers">
     <h2>Call for Papers</h2>
     <i18n path="desc" tag="p">
-      <a place="papercall" href="https://www.papercall.io/gocon-jp-2019-fukuoka">PaperCall.io</a>
+      <a place="papercall" href="https://www.papercall.io/">PaperCall.io</a>
     </i18n>
 
     <p class="goto-papercall"><a class="button large is-inverted is-outlined" href="https://www.papercall.io/gocon-jp-2019-fukuoka">{{ $t('goto_papercall') }}</a></p>
