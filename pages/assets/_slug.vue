@@ -6,7 +6,7 @@ en:
 ja:
   how: |-
     画像をクリックするとダウンロードします。
-    スマートフォンの場合は、画像をロングタップしてメニューから画像を保存するを選択してください。
+    スマートフォンの場合は、画像をロングタップしてメニューから"イメージを保存"を選択してください。
 </i18n>
 
 <template>
@@ -31,8 +31,8 @@ import { Component, Vue } from 'vue-property-decorator'
     const slug = params.slug
     return {
       name: kepabToPascal(slug),
-      assetsPath: require(`~/static/assets/${slug}.png`),
-      downloadPath: `/assets/${slug}.png`
+      assetsPath: require(`~/static/download/${slug}.png`),
+      downloadPath: `/download/${slug}.png`
     }
   }
 })

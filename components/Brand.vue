@@ -37,7 +37,7 @@ ja:
           <img src="~assets/img/logo.png" >
         </picture>
         <p>Included format: ai, eps, pdf and svg</p>
-        <p><a class="button" href="/assets/logo.tar.gz">Download Logo Assets</a></p>
+        <p><a class="button" href="/download/logo.tar.gz">Download Logo Assets</a></p>
       </div>
     </div>
 
@@ -51,20 +51,20 @@ ja:
         </picture>
         <p>Gopher Noodle</p>
         <ul>
-          <li><nuxt-link class="button" :to="localePath({name: 'assets-slug', params: { slug: 'gopher-noodle-phone' }})">For Phone</nuxt-link></li>
-          <li><nuxt-link class="button" :to="localePath({name: 'assets-slug', params: { slug: 'gopher-noodle-laptop' }})">For Laptop</nuxt-link></li>
+          <li><nuxt-link class="button" :to="localePath({name: 'assets-slug', params: { slug: 'gopher-noodle-for-phone' }})">For Phone</nuxt-link></li>
+          <li><nuxt-link class="button" :to="localePath({name: 'assets-slug', params: { slug: 'gopher-noodle-for-laptop' }})">For Laptop</nuxt-link></li>
         </ul>
       </div>
 
       <div class="inner">
         <picture class="eyecatch">
-          <source type="image/webp" srcset="~static/img/gophers-pattern.webp">
-          <img src="~assets/img/gophers-pattern.png" >
+          <source type="image/webp" srcset="~static/img/gopher-pattern.webp">
+          <img src="~assets/img/gopher-pattern.png" >
         </picture>
-        <p>Gophers Pattern</p>
+        <p>Gopher Pattern</p>
         <ul>
-          <li><nuxt-link class="button" :to="localePath({name: 'assets-slug', params: { slug: 'gophers-pattern-phone' }})">For Phone</nuxt-link></li>
-          <li><nuxt-link class="button" :to="localePath({name: 'assets-slug', params: { slug: 'gophers-pattern-laptop' }})">For Laptop</nuxt-link></li>
+          <li><nuxt-link class="button" :to="localePath({name: 'assets-slug', params: { slug: 'gopher-pattern-for-phone' }})">For Phone</nuxt-link></li>
+          <li><nuxt-link class="button" :to="localePath({name: 'assets-slug', params: { slug: 'gopher-pattern-for-laptop' }})">For Laptop</nuxt-link></li>
         </ul>
       </div>
 
@@ -75,8 +75,8 @@ ja:
         </picture>
         <p>Gopher Sunglass</p>
         <ul>
-          <li><nuxt-link class="button" :to="localePath({name: 'assets-slug', params: { slug: 'gopher-sunglass-phone' }})">For Phone</nuxt-link></li>
-          <li><nuxt-link class="button" :to="localePath({name: 'assets-slug', params: { slug: 'gopher-sunglass-laptop' }})">For Laptop</nuxt-link></li>
+          <li><nuxt-link class="button" :to="localePath({name: 'assets-slug', params: { slug: 'gopher-sunglass-for-phone' }})">For Phone</nuxt-link></li>
+          <li><nuxt-link class="button" :to="localePath({name: 'assets-slug', params: { slug: 'gopher-sunglass-for-laptop' }})">For Laptop</nuxt-link></li>
         </ul>
       </div>
     </div>

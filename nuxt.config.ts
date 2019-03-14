@@ -1,30 +1,40 @@
-const name = 'Go Conference\'19 Summer in Fukuoka'
-const url = 'https://fukuoka.gocon.jp'
-const desc = 'Go and Enjoy Fukuoka ʕ⊙౪⚆ʔ'
+const pkg = require('./package')
+
+const dynamicPages = [
+  '/blog/brand-kit-releases',
+  '/blog/hello-gophers',
+  '/assets/gopher-noodle-for-phone',
+  '/assets/gopher-noodle-for-laptop',
+  '/assets/gopher-pattern-for-phone',
+  '/assets/gopher-pattern-for-laptop',
+  '/assets/gopher-sunglass-for-phone',
+  '/assets/gopher-sunglass-for-laptop'
+]
+const dynamicPagesWithLocale = dynamicPages.concat(dynamicPages.map((m) => { return `/ja${m}` }))
 
 const config = {
   mode: 'spa',
   head: {
-    title: name,
-    titleTemplate: `%s - ${name}`,
+    title: pkg.fullname,
+    titleTemplate: `%s - ${pkg.fullname}`,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no' },
-      { hid: 'description', name: 'description', content: desc },
+      { hid: 'description', name: 'description', content: pkg.description },
       { name: 'keywords', content: 'Go, Golang, Conference, GopherCon, Gopher, Fukuoka, 2019' },
-      { property: 'og:title', content: name },
+      { property: 'og:title', content: pkg.fullname },
       { property: 'og:type', content: 'article' },
-      { property: 'og:url', content: url },
-      { property: 'og:image', content: `${url}/icons/ogimage.png` },
-      { property: 'og:description', content: desc },
-      { property: 'og:site_name', content: name },
+      { property: 'og:url', content: pkg.homepage },
+      { property: 'og:image', content: `${pkg.homepage}/icons/ogimage.png` },
+      { property: 'og:description', content: pkg.description },
+      { property: 'og:site_name', content: pkg.fullname },
       { property: 'og:locale', content: 'ja_JP' },
       { property: 'twitter:card', content: 'summary_large_image' },
       { property: 'twitter:site', content: '@golangjp' },
-      { property: 'twitter:title', content: name },
-      { property: 'twitter:description', content: desc },
-      { property: 'twitter:url', content: url },
-      { property: 'twitter:image', content: `${url}/icons/ogimage.png` },
+      { property: 'twitter:title', content: pkg.fullname },
+      { property: 'twitter:description', content: pkg.description },
+      { property: 'twitter:url', content: pkg.homepage },
+      { property: 'twitter:image', content: `${pkg.homepage}/icons/ogimage.png` },
       // Icons generated: https://www.favicon-generator.org/
       { name: 'msapplication-TileColor', content: '#ffffff' },
       { name: 'msapplication-TileImage', content: '/icons/ms-icon-144x144.png' },
@@ -109,6 +119,11 @@ const config = {
     ]
   },
   axios: {
+  },
+  generate: {
+    fallback: true,
+    subFolders: true,
+    routes: dynamicPagesWithLocale
   },
   build: {
     extend(c: any) {

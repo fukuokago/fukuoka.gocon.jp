@@ -1,13 +1,15 @@
 {
-  "name": "fukuoka.gocon.jp",
+  "name": "go-conference-2019-in-fukuoka-japan",
+  "fullname": "Go Conference'19 Summer in Fukuoka",
   "version": "1.0.0",
-  "description": "Go Conference in Fukuoka",
+  "description": "Go and Enjoy Fukuoka ʕ⊙౪⚆ʔ",
+  "homepage": "https://fukuoka.gocon.jp",
   "author": "linyows",
   "private": true,
   "scripts": {
     "dev": "nuxt-ts",
     "build": "npm run clean && bin/webp.js && nuxt-ts build",
-    "clean": "rm -rf static/img/* && rm -rf dist/*",
+    "clean": "rm -rf dist/*",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
     "lint": "tslint --project .",
@@ -16,7 +18,7 @@
     "ci": "npm i && nuxt-ts build && npm run lint && npm audit",
     "dist": "npm run build && npm run dist:rsync && npm run dist:assets",
     "dist:rsync": "gsutil -m rsync -d -r dist gs://fukuoka.gocon.jp/",
-    "dist:assets": "gsutil setmeta -h 'Content-Type:image/png' -h 'Cache-Control:public, max-age=3600' -h 'Content-Disposition: attachment' gs://fukuoka.gocon.jp/assets/*",
+    "dist:assets": "gsutil setmeta -h 'Content-Type:image/png' -h 'Cache-Control:public, max-age=3600' -h 'Content-Disposition: attachment' gs://fukuoka.gocon.jp/download/*",
     "install:gsutil": "curl https://sdk.cloud.google.com | bash && exec -l $SHELL && gcloud init"
   },
   "dependencies": {
