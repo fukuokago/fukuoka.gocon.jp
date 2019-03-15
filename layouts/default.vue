@@ -145,6 +145,10 @@ ol.colored li:before {
   margin-right: .6em;
   font-family: 'Arvo', serif;
 }
+ul.references {
+  font-size: 1em;
+  padding-bottom: 3em;
+}
 li {
   line-height: 1.8;
 }

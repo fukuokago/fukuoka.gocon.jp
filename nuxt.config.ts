@@ -2,6 +2,19 @@ const name = 'Go Conference\'19 Summer in Fukuoka'
 const url = 'https://fukuoka.gocon.jp'
 const desc = 'Go and Enjoy Fukuoka ʕ⊙౪⚆ʔ'
 
+const d = [
+  '/blog/call-for-papers-is-open',
+  '/blog/brand-kit-releases',
+  '/blog/hello-gophers',
+  '/assets/gopher-noodle-phone',
+  '/assets/gopher-noodle-laptop',
+  '/assets/gophers-pattern-phone',
+  '/assets/gophers-pattern-laptop',
+  '/assets/gopher-sunglass-phone',
+  '/assets/gopher-sunglass-laptop'
+]
+const dynamicRoutes = d.concat(d.map((m) => { return `/ja/${m}` }))
+
 const config = {
   mode: 'spa',
   head: {
@@ -109,6 +122,12 @@ const config = {
     ]
   },
   axios: {
+  },
+  generate: {
+    dir: 'dist',
+    fallback: true,
+    subFolders: true,
+    routes: dynamicRoutes
   },
   build: {
     extend(c: any) {

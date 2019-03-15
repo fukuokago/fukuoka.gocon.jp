@@ -2,6 +2,7 @@
   <div class="latest-news">
     <h2>Latest News</h2>
 
+    <CallForPapersIsOpen titleTag="h3" />
     <BrandKitReleases titleTag="h3" />
     <HelloGophers titleTag="h3" />
   </div>
@@ -9,11 +10,13 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import CallForPapersIsOpen from '~/components/blog/CallForPapersIsOpen.vue'
 import HelloGophers from '~/components/blog/HelloGophers.vue'
 import BrandKitReleases from '~/components/blog/BrandKitReleases.vue'
 
 @Component({
   components: {
+    CallForPapersIsOpen,
     BrandKitReleases,
     HelloGophers
   }
