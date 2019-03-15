@@ -1,8 +1,8 @@
 <i18n>
 en:
   desc: |-
-    Call for paper is coming soon... We will use {papercall}{external} for paper calling.
-    The reason for using PaperCall.io has pros that form content is superior and reviewer feedback is easy.
+    Call for paper is open. We are using {papercall}{external} for paper calling.
+    The reason for using PaperCall.io has pros that form content is superior, anonymous submission and reviewer feedback is easy.
     To use PaperCall.io you need to create an account.
   goto_papercall: Apply to Talker(Go to PaperCall.io)
   types:
