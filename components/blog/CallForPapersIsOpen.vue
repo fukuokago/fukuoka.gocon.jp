@@ -32,10 +32,7 @@ ja:
     <p class="date">{{ $t('date') }}</p>
     <p v-for="(v) in $t('body')">{{ v }}</p>
     <ul class="references">
-      <li v-for="(v) in references">
-        {{ v.title }}<br />
-        <a :href="v.url"> {{ v.url }}</a>
-      </li>
+      <li v-for="(v) in references"><a :href="v.url">{{ v.title }}</a> by {{ v.author }}</li>
     </ul>
     <p>{{ $t('note') }}</p>
     <nuxt-link :to="localePath('cfp')" class="button is-inverted is-outlined">{{ $t('button') }}</nuxt-link>
@@ -45,6 +42,7 @@ ja:
 <script lang="ts">
 interface Reference {
   title: string,
+  author: string,
   url: string
 }
 
@@ -53,13 +51,17 @@ import { Component, Vue, Prop } from 'vue-property-decorator'
 export default class CallForPapersIsOpen extends Vue {
   @Prop() public titleTag!: string
   public references: Reference[] = [
-    { title: 'How to write a successful conference proposal by Karolina Szczur',
+    { title: 'How to write a successful conference proposal',
+        author: 'Karolina Szczur',
         url: 'https://medium.com/@fox/how-to-write-a-successful-conference-proposal-4461509d3e32' },
-    { title: 'How to write a successful conference proposal by Dave Cheney',
+    { title: 'How to write a successful conference proposal',
+        author: 'Dave Cheney',
         url: 'https://dave.cheney.net/2017/02/12/how-to-write-a-successful-conference-proposal' },
-    { title: 'Talking Tech: Getting Your Proposal Through the Door by Russ Olsen',
+    { title: 'Talking Tech: Getting Your Proposal Through the Door',
+        author: 'Russ Olsen',
         url: 'http://russolsen.com/articles/2012/06/21/acing-the-technical-talk-getting-your-proposal-through-the-door.html' },
-    { title: '登壇の可能性をあげる！カンファレンスプロポーザルの書き方のススメ - builderscon::blog by Daisuke Maki',
+    { title: '登壇の可能性をあげる！カンファレンスプロポーザルの書き方のススメ - builderscon::blog',
+        author: 'Daisuke Maki',
         url: 'https://blog.builderscon.io/entry/2017/05/09/090000' }
   ]
   get permalink(): string {
