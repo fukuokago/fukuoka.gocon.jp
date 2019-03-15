@@ -56,7 +56,7 @@ export default class PatternWall extends Vue {
   margin: 0;
   padding: 0;
   border: none;
-  opacity: 0.2;
+  opacity: 0.15;
 }
 
 @media (min-width: 801px) and (max-width: 1300px) {

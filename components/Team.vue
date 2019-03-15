@@ -20,10 +20,12 @@ ja:
       <a place="slack" href="https://slack.fukuokago.tech/">https://slack.fukuokago.tech</a>
     </i18n>
 
-    <div v-for="(m, i) in members" class="member">
-      <img :src=m.avatar />
-      <h3 class="name"><a :href=m.link><span class="text">@{{m.id}}</span><span class="icon"><i :class="'fab fa-' + m.icon"></i></span></a></h3>
-      <p class="role">{{m.roles.join(', ')}}</p>
+    <div class="members is-clearfix">
+      <div v-for="(m, i) in members" class="member">
+        <img :src=m.avatar />
+        <h3 class="name"><a :href=m.link><span class="text">@{{m.id}}</span><span class="icon"><i :class="'fab fa-' + m.icon"></i></span></a></h3>
+        <p class="role">{{m.roles.join(', ')}}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -79,7 +81,7 @@ export default class Team extends Vue {
 .name .icon {
   font-size: 2.5em;
   opacity: 0.3;
-  color: #999;
+  color: #00ADD8;
   position: absolute;
   left: 90px;
   top: 0;
