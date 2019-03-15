@@ -5,11 +5,11 @@ en:
   body:
     - Hi, Strong gophers. Now call for papers is open.
     - |-
-      Because you use PaperCall.io for application, anonymous posting and feedback are easy.
-      If you post early, you can receive feedback from reviewers.
-      In addition, as we set selection criteria for recruitment this time, it would be appreciated if you could refer to it.
+      We use PaperCall.io to easy anonymous review and feedback.
+      If you post proposal early, you can receive feedback from reviewers.
+      In addition, we have published the selection criteria this time, so please refer to it.
       Here is a great article on how to write a conference proposal.
-  note: Call for Papers period will be from today to April 30. We look forward to many applications!
+  note: The Call for Papers opens today and closes April 30st. We look forward to many proposals!
   button: Go to Call for Papers page
 ja:
   title: '登壇者の募集を開始しました'
@@ -19,7 +19,7 @@ ja:
     - |-
       応募には、PaperCall.ioを使うため、匿名投稿とフィードバックが簡単にできます。
       早めに投稿するとレビュアーからのフィードバックを受けることができます。
-      また、今回は募集に選択基準を設定していますので、参考にしていただければ幸いです。
+      また、今回は募集に選択基準を公開していますので、参考にしていただければ幸いです。
       カンファレンスプロポーサルの書き方を書いた素晴らしい記事も合わせてご紹介いたします。
   note: 募集期間は、本日から5月1日の日本時間9時までとなります。たくさんのご応募をお待ちしております！
   button: Call for Papersページへ
