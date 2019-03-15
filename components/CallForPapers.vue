@@ -26,7 +26,10 @@ en:
   supplement:
     title: Supplement
     list:
-      - Please tell me if you can speak Japanese
+      - Do not write about how great the Go anymore.
+      - Session for beginners is welcome.
+      - Please don't criticize other languages or give excessive product descriptions, instead please talk technical.
+      - Please tell me if you can speak Japanese.
   feedback:
     title: Feedback from reviewers
     body: |-
@@ -57,11 +60,11 @@ ja:
       - 影響力：プレゼンテーションのゴール（聴衆はプレゼンテーションを経てどんな新しいアイデア、テクニック、ツール、情報を持ちますか）
     note: この明確な選択基準は {gophercon}{external} のものを参考にさせていただきました。ありがとうございます。
   supplement:
-    title: 入力フォームの補足
+    title: 補足
     list:
-      - Elevator Pitch - いわゆる概要です。300文字でプレゼンの大枠を簡潔に記述してください
-      - Description - プレゼンの説明になります。おもに内容を具体的に記述してください
-      - Note - 例えば、あなたがプレゼンをするのにふさわしい理由や背景、または技術的な要件を記述してください
+      - もうGoの良さを説明する必要はありません
+      - ビギナー向けの内容はWelcomeです
+      - 他の言語批判や過度の製品説明はしないでください、テクニカルな内容をお願いします
   feedback:
     title: レビュアーからのフィードバック
     body: |-

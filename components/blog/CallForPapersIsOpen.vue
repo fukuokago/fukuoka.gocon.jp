@@ -53,13 +53,13 @@ import { Component, Vue, Prop } from 'vue-property-decorator'
 export default class CallForPapersIsOpen extends Vue {
   @Prop() public titleTag!: string
   public references: Reference[] = [
-    { title: 'How to write a successful conference proposal',
-        url: 'https://dave.cheney.net/2017/02/12/how-to-write-a-successful-conference-proposal' },
-    { title: 'How to write a successful conference proposal',
+    { title: 'How to write a successful conference proposal by Karolina Szczur',
         url: 'https://medium.com/@fox/how-to-write-a-successful-conference-proposal-4461509d3e32' },
-    { title: 'Talking Tech: Getting Your Proposal Through the Door',
+    { title: 'How to write a successful conference proposal by Dave Cheney',
+        url: 'https://dave.cheney.net/2017/02/12/how-to-write-a-successful-conference-proposal' },
+    { title: 'Talking Tech: Getting Your Proposal Through the Door by Russ Olsen',
         url: 'http://russolsen.com/articles/2012/06/21/acing-the-technical-talk-getting-your-proposal-through-the-door.html' },
-    { title: '登壇の可能性をあげる！カンファレンスプロポーザルの書き方のススメ - builderscon::blog',
+    { title: '登壇の可能性をあげる！カンファレンスプロポーザルの書き方のススメ - builderscon::blog by Daisuke Maki',
         url: 'https://blog.builderscon.io/entry/2017/05/09/090000' }
   ]
   get permalink(): string {
