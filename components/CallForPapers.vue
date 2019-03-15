@@ -29,7 +29,6 @@ en:
       - Do not write about how great the Go anymore.
       - Session for beginners is welcome.
       - Please don't criticize other languages or give excessive product descriptions, instead please talk technical.
-      - Please tell me if you can speak Japanese.
   feedback:
     title: Feedback from reviewers
     body: |-
@@ -40,6 +39,7 @@ ja:
     登壇者の募集を開始しています。応募には、{papercall}{external} を利用します。
     （PaperCall.ioは、予め用意されたされた入力フォーム内容が優れており、匿名応募機能やレビュアーからのフィードバックをしやすいというメリットがあります）
     PaperCall.ioを初めて利用される方にはお手数ですが、アカウント作成からお願いいたします。
+    もちろん、日本語で投稿して大丈夫です。
   goto_papercall: 応募する(PaperCall.ioへ)
   types:
     title: 発表種別
