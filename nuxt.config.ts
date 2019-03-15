@@ -1,6 +1,7 @@
 const pkg = require('./package')
 
 const dynamicPages = [
+  '/blog/call-for-papers-is-open',
   '/blog/brand-kit-releases',
   '/blog/hello-gophers',
   '/assets/gopher-noodle-for-phone',
@@ -121,6 +122,7 @@ const config = {
   axios: {
   },
   generate: {
+    dir: 'dist',
     fallback: true,
     subFolders: true,
     routes: dynamicPagesWithLocale
