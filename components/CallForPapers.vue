@@ -1,10 +1,10 @@
 <i18n>
 en:
   desc: |-
-    Call for paper is coming soon... We will use {papercall} {external} for paper calling.
-    The reason for using PaperCall.io has pros that form content is superior and organizer feedback is easy.
+    Call for paper is coming soon... We will use {papercall}{external} for paper calling.
+    The reason for using PaperCall.io has pros that form content is superior and reviewer feedback is easy.
     To use PaperCall.io you need to create an account.
-  goto_papercall: Go to PaperCall.io
+  goto_papercall: Apply to Talker(Go to PaperCall.io)
   types:
     title: Talk Types
     desc: There are 3 talk types. Please select the one that suits your presentation. Presentation will proceed on 2 tracks.
@@ -22,11 +22,11 @@ en:
       - Correctness. You’ve demonstrated knowledge of your topic. You don’t have to be an expert, but you are expected to be speaking from experience.
       - Achievability. You’ve thought about how to present your material in the time available.
       - Impact. The goal of the talk. What new idea, technique, tool, or information will the audience leave your presentation with?
-    note: "Note: This clear selection criterion is based on {gophercon} {external} 's one. Thank you."
+    note: "Note: This clear selection criterion is based on {gophercon}{external} 's one. Thank you."
   supplement:
     title: Supplement
     list:
-      - Nothing
+      - Please tell me if you can speak Japanese
   feedback:
     title: Feedback from reviewers
     body: |-
@@ -34,10 +34,10 @@ en:
       We recommend submitting early to receive early feedback from reviewers.
 ja:
   desc: |-
-    もうすぐ登壇の募集を開始します。募集への応募は、{papercall} {external} を利用します。
-    PaperCall.ioを使うのは、入力フォーム内容が優れていることと、Organizerからのフィードバックをしやすいからです。
-    PaperCall.ioを初めて利用される方にはお手数ですが、あらかじめアカウントを登録する必要があります。
-  goto_papercall: PaperCall.ioへ
+    登壇者の募集を開始しています。応募には、{papercall}{external} を利用します。
+    （PaperCall.ioは、予め用意されたされた入力フォーム内容が優れており、匿名応募機能やレビュアーからのフィードバックをしやすいというメリットがあります）
+    PaperCall.ioを初めて利用される方にはお手数ですが、アカウント作成からお願いいたします。
+  goto_papercall: 応募する(PaperCall.ioへ)
   types:
     title: 発表種別
     desc: 種別は3つありますので、プレゼンテーションにあったものを選択してください。なお、発表は2トラックで進行されます。
@@ -55,13 +55,13 @@ ja:
       - 正しさ：トピックに関する知見を持つこと証明している（専門家である必要はありませんが経験から話すことが期待されています）
       - 達成可能性：発表材料を有効時間内にどのように提示するか考えている
       - 影響力：プレゼンテーションのゴール（聴衆はプレゼンテーションを経てどんな新しいアイデア、テクニック、ツール、情報を持ちますか）
-    note: この明確な選択基準は {gophercon} {external} のものを参考にさせていただきました。ありがとうございます。
+    note: この明確な選択基準は {gophercon}{external} のものを参考にさせていただきました。ありがとうございます。
   supplement:
     title: 入力フォームの補足
     list:
-      - Elevator Pitch - ググっていただけるとわかりますがいわゆる概要になります。プレゼンの大枠を簡潔に記述してください
-      - Description - プレゼンの説明でおもに内容を記述します
-      - Note - 例えば、あなたがプレゼンをするのにふさわしい理由や背景または技術的な要件を記述してください
+      - Elevator Pitch - いわゆる概要です。300文字でプレゼンの大枠を簡潔に記述してください
+      - Description - プレゼンの説明になります。おもに内容を具体的に記述してください
+      - Note - 例えば、あなたがプレゼンをするのにふさわしい理由や背景、または技術的な要件を記述してください
   feedback:
     title: レビュアーからのフィードバック
     body: |-
@@ -77,7 +77,12 @@ ja:
       <span class="external" place="external"><i class="fas fa-external-link-alt"></i></span>
     </i18n>
 
-    <p class="goto-papercall"><a class="button large is-inverted is-outlined" href="https://www.papercall.io/gocon-jp-2019-fukuoka">{{ $t('goto_papercall') }}</a></p>
+    <p class="goto-papercall">
+      <a class="button large is-inverted is-outlined" href="https://www.papercall.io/gocon-jp-2019-fukuoka">
+        {{ $t('goto_papercall') }}
+        <span class="external" place="external"><i class="fas fa-external-link-alt"></i></span>
+      </a>
+    </p>
 
     <h3>{{ $t('types.title') }}</h3>
     <p>{{ $t('types.desc') }}</p>
@@ -104,6 +109,13 @@ ja:
     <ul class="colored">
       <li v-for="val in $t('supplement.list')">{{ val }}</li>
     </ul>
+
+    <p class="goto-papercall">
+      <a class="button large is-inverted is-outlined" href="https://www.papercall.io/gocon-jp-2019-fukuoka">
+        {{ $t('goto_papercall') }}
+        <span class="external" place="external"><i class="fas fa-external-link-alt"></i></span>
+      </a>
+    </p>
   </div>
 </template>
 

@@ -200,6 +200,7 @@ em {
 .external {
   font-size: .7em;
   opacity: 0.5;
+  margin-left: .3em;
 }
 
 @media (min-width: 801px) and (max-width: 1300px) {
