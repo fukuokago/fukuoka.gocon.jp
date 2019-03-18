@@ -1,14 +1,16 @@
 <i18n>
 en:
   description: |-
-    "Go Conference'19 Summer in Fukuoka" is managed by {fukuokago}, a Go community in Fukuoka and Tokyo {gocon} members. 
+    "Go Conference'19 Summer in Fukuoka" is managed by {fukuokago}{external},
+    a Go community in Fukuoka and Tokyo {gocon}{external} members. 
     If you could help us manage our events, please contact @linyows or @monochromegane.
-    Join to the Fukuoka.go slack team from here. 👉 {slack}
+    Join to the Fukuoka.go slack team from here. 👉 {slack}{external}
 ja:
   description: |-
-    "Go Conference'19 Summer in Fukuoka" は、東京の{gocon}メンバーと共に福岡のGoコミュニティである{fukuokago}によって運営いたします。
-    運営のお手伝いをしていただける方は、@linyows や @monochromegane へお気軽にお声掛けください。
-    Fukuoka.goのSlack TeamはこちらからJoinできます 👉 {slack}
+    "Go Conference'19 Summer in Fukuoka" は、
+    東京の{gocon}{external}メンバーと共に福岡のGoコミュニティである{fukuokago}{external}によって運営いたします。
+    もし、運営のお手伝いに興味がある方は、@linyows や @monochromegane へお気軽にお声掛けください。
+    Fukuoka.goのSlack TeamはこちらからJoinできます 👉 {slack}{external}
 </i18n>
 
 <template>
@@ -16,8 +18,9 @@ ja:
     <h2>Team</h2>
     <i18n path="description" tag="p">
       <a place="gocon" href="https://gocon.connpass.com/">Go Conference</a>
-      <a place="fukuokago" href="https://fukuokago.tech/">Fukuoka.go</a>
+      <a place="fukuokago" href="https://fukuokago.dev/">Fukuoka.go</a>
       <a place="slack" href="https://slack.fukuokago.tech/">https://slack.fukuokago.tech</a>
+      <span class="external" place="external"><i class="fas fa-external-link-alt"></i></span>
     </i18n>
 
     <div class="members is-clearfix">
@@ -33,8 +36,7 @@ ja:
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 
-@Component({
-})
+@Component
 export default class Team extends Vue {
   public members = [
     { id: 'deeeet',         roles: ['Organizer'],               icon: 'twitter', link: 'https://twitter.com/deeeet', avatar: 'https://avatars3.githubusercontent.com/u/1256183?s=120&v=4' },
