@@ -5,7 +5,7 @@ en:
   enjoy: "In Fukuoka, let's talk about various technologies through the Go programming language, learn from each other, have a good time, interact with developers! You will surely feel that Fukuoka is an attractive city for engineers by attending the conference."
   background: '"{go}" is been held from early in comparison with other one in the world and a significant event for Go community. Every year several hundreds of gophers attend the conference and interact through various sessions of Go.'
   announce: 'At last this conference will be held in Fukuoka. {enjoy}'
-  theme: 'Theme is {words}'
+  theme: 'Catchphrase is {words}'
 ja:
   callforpapers: 登壇募集に応募する
   registration: 参加登録をする
