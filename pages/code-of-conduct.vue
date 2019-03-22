@@ -9,16 +9,17 @@ import { Component, Vue } from 'vue-property-decorator'
 import CodeOfConduct from '~/components/CodeOfConduct.vue'
 
 @Component({
-  head() {
-    return {
-      title: 'Code of Conduct',
-    }
-  },
   components: {
     CodeOfConduct
   }
 })
-export default class PageCodeOfConduct extends Vue {}
+export default class PageCodeOfConduct extends Vue {
+  private head() {
+    return {
+      title: 'Code of Conduct'
+    }
+  }
+}
 </script>
 
 <style scoped>

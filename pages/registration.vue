@@ -9,16 +9,17 @@ import { Component, Vue } from 'vue-property-decorator'
 import Registration from '~/components/Registration.vue'
 
 @Component({
-  head() {
-    return {
-      title: 'Registration',
-    }
-  },
   components: {
     Registration
   }
 })
-export default class PageRegistration extends Vue {}
+export default class PageRegistration extends Vue {
+  private head() {
+    return {
+      title: 'Registration'
+    }
+  }
+}
 </script>
 
 <style scoped>

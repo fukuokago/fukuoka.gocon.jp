@@ -10,16 +10,7 @@ import HelloGophers from '~/components/blog/HelloGophers.vue'
 import BrandKitReleases from '~/components/blog/BrandKitReleases.vue'
 import CallForPapersIsOpen from '~/components/blog/CallForPapersIsOpen.vue'
 
-@Component({
-  head() {
-    return {
-      title: 'Blog',
-    }
-  },
-  async asyncData({ params }: any) {
-    return { slug: params.slug }
-  }
-})
+@Component
 export default class PageBlog extends Vue {
   public slug!: string
 
@@ -32,6 +23,16 @@ export default class PageBlog extends Vue {
       case 'hello-gophers':
         return HelloGophers
     }
+  }
+
+  private head() {
+    return {
+      title: 'Blog'
+    }
+  }
+
+  private async asyncData({ params }: any) {
+    return { slug: params.slug }
   }
 }
 </script>

@@ -9,16 +9,17 @@ import { Component, Vue } from 'vue-property-decorator'
 import Talks from '~/components/Talks.vue'
 
 @Component({
-  head() {
-    return {
-      title: 'Talks',
-    }
-  },
   components: {
     Talks
   }
 })
-export default class PageTalks extends Vue {}
+export default class PageTalks extends Vue {
+  private head() {
+    return {
+      title: 'Talks'
+    }
+  }
+}
 </script>
 
 <style scoped>

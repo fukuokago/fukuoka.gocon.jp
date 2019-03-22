@@ -9,16 +9,17 @@ import { Component, Vue } from 'vue-property-decorator'
 import Fukuoka from '~/components/Fukuoka.vue'
 
 @Component({
-  head() {
-    return {
-      title: 'Fukuoka',
-    }
-  },
   components: {
     Fukuoka
   }
 })
-export default class PageFukuoka extends Vue {}
+export default class PageFukuoka extends Vue {
+  private head() {
+    return {
+      title: 'Fukuoka'
+    }
+  }
+}
 </script>
 
 <style scoped>

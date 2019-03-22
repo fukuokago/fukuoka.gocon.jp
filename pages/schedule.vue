@@ -9,16 +9,17 @@ import { Component, Vue } from 'vue-property-decorator'
 import Schedule from '~/components/Schedule.vue'
 
 @Component({
-  head() {
-    return {
-      title: 'Schedule',
-    }
-  },
   components: {
     Schedule
   }
 })
-export default class PageSchedule extends Vue {}
+export default class PageSchedule extends Vue {
+  private head() {
+    return {
+      title: 'Schedule'
+    }
+  }
+}
 </script>
 
 <style scoped>

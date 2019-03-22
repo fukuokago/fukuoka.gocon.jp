@@ -21,12 +21,6 @@ import Fukuoka from '~/components/Fukuoka.vue'
 import CallForPapers from '~/components/CallForPapers.vue'
 
 @Component({
-  head() {
-    return {
-      title: 'Go Conference‘19 Summer in Fukuoka 🍜',
-      titleTemplate: '%s'
-    }
-  },
   components: {
     TheHome,
     News,
@@ -34,7 +28,14 @@ import CallForPapers from '~/components/CallForPapers.vue'
     CallForPapers
   }
 })
-export default class PageIndex extends Vue {}
+export default class PageIndex extends Vue {
+  private head() {
+    return {
+      title: 'Go Conference‘19 Summer in Fukuoka 🍜',
+      titleTemplate: '%s'
+    }
+  }
+}
 </script>
 
 <style>

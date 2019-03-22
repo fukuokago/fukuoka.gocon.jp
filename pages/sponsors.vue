@@ -9,16 +9,17 @@ import { Component, Vue } from 'vue-property-decorator'
 import Sponsors from '~/components/Sponsors.vue'
 
 @Component({
-  head() {
-    return {
-      title: 'Sponsors',
-    }
-  },
   components: {
     Sponsors
   }
 })
-export default class PageSponsors extends Vue {}
+export default class PageSponsors extends Vue {
+  private head() {
+    return {
+      title: 'Sponsors'
+    }
+  }
+}
 </script>
 
 <style scoped>

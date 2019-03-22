@@ -21,8 +21,9 @@ ja:
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 
-@Component({
-  async asyncData({ params }: any) {
+@Component
+export default class PageAssets extends Vue {
+  private async asyncData({ params }: any) {
     const kepabToPascal = ((s: string) => {
       return s.replace(/(^\w|\-\w)/g, (m) => {
         return m.length === 1 ? m[0].toUpperCase() : ` ${m[1].toUpperCase()}`
@@ -35,8 +36,7 @@ import { Component, Vue } from 'vue-property-decorator'
       downloadPath: `/download/${slug}.png`
     }
   }
-})
-export default class PageAssets extends Vue {}
+}
 </script>
 
 <style scoped>

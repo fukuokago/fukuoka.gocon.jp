@@ -11,17 +11,18 @@ import Team from '~/components/Team.vue'
 import Contact from '~/components/Contact.vue'
 
 @Component({
-  head() {
-    return {
-      title: 'Team',
-    }
-  },
   components: {
     Team,
     Contact
   }
 })
-export default class PageTeam extends Vue {}
+export default class PageTeam extends Vue {
+  private head() {
+    return {
+      title: 'Team'
+    }
+  }
+}
 </script>
 
 <style scoped>

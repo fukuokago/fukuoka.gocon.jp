@@ -9,16 +9,17 @@ import { Component, Vue } from 'vue-property-decorator'
 import CallForPapers from '~/components/CallForPapers.vue'
 
 @Component({
-  head() {
-    return {
-      title: 'Call for Papers',
-    }
-  },
   components: {
     CallForPapers
   }
 })
-export default class PageCFP extends Vue {}
+export default class PageCFP extends Vue {
+  private head() {
+    return {
+      title: 'Code of Papers'
+    }
+  }
+}
 </script>
 
 <style scoped>

@@ -9,16 +9,17 @@ import { Component, Vue } from 'vue-property-decorator'
 import Brand from '~/components/Brand.vue'
 
 @Component({
-  head() {
-    return {
-      title: 'Brand',
-    }
-  },
   components: {
     Brand
   }
 })
-export default class PageBrand extends Vue {}
+export default class PageBrand extends Vue {
+  private head() {
+    return {
+      title: 'Brand'
+    }
+  }
+}
 </script>
 
 <style scoped>
