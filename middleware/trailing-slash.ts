@@ -1,4 +1,4 @@
-import {Context} from '@nuxt/vue-app'
+import {Context} from 'nuxt'
 
 // Google Cloud Strorage requires add trailing slash.
 export default (ctx: Context) => {
