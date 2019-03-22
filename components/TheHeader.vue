@@ -2,9 +2,11 @@
 en:
   date: July 13th, 2019
   place: "@Tenjin Fukuoka, Japan"
+  sponsor: Become a Sponsor
 ja:
   date: July 13th, 2019
   place: "@Tenjin Fukuoka, Japan"
+  sponsor: スポンサーになる
 </i18n>
 
 <template>
@@ -28,7 +30,7 @@ ja:
     </div>
 
     <div class="attention">
-      <p><nuxt-link class="button is-small is-inverted is-outlined" :to="localePath('call-for-sponsors')">Become a Sponsor</nuxt-link></p>
+      <p><a class="button is-small is-inverted is-outlined" href="https://docs.google.com/forms/d/17v0fB3UxTLpf6G_th-TMyJTSOBMgVBlPogNk0iubxnQ/">{{ $t('sponsor') }}</a></p>
     </div>
 
     <p class="day"><span class="date">{{$t('date')}}</span> <span class="place">{{$t('place')}}</span></p>

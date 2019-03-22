@@ -1,18 +1,18 @@
 <i18n>
 en:
   description: |-
-    Call for sponsors is closed yet. Sponsor will be posted sequentially as soon as it is decided.
-  cfs_button: Call for Sponsors
+    Now call for sponsors is open. Sponsor will be posted sequentially as soon as it is decided.
+  cfs_button: Become a Sponsor
 ja:
-  description: 'スポンサー募集がまだ開始されていません。スポンサーは決まり次第順次掲載予定です。'
-  cfs_button: スポンサー募集
+  description: '現在、スポンサーを募集しています。スポンサーは決まり次第順次掲載予定です。'
+  cfs_button: スポンサーになる
 </i18n>
 
 <template>
   <div class="sponsors">
     <h2>Sponsors</h2>
     <p>{{ $t('description') }}</p>
-    <p><nuxt-link class="button is-inverted is-outlined" :to="localePath('call-for-sponsors')">{{ $t('cfs_button') }}</nuxt-link></p>
+    <p><a class="button is-inverted is-outlined" href="https://docs.google.com/forms/d/17v0fB3UxTLpf6G_th-TMyJTSOBMgVBlPogNk0iubxnQ/">{{ $t('cfs_button') }}</a></p>
   </div>
 </template>
 
