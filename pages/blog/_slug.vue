@@ -9,6 +9,7 @@ import { Component, Vue } from 'vue-property-decorator'
 import HelloGophers from '~/components/blog/HelloGophers.vue'
 import BrandKitReleases from '~/components/blog/BrandKitReleases.vue'
 import CallForPapersIsOpen from '~/components/blog/CallForPapersIsOpen.vue'
+import CallForSponsorsIsOpen from '~/components/blog/CallForSponsorsIsOpen.vue'
 
 @Component
 export default class PageBlog extends Vue {
@@ -16,6 +17,8 @@ export default class PageBlog extends Vue {
 
   get computedBlog() {
     switch (this.slug) {
+      case 'call-for-sponsors-is-open':
+        return CallForSponsorsIsOpen
       case 'call-for-papers-is-open':
         return CallForPapersIsOpen
       case 'brand-kit-releases':

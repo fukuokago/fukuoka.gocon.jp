@@ -1,6 +1,7 @@
 const pkg = require('./package')
 
 const dynamicPages = [
+  '/blog/call-for-sponsors-is-open',
   '/blog/call-for-papers-is-open',
   '/blog/brand-kit-releases',
   '/blog/hello-gophers',
