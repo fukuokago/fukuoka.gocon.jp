@@ -3,12 +3,12 @@ en:
   title: 'Call for Sponsors is open'
   date: 'Mar 25, 2019'
   body:
-    - Call for sponsors is open now. To make our conference a better experience.
+    - Call for sponsors is open now to make our conference a better experience.
     - |-
-      Again, as we have also described sponsorships,
+      As we have also described sponsorships,
       we are organizing conferences as volunteers, so we avoid managing money balances as much as possible.
       So, we ask the sponsors to provide the necessary goods, not money support.
-      The experience of those participating in the conference depends on the sponsors.
+      Your support will make the experience of people participating in the conference better.
       Please cooperate with us to make Go Conference'19 Summer in Fukuoka successful.
   button: Become a Sponsor
 ja:
@@ -18,7 +18,7 @@ ja:
     - カンファレンスに参加していただく人々の体験を、より良いものにするために、スポンサーの募集をいたします。
     - |-
       このカンファレンスは有志のボランティアによって開催しようとしています。
-      スポンサーシップにも記述していますが、私たちがお金の収支を管理しないでいいようにスポンサーへは、お金での支援でなく必要な品物の提供をお願いしています。
+      スポンサーシップにも記述していますが、私たちがお金の収支を管理しないでいいように、お金での支援でなく必要な品物の提供をお願いしています。
       カンファレンスに参加する人たちの体験は、スポンサーの皆様にかかっています。
       どうぞ、私たちにご協力お願いします。
       また、一緒にGo Conference'19 Summer in Fukuokaを成功させましょう。
