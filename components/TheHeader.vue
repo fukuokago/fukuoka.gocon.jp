@@ -42,7 +42,7 @@ ja:
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'nuxt-property-decorator'
 import { Getter } from 'vuex-class'
 import Logo from '~/components/Logo.vue'
 import TheNav from '~/components/TheNav.vue'

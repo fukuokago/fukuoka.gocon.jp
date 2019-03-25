@@ -9,7 +9,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'nuxt-property-decorator'
 import CallForSponsorsIsOpen from '~/components/blog/CallForSponsorsIsOpen.vue'
 import CallForPapersIsOpen from '~/components/blog/CallForPapersIsOpen.vue'
 import BrandKitReleases from '~/components/blog/BrandKitReleases.vue'

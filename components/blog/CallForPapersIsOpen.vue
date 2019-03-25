@@ -46,7 +46,7 @@ interface Reference {
   url: string
 }
 
-import { Component, Vue, Prop } from 'vue-property-decorator'
+import { Component, Vue, Prop } from 'nuxt-property-decorator'
 @Component
 export default class CallForPapersIsOpen extends Vue {
   @Prop() public titleTag!: string

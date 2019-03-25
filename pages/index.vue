@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'nuxt-property-decorator'
 import TheHome from '~/components/TheHome.vue'
 import News from '~/components/News.vue'
 import Fukuoka from '~/components/Fukuoka.vue'
