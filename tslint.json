@@ -1,0 +1,17 @@
+{
+  "defaultSeverity": "error",
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**",
+      "dist/**",
+      "bin/**",
+      "lang/**",
+      "middleware/**",
+      "server/**",
+      "store/**",
+      "plugins/**",
+      "*.config.ts",
+      "static/sw.js"
+    ]
+  }
+}
