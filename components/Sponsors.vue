@@ -13,6 +13,12 @@ en:
         blog service "JUGEM" Is a technology company that provides a variety of personalized Internet services.
       url: https://pepabo.com/en/
       logo: pepabo.svg
+    - name: Fusic Co.,Ltd.
+      desc: |-
+        株式会社Fusicは福岡を拠点に、テクノロジーコンサルティングやWebシステムの開発を中心に事業を展開しています。
+        100%自社開発にこだわり、他にはない自由な発想・提案で、お客様の事業の成長に貢献しています。
+      url: https://fusic.co.jp
+      logo: fusic.svg
 ja:
   description: |-
     現在、スポンサーを募集しています。
@@ -27,6 +33,12 @@ ja:
         様々な個人向けインターネットサービスを提供するテクノロジー企業です。
       url: https://recruit.pepabo.com/
       logo: pepabo.svg
+    - name: 株式会社Fusic
+      desc: |-
+        株式会社Fusicは福岡を拠点に、テクノロジーコンサルティングやWebシステムの開発を中心に事業を展開しています。
+        100%自社開発にこだわり、他にはない自由な発想・提案で、お客様の事業の成長に貢献しています。
+      url: https://fusic.co.jp
+      logo: fusic.svg
 </i18n>
 
 <template>
