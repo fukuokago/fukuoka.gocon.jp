@@ -6,6 +6,9 @@
     <div class="container">
       <News/>
     </div>
+    <div class="container">
+      <Sponsors/>
+    </div>
     <Fukuoka/>
     <div class="container">
       <CallForPapers/>
@@ -17,6 +20,7 @@
 import { Component, Vue } from 'nuxt-property-decorator'
 import TheHome from '~/components/TheHome.vue'
 import News from '~/components/News.vue'
+import Sponsors from '~/components/Sponsors.vue'
 import Fukuoka from '~/components/Fukuoka.vue'
 import CallForPapers from '~/components/CallForPapers.vue'
 
@@ -24,6 +28,7 @@ import CallForPapers from '~/components/CallForPapers.vue'
   components: {
     TheHome,
     News,
+    Sponsors,
     Fukuoka,
     CallForPapers
   }
