@@ -13,12 +13,28 @@ en:
         blog service "JUGEM" Is a technology company that provides a variety of personalized Internet services.
       url: https://pepabo.com/en/
       logo: pepabo.svg
+    - name: Circulation, Inc.
+      desc: |-
+      url: https://circu.co.jp/
+      logo: circulation.svg
+    - name: teamLab Inc.
+      desc: |-
+      url: https://www.team-lab.com/
+      logo: teamlab.svg
+    - name: DeNA Co., Ltd.
+      desc: |-
+      url: https://dena.com/jp/recruit/career/engineer/
+      logo: dena.svg
     - name: Fusic Co.,Ltd.
       desc: |-
         株式会社Fusicは福岡を拠点に、テクノロジーコンサルティングやWebシステムの開発を中心に事業を展開しています。
         100%自社開発にこだわり、他にはない自由な発想・提案で、お客様の事業の成長に貢献しています。
       url: https://fusic.co.jp
       logo: fusic.svg
+    - name: Nulab Inc.
+      desc: |-
+      url: https://nulab.com/en/about/
+      logo: nulab.svg
 ja:
   description: |-
     現在、スポンサーを募集しています。
@@ -33,12 +49,28 @@ ja:
         様々な個人向けインターネットサービスを提供するテクノロジー企業です。
       url: https://recruit.pepabo.com/
       logo: pepabo.svg
+    - name: 株式会社サーキュレーション
+      desc: |-
+      url: https://circu.co.jp/
+      logo: circulation.svg
+    - name: チームラボ株式会社
+      desc: |-
+      url: https://www.team-lab.com/
+      logo: teamlab.svg
+    - name: 株式会社ディー・エヌ・エー
+      desc: |-
+      url: https://dena.com/jp/recruit/career/engineer/
+      logo: dena.svg
     - name: 株式会社Fusic
       desc: |-
         株式会社Fusicは福岡を拠点に、テクノロジーコンサルティングやWebシステムの開発を中心に事業を展開しています。
         100%自社開発にこだわり、他にはない自由な発想・提案で、お客様の事業の成長に貢献しています。
       url: https://fusic.co.jp
       logo: fusic.svg
+    - name: 株式会社ヌーラボ
+      desc: |-
+      url: https://nulab.com/ja/about/
+      logo: nulab.svg
 </i18n>
 
 <template>
