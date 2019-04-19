@@ -1,6 +1,6 @@
 <i18n>
 en:
-  title: 'Sponsors is published'
+  title: 'Sponsors are published'
   date: 'Apr 19, 2019'
   body:
     - We published that our sponsorship companies.
@@ -44,10 +44,10 @@ ja:
 import { Component, Vue, Prop } from 'nuxt-property-decorator'
 
 @Component
-export default class SponsorsIsPublished extends Vue {
+export default class SponsorsArePublished extends Vue {
   @Prop() public titleTag!: string
   get permalink(): string {
-    return this.localePath({ name: 'blog-slug', params: { slug: 'sponsors-is-published' } })
+    return this.localePath({ name: 'blog-slug', params: { slug: 'sponsors-are-published' } })
   }
 }
 </script>

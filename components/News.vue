@@ -2,7 +2,7 @@
   <div class="latest-news">
     <h2>Latest News</h2>
 
-    <SponsorsIsPublished titleTag="h3" />
+    <SponsorsArePublished titleTag="h3" />
     <CallForSponsorsIsOpen titleTag="h3" />
     <CallForPapersIsOpen titleTag="h3" />
   </div>
@@ -10,13 +10,13 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-import SponsorsIsPublished from '~/components/blog/SponsorsIsPublished.vue'
+import SponsorsArePublished from '~/components/blog/SponsorsArePublished.vue'
 import CallForSponsorsIsOpen from '~/components/blog/CallForSponsorsIsOpen.vue'
 import CallForPapersIsOpen from '~/components/blog/CallForPapersIsOpen.vue'
 
 @Component({
   components: {
-    SponsorsIsPublished,
+    SponsorsArePublished,
     CallForSponsorsIsOpen,
     CallForPapersIsOpen
   }
