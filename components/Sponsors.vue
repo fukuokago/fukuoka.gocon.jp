@@ -80,9 +80,9 @@ ja:
     <p><a class="button is-inverted is-outlined" href="https://docs.google.com/forms/d/17v0fB3UxTLpf6G_th-TMyJTSOBMgVBlPogNk0iubxnQ/">{{ $t('cfs_button') }}</a></p>
 
     <div v-for="(s) in $t('sponsors')">
-      <div class="sponsor">
-        <p class="sponsor-logo"><a :ref="s.url"><img :src="'/sponsors/' + s.logo" /></a></p>
-        <p class="sponsor-name"><a :ref="s.url">{{ s.name }}</a>
+      <div v-if="s.desc != ''" class="sponsor">
+        <p class="sponsor-logo"><a :href="s.url"><img :src="'/sponsors/' + s.logo" /></a></p>
+        <p class="sponsor-name"><a :href="s.url">{{ s.name }}</a>
           <span class="external" place="external"><i class="fas fa-external-link-alt"></i></span></p>
         <p class="sponsor-desc">{{ s.desc }}</p>
       </div>
