@@ -27,8 +27,8 @@ en:
       logo: dena.svg
     - name: Fusic Co.,Ltd.
       desc: |-
-        株式会社Fusicは福岡を拠点に、テクノロジーコンサルティングやWebシステムの開発を中心に事業を展開しています。
-        100%自社開発にこだわり、他にはない自由な発想・提案で、お客様の事業の成長に貢献しています。
+        Fusic Co., Ltd., based in Fukuoka, expands businesses focusing on technology consulting and Web system development.
+        We are committed to 100% in-house development and contribute to the growth of our customers' businesses with unique ideas and suggestions.
       url: https://fusic.co.jp
       logo: fusic.svg
     - name: Nulab Inc.
