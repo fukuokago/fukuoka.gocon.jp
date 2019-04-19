@@ -33,7 +33,7 @@ en:
       logo: fusic.svg
     - name: Nulab Inc.
       desc: |-
-      url: https://nulab.com/en/about/
+      url: https://nulab.com/about/
       logo: nulab.svg
 ja:
   description: |-
