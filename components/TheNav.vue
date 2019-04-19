@@ -1,3 +1,12 @@
+<i18n>
+en:
+  sponsor: Become a Sponsor
+  gocon: Go Conference Tokyo
+ja:
+  sponsor: スポンサーになる
+  gocon: Go Conference 東京
+</i18n>
+
 <template>
   <nav class="nav">
     <div class="horizontal">
@@ -15,6 +24,11 @@
       <ul>
         <li v-for="(link, i) in links" v-on:click="toggleDrawer()" v-if="link.visible"><nuxt-link v-if="link.visible" :to="localePath(link.to)">{{ link.label }}</nuxt-link> </li>
       </ul>
+
+      <div class="attention">
+        <a class="button is-small is-inverted is-outlined" href="https://docs.google.com/forms/d/17v0fB3UxTLpf6G_th-TMyJTSOBMgVBlPogNk0iubxnQ/">{{ $t('sponsor') }}</a>
+        <a class="button is-small is-inverted is-outlined" href="https://gocon.jp/">{{ $t('gocon') }}</a>
+      </div>
 
       <div class="lang" v-on:click="toggleDrawer()">
         <Lang stylePClass="lang__drawer" styleAClass="button is-inverted is-outlined"/>
@@ -88,7 +102,7 @@ export default class TheNav extends Vue {
 .vertical {
   background-color: #000;
 }
-.vertical a {
+.vertical ul a {
   opacity: 0.6;
   border: none;
   font-family: 'Arvo', serif;
@@ -98,7 +112,7 @@ export default class TheNav extends Vue {
   cursor: pointer;
   padding: 1em 0;
 }
-.vertical a:hover {
+.vertical ul a:hover {
   opacity: 1;
 }
 .vertical ul {
@@ -108,6 +122,18 @@ export default class TheNav extends Vue {
 }
 .vertical li {
   border-bottom: 1px solid #444;
+}
+.vertical .attention {
+  padding: 2em 0 1em;
+  text-align: center;
+}
+.vertical .attention .button {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.vertical .attention .button:hover {
+  color: #00ADD8;
+  border-color: #00ADD8;
 }
 .vertical .lang {
   font-size: .8em;

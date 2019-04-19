@@ -3,10 +3,12 @@ en:
   date: July 13th, 2019
   place: "@Tenjin Fukuoka, Japan"
   sponsor: Become a Sponsor
+  gocon: Go Conference Tokyo
 ja:
   date: July 13th, 2019
   place: "@Tenjin Fukuoka, Japan"
   sponsor: スポンサーになる
+  gocon: Go Conference 東京
 </i18n>
 
 <template>
@@ -30,7 +32,8 @@ ja:
     </div>
 
     <div class="attention">
-      <p><a class="button is-small is-inverted is-outlined" href="https://docs.google.com/forms/d/17v0fB3UxTLpf6G_th-TMyJTSOBMgVBlPogNk0iubxnQ/">{{ $t('sponsor') }}</a></p>
+      <a class="button is-small is-inverted is-outlined" href="https://docs.google.com/forms/d/17v0fB3UxTLpf6G_th-TMyJTSOBMgVBlPogNk0iubxnQ/">{{ $t('sponsor') }}</a>
+      <a class="button is-small is-inverted is-outlined" href="https://gocon.jp/">{{ $t('gocon') }}</a>
     </div>
 
     <p class="day"><span class="date">{{$t('date')}}</span> <span class="place">{{$t('place')}}</span></p>
