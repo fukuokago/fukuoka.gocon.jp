@@ -1,12 +1,12 @@
 <i18n>
 en:
-  date: July 13th, 2019
-  place: "@Tenjin Fukuoka, Japan"
+  date: July 13th
+  place: "@The Fukuoka Growth Next, in Japan"
   sponsor: Become a Sponsor
   gocon: Go Conference Tokyo
 ja:
-  date: July 13th, 2019
-  place: "@Tenjin Fukuoka, Japan"
+  date: July 13th
+  place: "@The Fukuoka Growth Next, in Japan"
   sponsor: スポンサーになる
   gocon: Go Conference 東京
 </i18n>

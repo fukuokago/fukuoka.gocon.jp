@@ -1,8 +1,8 @@
 <i18n>
 en:
-  schedule: 'July 13th, 2019 @ Tenjin Fukuoka, Japan'
+  schedule: 'July 13th (10:00-19:00) @ The Fukuoka Growth Next | Fukuoka, Japan'
 ja:
-  schedule: '2019年7月13日 福岡市天神某所で開催予定'
+  schedule: '7月13日 10:00-19:00 | 福岡市中央区天神の Fukuoka Growth Next で開催'
 </i18n>
 
 <template>
