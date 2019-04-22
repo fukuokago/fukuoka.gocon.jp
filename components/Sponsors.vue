@@ -174,8 +174,8 @@ export default class Sponsors extends Vue {
   margin: 12% 0 0;
 }
 .sponsor.nulab img {
-  width: 86%;
-  margin: 8% 7% 0;
+  width: 78%;
+  margin: 8% 11% 0;
 }
 
 .simple .sponsor {
