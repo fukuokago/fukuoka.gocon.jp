@@ -145,8 +145,6 @@ export default class Sponsors extends Vue {
 }
 .sponsor-desc {
   font-size: .85em;
-  text-align: justify;
-  text-justify: inter-ideograph;
 }
 .note {
   clear: both;
