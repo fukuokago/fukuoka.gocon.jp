@@ -1,7 +1,7 @@
 <i18n>
 en:
   title: 'Sponsors are published'
-  date: 'Apr 19, 2019'
+  date: 'Apr 22, 2019'
   body:
     - We published that our sponsorship companies.
     - |-
@@ -15,7 +15,7 @@ en:
     - Subbmit to CFP
 ja:
   title: 'スポンサーを公開しました'
-  date: '2019-04-19'
+  date: '2019-04-22'
   body:
     - 私たちとスポンサーシップを結んでいただいた企業を公開しました。
     - |-
