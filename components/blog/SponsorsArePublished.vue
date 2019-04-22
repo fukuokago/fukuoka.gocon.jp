@@ -6,7 +6,7 @@ en:
     - We published that our sponsorship companies.
     - |-
       Thank you some companies for sponsorship.
-      We are still calling for sponsors because there is empty in sponsorship menu.
+      We are still calling for sponsors because there are a few sponsorship menu available.
       And you can have a proposals other than the sponsor menu.
       Please contact to us.
     - It will be another week until the CFP deadline. Please feel free to register just the title and outline.
