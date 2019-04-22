@@ -95,7 +95,7 @@ ja:
   <div class="sponsors is-clearfix">
     <h2>Sponsors</h2>
     <p>{{ $t('description') }}</p>
-    <p><a class="button is-inverted is-outlined" href="https://docs.google.com/forms/d/17v0fB3UxTLpf6G_th-TMyJTSOBMgVBlPogNk0iubxnQ/">{{ $t('cfs_button') }}</a></p>
+    <p class="goto-becomeasponsor"><a class="button large is-inverted is-outlined" href="https://docs.google.com/forms/d/17v0fB3UxTLpf6G_th-TMyJTSOBMgVBlPogNk0iubxnQ/">💪 {{ $t('cfs_button') }}</a></p>
 
     <div v-for="(s) in $t('sponsors')">
       <div v-if="s.desc != ''" :class="['sponsor', s.slug]">
@@ -110,12 +110,13 @@ ja:
   </div>
 </template>
 
-<style scoped>
+<style>
 .sponsor {
   width: 280px;
   height: 480px;
   float: left;
   margin: 0 3em 3em 0;
+  padding: 0;
   overflow: hidden;
 }
 .sponsor-logo {
@@ -135,48 +136,57 @@ ja:
 }
 .sponsor-desc {
   font-size: .85em;
+  text-align: justify;
+  text-justify: inter-ideograph;
 }
 .note {
   clear: both;
   font-size: .7em;
   text-align: center;
-  padding-top: 2em;
+  padding: 2em .6em 1em 0;
   letter-spacing: .3em;
+}
+.goto-becomeasponsor {
+  text-align: center;
+  margin-bottom: 2em;
 }
 
 .sponsor.circulation img {
   width: 86%;
-  margin: 16% 7% 0;
+  margin: 8% 7% 0;
 }
 
 @media (min-width: 501px) and (max-width: 800px) {
   .sponsor {
-    width: 240px;
-    height: 240px;
-    padding: 0 1em 1em 0;
+    width: 46%;
+    margin: 0 4% 0 0;
+    overflow: visible;
   }
   .sponsor-logo {
     width: 240px;
     height: 240px;
+    overflow: visible;
   }
   .sponsor-name,
   .sponsor-desc {
-    display: none;
+    display: block;
   }
 }
 @media (max-width: 500px) {
   .sponsor {
-    width: 170px;
-    height: 170px;
-    margin: 0 0 1em;
+    width: 100%;
+    padding: 0 0 1em;
+    overflow: visible;
+    float: none;
   }
   .sponsor-logo {
-    width: 170px;
-    height: 170px;
+    width: 100%;
+    height: auto;
+    overflow: visible;
   }
   .sponsor-name,
   .sponsor-desc {
-    display: none;
+    display: block;
   }
 }
 </style>
