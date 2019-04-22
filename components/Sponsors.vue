@@ -21,12 +21,15 @@ en:
         We have an in-house engineer organization and work on new web service development.
       url: https://circu.co.jp/
       slug: circulation
-      ext: png
+      ext: svg
     - name: teamLab Inc.
       desc: |-
+        teamLab (f. 2001) is an art collective, interdisciplinary group of ultratechnologists whose collaborative practice seeks to navigate the confluence of art,
+        science, technology, design and the natural world.
+        Various specialists such as artists, programmers, engineers, CG animators, mathematicians and architects form teamLab.
       url: https://www.team-lab.com/
       slug: teamlab
-      ext: svg
+      ext: png
     - name: DeNA Co., Ltd.
       desc: |-
         DeNA (pronounced “D-N-A”) develops and operates a broad range of services including games, automotive, healthcare, sports and other diversified offerings.
@@ -43,10 +46,16 @@ en:
       ext: svg
     - name: Nulab Inc.
       desc: |-
-        株式会社ヌーラボは、福岡に本社を構え、国内3拠点と海外3拠点(ニューヨーク、アムステルダム、シンガポール)に拠点を展開している企業です。
-        「Backlog」「Cacoo」「Typetalk」の3サービスを通して、仕事の中のコラボレーションをより効率的に楽しくしていきます。
+        Nulab Inc. is the company has HQ office in Fukuoka, with 3 offices in Japan and 3 office overseas (New York, Amsterdam, Singapore).
+        We are making collaboration in everyone's work more enjoyable and more efficient, through 3 services "Backlog", "Cacoo" and "Typetalk".
       url: https://nulab.com/about/
       slug: nulab
+      ext: svg
+    - name: Mercari, Inc.
+      desc: |-
+        N/A
+      url: https://about.mercari.com/
+      slug: mercari
       ext: svg
 ja:
   description: |-
@@ -70,12 +79,13 @@ ja:
         社内にエンジニア組織を持ち、新規のWebサービス開発に取り組んでいます。
       url: https://circu.co.jp/
       slug: circulation
-      ext: png
+      ext: svg
     - name: チームラボ株式会社
       desc: |-
+        チームラボは、アーティスト、プログラマ、エンジニア、CGアニメーター、数学者、建築家など、デジタル社会の様々な分野のスペシャリストから構成されているウルトラテクノロジスト集団です。
       url: https://www.team-lab.com/
       slug: teamlab
-      ext: svg
+      ext: png
     - name: 株式会社ディー・エヌ・エー
       desc: |-
         1999年に創業した株式会社ディー・エヌ・エーはゲーム事業を中心に、オートモーティブ事業やヘルスケア事業、
@@ -96,6 +106,12 @@ ja:
         「Backlog」「Cacoo」「Typetalk」の3サービスを通して、仕事の中のコラボレーションをより効率的に楽しくしていきます。
       url: https://nulab.com/ja/about/
       slug: nulab
+      ext: svg
+    - name: Mercari, Inc.
+      desc: |-
+        N/A
+      url: https://about.mercari.com/
+      slug: mercari
       ext: svg
 </i18n>
 
@@ -167,7 +183,7 @@ export default class Sponsors extends Vue {
 }
 
 .sponsor.circulation img {
-  width: 86%;
+  width: 220%;
   margin: 8% 7% 0;
 }
 .sponsor.dena img {
