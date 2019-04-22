@@ -108,7 +108,7 @@ ja:
       url: https://nulab.com/ja/about/
       slug: nulab
       ext: svg
-    - name: Mercari, Inc.
+    - name: 株式会社メルカリ
       desc: |-
         "新たな価値を生みだす世界的なマーケットプレイスを創る"
         メルカリはこのミッションのもと、フリマアプリ「メルカリ」などその他サービス開発に全力で取り組んでいます！
