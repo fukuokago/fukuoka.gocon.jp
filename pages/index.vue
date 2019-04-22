@@ -13,7 +13,7 @@ ja:
       <News/>
     </div>
     <div class="container">
-      <Sponsors/>
+      <Sponsors isSimple="true" />
       <p class="goto-sponsors"><nuxt-link :to="localePath('sponsors')" class="button large is-inverted is-outlined">🏢 {{ $t('sponsors') }}</nuxt-link></p>
     </div>
     <Fukuoka/>
@@ -50,28 +50,8 @@ export default class PageIndex extends Vue {
 }
 </script>
 
-<style>
+<style scoped>
 .goto-sponsors {
   text-align: center;
-}
-.sponsor {
-  height: auto;
-}
-.sponsor-name,
-.sponsor-desc {
-  display: none;
-}
-
-@media (max-width: 500px) {
-  .sponsor {
-    width: 170px;
-    height: 170px;
-    margin: 0 0 1em;
-    float: left;
-  }
-  .sponsor-logo {
-    width: 170px;
-    height: 170px;
-  }
 }
 </style>

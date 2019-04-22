@@ -92,7 +92,7 @@ ja:
 </i18n>
 
 <template>
-  <div class="sponsors is-clearfix">
+  <div class="sponsors is-clearfix" v-bind:class="{ simple: isSimple }">
     <h2>Sponsors</h2>
     <p>{{ $t('description') }}</p>
     <p class="goto-becomeasponsor"><a class="button large is-inverted is-outlined" href="https://docs.google.com/forms/d/17v0fB3UxTLpf6G_th-TMyJTSOBMgVBlPogNk0iubxnQ/">💪 {{ $t('cfs_button') }}</a></p>
@@ -100,15 +100,24 @@ ja:
     <div v-for="(s) in $t('sponsors')">
       <div v-if="s.desc != ''" :class="['sponsor', s.slug]">
           <p class="sponsor-logo"><a :href="s.url"><img :src="'/sponsors/' + s.slug + '.' + s.ext" /></a></p>
-        <p class="sponsor-name"><a :href="s.url">{{ s.name }}</a>
+        <p v-if="!isSimple" class="sponsor-name"><a :href="s.url">{{ s.name }}</a>
           <span class="external" place="external"><i class="fas fa-external-link-alt"></i></span></p>
-        <p class="sponsor-desc">{{ s.desc }}</p>
+        <p v-if="!isSimple" class="sponsor-desc">{{ s.desc }}</p>
       </div>
     </div>
 
     <p class="note">{{ $t('note') }}</p>
   </div>
 </template>
+
+<script lang="ts">
+import { Component, Vue, Prop } from 'nuxt-property-decorator'
+
+@Component
+export default class Sponsors extends Vue {
+  @Prop({ default: false }) public isSimple!: boolean
+}
+</script>
 
 <style>
 .sponsor {
@@ -156,6 +165,10 @@ ja:
   margin: 8% 7% 0;
 }
 
+.simple .sponsor {
+  height: auto;
+}
+
 @media (min-width: 501px) and (max-width: 800px) {
   .sponsor {
     width: 46%;
@@ -187,6 +200,16 @@ ja:
   .sponsor-name,
   .sponsor-desc {
     display: block;
+  }
+  .simple .sponsor {
+    width: 170px;
+    height: 170px;
+    margin: 0 0 1em;
+    float: left;
+  }
+  .simple .sponsor-logo {
+    width: 170px;
+    height: 170px;
   }
 }
 </style>
