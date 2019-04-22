@@ -43,6 +43,8 @@ en:
       ext: svg
     - name: Nulab Inc.
       desc: |-
+        株式会社ヌーラボは、福岡に本社を構え、国内3拠点と海外3拠点(ニューヨーク、アムステルダム、シンガポール)に拠点を展開している企業です。
+        「Backlog」「Cacoo」「Typetalk」の3サービスを通して、仕事の中のコラボレーションをより効率的に楽しくしていきます。
       url: https://nulab.com/about/
       slug: nulab
       ext: svg
@@ -90,6 +92,8 @@ ja:
       ext: svg
     - name: 株式会社ヌーラボ
       desc: |-
+        株式会社ヌーラボは、福岡に本社を構え、国内3拠点と海外3拠点(ニューヨーク、アムステルダム、シンガポール)に拠点を展開している企業です。
+        「Backlog」「Cacoo」「Typetalk」の3サービスを通して、仕事の中のコラボレーションをより効率的に楽しくしていきます。
       url: https://nulab.com/ja/about/
       slug: nulab
       ext: svg
@@ -168,6 +172,10 @@ export default class Sponsors extends Vue {
 }
 .sponsor.dena img {
   margin: 12% 0 0;
+}
+.sponsor.nulab img {
+  width: 86%;
+  margin: 8% 7% 0;
 }
 
 .simple .sponsor {
