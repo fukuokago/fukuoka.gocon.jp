@@ -53,7 +53,8 @@ en:
       ext: svg
     - name: Mercari, Inc.
       desc: |-
-        N/A
+        "新たな価値を生みだす世界的なマーケットプレイスを創る"
+        メルカリはこのミッションのもと、フリマアプリ「メルカリ」などその他サービス開発に全力で取り組んでいます！
       url: https://about.mercari.com/
       slug: mercari
       ext: svg
@@ -109,7 +110,8 @@ ja:
       ext: svg
     - name: Mercari, Inc.
       desc: |-
-        N/A
+        "新たな価値を生みだす世界的なマーケットプレイスを創る"
+        メルカリはこのミッションのもと、フリマアプリ「メルカリ」などその他サービス開発に全力で取り組んでいます！
       url: https://about.mercari.com/
       slug: mercari
       ext: svg
@@ -183,15 +185,18 @@ export default class Sponsors extends Vue {
 }
 
 .sponsor.circulation img {
-  width: 220%;
-  margin: 8% 7% 0;
+  width: 94%;
+  margin: 3%;
+}
+.sponsor.teamlab img {
+  width: 88%;
+  margin: 3% 6%;
 }
 .sponsor.dena img {
-  margin: 12% 0 0;
 }
 .sponsor.nulab img {
-  width: 78%;
-  margin: 8% 11% 0;
+  width: 86%;
+  margin: 4% 7%;
 }
 
 .simple .sponsor {
