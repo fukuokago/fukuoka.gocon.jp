@@ -29,6 +29,8 @@ en:
       ext: svg
     - name: DeNA Co., Ltd.
       desc: |-
+        DeNA (pronounced “D-N-A”) develops and operates a broad range of services including games, automotive, healthcare, sports and other diversified offerings.
+        Founded in 1999, DeNA’s aim is to delight and impact the world through the use of the internet and AI.
       url: https://dena.com/jp/recruit/career/engineer/
       slug: dena
       ext: svg
@@ -74,6 +76,8 @@ ja:
       ext: svg
     - name: 株式会社ディー・エヌ・エー
       desc: |-
+        1999年に創業した株式会社ディー・エヌ・エーはゲーム事業を中心に、オートモーティブ事業やヘルスケア事業、
+        スポーツ事業などにも進出し、インターネットや人工知能（AI）を活用した新しい挑戦を続けています。
       url: https://dena.com/jp/recruit/career/engineer/
       slug: dena
       ext: svg
@@ -161,6 +165,9 @@ export default class Sponsors extends Vue {
 .sponsor.circulation img {
   width: 86%;
   margin: 8% 7% 0;
+}
+.sponsor.dena img {
+  margin: 12% 0 0;
 }
 
 .simple .sponsor {
