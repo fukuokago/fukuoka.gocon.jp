@@ -82,7 +82,8 @@ const config = {
     { src: '~plugins/pattern-wall', ssr: false },
     { src: '~plugins/scroll', ssr: false },
     { src: '~plugins/parallax', ssr: false },
-    { src: '~plugins/lazyload', ssr: false }
+    { src: '~plugins/lazyload', ssr: false },
+    { src: '~plugins/googlemap', ssr: false }
   ],
   modules: [
     ['nuxt-imagemin'],
