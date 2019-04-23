@@ -10,6 +10,7 @@ import HelloGophers from '~/components/blog/HelloGophers.vue'
 import BrandKitReleases from '~/components/blog/BrandKitReleases.vue'
 import CallForPapersIsOpen from '~/components/blog/CallForPapersIsOpen.vue'
 import CallForSponsorsIsOpen from '~/components/blog/CallForSponsorsIsOpen.vue'
+import SponsorsArePublished from '~/components/blog/SponsorsArePublished.vue'
 
 @Component
 export default class PageBlog extends Vue {
@@ -17,6 +18,8 @@ export default class PageBlog extends Vue {
 
   get computedBlog() {
     switch (this.slug) {
+      case 'sponsors-are-published':
+        return SponsorsArePublished
       case 'call-for-sponsors-is-open':
         return CallForSponsorsIsOpen
       case 'call-for-papers-is-open':
