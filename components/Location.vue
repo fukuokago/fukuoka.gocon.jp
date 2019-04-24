@@ -6,10 +6,10 @@ en:
   access:
     title: How to Access
     list:
-      - You can reach here by 🚇 subway from ✈️Fukuoka Airport or🚅  JR-Hakata Station
-      - By subway, it takes 7 minutes from Fukuoka Airport and 5 minutes from JR-Hakata Station to Tenjin Station
+      - 🚇 Tenjin subway station is convenient for the venue
+      - By subway, it takes 7 minutes from  ✈️Fukuoka Airport and 5 minutes from 🚅 JR-Hakata Station to Tenjin Station
       - It takes 3 minutes on Walking from Tenjin Station to here
-      - 🙅‍♂️Of course there is no parking lot or bicycle parking lot, 💁‍so please come by public transportation
+      - 🙅‍ There is no parking lot or bicycle parking lot, 💁‍so please come by public transportation
 ja:
   fgn: 小学校の校門や校舎の面影を残す入口
   desc: |-
@@ -17,10 +17,10 @@ ja:
   access:
     title: アクセス方法
     list:
-      - 会場には、✈️ 福岡空港や🚅 JR博多駅からは🚇 地下鉄で向かうことができます
-      - 地下鉄で、福岡空港より7分、JR博多駅より5分で天神駅に着きます
+      - 会場には、🚇 地下鉄天神駅のご利用が便利です
+      - 地下鉄天神駅へは、 ✈️福岡空港より7分、🚅JR博多駅より5分で着きます
       - 地下鉄天神駅からは徒歩で約3分ほどです
-      - 🙅‍♂️駐車場や駐輪場はもちろんありませんので、💁‍公共交通機関でご来場ください
+      - 🙅‍♂️駐車場や駐輪場はありませんので、💁‍公共交通機関でご来場ください
 </i18n>
 
 <template>
