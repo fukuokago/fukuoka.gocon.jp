@@ -82,7 +82,8 @@ const config = {
     { src: '~plugins/pattern-wall', ssr: false },
     { src: '~plugins/scroll', ssr: false },
     { src: '~plugins/parallax', ssr: false },
-    { src: '~plugins/lazyload', ssr: false }
+    { src: '~plugins/lazyload', ssr: false },
+    { src: '~plugins/googlemap', ssr: false }
   ],
   modules: [
     ['nuxt-imagemin'],
@@ -128,6 +129,7 @@ const config = {
     subFolders: true,
     routes: dynamicPagesWithLocale
   },
+  transpile: [/^vue2-google-maps($|\/)/],
   build: {
     extend(c: any) {
       c.module.rules.push({

@@ -12,6 +12,7 @@ ja:
     <div class="container">
       <News/>
     </div>
+    <Location/>
     <div class="container">
       <Sponsors isSimple="true" />
       <p class="goto-sponsors"><nuxt-link :to="localePath('sponsors')" class="button large is-inverted is-outlined">🏢 {{ $t('sponsors') }}</nuxt-link></p>
@@ -26,6 +27,7 @@ ja:
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
 import TheHome from '~/components/TheHome.vue'
+import Location from '~/components/Location.vue'
 import News from '~/components/News.vue'
 import Sponsors from '~/components/Sponsors.vue'
 import Fukuoka from '~/components/Fukuoka.vue'
@@ -34,6 +36,7 @@ import CallForPapers from '~/components/CallForPapers.vue'
 @Component({
   components: {
     TheHome,
+    Location,
     News,
     Sponsors,
     Fukuoka,

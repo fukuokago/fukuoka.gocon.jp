@@ -41,6 +41,7 @@
     "typescript": "^3.2.4",
     "vue-lazyload": "^1.2.6",
     "vue-parallax-js": "^0.2.3",
+    "vue2-google-maps": "^0.10.6",
     "vuex-class": "^0.3.1",
     "yaml-loader": "^0.5.0"
   },
