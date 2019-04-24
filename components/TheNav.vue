@@ -25,7 +25,10 @@ ja:
 
     <div class="vertical" v-if="drawer">
       <ul>
-        <li v-for="(link, i) in links" v-on:click="toggleDrawer()" v-if="link.visible"><nuxt-link v-if="link.visible" :to="localePath(link.to)">{{ link.label }}</nuxt-link> </li>
+        <li v-for="(link, i) in links" v-on:click="toggleDrawer()">
+          <nuxt-link v-if="link.slug === ''" :to="localePath(link.to)">{{ link.label }}</nuxt-link>
+          <nuxt-link v-else :to="localePath({name: link.slug})">{{ link.label }}</nuxt-link>
+        </li>
       </ul>
 
       <div class="attention">
