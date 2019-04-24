@@ -51,12 +51,12 @@ export default class TheNav extends Vue {
 
     public links = [
       { visible: false, to: 'about', label: 'About' },
-      { visible: false, to: 'fukuoka', label: 'Fukuoka' },
+      { visible: true, to: 'location', label: 'Location' },
       { visible: true, to: 'cfp', label: 'Call for Papers' },
       { visible: true, to: 'schedule', label: 'Schedule' },
       { visible: true, to: 'registration', label: 'Registration' },
       { visible: false, to: 'talks', label: 'Talks' },
-      { visible: true, to: 'scholarships', label: 'Scholarships' },
+      { visible: false, to: 'scholarships', label: 'Scholarships' },
       { visible: true, to: 'sponsors', label: 'Sponsors' },
       { visible: true, to: 'team', label: 'Team' },
       { visible: true, to: 'brand', label: 'Brand' },
