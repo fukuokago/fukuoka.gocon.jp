@@ -1,6 +1,17 @@
 <template>
   <section class="container">
-    <component v-bind:is="computedBlog"></component>
+     <div v-if="computedBlog === ''">
+       <h2>Blog</h2>
+
+       <SponsorsArePublished titleTag="h3" />
+       <CallForSponsorsIsOpen titleTag="h3" />
+       <CallForPapersIsOpen titleTag="h3" />
+       <BrandKitReleases titleTag="h3" />
+       <HelloGophers titleTag="h3" />
+     </div>
+     <div v-else>
+       <component v-bind:is="computedBlog"></component>
+     </div>
   </section>
 </template>
 
@@ -12,7 +23,15 @@ import CallForPapersIsOpen from '~/components/blog/CallForPapersIsOpen.vue'
 import CallForSponsorsIsOpen from '~/components/blog/CallForSponsorsIsOpen.vue'
 import SponsorsArePublished from '~/components/blog/SponsorsArePublished.vue'
 
-@Component
+@Component({
+  components: {
+    SponsorsArePublished,
+    CallForSponsorsIsOpen,
+    CallForPapersIsOpen,
+    BrandKitReleases,
+    HelloGophers
+  }
+})
 export default class PageBlog extends Vue {
   public slug!: string
 
@@ -28,6 +47,8 @@ export default class PageBlog extends Vue {
         return BrandKitReleases
       case 'hello-gophers':
         return HelloGophers
+      default:
+        return ''
     }
   }
 
@@ -44,4 +65,17 @@ export default class PageBlog extends Vue {
 </script>
 
 <style scoped>
+article.blog {
+  padding-bottom: 3em;
+}
+article.blog:last-child {
+  padding-bottom: 0;
+}
+body h2.blog-title {
+  padding: 1em 0 .5em;
+  font-size: 1.7em;
+}
+body .blog h3.blog-title a {
+  border-bottom: none;
+}
 </style>

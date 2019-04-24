@@ -32,7 +32,7 @@ ja:
 <template>
   <article class="blog">
     <h3 v-if="titleTag === 'h3'" class="blog-title"> <nuxt-link :to="permalink">{{ $t('title') }}</nuxt-link> </h3>
-    <h2 v-else class="blog-title"> {{ $t('title') }} </h2>
+    <h2 v-else class="blog-title">Blog &#8811; {{ $t('title') }} </h2>
     <p class="date">{{ $t('date') }}</p>
     <p v-for="(v) in $t('body')">{{ v }}</p>
     <nuxt-link :to="localePath('sponsors')" class="button is-inverted is-outlined">{{ $t('button.0') }}</nuxt-link>

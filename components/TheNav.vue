@@ -11,7 +11,10 @@ ja:
   <nav class="nav">
     <div class="horizontal">
       <ul class=" is-clearfix">
-        <li v-for="(link, i) in links"><nuxt-link v-if="link.visible" :to="localePath(link.to)">{{ link.label }}</nuxt-link> </li>
+        <li v-for="(link, i) in links">
+          <nuxt-link v-if="link.slug === ''" :to="localePath(link.to)">{{ link.label }}</nuxt-link>
+          <nuxt-link v-else :to="localePath({name: link.slug})">{{ link.label }}</nuxt-link>
+        </li>
       </ul>
     </div>
 
@@ -50,17 +53,18 @@ export default class TheNav extends Vue {
     private drawer = false
 
     public links = [
-      { visible: false, to: 'about', label: 'About' },
-      { visible: true, to: 'location', label: 'Location' },
-      { visible: true, to: 'cfp', label: 'Call for Papers' },
-      { visible: true, to: 'schedule', label: 'Schedule' },
-      { visible: true, to: 'registration', label: 'Registration' },
-      { visible: false, to: 'talks', label: 'Talks' },
-      { visible: false, to: 'scholarships', label: 'Scholarships' },
-      { visible: true, to: 'sponsors', label: 'Sponsors' },
-      { visible: true, to: 'team', label: 'Team' },
-      { visible: true, to: 'brand', label: 'Brand' },
-      { visible: true, to: 'code-of-conduct', label: 'Code of Conduct' }
+      { slug: '', to: 'location', label: 'Location' },
+      { slug: 'blog-slug', to: 'blog', label: 'Blog' },
+      { slug: '', to: 'cfp', label: 'Call for Papers' },
+      { slug: '', to: 'schedule', label: 'Schedule' },
+      { slug: '', to: 'registration', label: 'Registration' },
+      //{ slug: '', to: 'about', label: 'About' },
+      //{ slug: '', to: 'talks', label: 'Talks' },
+      //{ slug: '', to: 'scholarships', label: 'Scholarships' },
+      { slug: '', to: 'sponsors', label: 'Sponsors' },
+      { slug: '', to: 'team', label: 'Team' },
+      { slug: '', to: 'brand', label: 'Brand' },
+      { slug: '', to: 'code-of-conduct', label: 'Code of Conduct' }
     ]
 
     public toggleDrawer() {

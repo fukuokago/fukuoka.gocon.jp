@@ -1,10 +1,13 @@
 const pkg = require('./package')
 
 const dynamicPages = [
+  '/blog/sponsors-are-published',
+  '/blog/call-for-sponsors-is-open',
   '/blog/call-for-sponsors-is-open',
   '/blog/call-for-papers-is-open',
   '/blog/brand-kit-releases',
   '/blog/hello-gophers',
+  '/blog',
   '/assets/gopher-noodle-for-phone',
   '/assets/gopher-noodle-for-laptop',
   '/assets/gopher-pattern-for-phone',
