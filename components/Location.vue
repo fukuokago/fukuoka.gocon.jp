@@ -3,6 +3,7 @@ en:
   fgn: An entrance that leaves an impression of the elementary school gates and school buildings
   desc: |-
     GoConference'19 Summer in Fukuoka will take place at the Fukuoka Growth Next, a building which renovated elementary school, in Fukuoka, JP.
+    The Fukuoka Growth Next is currently under construction for the 5/31 (Fri) renewal.
   access:
     title: How to Access
     list:
@@ -10,10 +11,12 @@ en:
       - By subway, it takes 7 minutes from  ✈️Fukuoka Airport and 5 minutes from 🚅 JR-Hakata Station to Tenjin Station
       - It takes 3 minutes on Walking from Tenjin Station to here
       - 🙅‍ There is no parking lot or bicycle parking lot, 💁‍so please come by public transportation
+  subwaytable: Time Table for Tenjin Station
 ja:
-  fgn: 小学校の校門や校舎の面影を残す入口
+  fgn: 小学校の校門や校舎の面影を残す入口（だが今は取り壊されている）
   desc: |-
     Go Conference'19 Summer in Fukuoka は、福岡天神の中心に位置する、旧大名小学校を活用した官民共働型スタートアップ支援施設 {fgn} で開催されます。
+    Fukuoka Growth Nextは、現在 5/31（金）のリニューアルにむけて工事中となっております。
   access:
     title: アクセス方法
     list:
@@ -21,6 +24,7 @@ ja:
       - 地下鉄天神駅へは、 ✈️福岡空港より7分、🚅JR博多駅より5分で着きます
       - 地下鉄天神駅からは徒歩で約3分ほどです
       - 🙅‍♂️駐車場や駐輪場はありませんので、💁‍公共交通機関でご来場ください
+  subwaytable: 地下鉄天神駅の時刻表
 </i18n>
 
 <template>
@@ -50,6 +54,7 @@ ja:
       <ul class="colored">
         <li v-for="(val, i) in $t('access.list')">{{ val }}</li>
       </ul>
+      <p><a href="https://subway.city.fukuoka.lg.jp/pdf/daiya/tenjin.pdf" class="button">🚇 {{ $t('subwaytable') }}</a></p>
     </div>
   </section>
 </template>
