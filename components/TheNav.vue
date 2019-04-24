@@ -54,7 +54,6 @@ export default class TheNav extends Vue {
 
     public links = [
       { slug: '', to: 'location', label: 'Location' },
-      { slug: 'blog-slug', to: 'blog', label: 'Blog' },
       { slug: '', to: 'cfp', label: 'Call for Papers' },
       { slug: '', to: 'schedule', label: 'Schedule' },
       { slug: '', to: 'registration', label: 'Registration' },
@@ -64,7 +63,8 @@ export default class TheNav extends Vue {
       { slug: '', to: 'sponsors', label: 'Sponsors' },
       { slug: '', to: 'team', label: 'Team' },
       { slug: '', to: 'brand', label: 'Brand' },
-      { slug: '', to: 'code-of-conduct', label: 'Code of Conduct' }
+      { slug: '', to: 'code-of-conduct', label: 'Code of Conduct' },
+      { slug: 'blog-slug', to: 'blog', label: 'Blog' }
     ]
 
     public toggleDrawer() {
