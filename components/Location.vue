@@ -13,7 +13,7 @@ en:
 ja:
   fgn: 小学校の校門や校舎の面影を残す入口
   desc: |-
-    Go Conference'19 Summer in Fukuoka は、福岡天神の真ん中に位置する、旧大名小学校を活用した官民共働型スタートアップ支援施設 {fgn} で開催されます。
+    Go Conference'19 Summer in Fukuoka は、福岡天神の中心に位置する、旧大名小学校を活用した官民共働型スタートアップ支援施設 {fgn} で開催されます。
   access:
     title: アクセス方法
     list:
