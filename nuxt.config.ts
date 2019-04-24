@@ -129,6 +129,7 @@ const config = {
     subFolders: true,
     routes: dynamicPagesWithLocale
   },
+  transpile: [/^vue2-google-maps($|\/)/],
   build: {
     extend(c: any) {
       c.module.rules.push({
