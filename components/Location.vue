@@ -54,7 +54,7 @@ ja:
       <ul class="colored">
         <li v-for="(val, i) in $t('access.list')">{{ val }}</li>
       </ul>
-      <p><a href="https://subway.city.fukuoka.lg.jp/pdf/daiya/tenjin.pdf" class="button">🚇 {{ $t('subwaytable') }}</a></p>
+      <p><a href="https://subway.city.fukuoka.lg.jp/pdf/daiya/tenjin.pdf" class="button large is-inverted is-outlined">🚇 {{ $t('subwaytable') }}</a></p>
     </div>
   </section>
 </template>
