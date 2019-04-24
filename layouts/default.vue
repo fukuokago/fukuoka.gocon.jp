@@ -100,6 +100,13 @@ h3 {
   padding: 1em 0 .5em;
   color: #000;
 }
+h4 {
+  font-size: 1em;
+  font-family: 'Arvo', serif;
+  padding: 0 0 .5em;
+  color: #000;
+  font-weight: bold;
+}
 p {
   font-size: 1.5em;
   line-height: 1.5;
