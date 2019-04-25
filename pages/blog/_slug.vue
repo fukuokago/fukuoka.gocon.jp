@@ -3,6 +3,7 @@
      <div v-if="computedBlog === ''">
        <h2>Blog</h2>
 
+       <ProposalsFeedbackAndNotice titleTag="h3" />
        <SponsorsArePublished titleTag="h3" />
        <CallForSponsorsIsOpen titleTag="h3" />
        <CallForPapersIsOpen titleTag="h3" />
@@ -22,9 +23,11 @@ import BrandKitReleases from '~/components/blog/BrandKitReleases.vue'
 import CallForPapersIsOpen from '~/components/blog/CallForPapersIsOpen.vue'
 import CallForSponsorsIsOpen from '~/components/blog/CallForSponsorsIsOpen.vue'
 import SponsorsArePublished from '~/components/blog/SponsorsArePublished.vue'
+import ProposalsFeedbackAndNotice from '~/components/blog/ProposalsFeedbackAndNotice.vue'
 
 @Component({
   components: {
+    ProposalsFeedbackAndNotice,
     SponsorsArePublished,
     CallForSponsorsIsOpen,
     CallForPapersIsOpen,
@@ -37,6 +40,8 @@ export default class PageBlog extends Vue {
 
   get computedBlog() {
     switch (this.slug) {
+      case 'proposals-feedback-and-notice':
+        return ProposalsFeedbackAndNotice
       case 'sponsors-are-published':
         return SponsorsArePublished
       case 'call-for-sponsors-is-open':

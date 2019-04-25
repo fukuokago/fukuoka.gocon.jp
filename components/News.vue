@@ -2,23 +2,20 @@
   <div class="latest-news">
     <h2>Latest News</h2>
 
+    <ProposalsFeedbackAndNotice titleTag="h3" />
     <SponsorsArePublished titleTag="h3" />
-    <CallForSponsorsIsOpen titleTag="h3" />
-    <CallForPapersIsOpen titleTag="h3" />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
 import SponsorsArePublished from '~/components/blog/SponsorsArePublished.vue'
-import CallForSponsorsIsOpen from '~/components/blog/CallForSponsorsIsOpen.vue'
-import CallForPapersIsOpen from '~/components/blog/CallForPapersIsOpen.vue'
+import ProposalsFeedbackAndNotice from '~/components/blog/ProposalsFeedbackAndNotice.vue'
 
 @Component({
   components: {
     SponsorsArePublished,
-    CallForSponsorsIsOpen,
-    CallForPapersIsOpen
+    ProposalsFeedbackAndNotice
   }
 })
 export default class LatestNews extends Vue {}

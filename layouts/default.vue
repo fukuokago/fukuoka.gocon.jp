@@ -100,6 +100,13 @@ h3 {
   padding: 1em 0 .5em;
   color: #000;
 }
+h4 {
+  font-size: 1em;
+  font-family: 'Arvo', serif;
+  padding: 0 0 .5em;
+  color: #000;
+  font-weight: bold;
+}
 p {
   font-size: 1.5em;
   line-height: 1.5;
@@ -199,6 +206,22 @@ em {
 }
 .blog p {
   margin-bottom: .5em;
+}
+.blog-index-link {
+  display: inline-block;
+  font-family: 'Arvo', serif;
+  color: #ccc;
+  padding-right: .3em;
+}
+.blog-index-link a {
+  font-weight: bold;
+  border: none;
+  color: #bbb;
+  padding-right: .3em;
+}
+.blog-index-link a:hover {
+  border: none;
+  color: #000;
 }
 
 .external {

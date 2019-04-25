@@ -32,7 +32,9 @@ ja:
 <template>
   <article class="blog">
     <h3 v-if="titleTag === 'h3'" class="blog-title"> <nuxt-link :to="permalink">{{ $t('title') }}</nuxt-link> </h3>
-    <h2 v-else class="blog-title">{{ $t('title') }}</h2>
+    <h2 class="blog-title" v-else>
+      <span class="blog-index-link"><nuxt-link :to="indexlink">Blog</nuxt-link>/</span>{{ $t('title') }}
+    </h2>
     <p class="date">{{ $t('date') }}</p>
     <i18n path="body" tag="p">
       <a place="golangjp" href="https://twitter.com/golangjp">@golangjp</a>
@@ -50,6 +52,9 @@ export default class BlogHelloGophers extends Vue {
   @Prop() public titleTag!: string
   get permalink(): string {
     return this.localePath({ name: 'blog-slug', params: { slug: 'hello-gophers' } })
+  }
+  get indexlink(): string {
+    return this.localePath({name: 'blog-slug'})
   }
 }
 </script>
