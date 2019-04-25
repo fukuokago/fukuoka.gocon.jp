@@ -28,7 +28,9 @@ ja:
 <template>
   <article class="blog">
     <h3 v-if="titleTag === 'h3'" class="blog-title"> <nuxt-link :to="permalink">{{ $t('title') }}</nuxt-link> </h3>
-    <h2 v-else class="blog-title"> {{ $t('title') }} </h2>
+    <h2 class="blog-title" v-else>
+      <span class="blog-index-link"><nuxt-link :to="indexlink">Blog</nuxt-link>/</span>{{ $t('title') }}
+    </h2>
     <p class="date">{{ $t('date') }}</p>
     <p v-for="(v) in $t('body')">{{ v }}</p>
     <ul class="references">
@@ -66,6 +68,9 @@ export default class CallForPapersIsOpen extends Vue {
   ]
   get permalink(): string {
     return this.localePath({ name: 'blog-slug', params: { slug: 'call-for-papers-is-open' } })
+  }
+  get indexlink(): string {
+    return this.localePath({name: 'blog-slug'})
   }
 }
 </script>

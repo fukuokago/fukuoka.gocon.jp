@@ -207,6 +207,22 @@ em {
 .blog p {
   margin-bottom: .5em;
 }
+.blog-index-link {
+  display: inline-block;
+  font-family: 'Arvo', serif;
+  color: #ccc;
+  padding-right: .3em;
+}
+.blog-index-link a {
+  font-weight: bold;
+  border: none;
+  color: #bbb;
+  padding-right: .3em;
+}
+.blog-index-link a:hover {
+  border: none;
+  color: #000;
+}
 
 .external {
   font-size: .7em;
