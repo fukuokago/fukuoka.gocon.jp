@@ -4,7 +4,7 @@ en:
   date: 'Apr 25, 2019'
   body0: |-
     It is a deadline of CFP soon(April 30st). You guys Gophers have already been sent, right?
-    Thank you, Thank you and Thank you. You are so Grate!
+    Thank you, Thank you and Thank you. You are so Grate ❤️
     We are starting to provide feedback to those who applied for CFP early.
     The feedback is roughly like this:
   feedback:
@@ -29,7 +29,7 @@ ja:
   date: '2019-04-25'
   body0: |-
     CFPの締め切り(5月1日の日本時間9時まで)が迫ってまいりましたが、よいGopherのみなさんはもう送信済みですよね？
-    はい、ありがとうございます。応募済みの方、とても素晴らしいですよ。
+    はい、ありがとうございます。応募済みの方、とても素晴らしいですよ ❤️
     早くにCFPを応募していただいた方へのフィードバックを開始しております。
     どんなことをフィードバックしているかというと、だいたい共通していたりしていて、以下のようなメッセージをお送りしています。
   feedback:
@@ -46,7 +46,7 @@ ja:
   notice:
     title: プロポーザルの使い回しでのお願い
     body: |-
-      同じ内容のプロポーザルを{gocon}などの他のカンファレンスで発表する予定、または既にした場合、今回の応募内容との違いを確認する可能性があります。
+      同じ内容のプロポーザルを{gocon}などの他のカンファレンスで発表する予定、または既にした場合、今回の応募内容との違いを確認する必要があります。
       他のカンファレンスで登壇が決まっている方は、内容をアップデートしていただけると確認の手間が省けて嬉しいです。{st}
   criteria: 選択基準
   button: CFPに応募する
