@@ -1,9 +1,10 @@
 <i18n>
 en:
   desc: |-
-    Call for paper is open. We are using {papercall}{external} for paper calling.
+    Call for paper {notopen}was closed(May 1th, 0:00). We are using {papercall}{external} for paper calling.
     The reason for using PaperCall.io has pros that form content is superior, anonymous submission and reviewer feedback is easy.
     To use PaperCall.io you need to create an account.
+  opentoclosed: is open
   goto_papercall: Apply to Talker(Go to PaperCall.io)
   types:
     title: Talk Types
@@ -36,10 +37,11 @@ en:
       We recommend submitting early to receive early feedback from reviewers.
 ja:
   desc: |-
-    登壇者の募集を開始しています。応募には、{papercall}{external} を利用します。
+    登壇者の募集を{notopen} 終了しました(5月1日9時)。応募には、{papercall}{external} を利用します。
     （PaperCall.ioは、予め用意されたされた入力フォーム内容が優れており、匿名応募機能やレビュアーからのフィードバックをしやすいというメリットがあります）
     PaperCall.ioを初めて利用される方にはお手数ですが、アカウント作成からお願いいたします。
     もちろん、日本語で投稿して大丈夫です。
+  opentoclosed: 開始しています
   goto_papercall: 応募する(PaperCall.ioへ)
   types:
     title: 発表種別
@@ -76,6 +78,7 @@ ja:
   <div class="call-for-papers">
     <h2>Call for Papers</h2>
     <i18n path="desc" tag="p">
+      <s place="notopen">{{ $t('opentoclosed') }}</s>
       <a place="papercall" href="https://www.papercall.io/">PaperCall.io</a>
       <span class="external" place="external"><i class="fas fa-external-link-alt"></i></span>
     </i18n>
