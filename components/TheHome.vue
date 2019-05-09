@@ -91,8 +91,8 @@ export default class TheHome extends Vue {}
 }
 .gopher {
   float: left;
-  width: 35%;
-  margin-right: 2%;
+  width: 30%;
+  margin-right: 7%;
 }
 .title {
   margin: 3em 0 1.4em;
