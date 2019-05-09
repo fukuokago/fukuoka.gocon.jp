@@ -12,7 +12,7 @@ ja:
 </i18n>
 
 <template>
-  <div class="schedule">
+  <div class="container schedule">
     <h2>Schedule</h2>
 
     <p>{{ $t('desc') }}</p>
