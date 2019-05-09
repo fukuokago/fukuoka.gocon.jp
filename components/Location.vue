@@ -97,6 +97,7 @@ export default class Location extends Vue {
   width: 50%;
   height: 500px;
   float: left;
+  z-index: 9999;
 }
 .fgn {
   width: 50%;
