@@ -58,6 +58,13 @@ en:
       url: https://about.mercari.com/
       slug: mercari
       ext: svg
+    - name: i³ Systems, Inc.
+      desc: |-
+        i³ Systems is based in Fukuoka and Tokyo, and is working on service development with "Making IT more familiar" as a mission.
+        CLOMO MDM, one of our products, is an EMM (Enterprise Mobility Management) service used by many companies.
+      url: https://www.i3-systems.com
+      slug: i3systems
+      ext: svg
 ja:
   description: |-
     現在、スポンサーを募集しています。
@@ -114,6 +121,13 @@ ja:
         メルカリはこのミッションのもと、フリマアプリ「メルカリ」などその他サービス開発に全力で取り組んでいます！
       url: https://about.mercari.com/
       slug: mercari
+      ext: svg
+    - name: 株式会社アイキューブドシステムズ
+      desc: |-
+        i³ Systems は福岡と東京を拠点に、「IT をもっと身近に」をミッションに掲げてサービス開発に取り組んでいます。
+        私たちの製品の一つである CLOMO MDM は、多くのお客様にご利用いただいている EMM サービスです。
+      url: https://www.i3-systems.com
+      slug: i3systems
       ext: svg
 </i18n>
 
