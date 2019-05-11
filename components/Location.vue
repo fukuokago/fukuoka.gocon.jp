@@ -32,7 +32,14 @@ ja:
     <h2>Location</h2>
 
     <GmapMap map-type-id="roadmap" :center="center" :zoom="zoom" :options="options">
-      <GmapMarker :key="index" v-for="(m, index) in markers" :position="m.position" :clickable="true" :draggable="true" @click="center=m.position" />
+      <GmapInfoWindow :options="infoOptions" :position="infoWindowPos" opened="infoWinOpen" @closeclick="infoWinOpen=false">
+        <div class="gmap--infowin">
+          <p class="gmap--infotext">{{infoContent.type}}</p>
+          <p class="gmap--infotext"><a :href="infoContent.url" target="_blank">{{infoContent.title}}</a></p>
+        </div>
+      </GmapInfoWindow>
+      <GmapMarker v-for="(m, index) in markers" @click="toggleInfoWindow(m, index)"
+        :key="index" :position="m.position" :clickable="true" :draggable="false"></GmapMarker>
     </GmapMap>
 
     <picture class="fgn">
@@ -63,6 +70,7 @@ ja:
 import { Component, Vue } from 'nuxt-property-decorator'
 const styles = require('~/static/googlemap-styles.json')
 const fgn = { lat: 33.5888978, lng: 130.394886 }
+const info = { type: 'Venue', title: 'Fukuoka Growth Next', url: 'https://growth-next.com/' }
 
 @Component({})
 export default class Location extends Vue {
@@ -78,14 +86,25 @@ export default class Location extends Vue {
     disableDefaultUi: true,
     styles: styles
   }
+  public infoWinOpen = true
+  public infoWindowPos = fgn
+  public infoContent = info
+  public infoOptions = {
+    pixelOffset: { width: 0, height: -55 }
+  }
+
+  toggleInfoWindow(marker, id) {
+    this.infoWinOpen = false
+    this.infoWindowPos = marker.position
+    this.infoContent = marker.content
+    this.infoWinOpen = true
+  }
 
   data() {
     return {
+      center: fgn,
       markers: [
-        {
-          position: fgn,
-          title: 'Fukuoka Growth Next'
-        }
+        { position: fgn, content: this.infoContent }
       ]
     }
   }
@@ -143,6 +162,18 @@ img.eyecatch {
 }
 .location--desc {
   padding-top: 550px;
+}
+.gmap--infowin {
+  padding: 1em;
+}
+.gmap--infotext {
+  font-size: 12px;
+  padding-bottom: .2em;
+  font-weight: bold;
+}
+.gmap--infotext a {
+  font-size: 12px;
+  font-weight: normal;
 }
 @media (max-width: 1000px) {
   .fukuoka-city figcaption {
