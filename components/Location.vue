@@ -67,7 +67,7 @@ const fgn = { lat: 33.5888978, lng: 130.394886 }
 @Component({})
 export default class Location extends Vue {
   public center = fgn
-  public zoom = 13
+  public zoom = 17
   public options = {
     zoomControl: true,
     mapTypeControl: false,
@@ -85,6 +85,10 @@ export default class Location extends Vue {
         {
           position: fgn,
           title: 'Fukuoka Growth Next'
+        },
+        {
+          position: { lat:33.5901462 , lng: 130.39285510000002 },
+          title: 'ちー坊のタンタン麺 大名店'
         }
       ]
     }
