@@ -41,6 +41,20 @@ ja:
       </div>
     </div>
 
+    <div class="assets logo is-clearfix">
+      <h3>Icon</h3>
+
+      <div class="inner">
+        <picture class="eyecatch">
+          <source type="image/webp" srcset="~static/img/icon.webp">
+          <img src="~assets/img/icon.png" >
+        </picture>
+        <p>Included format: ai, eps, pdf and svg</p>
+        <p><a class="button" href="/download/icon.tar.gz">Download icon Assets</a></p>
+      </div>
+    </div>
+    </div>
+
     <div class="assets wallpaper is-clearfix">
       <h3>Wallpaper</h3>
 
