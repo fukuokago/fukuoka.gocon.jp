@@ -40,7 +40,7 @@ ja:
         <li><img src="/eat/udon.png">うどん<ul class="colored"> <li v-for="(m) in markers.udon">{{ m.content.title }}</li> </ul> </li>
         <li><img src="/eat/curry.png">カレー<ul class="colored"> <li v-for="(m) in markers.curry">{{ m.content.title }}</li> </ul> </li>
         <li><img src="/eat/dinner.png">カフェ・食堂<ul class="colored"> <li v-for="(m) in markers.diner">{{ m.content.title }}</li> </ul> </li>
-        <li><img src="/eat/tempura.png">天ぷら<ul class="colored"> <li v-for="(m) in markers.tenpura">{{ m.content.title }}</li> </ul> </li>
+        <li><img src="/eat/tempura.png">天ぷら<ul class="colored"> <li v-for="(m) in markers.tempura">{{ m.content.title }}</li> </ul> </li>
       </ul>
     </div>
   </section>
