@@ -20,27 +20,27 @@ ja:
         </div>
       </GmapInfoWindow>
       <GmapMarker v-for="(m, index) in markers.ramen" @click="toggleInfoWindow(m, index)"
-        :key="index" :position="m.position" :clickable="true" :draggable="false"></GmapMarker>
+        :key="index" :position="m.position" :clickable="true" :draggable="false" :icon="'/eat/ramen.png'"></GmapMarker>
       <GmapMarker v-for="(m, index) in markers.soba" @click="toggleInfoWindow(m, index)"
-        :key="index" :position="m.position" :clickable="true" :draggable="false"></GmapMarker>
+        :key="index" :position="m.position" :clickable="true" :draggable="false" :icon="'/eat/soba.png'"></GmapMarker>
       <GmapMarker v-for="(m, index) in markers.udon" @click="toggleInfoWindow(m, index)"
-        :key="index" :position="m.position" :clickable="true" :draggable="false"></GmapMarker>
+        :key="index" :position="m.position" :clickable="true" :draggable="false" :icon="'/eat/udon.png'"></GmapMarker>
       <GmapMarker v-for="(m, index) in markers.curry" @click="toggleInfoWindow(m, index)"
-        :key="index" :position="m.position" :clickable="true" :draggable="false"></GmapMarker>
+        :key="index" :position="m.position" :clickable="true" :draggable="false" :icon="'/eat/curry.png'"></GmapMarker>
       <GmapMarker v-for="(m, index) in markers.diner" @click="toggleInfoWindow(m, index)"
-        :key="index" :position="m.position" :clickable="true" :draggable="false"></GmapMarker>
+        :key="index" :position="m.position" :clickable="true" :draggable="false" :icon="'/eat/dinner.png'"></GmapMarker>
       <GmapMarker v-for="(m, index) in markers.tempura" @click="toggleInfoWindow(m, index)"
-        :key="index" :position="m.position" :clickable="true" :draggable="false"></GmapMarker>
+        :key="index" :position="m.position" :clickable="true" :draggable="false" :icon="'/eat/tempura.png'"></GmapMarker>
     </GmapMap>
 
     <div class="lunchmap--list container">
       <ul>
-        <li>ラーメン<ul class="colored"> <li v-for="(m) in markers.ramen">{{ m.content.title }}</li> </ul> </li>
-        <li>蕎麦<ul class="colored"> <li v-for="(m) in markers.soba">{{ m.content.title }}</li> </ul> </li>
-        <li>うどん<ul class="colored"> <li v-for="(m) in markers.udon">{{ m.content.title }}</li> </ul> </li>
-        <li>カレー<ul class="colored"> <li v-for="(m) in markers.curry">{{ m.content.title }}</li> </ul> </li>
-        <li>カフェ・食堂<ul class="colored"> <li v-for="(m) in markers.diner">{{ m.content.title }}</li> </ul> </li>
-        <li>天ぷら<ul class="colored"> <li v-for="(m) in markers.tenpura">{{ m.content.title }}</li> </ul> </li>
+        <li><img src="/eat/ramen.png">ラーメン<ul class="colored"> <li v-for="(m) in markers.ramen">{{ m.content.title }}</li> </ul> </li>
+        <li><img src="/eat/soba.png">蕎麦<ul class="colored"> <li v-for="(m) in markers.soba">{{ m.content.title }}</li> </ul> </li>
+        <li><img src="/eat/udon.png">うどん<ul class="colored"> <li v-for="(m) in markers.udon">{{ m.content.title }}</li> </ul> </li>
+        <li><img src="/eat/curry.png">カレー<ul class="colored"> <li v-for="(m) in markers.curry">{{ m.content.title }}</li> </ul> </li>
+        <li><img src="/eat/dinner.png">カフェ・食堂<ul class="colored"> <li v-for="(m) in markers.diner">{{ m.content.title }}</li> </ul> </li>
+        <li><img src="/eat/tempura.png">天ぷら<ul class="colored"> <li v-for="(m) in markers.tenpura">{{ m.content.title }}</li> </ul> </li>
       </ul>
     </div>
   </section>
