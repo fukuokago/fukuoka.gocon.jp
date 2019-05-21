@@ -58,9 +58,9 @@ export default class TheNav extends Vue {
     public links = [
       { slug: '', to: 'location', label: 'Location' },
       { slug: '', to: 'schedule', label: 'Schedule' },
+      { slug: '', to: 'speakers', label: 'Speakers' },
       { slug: '', to: 'registration', label: 'Registration' },
       //{ slug: '', to: 'about', label: 'About' },
-      //{ slug: '', to: 'talks', label: 'Talks' },
       //{ slug: '', to: 'scholarships', label: 'Scholarships' },
       { slug: '', to: 'sponsors', label: 'Sponsors' },
       { slug: '', to: 'team', label: 'Team' },
