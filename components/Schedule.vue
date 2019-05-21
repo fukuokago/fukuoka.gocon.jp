@@ -18,87 +18,46 @@ ja:
     <p>{{ $t('desc') }}</p>
 
     <div class="row" v-for="(sessions, time) in timetable">
-        <p class="timediv">{{ time }}</p>
-        <div class="is-clearfix">
-          <div class="session" v-bind:class="{single: sessions.length === 1}" v-for="(v, i) in sessions">
-            <p class="session--time">{{ format24To12(v.start) }} - {{ format24To12(v.end) }}
-              <span class="session--time--duration">({{ duration(v.start, v.end) }})</span>
-            </p>
-            <p class="session--title">{{ v.title }}</p>
-            <div class="session--speaker is-clearfix">
-              <img class="session--speaker--avatar" :src="v.avatar" v-if="v.avatar !== undefined" />
-              <p class="session--speaker--name">{{ v.name }}</p>
-              <p class="session--speaker--org" v-if="v.organization !== undefined">{{ v.organization }}</p>
-            </div>
+      <p class="timediv">{{ time }}</p>
+      <div class="is-clearfix">
+        <div class="session" v-bind:class="{single: sessions.length === 1}" v-for="(v, i) in sessions">
+          <p class="session--time">{{ v.start }} - {{ v.stop }}
+            <span class="session--time--duration">({{ v.duration }})</span>
+          </p>
+          <p class="session--title">
+            <nuxt-link class="session--title--anchor" :to="permalink(v.id)" v-if="v.name !== undefined && v.name !== ''">{{ v.title }}</nuxt-link>
+            <span v-else>{{ v.title }}</span>
+          </p>
+          <ul class="session--tags">
+            <li class="tag" v-for="(tag) in v.tags">{{ tag }}</li>
+          </ul>
+          <p class="session--tags">
+          <div class="session--speaker is-clearfix" v-if="v.name !== undefined && v.name !== ''">
+            <img class="session--speaker--avatar" :src="v.avatar" />
+            <p class="session--speaker--name">{{ v.name }}</p>
+            <p class="session--speaker--org">{{ v.organization }}</p>
           </div>
         </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-const t = require('~/data/timetable.json')
-const speakers = require('~/data/speakers.json')
+import { getTimetable } from '~/lib/event'
 
 @Component
 export default class Schedule extends Vue {
   public timetable
 
-  public format24To12(t: string): string {
-    const colonRemoved = t.replace(/:/, '')
-    const tt = parseInt(colonRemoved)
-    const f12h = `${tt - (tt > 1200 ? 1200 : 0)}`.replace(/^(.*)(\d{2})$/, '$1:$2')
-    return `${f12h} ${tt > 1200 ? 'PM' : 'AM'}`
-  }
-
-  public duration(start: string, stop: string): string {
-    const s = start.split(':')
-    const ss = stop.split(':')
-    const us = Math.round((new Date(1970, 0, 1, parseInt(s[0]), parseInt(s[1]))).getTime() / 1000 / 60)
-    const uss = Math.round((new Date(1970, 0, 1, parseInt(ss[0]), parseInt(ss[1]))).getTime() / 1000 / 60)
-    const duMin = uss - us
-    if (duMin >= 60) {
-      const h = Math.floor(duMin / 60)
-      const m = duMin - (h * 60)
-      if (m === 0) {
-        return `${h} hours`
-      }
-      return `${h} hours, ${m} min`
-    }
-    return `${duMin} min`
-  }
-
-  public findSpeaker(id: string) {
-    for (const v of speakers) {
-      if (v.id === id) {
-        return v
-      }
-    }
-    return {}
-  }
-
-  public createDiv() {
-    let divs = {}
-    for (const v of t) {
-      if (v.start === '') {
-        continue
-      }
-
-      const sp = this.findSpeaker(v.id)
-      const speaker = { ...sp, ...v }
-      const time = this.format24To12(v.start)
-      if (divs[time] === undefined) {
-        divs[time] = []
-      }
-      divs[time].push(speaker)
-    }
-    return divs
+  public permalink(id: string): string {
+    return this.localePath({ name: 'speakers-slug', params: { slug: id } })
   }
 
   public data() {
     return {
-      timetable: this.createDiv()
+      timetable: getTimetable()
     }
   }
 }
@@ -161,9 +120,39 @@ export default class Schedule extends Vue {
 }
 .session--title {
   font-weight: bold;
+  font-family: 'Arvo', serif;
+  padding-bottom: .7em;
+  line-height: 1.2;
+}
+.session--title--anchor {
+  font-size: .7em;
+}
+.session--tags {
+  font-family: 'Arvo', serif;
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+.session--tags li {
+  float: left;
+}
+.tag {
+  font-size: .7em;
+  background: #888;
+  border-radius: 3px 0 0 3px;
+  color: #fff;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
 }
 .session--speaker {
-  padding-bottom: 1em;
+  padding: 1em 0;
   font-family: 'Arvo', serif;
 }
 .session--speaker img {
@@ -177,7 +166,7 @@ export default class Schedule extends Vue {
   margin-right: 1em;
 }
 .session--speaker--name {
-  padding: .7em 0 .15em;
+  padding: 1em 0 .15em;
   font-size: 1em;
   font-weight: bold;
 }

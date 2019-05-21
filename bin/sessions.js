@@ -6,11 +6,11 @@ let sessions = [];
 
 for (const v in submissions) {
   const src = submissions[v];
-  if (src.state === "accepted" && src.confirmed === true) {
+  if (src.state === 'accepted' && src.confirmed === true) {
     const data = {
       sponsor: (src.rating === 0),
-      start: "",
-      end: "",
+      start: '',
+      stop: '',
       id: (src.twitter === '' ? src.email.split('@')[0] : src.twitter),
       type: (src.talk_format.match(/20 min/) ? 'short' : 'long')
     };
