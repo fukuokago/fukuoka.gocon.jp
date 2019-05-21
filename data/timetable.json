@@ -1,0 +1,276 @@
+[
+  {
+    "sponsor": false,
+    "start": "09:30",
+    "end": "17:30",
+    "id": "staff",
+    "title": "Registration 🎫",
+    "type": "registration"
+  },
+  {
+    "sponsor": false,
+    "start": "10:00",
+    "end": "10:10",
+    "id": "organizer",
+    "title": "Opening talk 🙋",
+    "type": "call"
+  },
+  {
+    "sponsor": false,
+    "start": "10:10",
+    "end": "10:50",
+    "id": "tenntenn",
+    "type": "long"
+  },
+  {
+    "sponsor": false,
+    "start": "10:10",
+    "end": "10:50",
+    "id": "denis_makogon",
+    "type": "long"
+  },
+  {
+    "sponsor": true,
+    "start": "10:50",
+    "end": "11:10",
+    "id": null,
+    "title": "Sponsor Session 📢",
+    "type": "short"
+  },
+  {
+    "sponsor": true,
+    "start": "10:50",
+    "end": "11:10",
+    "id": null,
+    "title": "Sponsor Session 📢",
+    "type": "short"
+  },
+  {
+    "sponsor": true,
+    "start": "11:10",
+    "end": "11:30",
+    "id": null,
+    "title": "Sponsor Session 📢",
+    "type": "short"
+  },
+  {
+    "sponsor": true,
+    "start": "11:10",
+    "end": "11:30",
+    "id": null,
+    "title": "Sponsor Session 📢",
+    "type": "short"
+  },
+  {
+    "sponsor": false,
+    "start": "11:30",
+    "end": "11:50",
+    "id": "budougumi0617",
+    "type": "short"
+  },
+  {
+    "sponsor": false,
+    "start": "11:30",
+    "end": "11:50",
+    "id": "pyama86",
+    "type": "short"
+  },
+  {
+    "sponsor": false,
+    "start": "11:50",
+    "end": "13:20",
+    "id": null,
+    "title": "Lunch Break 🍜",
+    "type": "break"
+  },
+  {
+    "sponsor": true,
+    "start": "13:20",
+    "end": "13:40",
+    "id": null,
+    "title": "Sponsor Session 📢",
+    "type": "short"
+  },
+  {
+    "sponsor": true,
+    "start": "13:20",
+    "end": "13:40",
+    "id": null,
+    "title": "Sponsor Session 📢",
+    "type": "short"
+  },
+  {
+    "sponsor": false,
+    "start": "13:40",
+    "end": "14:00",
+    "id": "cohhei",
+    "type": "short"
+  },
+  {
+    "sponsor": false,
+    "start": "13:40",
+    "end": "14:00",
+    "id": "tsurubee3",
+    "type": "short"
+  },
+  {
+    "sponsor": false,
+    "start": "14:00",
+    "end": "14:20",
+    "id": "avvmoto",
+    "type": "short"
+  },
+  {
+    "sponsor": false,
+    "start": "14:00",
+    "end": "14:20",
+    "id": "qt_luigi",
+    "type": "short"
+  },
+  {
+    "sponsor": false,
+    "start": "14:20",
+    "end": "15:00",
+    "id": "shibu_jp",
+    "type": "long"
+  },
+  {
+    "sponsor": false,
+    "start": "14:20",
+    "end": "15:00",
+    "id": "ymotongpoo",
+    "type": "long"
+  },
+  {
+    "sponsor": false,
+    "start": "15:00",
+    "end": "15:10",
+    "id": null,
+    "title": "Break ☕️",
+    "type": "break"
+  },
+  {
+    "sponsor": false,
+    "start": "15:10",
+    "end": "15:30",
+    "id": "po3rin",
+    "type": "short"
+  },
+  {
+    "sponsor": false,
+    "start": "15:10",
+    "end": "15:30",
+    "id": "seike460",
+    "type": "short"
+  },
+  {
+    "sponsor": false,
+    "start": "15:30",
+    "end": "15:50",
+    "id": "pb.hirokawa",
+    "type": "short"
+  },
+  {
+    "sponsor": false,
+    "start": "15:30",
+    "end": "15:50",
+    "id": "ikeda.sub",
+    "type": "short"
+  },
+  {
+    "sponsor": false,
+    "start": "15:50",
+    "end": "16:30",
+    "id": "codehex",
+    "type": "long"
+  },
+  {
+    "sponsor": false,
+    "start": "15:50",
+    "end": "16:30",
+    "id": "k1LoW",
+    "type": "long"
+  },
+  {
+    "sponsor": false,
+    "start": "16:30",
+    "end": "16:50",
+    "id": null,
+    "title": "Break ☕️",
+    "type": "break"
+  },
+  {
+    "sponsor": true,
+    "start": "16:50",
+    "end": "17:10",
+    "id": null,
+    "title": "Sponsor Session 📢",
+    "type": "short"
+  },
+  {
+    "sponsor": true,
+    "start": "16:50",
+    "end": "17:10",
+    "id": null,
+    "title": "Sponsor Session 📢",
+    "type": "short"
+  },
+  {
+    "sponsor": false,
+    "start": "17:10",
+    "end": "17:30",
+    "id": "hgsgtk",
+    "type": "short"
+  },
+  {
+    "sponsor": false,
+    "start": "17:10",
+    "end": "17:30",
+    "id": "makki_d",
+    "type": "short"
+  },
+  {
+    "sponsor": false,
+    "start": "17:30",
+    "end": "17:50",
+    "id": "ichikaway",
+    "type": "short"
+  },
+  {
+    "sponsor": false,
+    "start": "17:30",
+    "end": "17:50",
+    "id": "__timakin__",
+    "type": "long"
+  },
+  {
+    "sponsor": false,
+    "start": "17:50",
+    "end": "18:50",
+    "id": null,
+    "title": "Networking 🍻",
+    "type": "break"
+  },
+  {
+    "sponsor": false,
+    "start": "18:50",
+    "end": "19:00",
+    "id": "organizer",
+    "title": "Close 👋",
+    "type": "call"
+  },
+  {
+    "sponsor": true,
+    "start": "",
+    "end": "",
+    "id": "mohri1219",
+    "type": "short"
+  },
+  {
+    "sponsor": true,
+    "start": "",
+    "end": "",
+    "id": "vvvatanabe",
+    "type": "short"
+  }
+]
