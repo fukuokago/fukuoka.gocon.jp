@@ -4,6 +4,7 @@ const pkg = require('./package')
 const speakersPages = getIds().map((m) => { return `/speakers/${m}` })
 const dynamicPages = speakersPages.concat([
   '/speakers',
+  '/blog/schedule-and-speakers-are-published',
   '/blog/sponsors-are-published',
   '/blog/call-for-sponsors-is-open',
   '/blog/call-for-sponsors-is-open',
