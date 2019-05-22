@@ -57,11 +57,6 @@ export function getSpeakers() {
   for (const v of speakersRaw) {
     const speaker = findSpeaker(v.id)
     const session = findSession(v.id)
-    if (session.start === '' || session.stop === '') {
-      session.start = 'N/A'
-      session.stop = 'N/A'
-      session.duration = '20 min'
-    }
     const merged = { ...speaker, ...session }
     obj.push(merged)
   }
