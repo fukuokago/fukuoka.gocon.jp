@@ -21,10 +21,7 @@
     "organization": "Future Corporation",
     "title": "他の言語ユーザーのためのGoのまとめ",
     "abstract": "言語が違えば実装方針も変わってきます。パッケージの分け方、構造体の設計、関数の定義方法・・・Goに入ったらGoに従おうと思っても、どのような方法があるのかを知らないと、ついつい知っている方法に引きずられてしまいがちです。Goらしいプログラミングの手法を整理しようと思います。",
-    "tags": [
-      "go",
-      "golang"
-    ]
+    "tags": []
   },
   {
     "id": "codehex",
@@ -37,8 +34,6 @@
     "title": "Chrome as a service in Go",
     "abstract": "Go でChrome を使ったブラウザの操作を自動化するためのサービスを開発した話をしたいです。",
     "tags": [
-      "go",
-      "golang",
       "chrome",
       "javascript",
       "microservices"
@@ -55,8 +50,6 @@
     "title": "Data aggregation design with Goroutine, Channel, \"sync\" package, and Simple diagram",
     "abstract": "\"GoはGoroutineやChannelがあるので、並列・並行処理が書きやすい\" と言われて久しいですが、遅ればせながら私もそう思います。\n本発表では、\"データを収集して処理する\"という点に絞り、実際に私が直面したいくつかのケースで、GoroutineやChannelやsyncパッケージそして独自の図を使って、どのように設計し作り上げたかをいくつかの実例を元にお話ししたいと思います。",
     "tags": [
-      "go",
-      "golang",
       "concurrency",
       "data aggrigation"
     ]
@@ -75,7 +68,6 @@
       "middleware",
       "tools",
       "Japanese",
-      "go",
       "English"
     ]
   },
@@ -106,7 +98,6 @@
     "title": "なぜ Go はマイクロサービスのための言語なのか",
     "abstract": "マイクロサービスは一般に組織やシステムをスケーラブルにしますが、同時に複雑さももたらします。例えば、マイクロサービスの環境下ではクライアントからのひとつのリクエストが複数のサービスを経由します。そのため、特定のリクエストで発生した遅延や不具合がどこで発生したのかを調査するためには、個々のリクエストに関連する処理をまとめておく必要があります。一方で、Go はマイクロサービスのための言語と言われています。その理由を、実際にプロダクション環境で Go で実装したマイクロサービスを開発・運用している経験をもとに、コンテナと Observability の観点から解説します。",
     "tags": [
-      "go",
       "Microservices",
       "Docker",
       "OpenTracing",
@@ -126,8 +117,7 @@
     "title": "Linux middleware development by Go",
     "abstract": "Go言語を用いたLinuxサーバミドルウェア開発における失敗談を含むノウハウや、ベストプラクティスをトークします。Go言語はLinuxの各種ライブラリとの連携が容易であることや、CGOが利用できることで、従来の言語と比較しLinuxミドルウェアを作りやすい言語です。\n一方で、言語として想定していないプロセス、メモリ状態もあり、そういった点に注意を払わないと想定外の挙動をしてしまいます。話し手がLinuxサーバミドルウェア開発を続ける中で実際に遭遇した動作、仕様を実例を元にトークします。",
     "tags": [
-      "middleware",
-      "go"
+      "middleware"
     ]
   },
   {
@@ -141,8 +131,6 @@
     "title": "Let's do some serverless with Go",
     "abstract": "This talk is all about doing serverless and Go with some comparison to other programming languages like Java and Python. This talk would be very useful for people deciding on serverless as a technology to use. In this talk we'd some coding, doing some serverless functions, math, etc.",
     "tags": [
-      "go",
-      "golang",
       "serverless",
       "clouds",
       "oracle"
@@ -159,8 +147,6 @@
     "title": "JavaプログラムをGoに移植するためのテクニック――継承と例外",
     "abstract": "Goは比較的新しい言語なので、他言語のソフトウェア資産を活用するために設計や構造をそのままGoに移植したいケースが稀にあると思います。しかし、JavaやC++のようなクラスシステムや例外機構を持つ言語からGoに移植しようとするとき、その言語構造の違いに直面します。Goではクラスではなく構造体とインターフェイスでオブジェクトを表現する他、例外機構ではないエラーハンドリングによって、元のプログラムと同等の機能を実現する必要があります。ここではZXingというJavaのライブラリを移植したgozxingプロジェクトにおいて、特に継承と例外をGoでどのように実現したか実例を交えて紹介します。",
     "tags": [
-      "Go",
-      "golang",
       "Java"
     ]
   },
@@ -175,7 +161,6 @@
     "title": "Image processing with Go has great potential !!",
     "abstract": "Goによる画像自動生成サービスを作った経験から、Goで一歩進んだ画像処理を行う方法についてお話します。画像やテキストの合成に関して知っておくべき用語やエッセンスから、任意の画像処理アルゴリズムを標準パッケージで実装する際の知見や、Go+OpenCVを使った画像解析など、入門書だけでは体感できないような、Go+画像処理の可能性をお伝えします。",
     "tags": [
-      "go",
       "image",
       "OpenCV"
     ]
@@ -191,7 +176,6 @@
     "title": "How to Write Go CLI Tools",
     "abstract": "I show some tips and tricks for writing CLI tools by Go. (Notes on writing CLI tools in my case. Findings obtained when wrote CLI tools at my work.) This gives you the following benefits: (Know-how to write CLI tools. Persuasive material to introduce Go to your workplace.)",
     "tags": [
-      "go",
       "tools"
     ]
   },
@@ -231,7 +215,6 @@
     "abstract": "常時接続型 API を構築するとき、 Golang + gRPC Streaming はパフォーマンスに優れる有力な選択肢となります。しかしながら常時接続ゆえ、通常通信時間が短時間で終了する Web API とは異なる注意点があります。そこで本セッションでは、gRPC Streaming の紹介にはじまり、注意点やハマりポイントをご紹介します。また、GCP や AWS で、 kubenetes 上でオートスケールするオートモーティブ移動体情報配信システムを構築した事例をご紹介します。",
     "tags": [
       "gRPC Streaming",
-      "Golang",
       "k8s"
     ]
   },
@@ -274,7 +257,6 @@
     "title": "google/wireを使ったGoらしいアーキテクチャ設計への取り組み",
     "abstract": "github.com/google/wireはGoでDI（依存性の注入）を行なうためのツールです。\n依存の注入・初期化、依存の注入・初期化を繰り返し、多階層のDIコードも自動生成できます。  \nマイクロサービスをゼロから開発するにあたり、google/wireを使ってGoらしく疎結合なアーキテクチャ設計に挑戦しました。その際に感じたgoogle/wireのメリット・デメリット・可能性を紹介します。  \nhttps://github.com/google/wire",
     "tags": [
-      "go",
       "Japanese",
       "design"
     ]
@@ -308,9 +290,7 @@
     "organization": "BASE BANK, Inc.",
     "title": "Cost-effective Go unit test thinking and practices",
     "abstract": "ユニットテストを書くことが重要なのはもちろんですが、費用対効果のよいユニットテストであることも重要です。それが実現できていない場合、ユニットテスト量が増えたときに様々な弊害をもたらします。このトークでは、費用対効果を高める上で、Goでどのように考え・実践しているかを紹介します。特に実装上Go特有の注意が必要な、適切なエラーハンドリング/エラーレポート・テストヘルパーの使い所・モック/スタブの使い所などについてです。このトークで紹介する基礎的な考え方と実践例が、参加者の方々の実践を支える基礎となることを期待しています。",
-    "tags": [
-      "go"
-    ]
+    "tags": []
   },
   {
     "id": "seike460",
@@ -323,8 +303,6 @@
     "title": "ISUCONの為のpprof",
     "abstract": "pprofはGoの標準ライブラリであるプロファイリングツールです\n\n皆様大好きISUCONでは、必須のツールだと言えます\n\n今回はそのpprofについてひたすら調べた事を掘り下げてお伝えしようと思います\n\nISUCONでの利用を想定したお話をしますが、現場でも有効的に活用できる話も交えながらお話します\n\n聴講ターゲット\n\n- pprofを知らない方\n- pprofをもっと知りたい方\n- ISUCONに興味がある方\n\nお話すること\n\n- pprofの機能\n- pprofの便利な使い方\n- ISUCONにおけるpprofの役割",
     "tags": [
-      "go",
-      "golang",
       "pprof"
     ]
   },
