@@ -32,7 +32,7 @@
     "url": "https://codehex.dev",
     "organization": "mercari",
     "title": "Chrome as a service in Go",
-    "abstract": "Go でChrome を使ったブラウザの操作を自動化するためのサービスを開発した話をしたいです。",
+    "abstract": "本トークでは Go 製の Chrome を使うサービスを開発する際に考えたこと、試したこと、苦労したことを話したいと思います。\n\n※内容は変更される可能性があります\n\n- Summary of the Chrome as a service\n- What did we think about devops\n- Performance improvement\n- Final result",
     "tags": [
       "chrome",
       "javascript",
