@@ -114,6 +114,13 @@ export function findSpeaker(id: string): Speaker {
 }
 
 function normalizeSession(data): Session {
+  if (data.start === '' || data.stop === '') {
+    data.start = 'N/A'
+    data.stop = 'N/A'
+    data.duration = '20 min'
+    return data
+  }
+
   return { ...data, ...{
     start: format24To12(data.start),
     stop: format24To12(data.stop),

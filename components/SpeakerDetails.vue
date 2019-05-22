@@ -5,7 +5,9 @@
     <img class="avatar" :src="speaker.avatar" v-if="speaker.avatar !== undefined" />
 
     <div class="speaker-details--speaker">
-      <p class="speaker-org">{{ speaker.organization }}</p>
+      <p class="speaker-org">{{ speaker.organization }}
+        <nuxt-link :to="localePath('sponsors')" class="speaker-details--sponsor" v-if="session.sponsor">Sponsor</nuxt-link>
+      </p>
       <p class="speaker-name">{{ speaker.name }}</p>
       <div class="speaker-bio" v-html="$md.render(speaker.bio)"></div>
       <p class="speaker-url" v-if="speaker.url"><a :href="speaker.url">{{ speaker.url }}</a></p>
@@ -144,6 +146,22 @@ export default class SpeakerDetails extends Vue {
   margin: 0 10px 10px 0;
   text-decoration: none;
   -webkit-transition: color 0.2s;
+}
+.speaker-details--sponsor {
+  display: inline-block;
+  background-color: #CE3262;
+  color: #fff;
+  padding: .3em 1em .4em;
+  font-size: .7em;
+  border-radius: 4px;
+  margin: -.1em 0 0 1em;
+  position: absolute;
+  border: none;
+}
+.speaker-details--sponsor:hover {
+  border: none;
+  color: #fff;
+  background-color: #000;
 }
 @media (max-width: 500px) {
   .speaker-details--speaker .speaker-name {
