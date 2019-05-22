@@ -93,7 +93,7 @@ a.speaker--anchor {
 }
 .speaker--session-sponsor {
   position: absolute;
-  top: -2em;
+  top: -1.9em;
   right: 1em;
   background-color: #CE3262;
   color: #fff;
