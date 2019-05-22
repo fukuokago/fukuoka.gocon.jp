@@ -32,7 +32,6 @@ ja:
             <ul class="session--tags">
               <li class="tag" v-for="(tag) in v.tags">{{ tag }}</li>
             </ul>
-            <p class="session--tags">
             <div class="session--speaker is-clearfix" v-if="v.name !== undefined && v.name !== ''">
               <img class="session--speaker--avatar" :src="v.avatar" />
               <p class="session--speaker--name">{{ v.name }}</p>
