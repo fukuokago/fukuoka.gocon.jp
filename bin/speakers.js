@@ -17,7 +17,7 @@ for (const v in submissions) {
       organization: src.organization,
       title: src.title,
       abstract: src.abstract,
-      tags: src.tags
+      tags: src.tags.filter(t => t.toLowerCase() !== 'go' && t.toLowerCase() !== 'golang'),
     };
     speakers.push(data);
   }
