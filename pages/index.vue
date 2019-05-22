@@ -18,7 +18,9 @@ ja:
       <p class="goto-sponsors"><nuxt-link :to="localePath('sponsors')" class="button large is-inverted is-outlined">🏢 {{ $t('sponsors') }}</nuxt-link></p>
     </div>
     <Fukuoka/>
-    <Schedule/>
+    <div class="container">
+      <Schedule/>
+    </div>
   </section>
 </template>
 

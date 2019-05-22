@@ -1,5 +1,5 @@
 <template>
-  <div class="container speaker-details is-clearfix">
+  <div class="speaker-details is-clearfix">
     <h2><span class="speakers-index-link"><nuxt-link :to="indexlink">Speakers & Talks</nuxt-link></span></h2>
 
     <img class="avatar" :src="speaker.avatar" v-if="speaker.avatar !== undefined" />
@@ -117,5 +117,33 @@ export default class SpeakerDetails extends Vue {
 .speakers-index-link a:hover {
   border: none;
   color: #000;
+}
+@media (max-width: 500px) {
+  .speaker-details--speaker .speaker-name {
+    font-size: 1em;
+    white-space: nowrap;
+  }
+  .speaker-details--speaker .speaker-bio {
+    font-size: .8em;
+  }
+  .speaker-details--speaker .speaker-url,
+  .speaker-details--speaker .speaker-twitter {
+    font-size: .7em;
+  }
+  .speaker-details--speaker .session-head {
+    padding: .3em 0 .3em 1em;
+    font-size: .6em;
+    width: 6em;
+    margin-left: -7em;
+    margin-top: 0;
+  }
+  .speaker-details--session {
+    margin-left: -50%;
+    margin-top: 2em;
+    padding: 1.5em 1.5em 1em 3em;
+  }
+  .speaker-details--session .session-time {
+    font-size: .7em;
+  }
 }
 </style>

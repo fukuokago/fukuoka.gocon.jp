@@ -1,5 +1,5 @@
 <template>
-  <div class="container speakers is-clearfix">
+  <div class="speakers is-clearfix">
     <h2>Speakers & Talks</h2>
 
     <div class="speaker" v-for="(s, i) in speakers">
@@ -102,6 +102,44 @@ a.speaker--anchor {
   border-radius: 4px 4px 0 0;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 501px) and (max-width: 800px) {
+  .speaker {
+    width: 29%;
+    margin: 0 2% 2em;
+  }
+  .speaker img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .speaker {
+    width: 47%;
+    height: 400px;
+    margin: 0 6% 1em 0;
+  }
+  .speaker:nth-child(odd) {
+    margin-right: 0;
+  }
+  .speaker img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+  }
+  .speaker--name {
+    letter-spacing: -1px;
+    font-size: .8em;
+  }
+  .talk {
+    margin: .6em 0 0;
+    padding: 1.5em .5em .5em;
+  }
+  .speaker--session-title {
+    letter-spacing: -1px;
+  }
+  .speaker--session-time {
+    font-size: .6em;
+    letter-spacing: -1px;
+  }
 }
 </style>

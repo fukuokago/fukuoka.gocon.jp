@@ -12,30 +12,32 @@ ja:
 </i18n>
 
 <template>
-  <div class="container schedule">
+  <div class="schedule">
     <h2>Schedule</h2>
 
     <p>{{ $t('desc') }}</p>
 
-    <div class="row" v-for="(sessions, time) in timetable">
-      <p class="timediv">{{ time }}</p>
-      <div class="is-clearfix">
-        <div class="session" v-bind:class="{single: sessions.length === 1}" v-for="(v, i) in sessions">
-          <p class="session--time">{{ v.start }} - {{ v.stop }}
-            <span class="session--time--duration">({{ v.duration }})</span>
-          </p>
-          <p class="session--title">
-            <nuxt-link class="session--title--anchor" :to="permalink(v.id)" v-if="v.name !== undefined && v.name !== ''">{{ v.title }}</nuxt-link>
-            <span v-else>{{ v.title }}</span>
-          </p>
-          <ul class="session--tags">
-            <li class="tag" v-for="(tag) in v.tags">{{ tag }}</li>
-          </ul>
-          <p class="session--tags">
-          <div class="session--speaker is-clearfix" v-if="v.name !== undefined && v.name !== ''">
-            <img class="session--speaker--avatar" :src="v.avatar" />
-            <p class="session--speaker--name">{{ v.name }}</p>
-            <p class="session--speaker--org">{{ v.organization }}</p>
+    <div class="schedule--box">
+      <div class="row" v-for="(sessions, time) in timetable">
+        <p class="timediv">{{ time }}</p>
+        <div class="is-clearfix">
+          <div class="session" v-bind:class="{single: sessions.length === 1}" v-for="(v, i) in sessions">
+            <p class="session--time">{{ v.start }} - {{ v.stop }}
+              <span class="session--time--duration">({{ v.duration }})</span>
+            </p>
+            <p class="session--title">
+              <nuxt-link class="session--title--anchor" :to="permalink(v.id)" v-if="v.name !== undefined && v.name !== ''">{{ v.title }}</nuxt-link>
+              <span v-else>{{ v.title }}</span>
+            </p>
+            <ul class="session--tags">
+              <li class="tag" v-for="(tag) in v.tags">{{ tag }}</li>
+            </ul>
+            <p class="session--tags">
+            <div class="session--speaker is-clearfix" v-if="v.name !== undefined && v.name !== ''">
+              <img class="session--speaker--avatar" :src="v.avatar" />
+              <p class="session--speaker--name">{{ v.name }}</p>
+              <p class="session--speaker--org">{{ v.organization }}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -64,6 +66,9 @@ export default class Schedule extends Vue {
 </script>
 
 <style scopd>
+.schedule--box {
+  margin-top: 2em;
+}
 .row {
   position: relative;
   padding: 0 0 2em 7em;
@@ -175,7 +180,7 @@ export default class Schedule extends Vue {
   font-size: .8em;
   color: #00ADD8;
 }
-@media (max-width: 800px) {
+@media (min-width: 501px) and (max-width: 800px) {
   .session {
     width: 100%;
     float: none;
@@ -183,6 +188,39 @@ export default class Schedule extends Vue {
   }
   .session:first-child {
     margin-right: 0;
+  }
+}
+@media (max-width: 500px) {
+  .session {
+    width: 100%;
+    float: none;
+    margin-bottom: 1em;
+  }
+  .session:first-child {
+    margin-right: 0;
+  }
+  .session--time:before {
+    left: -10px;
+    width: 16px;
+    overflow: hidden;
+  }
+  .row {
+    position: relative;
+    padding: 2em 0 0;
+  }
+  .timediv {
+    top: -5px;
+    left: -1em;
+  }
+  .session--title {
+    font-size: 1.2em;
+  }
+  .session--tags li {
+  font-size: .5em;
+  }
+  .session--speaker--name {
+    padding-top: 1.5em;
+    font-size: .9em;
   }
 }
 </style>
