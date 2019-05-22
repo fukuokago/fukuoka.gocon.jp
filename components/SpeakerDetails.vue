@@ -7,15 +7,18 @@
     <div class="speaker-details--speaker">
       <p class="speaker-org">{{ speaker.organization }}</p>
       <p class="speaker-name">{{ speaker.name }}</p>
-      <p class="speaker-bio">{{ speaker.bio }}</p>
+      <div class="speaker-bio" v-html="$md.render(speaker.bio)"></div>
       <p class="speaker-url" v-if="speaker.url"><a :href="speaker.url">{{ speaker.url }}</a></p>
       <p class="speaker-twitter" v-if="speaker.twitter"><a :href="'https://twitter.com/' + speaker.twitter">https://twitter.com/{{ speaker.twitter }}</a></p>
 
       <div class="speaker-details--session">
         <p class="session-head">Title:</p>
         <p class="session-title">{{ speaker.title }}</p>
+        <ul class="session-tags">
+          <li class="tag" v-for="(tag) in speaker.tags">{{ tag }}</li>
+        </ul>
         <p class="session-head">Abstract:</p>
-        <p class="session-abstract">{{ speaker.abstract }}</p>
+        <div class="session-abstract" v-html="$md.render(speaker.abstract)"></div>
         <p class="session-head">Time:</p>
         <p class="session-time">{{ session.start }} - {{ session.stop }}
           <span class="speaker--session-time-duration">({{ session.duration }})</span>
@@ -67,10 +70,10 @@ export default class SpeakerDetails extends Vue {
   font-size: 2em;
 }
 .speaker-details--speaker .speaker-org {
-  font-size: .7em;
+  font-size: .85em;
 }
 .speaker-details--speaker .speaker-bio {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 .speaker-details--speaker .speaker-url,
 .speaker-details--speaker .speaker-twitter {
@@ -117,6 +120,30 @@ export default class SpeakerDetails extends Vue {
 .speakers-index-link a:hover {
   border: none;
   color: #000;
+}
+.session-tags {
+  font-family: 'Arvo', serif;
+  list-style: none;
+  margin: 0 0 1em;
+  overflow: hidden;
+  padding: 0;
+}
+.session-tags li {
+  float: left;
+}
+.tag {
+  font-size: .7em;
+  background: #888;
+  border-radius: 3px 0 0 3px;
+  color: #fff;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
 }
 @media (max-width: 500px) {
   .speaker-details--speaker .speaker-name {
