@@ -1,1 +1,349 @@
-[{"id":"mohri1219","name":"毛利 啓太","avatar":"https://secure.gravatar.com/avatar/a9f8382f6cdd535370c723eba233a8f7?s=500","bio":"","twitter":"","url":"","organization":"Fusic CO.,LTD.","title":"Goで作る大量プロセス管理機構","abstract":"株式会社Fusicでは、IoT仮想デバイス作成サービス「mockmock」を展開しています。\nmockmockは、「mock」と呼ばれる仮想デバイスから疑似データを送ることで、IoTシステム開発のテストや負荷試験を支援します。\n本セッションでは、数千、数万単位で稼働するmockのプロセスをいかにして管理しているのか解説します。fsnotifyを利用したファイル経由の疎結合なやりとり、goroutineを利用したmockプロセスの監視、各種イレギュラーな動作への対応、バイナリの差し替えなどお話できればと思います。","tags":[]},{"id":"shibu_jp","name":"Yoshiki Shibukawa","avatar":"https://secure.gravatar.com/avatar/d299468335580748cb8d533d2650f9a4?s=500","bio":"I am working for Future Corporation. My favorite languages are C++/Python/Go/TypeScript. My favorite backend for OpenCensus is Jaeger.\r\n\r\nI am an author of Real World HTTP (O'Reilly Japan), System Programming in Golang (Lambda Note) and other meny books.","twitter":"shibu_jp","url":"https://github.com/shibukawa","organization":"Future Corporation","title":"他の言語ユーザーのためのGoのまとめ","abstract":"言語が違えば実装方針も変わってきます。パッケージの分け方、構造体の設計、関数の定義方法・・・Goに入ったらGoに従おうと思っても、どのような方法があるのかを知らないと、ついつい知っている方法に引きずられてしまいがちです。Goらしいプログラミングの手法を整理しようと思います。","tags":["go","golang"]},{"id":"codehex","name":"codehex","avatar":"https://secure.gravatar.com/avatar/60e652d0244f47d2da4e1f7e712f9328?s=500","bio":"Backend engineer which development microservices at merpay and mercari","twitter":"codehex","url":"https://codehex.dev","organization":"mercari","title":"Chrome as a service in Go","abstract":"Go でChrome を使ったブラウザの操作を自動化するためのサービスを開発した話をしたいです。","tags":["go","golang","chrome","javascript","microservices"]},{"id":"k1LoW","name":"Ken’ichiro Oyama","avatar":"https://secure.gravatar.com/avatar/69b93af68320a590f607c296e8edff73?s=500","bio":"","twitter":"k1LoW","url":"https://github.com/k1LoW","organization":"GMO Pepabo, Inc.","title":"Data aggregation design with Goroutine, Channel, \"sync\" package, and Simple diagram","abstract":"\"GoはGoroutineやChannelがあるので、並列・並行処理が書きやすい\" と言われて久しいですが、遅ればせながら私もそう思います。\n本発表では、\"データを収集して処理する\"という点に絞り、実際に私が直面したいくつかのケースで、GoroutineやChannelやsyncパッケージそして独自の図を使って、どのように設計し作り上げたかをいくつかの実例を元にお話ししたいと思います。","tags":["go","golang","concurrency","data aggrigation"]},{"id":"__timakin__","name":"Seiji Takahashi","avatar":"https://secure.gravatar.com/avatar/5bfed9aa3a9ebccb0c0f0cb65ee9e012?s=500","bio":"movie junkie, bird lover.\r\nSoftware engineer at Gunosy Inc.","twitter":"__timakin__","url":"https://medium.com/@timakin","organization":"Gunosy Inc.","title":"Golang BFF with GraphQL and gRPC","abstract":"Backend For Frondend is one of the design patterns of a micro-service gateway.\nJavaScript is major for them, but Go is a good alternative choice because it has sophisticated tools for multiple platforms. I'll show how to build BFF gateway server in Go with the ecosystem of GraphQL and gRPC in Go.","tags":["middleware","tools","Japanese","go","English"]},{"id":"pb.hirokawa","name":"rhykw","avatar":"https://secure.gravatar.com/avatar/50641cb66638448146124fffc3f90ccd?s=500","bio":"","twitter":"","url":"https://blog.rhykw.net/","organization":"","title":"ホスティングにおけるメールサービスの運用とgolang","abstract":"発表者は共用ホスティングのメールサービスでバックエンドのリニューアルに携わり、リニューアルに際して初の試みとしてnginxとgolangを採用しました。メールサービスを継続的に安定して提供するためどのようにgolangを使っているかを紹介します。","tags":["nginx","postfix","mail"]},{"id":"cohhei","name":"Kohei Kimura","avatar":"https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/47154/180417nulab-22.jpg","bio":"","twitter":"cohhei","url":"https://cohhei.github.io","organization":"Nulab","title":"なぜ Go はマイクロサービスのための言語なのか","abstract":"マイクロサービスは一般に組織やシステムをスケーラブルにしますが、同時に複雑さももたらします。例えば、マイクロサービスの環境下ではクライアントからのひとつのリクエストが複数のサービスを経由します。そのため、特定のリクエストで発生した遅延や不具合がどこで発生したのかを調査するためには、個々のリクエストに関連する処理をまとめておく必要があります。一方で、Go はマイクロサービスのための言語と言われています。その理由を、実際にプロダクション環境で Go で実装したマイクロサービスを開発・運用している経験をもとに、コンテナと Observability の観点から解説します。","tags":["go","Microservices","Docker","OpenTracing","Prometheus","gRPC","ProtocolBuffers"]},{"id":"pyama86","name":"Kazuhiko Yamashita","avatar":"https://secure.gravatar.com/avatar/df7cc2cc2e207586248e60d879d85911?s=500","bio":"まず僕はOne DirectionよりBackStreatBoysが好きです。\r\n\r\nISPのサーバエンジニアを経験後、プログラミングへの思いからGMOペパボにコードが書けると嘘をついて入社後、技術的課題を抽象化し、OSSとして開発・公開しながら従事。\r\n現在は技術基盤チーム シニア・プリンシパルとしてオンプレミスとクラウドの最適融合を目指して技術開発をしています。","twitter":"pyama86","url":"https://pyama.fun","organization":"GMO Pepabo, inc.","title":"Linux middleware development by Go","abstract":"Go言語を用いたLinuxサーバミドルウェア開発における失敗談を含むノウハウや、ベストプラクティスをトークします。Go言語はLinuxの各種ライブラリとの連携が容易であることや、CGOが利用できることで、従来の言語と比較しLinuxミドルウェアを作りやすい言語です。\n一方で、言語として想定していないプロセス、メモリ状態もあり、そういった点に注意を払わないと想定外の挙動をしてしまいます。話し手がLinuxサーバミドルウェア開発を続ける中で実際に遭遇した動作、仕様を実例を元にトークします。","tags":["middleware","go"]},{"id":"denis_makogon","name":"Denys Makogon","avatar":"https://secure.gravatar.com/avatar/eed6f5ca181818d23754d9f00986f54e?s=500","bio":"Software enthusiast focused on developing and designing platform and software as a service application for clouds. He’s a principal software developer in Oracle, concentrating on product development along with bringing well-designed and production ready integration with clouds solutions, contributor to various open source projects, cloud-related technologies along having fun with IoT devices and photography.\r\nDenis is a regular attendee and speaker at OpenStack summits (Atlanta, Austin, Paris, Barcelona, Boston) and PyCon Hong Kong 2016, 2017, PyCon Italy 2018, PyCon Japan 2018, DeComplile.De 2018. Co-author of OpenStack Application development, OpenStack Trove Essentials.\r\n","twitter":"denis_makogon","url":"https://medium.com/@denismakogon","organization":"Oracle","title":"Let's do some serverless with Go","abstract":"This talk is all about doing serverless and Go with some comparison to other programming languages like Java and Python. This talk would be very useful for people deciding on serverless as a technology to use. In this talk we'd some coding, doing some serverless functions, math, etc.","tags":["go","golang","serverless","clouds","oracle"]},{"id":"makki_d","name":"牧内大輔 (MakKi, makki_d)","avatar":"https://secure.gravatar.com/avatar/99b72ba4c7dd4da957edb3e619a6d71f?s=500","bio":"KLab株式会社 エンジニアリングマネージャー","twitter":"makki_d","url":"https://github.com/makiuchi-d","organization":"KLab Inc.","title":"JavaプログラムをGoに移植するためのテクニック――継承と例外","abstract":"Goは比較的新しい言語なので、他言語のソフトウェア資産を活用するために設計や構造をそのままGoに移植したいケースが稀にあると思います。しかし、JavaやC++のようなクラスシステムや例外機構を持つ言語からGoに移植しようとするとき、その言語構造の違いに直面します。Goではクラスではなく構造体とインターフェイスでオブジェクトを表現する他、例外機構ではないエラーハンドリングによって、元のプログラムと同等の機能を実現する必要があります。ここではZXingというJavaのライブラリを移植したgozxingプロジェクトにおいて、特に継承と例外をGoでどのように実現したか実例を交えて紹介します。","tags":["Go","golang","Java"]},{"id":"po3rin","name":"po3rin","avatar":"https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/45880/gopher.jpeg","bio":"東京に住むエンジニアです。仕事ではGoを使ったBtoB向けの記事レコメンドサービスを開発・運用しています。名古屋大学でPythonを使って生物物理シミュレーション最適化手法を研究していました。趣味は麻雀です。","twitter":"po3rin","url":"https://qiita.com/po3rin","organization":"Shiroyagi Corporation","title":"Image processing with Go has great potential !!","abstract":"Goによる画像自動生成サービスを作った経験から、Goで一歩進んだ画像処理を行う方法についてお話します。画像やテキストの合成に関して知っておくべき用語やエッセンスから、任意の画像処理アルゴリズムを標準パッケージで実装する際の知見や、Go+OpenCVを使った画像解析など、入門書だけでは体感できないような、Go+画像処理の可能性をお伝えします。","tags":["go","image","OpenCV"]},{"id":"qt_luigi","name":"Ryuji Iwata","avatar":"https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/45387/qt_luigi250.png","bio":"","twitter":"qt_luigi","url":"","organization":"","title":"How to Write Go CLI Tools","abstract":"I show some tips and tricks for writing CLI tools by Go. (Notes on writing CLI tools in my case. Findings obtained when wrote CLI tools at my work.) This gives you the following benefits: (Know-how to write CLI tools. Persuasive material to introduce Go to your workplace.)","tags":["go","tools"]},{"id":"ikeda.sub","name":"haminiku","avatar":"https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/47553/yagi.png","bio":"","twitter":"","url":"https://github.com/subc","organization":"DeNA","title":"High memory usage server in Golang","abstract":"メモリに乗り切らない膨大なマスタデータをGolang Serverで高速に効率よく扱うにはどうすれば良いでしょうか。\n\ndiskストレージからメモリへのデータ展開はprotobufを利用すると直接mapに変換でき高速に処理できます。\n\nまたGC特性を考慮したヒット率低いデータをメモリから追い出すメモリ管理戦略が必要になります。\n\n更新されたdiskストレージ上のマスタデータをロック時間最小でメモリ展開するには、Read/Writeロックを組み合わせHot loadingする手法が有効です。\n\n以上を地理空間データを扱った知見を抽象化して紹介します。","tags":[]},{"id":"ichikaway","name":"cakephper (市川)","avatar":"https://secure.gravatar.com/avatar/13aa2fa6b2c4c14886a9dd6633cf4aef?s=500","bio":"","twitter":"","url":"","organization":"Bitforest","title":"Hello, Worldまで3ヶ月  Go言語でファミコンエミュレータ実装","abstract":"ファミコンエミュレータをGo言語で実装した話。\nエミュレータ実装とは何か、実装を通して理解できたコンピュータアーキテクチャの話を紹介します。\nファミコンであっても基本的には一般のコンピュータと同じような構成になっているため、得意な言語を通してファミコンの中身を見ることでコンピュータの仕組みが理解できるようになります。","tags":[]},{"id":"avvmoto","name":"井本 裕","avatar":"https://secure.gravatar.com/avatar/f8e7a1a5f90a13a1dd9fb57ce65cab77?s=500","bio":"井本 裕／株式会社ディー・エヌ・エー\r\nゲームプラットフォームのサーバーサイド開発に長年携わっていました。\r\n2019年1月からオートモーティブ事業本部に異動し、現在は移動体情報配信システムの開発をしています。","twitter":"avvmoto","url":"https://github.com/avvmoto/","organization":"DeNA","title":"gRPS Streaming によるスケーラブルな常時接続型 API の構築","abstract":"常時接続型 API を構築するとき、 Golang + gRPC Streaming はパフォーマンスに優れる有力な選択肢となります。しかしながら常時接続ゆえ、通常通信時間が短時間で終了する Web API とは異なる注意点があります。そこで本セッションでは、gRPC Streaming の紹介にはじまり、注意点やハマりポイントをご紹介します。また、GCP や AWS で、 kubenetes 上でオートスケールするオートモーティブ移動体情報配信システムを構築した事例をご紹介します。","tags":["gRPC Streaming","Golang","k8s"]},{"id":"tenntenn","name":"Takuya Ueda","avatar":"https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/6719/14962637_10206902935443067_8305984818586098017_n.jpg","bio":"メルカリ／メルペイ所属。 バックエンドエンジニアとして日々Goを書いている。 Go Conference主催者。golang.tokyo、Goビギナーズ、GCPUG Tokyo運営。 大学時代にGoに出会い、それ以来のめり込む。 社内外で自ら勉強会を開催し、Goの普及に取り組んでいる。 マスコットのGopherの絵を描くのも好き。人類をGopherにしたいと考えている。","twitter":"tenntenn","url":"","organization":"メルカリ／メルペイ","title":"Goによる静的解析のはじめかた","abstract":"Go1.12以来、go vetはx/tools/go/analysisパッケージによってモジュール化されるようになりました。go vetはいくつかの解析器によって構成され、各解析器は並行に実行されるようになりました。analysisパッケージによって乱立していた静的解析ツールの作り方も統一化される流れになり、統一化されることによって容易に静的解析ツールが作れるようになりました。このセッションを通して、analysisパッケージによってモジュール化された静的解析ツールの作り方を学ぶことで、誰でも静的解析をはじめれるようになります。","tags":[]},{"id":"tsurubee3","name":"Hirofumi Tsuruta","avatar":"https://secure.gravatar.com/avatar/5381bd68abe2b91239ca1600db2a890d?s=500","bio":"","twitter":"tsurubee3","url":"https://blog.tsurubee.tech/","organization":"GMO Pepabo, Inc.","title":"Goでつくる進化計算パッケージ","abstract":"生物の進化や振る舞いを模倣した探索アルゴリズムである進化計算は、幅広い最適化問題に適用可能であることから、様々な分野への応用が進んでいます。進化計算を用いて最適化問題を解くためには、膨大な計算量を要するため、実用時間内で良好な解を得るために計算処理を高速化することが課題の一つであることが知られています。\n発表者は、Goの並行処理機構であるGoroutineを活用して、高速な進化計算アルゴリズムの実装を試みています。発表では、進化計算の概要に始まり、Goによる実装、および最適化計算へのGoroutineの適用の有用性について発表します。\nぜひ皆さんも生物の進化や振る舞いをGoで模倣しましょう！","tags":["machine learning","evolutionary computation","optimization"]},{"id":"budougumi0617","name":"Yoichiro Shimizu","avatar":"https://secure.gravatar.com/avatar/eb6be531bcfaa99714d8d3b48665a5a9?s=500","bio":"Backend engineer in Japanese FinTech company. I love Go and Oyster.","twitter":"budougumi0617","url":"https://budougumi0617.github.io/","organization":"freee K.K.","title":"google/wireを使ったGoらしいアーキテクチャ設計への取り組み","abstract":"github.com/google/wireはGoでDI（依存性の注入）を行なうためのツールです。\n依存の注入・初期化、依存の注入・初期化を繰り返し、多階層のDIコードも自動生成できます。  \nマイクロサービスをゼロから開発するにあたり、google/wireを使ってGoらしく疎結合なアーキテクチャ設計に挑戦しました。その際に感じたgoogle/wireのメリット・デメリット・可能性を紹介します。  \nhttps://github.com/google/wire","tags":["go","Japanese","design"]},{"id":"ymotongpoo","name":"Yoshi Yamaguchi","avatar":"https://secure.gravatar.com/avatar/e6caa904a0954f9f8a9f56aab518f842?s=500","bio":"Yoshi is a Developer Advocate for Observability and Go in Google. He has run Go community since 2012, and the original organizer and co-organizer of Go Conference Tokyo. He has published the Japanese translation of \"Concurrency in Go.\"","twitter":"ymotongpoo","url":"https://ymotongpoo.hatenablog.com/","organization":"Google","title":"Expand observability in Go","abstract":"Go standard toolkit provides benchmark, tracer and profiler out of the box and its ecosystem provides those extensions that fits the large scale system. In this talk, I'll introduce how you can start implementing performant applications with standard tools, and how you can expand it to large scale.","tags":["observability","performance","benchmark","trace","profiler","OpenCensus"]},{"id":"hgsgtk","name":"Kazuki Higashiguchi","avatar":"https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/40824/Image_uploaded_from_iOS.jpg","bio":"","twitter":"hgsgtk","url":"https://speakerdeck.com/hgsgtk","organization":"BASE BANK, Inc.","title":"Cost-effective Go unit test thinking and practices","abstract":"ユニットテストを書くことが重要なのはもちろんですが、費用対効果のよいユニットテストであることも重要です。それが実現できていない場合、ユニットテスト量が増えたときに様々な弊害をもたらします。このトークでは、費用対効果を高める上で、Goでどのように考え・実践しているかを紹介します。特に実装上Go特有の注意が必要な、適切なエラーハンドリング/エラーレポート・テストヘルパーの使い所・モック/スタブの使い所などについてです。このトークで紹介する基礎的な考え方と実践例が、参加者の方々の実践を支える基礎となることを期待しています。","tags":["go"]},{"id":"seike460","name":"Shiro Seike","avatar":"https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/45312/seike460.png","bio":"","twitter":"seike460","url":"","organization":"Fusic Co.,Ltd.","title":"ISUCONの為のpprof","abstract":"pprofはGoの標準ライブラリであるプロファイリングツールです\n\n皆様大好きISUCONでは、必須のツールだと言えます\n\n今回はそのpprofについてひたすら調べた事を掘り下げてお伝えしようと思います\n\nISUCONでの利用を想定したお話をしますが、現場でも有効的に活用できる話も交えながらお話します\n\n聴講ターゲット\n\n- pprofを知らない方\n- pprofをもっと知りたい方\n- ISUCONに興味がある方\n\nお話すること\n\n- pprofの機能\n- pprofの便利な使い方\n- ISUCONにおけるpprofの役割","tags":["go","golang","pprof"]},{"id":"vvvatanabe","name":"Yuichi Watanabe","avatar":"https://secure.gravatar.com/avatar/27985720407b3813061e8a302508f06c?s=500","bio":"","twitter":"vvvatanabe","url":"https://github.com/vvatanabe","organization":"Nulab Inc.","title":"「Backlog」のGitを支えるサービス達をGoで刷新した技術的プラクティス","abstract":"PJ管理ツール「Backlog」のGitホスティングを支えるバックエンドは、役割の異なる複数のサービスによって構成されています。それらのサービスの中核を担うのがGoです。全てのサービスはGoで実装されており、サービス特有のプロトコルに併せて、Goが提供する機能をふんだんに使用しています。また、各サービスは初めからGoで統一していたわけではなく、以前は、Perl、Python、Javaといった様々な言語で実装していました。本セッションでは、Gitバックエンドを支えるサービスの全体像、各サービスを刷新するための技術的なプラクティス、Goで統一したことによる恩恵、そして今後の展望についてお話します。","tags":["Git","gRPC","CGO","SSH","RabbitMQ"]}]
+[
+  {
+    "id": "mohri1219",
+    "name": "毛利 啓太",
+    "avatar": "https://secure.gravatar.com/avatar/a9f8382f6cdd535370c723eba233a8f7?s=500",
+    "bio": "",
+    "twitter": "",
+    "url": "",
+    "organization": "Fusic CO.,LTD.",
+    "title": "Goで作る大量プロセス管理機構",
+    "abstract": "株式会社Fusicでは、IoT仮想デバイス作成サービス「mockmock」を展開しています。\nmockmockは、「mock」と呼ばれる仮想デバイスから疑似データを送ることで、IoTシステム開発のテストや負荷試験を支援します。\n本セッションでは、数千、数万単位で稼働するmockのプロセスをいかにして管理しているのか解説します。fsnotifyを利用したファイル経由の疎結合なやりとり、goroutineを利用したmockプロセスの監視、各種イレギュラーな動作への対応、バイナリの差し替えなどお話できればと思います。",
+    "tags": []
+  },
+  {
+    "id": "shibu_jp",
+    "name": "Yoshiki Shibukawa",
+    "avatar": "https://secure.gravatar.com/avatar/d299468335580748cb8d533d2650f9a4?s=500",
+    "bio": "I am working for Future Corporation. My favorite languages are C++/Python/Go/TypeScript. My favorite backend for OpenCensus is Jaeger.\r\n\r\nI am an author of Real World HTTP (O'Reilly Japan), System Programming in Golang (Lambda Note) and other meny books.",
+    "twitter": "shibu_jp",
+    "url": "https://github.com/shibukawa",
+    "organization": "Future Corporation",
+    "title": "他の言語ユーザーのためのGoのまとめ",
+    "abstract": "言語が違えば実装方針も変わってきます。パッケージの分け方、構造体の設計、関数の定義方法・・・Goに入ったらGoに従おうと思っても、どのような方法があるのかを知らないと、ついつい知っている方法に引きずられてしまいがちです。Goらしいプログラミングの手法を整理しようと思います。",
+    "tags": [
+      "go",
+      "golang"
+    ]
+  },
+  {
+    "id": "codehex",
+    "name": "codehex",
+    "avatar": "https://secure.gravatar.com/avatar/60e652d0244f47d2da4e1f7e712f9328?s=500",
+    "bio": "Backend engineer which development microservices at merpay and mercari",
+    "twitter": "codehex",
+    "url": "https://codehex.dev",
+    "organization": "mercari",
+    "title": "Chrome as a service in Go",
+    "abstract": "Go でChrome を使ったブラウザの操作を自動化するためのサービスを開発した話をしたいです。",
+    "tags": [
+      "go",
+      "golang",
+      "chrome",
+      "javascript",
+      "microservices"
+    ]
+  },
+  {
+    "id": "k1LoW",
+    "name": "Ken’ichiro Oyama",
+    "avatar": "https://secure.gravatar.com/avatar/69b93af68320a590f607c296e8edff73?s=500",
+    "bio": "",
+    "twitter": "k1LoW",
+    "url": "https://github.com/k1LoW",
+    "organization": "GMO Pepabo, Inc.",
+    "title": "Data aggregation design with Goroutine, Channel, \"sync\" package, and Simple diagram",
+    "abstract": "\"GoはGoroutineやChannelがあるので、並列・並行処理が書きやすい\" と言われて久しいですが、遅ればせながら私もそう思います。\n本発表では、\"データを収集して処理する\"という点に絞り、実際に私が直面したいくつかのケースで、GoroutineやChannelやsyncパッケージそして独自の図を使って、どのように設計し作り上げたかをいくつかの実例を元にお話ししたいと思います。",
+    "tags": [
+      "go",
+      "golang",
+      "concurrency",
+      "data aggrigation"
+    ]
+  },
+  {
+    "id": "__timakin__",
+    "name": "Seiji Takahashi",
+    "avatar": "https://secure.gravatar.com/avatar/5bfed9aa3a9ebccb0c0f0cb65ee9e012?s=500",
+    "bio": "movie junkie, bird lover.\r\nSoftware engineer at Gunosy Inc.",
+    "twitter": "__timakin__",
+    "url": "https://medium.com/@timakin",
+    "organization": "Gunosy Inc.",
+    "title": "Golang BFF with GraphQL and gRPC",
+    "abstract": "Backend For Frondend is one of the design patterns of a micro-service gateway.\nJavaScript is major for them, but Go is a good alternative choice because it has sophisticated tools for multiple platforms. I'll show how to build BFF gateway server in Go with the ecosystem of GraphQL and gRPC in Go.",
+    "tags": [
+      "middleware",
+      "tools",
+      "Japanese",
+      "go",
+      "English"
+    ]
+  },
+  {
+    "id": "pb.hirokawa",
+    "name": "rhykw",
+    "avatar": "https://secure.gravatar.com/avatar/50641cb66638448146124fffc3f90ccd?s=500",
+    "bio": "",
+    "twitter": "",
+    "url": "https://blog.rhykw.net/",
+    "organization": "",
+    "title": "ホスティングにおけるメールサービスの運用とgolang",
+    "abstract": "発表者は共用ホスティングのメールサービスでバックエンドのリニューアルに携わり、リニューアルに際して初の試みとしてnginxとgolangを採用しました。メールサービスを継続的に安定して提供するためどのようにgolangを使っているかを紹介します。",
+    "tags": [
+      "nginx",
+      "postfix",
+      "mail"
+    ]
+  },
+  {
+    "id": "cohhei",
+    "name": "Kohei Kimura",
+    "avatar": "https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/47154/180417nulab-22.jpg",
+    "bio": "",
+    "twitter": "cohhei",
+    "url": "https://cohhei.github.io",
+    "organization": "Nulab",
+    "title": "なぜ Go はマイクロサービスのための言語なのか",
+    "abstract": "マイクロサービスは一般に組織やシステムをスケーラブルにしますが、同時に複雑さももたらします。例えば、マイクロサービスの環境下ではクライアントからのひとつのリクエストが複数のサービスを経由します。そのため、特定のリクエストで発生した遅延や不具合がどこで発生したのかを調査するためには、個々のリクエストに関連する処理をまとめておく必要があります。一方で、Go はマイクロサービスのための言語と言われています。その理由を、実際にプロダクション環境で Go で実装したマイクロサービスを開発・運用している経験をもとに、コンテナと Observability の観点から解説します。",
+    "tags": [
+      "go",
+      "Microservices",
+      "Docker",
+      "OpenTracing",
+      "Prometheus",
+      "gRPC",
+      "ProtocolBuffers"
+    ]
+  },
+  {
+    "id": "pyama86",
+    "name": "Kazuhiko Yamashita",
+    "avatar": "https://secure.gravatar.com/avatar/df7cc2cc2e207586248e60d879d85911?s=500",
+    "bio": "まず僕はOne DirectionよりBackStreatBoysが好きです。\r\n\r\nISPのサーバエンジニアを経験後、プログラミングへの思いからGMOペパボにコードが書けると嘘をついて入社後、技術的課題を抽象化し、OSSとして開発・公開しながら従事。\r\n現在は技術基盤チーム シニア・プリンシパルとしてオンプレミスとクラウドの最適融合を目指して技術開発をしています。",
+    "twitter": "pyama86",
+    "url": "https://pyama.fun",
+    "organization": "GMO Pepabo, inc.",
+    "title": "Linux middleware development by Go",
+    "abstract": "Go言語を用いたLinuxサーバミドルウェア開発における失敗談を含むノウハウや、ベストプラクティスをトークします。Go言語はLinuxの各種ライブラリとの連携が容易であることや、CGOが利用できることで、従来の言語と比較しLinuxミドルウェアを作りやすい言語です。\n一方で、言語として想定していないプロセス、メモリ状態もあり、そういった点に注意を払わないと想定外の挙動をしてしまいます。話し手がLinuxサーバミドルウェア開発を続ける中で実際に遭遇した動作、仕様を実例を元にトークします。",
+    "tags": [
+      "middleware",
+      "go"
+    ]
+  },
+  {
+    "id": "denis_makogon",
+    "name": "Denys Makogon",
+    "avatar": "https://secure.gravatar.com/avatar/eed6f5ca181818d23754d9f00986f54e?s=500",
+    "bio": "Software enthusiast focused on developing and designing platform and software as a service application for clouds. He’s a principal software developer in Oracle, concentrating on product development along with bringing well-designed and production ready integration with clouds solutions, contributor to various open source projects, cloud-related technologies along having fun with IoT devices and photography.\r\nDenis is a regular attendee and speaker at OpenStack summits (Atlanta, Austin, Paris, Barcelona, Boston) and PyCon Hong Kong 2016, 2017, PyCon Italy 2018, PyCon Japan 2018, DeComplile.De 2018. Co-author of OpenStack Application development, OpenStack Trove Essentials.\r\n",
+    "twitter": "denis_makogon",
+    "url": "https://medium.com/@denismakogon",
+    "organization": "Oracle",
+    "title": "Let's do some serverless with Go",
+    "abstract": "This talk is all about doing serverless and Go with some comparison to other programming languages like Java and Python. This talk would be very useful for people deciding on serverless as a technology to use. In this talk we'd some coding, doing some serverless functions, math, etc.",
+    "tags": [
+      "go",
+      "golang",
+      "serverless",
+      "clouds",
+      "oracle"
+    ]
+  },
+  {
+    "id": "makki_d",
+    "name": "牧内大輔 (MakKi, makki_d)",
+    "avatar": "https://secure.gravatar.com/avatar/99b72ba4c7dd4da957edb3e619a6d71f?s=500",
+    "bio": "KLab株式会社 エンジニアリングマネージャー",
+    "twitter": "makki_d",
+    "url": "https://github.com/makiuchi-d",
+    "organization": "KLab Inc.",
+    "title": "JavaプログラムをGoに移植するためのテクニック――継承と例外",
+    "abstract": "Goは比較的新しい言語なので、他言語のソフトウェア資産を活用するために設計や構造をそのままGoに移植したいケースが稀にあると思います。しかし、JavaやC++のようなクラスシステムや例外機構を持つ言語からGoに移植しようとするとき、その言語構造の違いに直面します。Goではクラスではなく構造体とインターフェイスでオブジェクトを表現する他、例外機構ではないエラーハンドリングによって、元のプログラムと同等の機能を実現する必要があります。ここではZXingというJavaのライブラリを移植したgozxingプロジェクトにおいて、特に継承と例外をGoでどのように実現したか実例を交えて紹介します。",
+    "tags": [
+      "Go",
+      "golang",
+      "Java"
+    ]
+  },
+  {
+    "id": "po3rin",
+    "name": "po3rin",
+    "avatar": "https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/45880/gopher.jpeg",
+    "bio": "東京に住むエンジニアです。仕事ではGoを使ったBtoB向けの記事レコメンドサービスを開発・運用しています。名古屋大学でPythonを使って生物物理シミュレーション最適化手法を研究していました。趣味は麻雀です。",
+    "twitter": "po3rin",
+    "url": "https://qiita.com/po3rin",
+    "organization": "Shiroyagi Corporation",
+    "title": "Image processing with Go has great potential !!",
+    "abstract": "Goによる画像自動生成サービスを作った経験から、Goで一歩進んだ画像処理を行う方法についてお話します。画像やテキストの合成に関して知っておくべき用語やエッセンスから、任意の画像処理アルゴリズムを標準パッケージで実装する際の知見や、Go+OpenCVを使った画像解析など、入門書だけでは体感できないような、Go+画像処理の可能性をお伝えします。",
+    "tags": [
+      "go",
+      "image",
+      "OpenCV"
+    ]
+  },
+  {
+    "id": "qt_luigi",
+    "name": "Ryuji Iwata",
+    "avatar": "https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/45387/qt_luigi250.png",
+    "bio": "",
+    "twitter": "qt_luigi",
+    "url": "",
+    "organization": "",
+    "title": "How to Write Go CLI Tools",
+    "abstract": "I show some tips and tricks for writing CLI tools by Go. (Notes on writing CLI tools in my case. Findings obtained when wrote CLI tools at my work.) This gives you the following benefits: (Know-how to write CLI tools. Persuasive material to introduce Go to your workplace.)",
+    "tags": [
+      "go",
+      "tools"
+    ]
+  },
+  {
+    "id": "ikeda.sub",
+    "name": "haminiku",
+    "avatar": "https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/47553/yagi.png",
+    "bio": "",
+    "twitter": "",
+    "url": "https://github.com/subc",
+    "organization": "DeNA",
+    "title": "High memory usage server in Golang",
+    "abstract": "メモリに乗り切らない膨大なマスタデータをGolang Serverで高速に効率よく扱うにはどうすれば良いでしょうか。\n\ndiskストレージからメモリへのデータ展開はprotobufを利用すると直接mapに変換でき高速に処理できます。\n\nまたGC特性を考慮したヒット率低いデータをメモリから追い出すメモリ管理戦略が必要になります。\n\n更新されたdiskストレージ上のマスタデータをロック時間最小でメモリ展開するには、Read/Writeロックを組み合わせHot loadingする手法が有効です。\n\n以上を地理空間データを扱った知見を抽象化して紹介します。",
+    "tags": []
+  },
+  {
+    "id": "ichikaway",
+    "name": "cakephper (市川)",
+    "avatar": "https://secure.gravatar.com/avatar/13aa2fa6b2c4c14886a9dd6633cf4aef?s=500",
+    "bio": "",
+    "twitter": "",
+    "url": "",
+    "organization": "Bitforest",
+    "title": "Hello, Worldまで3ヶ月  Go言語でファミコンエミュレータ実装",
+    "abstract": "ファミコンエミュレータをGo言語で実装した話。\nエミュレータ実装とは何か、実装を通して理解できたコンピュータアーキテクチャの話を紹介します。\nファミコンであっても基本的には一般のコンピュータと同じような構成になっているため、得意な言語を通してファミコンの中身を見ることでコンピュータの仕組みが理解できるようになります。",
+    "tags": []
+  },
+  {
+    "id": "avvmoto",
+    "name": "井本 裕",
+    "avatar": "https://secure.gravatar.com/avatar/f8e7a1a5f90a13a1dd9fb57ce65cab77?s=500",
+    "bio": "井本 裕／株式会社ディー・エヌ・エー\r\nゲームプラットフォームのサーバーサイド開発に長年携わっていました。\r\n2019年1月からオートモーティブ事業本部に異動し、現在は移動体情報配信システムの開発をしています。",
+    "twitter": "avvmoto",
+    "url": "https://github.com/avvmoto/",
+    "organization": "DeNA",
+    "title": "gRPS Streaming によるスケーラブルな常時接続型 API の構築",
+    "abstract": "常時接続型 API を構築するとき、 Golang + gRPC Streaming はパフォーマンスに優れる有力な選択肢となります。しかしながら常時接続ゆえ、通常通信時間が短時間で終了する Web API とは異なる注意点があります。そこで本セッションでは、gRPC Streaming の紹介にはじまり、注意点やハマりポイントをご紹介します。また、GCP や AWS で、 kubenetes 上でオートスケールするオートモーティブ移動体情報配信システムを構築した事例をご紹介します。",
+    "tags": [
+      "gRPC Streaming",
+      "Golang",
+      "k8s"
+    ]
+  },
+  {
+    "id": "tenntenn",
+    "name": "Takuya Ueda",
+    "avatar": "https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/6719/14962637_10206902935443067_8305984818586098017_n.jpg",
+    "bio": "メルカリ／メルペイ所属。 バックエンドエンジニアとして日々Goを書いている。 Go Conference主催者。golang.tokyo、Goビギナーズ、GCPUG Tokyo運営。 大学時代にGoに出会い、それ以来のめり込む。 社内外で自ら勉強会を開催し、Goの普及に取り組んでいる。 マスコットのGopherの絵を描くのも好き。人類をGopherにしたいと考えている。",
+    "twitter": "tenntenn",
+    "url": "",
+    "organization": "メルカリ／メルペイ",
+    "title": "Goによる静的解析のはじめかた",
+    "abstract": "Go1.12以来、go vetはx/tools/go/analysisパッケージによってモジュール化されるようになりました。go vetはいくつかの解析器によって構成され、各解析器は並行に実行されるようになりました。analysisパッケージによって乱立していた静的解析ツールの作り方も統一化される流れになり、統一化されることによって容易に静的解析ツールが作れるようになりました。このセッションを通して、analysisパッケージによってモジュール化された静的解析ツールの作り方を学ぶことで、誰でも静的解析をはじめれるようになります。",
+    "tags": []
+  },
+  {
+    "id": "tsurubee3",
+    "name": "Hirofumi Tsuruta",
+    "avatar": "https://secure.gravatar.com/avatar/5381bd68abe2b91239ca1600db2a890d?s=500",
+    "bio": "",
+    "twitter": "tsurubee3",
+    "url": "https://blog.tsurubee.tech/",
+    "organization": "GMO Pepabo, Inc.",
+    "title": "Goでつくる進化計算パッケージ",
+    "abstract": "生物の進化や振る舞いを模倣した探索アルゴリズムである進化計算は、幅広い最適化問題に適用可能であることから、様々な分野への応用が進んでいます。進化計算を用いて最適化問題を解くためには、膨大な計算量を要するため、実用時間内で良好な解を得るために計算処理を高速化することが課題の一つであることが知られています。\n発表者は、Goの並行処理機構であるGoroutineを活用して、高速な進化計算アルゴリズムの実装を試みています。発表では、進化計算の概要に始まり、Goによる実装、および最適化計算へのGoroutineの適用の有用性について発表します。\nぜひ皆さんも生物の進化や振る舞いをGoで模倣しましょう！",
+    "tags": [
+      "machine learning",
+      "evolutionary computation",
+      "optimization"
+    ]
+  },
+  {
+    "id": "budougumi0617",
+    "name": "Yoichiro Shimizu",
+    "avatar": "https://secure.gravatar.com/avatar/eb6be531bcfaa99714d8d3b48665a5a9?s=500",
+    "bio": "Backend engineer in Japanese FinTech company. I love Go and Oyster.",
+    "twitter": "budougumi0617",
+    "url": "https://budougumi0617.github.io/",
+    "organization": "freee K.K.",
+    "title": "google/wireを使ったGoらしいアーキテクチャ設計への取り組み",
+    "abstract": "github.com/google/wireはGoでDI（依存性の注入）を行なうためのツールです。\n依存の注入・初期化、依存の注入・初期化を繰り返し、多階層のDIコードも自動生成できます。  \nマイクロサービスをゼロから開発するにあたり、google/wireを使ってGoらしく疎結合なアーキテクチャ設計に挑戦しました。その際に感じたgoogle/wireのメリット・デメリット・可能性を紹介します。  \nhttps://github.com/google/wire",
+    "tags": [
+      "go",
+      "Japanese",
+      "design"
+    ]
+  },
+  {
+    "id": "ymotongpoo",
+    "name": "Yoshi Yamaguchi",
+    "avatar": "https://secure.gravatar.com/avatar/e6caa904a0954f9f8a9f56aab518f842?s=500",
+    "bio": "Yoshi is a Developer Advocate for Observability and Go in Google. He has run Go community since 2012, and the original organizer and co-organizer of Go Conference Tokyo. He has published the Japanese translation of \"Concurrency in Go.\"",
+    "twitter": "ymotongpoo",
+    "url": "https://ymotongpoo.hatenablog.com/",
+    "organization": "Google",
+    "title": "Expand observability in Go",
+    "abstract": "Go standard toolkit provides benchmark, tracer and profiler out of the box and its ecosystem provides those extensions that fits the large scale system. In this talk, I'll introduce how you can start implementing performant applications with standard tools, and how you can expand it to large scale.",
+    "tags": [
+      "observability",
+      "performance",
+      "benchmark",
+      "trace",
+      "profiler",
+      "OpenCensus"
+    ]
+  },
+  {
+    "id": "hgsgtk",
+    "name": "Kazuki Higashiguchi",
+    "avatar": "https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/40824/Image_uploaded_from_iOS.jpg",
+    "bio": "",
+    "twitter": "hgsgtk",
+    "url": "https://speakerdeck.com/hgsgtk",
+    "organization": "BASE BANK, Inc.",
+    "title": "Cost-effective Go unit test thinking and practices",
+    "abstract": "ユニットテストを書くことが重要なのはもちろんですが、費用対効果のよいユニットテストであることも重要です。それが実現できていない場合、ユニットテスト量が増えたときに様々な弊害をもたらします。このトークでは、費用対効果を高める上で、Goでどのように考え・実践しているかを紹介します。特に実装上Go特有の注意が必要な、適切なエラーハンドリング/エラーレポート・テストヘルパーの使い所・モック/スタブの使い所などについてです。このトークで紹介する基礎的な考え方と実践例が、参加者の方々の実践を支える基礎となることを期待しています。",
+    "tags": [
+      "go"
+    ]
+  },
+  {
+    "id": "seike460",
+    "name": "Shiro Seike",
+    "avatar": "https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/45312/seike460.png",
+    "bio": "",
+    "twitter": "seike460",
+    "url": "",
+    "organization": "Fusic Co.,Ltd.",
+    "title": "ISUCONの為のpprof",
+    "abstract": "pprofはGoの標準ライブラリであるプロファイリングツールです\n\n皆様大好きISUCONでは、必須のツールだと言えます\n\n今回はそのpprofについてひたすら調べた事を掘り下げてお伝えしようと思います\n\nISUCONでの利用を想定したお話をしますが、現場でも有効的に活用できる話も交えながらお話します\n\n聴講ターゲット\n\n- pprofを知らない方\n- pprofをもっと知りたい方\n- ISUCONに興味がある方\n\nお話すること\n\n- pprofの機能\n- pprofの便利な使い方\n- ISUCONにおけるpprofの役割",
+    "tags": [
+      "go",
+      "golang",
+      "pprof"
+    ]
+  },
+  {
+    "id": "vvvatanabe",
+    "name": "Yuichi Watanabe",
+    "avatar": "https://secure.gravatar.com/avatar/27985720407b3813061e8a302508f06c?s=500",
+    "bio": "",
+    "twitter": "vvvatanabe",
+    "url": "https://github.com/vvatanabe",
+    "organization": "Nulab Inc.",
+    "title": "「Backlog」のGitを支えるサービス達をGoで刷新した技術的プラクティス",
+    "abstract": "PJ管理ツール「Backlog」のGitホスティングを支えるバックエンドは、役割の異なる複数のサービスによって構成されています。それらのサービスの中核を担うのがGoです。全てのサービスはGoで実装されており、サービス特有のプロトコルに併せて、Goが提供する機能をふんだんに使用しています。また、各サービスは初めからGoで統一していたわけではなく、以前は、Perl、Python、Javaといった様々な言語で実装していました。本セッションでは、Gitバックエンドを支えるサービスの全体像、各サービスを刷新するための技術的なプラクティス、Goで統一したことによる恩恵、そして今後の展望についてお話します。",
+    "tags": [
+      "Git",
+      "gRPC",
+      "CGO",
+      "SSH",
+      "RabbitMQ"
+    ]
+  }
+]
