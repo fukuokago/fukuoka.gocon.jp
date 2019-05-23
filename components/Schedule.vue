@@ -13,7 +13,7 @@ ja:
 
 <template>
   <div class="schedule">
-    <h2>Schedule</h2>
+    <h2>Schedule @ July 13</h2>
 
     <p>{{ $t('desc') }}</p>
 
