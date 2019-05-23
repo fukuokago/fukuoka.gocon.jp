@@ -1,6 +1,9 @@
+import { getIds } from './lib/event'
 const pkg = require('./package')
 
-const dynamicPages = [
+const speakersPages = getIds().map((m) => { return `/speakers/${m}` })
+const dynamicPages = speakersPages.concat([
+  '/speakers',
   '/blog/sponsors-are-published',
   '/blog/call-for-sponsors-is-open',
   '/blog/call-for-sponsors-is-open',
@@ -14,7 +17,7 @@ const dynamicPages = [
   '/assets/gopher-pattern-for-laptop',
   '/assets/gopher-sunglass-for-phone',
   '/assets/gopher-sunglass-for-laptop'
-]
+])
 const dynamicPagesWithLocale = dynamicPages.concat(dynamicPages.map((m) => { return `/ja${m}` }))
 
 const config = {
@@ -114,6 +117,7 @@ const config = {
       vueI18nLoader: true,
       silentTranslationWarn: true
     }],
+    '@nuxtjs/markdownit',
     '@nuxtjs/axios',
     '@nuxtjs/bulma',
     '@nuxtjs/pwa'
@@ -123,6 +127,13 @@ const config = {
       'gopher',
       'trailing-slash'
     ]
+  },
+  // See https://github.com/markdown-it/markdown-it
+  markdownit: {
+    preset: 'default',
+    linkify: false,
+    breaks: true,
+    injected: true
   },
   axios: {
   },
