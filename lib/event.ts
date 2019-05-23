@@ -57,11 +57,6 @@ export function getSpeakers() {
   for (const v of speakersRaw) {
     const speaker = findSpeaker(v.id)
     const session = findSession(v.id)
-    if (session.start === '' || session.stop === '') {
-      session.start = 'N/A'
-      session.stop = 'N/A'
-      session.duration = '20 min'
-    }
     const merged = { ...speaker, ...session }
     obj.push(merged)
   }
@@ -114,6 +109,13 @@ export function findSpeaker(id: string): Speaker {
 }
 
 function normalizeSession(data): Session {
+  if (data.start === '' || data.stop === '') {
+    data.start = 'N/A'
+    data.stop = 'N/A'
+    data.duration = '20 min'
+    return data
+  }
+
   return { ...data, ...{
     start: format24To12(data.start),
     stop: format24To12(data.stop),

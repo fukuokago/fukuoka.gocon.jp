@@ -118,6 +118,7 @@ const config = {
       vueI18nLoader: true,
       silentTranslationWarn: true
     }],
+    '@nuxtjs/markdownit',
     '@nuxtjs/axios',
     '@nuxtjs/bulma',
     '@nuxtjs/pwa'
@@ -127,6 +128,13 @@ const config = {
       'gopher',
       'trailing-slash'
     ]
+  },
+  // See https://github.com/markdown-it/markdown-it
+  markdownit: {
+    preset: 'default',
+    linkify: false,
+    breaks: true,
+    injected: true
   },
   axios: {
   },
