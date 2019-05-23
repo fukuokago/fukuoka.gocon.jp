@@ -5,8 +5,8 @@ en:
   body0:
     - We published that our event schedule and speakers for sessions.
       Each speaker page has a speaker's biography and an abstract of the session. Please find sessions that interests you.
-  schedule: Schedule
-  speakers: Speakers
+  schedule: Go to Schedule page
+  speakers: Go to Speakers page
   body1:
     - I'm very happy that many session frames, which can be overpacked, have been successfully filled with interesting content.
       Thanks to many people submissions for CFP. 😂
@@ -23,7 +23,7 @@ en:
       such as being dropped in an event called A but winning in B.
       In fact, this time it was covered with "Go Conference 2019 Spring in Tokyo" and CFP period,
       and there were some submissions of the same contents.
-    - So, what do you want to say is that the event organizer will actively use papercall.io! See also Papercall Impressions at Go Conference 2019 Spring in Tokyo:
+    - So, what do you want to say is that the event organizer will actively use papercall.io! See also Papercall Impressions at Go Conference 2019 Spring in Tokyo.
 ja:
   title: 'タイムテーブルとスピーカーを公開しました'
   date: '2019-05-23'
@@ -109,6 +109,7 @@ export default class ScheduleAndSpeakersArePublished extends Vue {
 <style scoped>
 .anchors a {
   margin-bottom: 1em;
+  margin-right: 1em;
 }
 .tweets {
   margin-bottom: 1em;
