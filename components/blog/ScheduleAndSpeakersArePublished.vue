@@ -20,7 +20,7 @@ en:
     - In addition, papercall.io is convenient as an applicant, and when you submit a proposal,
       it can be reused with about 3 clicks for each of the recruited events.
       Even proposals with the same contents (which are likely to brush up if rejected) can effectively increase the chances of becoming a speaker,
-      such as being rejected in an event called A but winning in B.
+      such as being rejected in an event called A but accepted in B.
       In fact, this time it was covered with "Go Conference 2019 Spring in Tokyo" and CFP period,
       and there were some submissions of the same contents.
     - So, what do you want to say is that the event organizer will actively use papercall.io! See also Papercall Impressions at Go Conference 2019 Spring in Tokyo.
