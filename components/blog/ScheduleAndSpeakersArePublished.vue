@@ -60,7 +60,7 @@ ja:
     <p class="date">{{ $t('date') }}</p>
 
     <p v-for="p in $t('body0')">{{ p }}</p>
-    <p>
+    <p class="anchors">
       <nuxt-link class="button is-inverted is-outlined" place="schedule" :to="schedulelink">{{ $t('schedule') }}</nuxt-link>
       <nuxt-link class="button is-inverted is-outlined" place="speakers" :to="speakerslink">{{ $t('speakers') }}</nuxt-link>
     </p>
@@ -107,9 +107,25 @@ export default class ScheduleAndSpeakersArePublished extends Vue {
 </script>
 
 <style scoped>
+.anchors a {
+  margin-bottom: 1em;
+}
+.tweets {
+  margin-bottom: 1em;
+}
 .tweets > div {
   width: 280px;
+  height: 350px;
   float: left;
   margin: 0 2em 2em 0;
+  overflow: hidden;
+}
+@media (max-width: 500px) {
+  .tweets > div {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin: 0 0 1em;
+  }
 }
 </style>
