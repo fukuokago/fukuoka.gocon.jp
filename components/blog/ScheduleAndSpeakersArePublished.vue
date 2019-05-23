@@ -8,7 +8,7 @@ en:
   schedule: Go to Schedule page
   speakers: Go to Speakers page
   body1:
-    - I'm very happy that many session frames, which can be overpacked, have been successfully filled with interesting content.
+    - We're very happy that many session frames, which can be overpacked, have been successfully filled with interesting content.
       Thanks to many people submissions for CFP. 😂
     - Feedback on the early review of proposals, which is one of the initiatives, was generally well received.
       With our feedback we were able to get what we wanted to know and what the audience wanted.
@@ -16,11 +16,11 @@ en:
     - This time, we used a service called papercall.io to ease CFP-related work.
       Of course, functional things such as "communicate with applicants" and "you can evaluate reviewers" are convenient,
       but we would not have been able to reach if we were recruiting independently "We received submissions from overseas.
-      I think the thing is the best to use.
+      We think the thing is the best to use.
     - In addition, papercall.io is convenient as an applicant, and when you submit a proposal,
       it can be reused with about 3 clicks for each of the recruited events.
-      Even proposals with the same contents (which are likely to brush up if dropped) can effectively increase the chances of becoming a speaker,
-      such as being dropped in an event called A but winning in B.
+      Even proposals with the same contents (which are likely to brush up if rejected) can effectively increase the chances of becoming a speaker,
+      such as being rejected in an event called A but winning in B.
       In fact, this time it was covered with "Go Conference 2019 Spring in Tokyo" and CFP period,
       and there were some submissions of the same contents.
     - So, what do you want to say is that the event organizer will actively use papercall.io! See also Papercall Impressions at Go Conference 2019 Spring in Tokyo.
