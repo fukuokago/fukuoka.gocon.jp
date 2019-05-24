@@ -211,7 +211,7 @@
     "twitter": "avvmoto",
     "url": "https://github.com/avvmoto/",
     "organization": "DeNA",
-    "title": "gRPS Streaming によるスケーラブルな常時接続型 API の構築",
+    "title": "gRPC Streaming によるスケーラブルな常時接続型 API の構築",
     "abstract": "常時接続型 API を構築するとき、 Golang + gRPC Streaming はパフォーマンスに優れる有力な選択肢となります。しかしながら常時接続ゆえ、通常通信時間が短時間で終了する Web API とは異なる注意点があります。そこで本セッションでは、gRPC Streaming の紹介にはじまり、注意点やハマりポイントをご紹介します。また、GCP や AWS で、 kubenetes 上でオートスケールするオートモーティブ移動体情報配信システムを構築した事例をご紹介します。",
     "tags": [
       "gRPC Streaming",
