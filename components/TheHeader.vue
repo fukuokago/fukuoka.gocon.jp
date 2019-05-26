@@ -2,13 +2,13 @@
 en:
   date: July 13th
   place: "@The Fukuoka Growth Next, in Japan"
-  sponsor: Become a Sponsor
-  gocon: Go Conference Tokyo
+  registration: Join us on July 13
+  scholarships: Scholarships
 ja:
   date: July 13th
   place: "@The Fukuoka Growth Next, in Japan"
-  sponsor: スポンサーになる
-  gocon: Go Conference 東京
+  registration: 7/13のイベントに参加登録する
+  scholarships: スカラーシップ
 </i18n>
 
 <template>
@@ -32,8 +32,8 @@ ja:
     </div>
 
     <div class="attention">
-      <a class="button is-small is-inverted is-outlined" href="https://docs.google.com/forms/d/17v0fB3UxTLpf6G_th-TMyJTSOBMgVBlPogNk0iubxnQ/">{{ $t('sponsor') }}</a>
-      <a class="button is-small is-inverted is-outlined" href="https://gocon.jp/">{{ $t('gocon') }}</a>
+      <a class="button is-small is-inverted is-outlined" href="https://fukuokago.connpass.com/event/130797/">{{ $t('registration') }}</a>
+      <a class="button is-small is-inverted is-outlined" href="https://docs.google.com/forms/d/1EQognjiUtOYEfifYMtuIlVpz4M98Gp8oqTrLU0OunoU/">{{ $t('scholarships') }}</a>
     </div>
 
     <p class="day"><span class="date">{{$t('date')}}</span> <span class="place">{{$t('place')}}</span></p>
