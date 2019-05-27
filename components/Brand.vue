@@ -28,7 +28,7 @@ ja:
       <span class="external" place="external"><i class="fas fa-external-link-alt"></i></span>
     </i18n>
 
-    <div class="assets logo is-clearfix">
+    <div id="brand--logo" class="assets logo is-clearfix">
       <h3>Logo</h3>
 
       <div class="inner">
@@ -41,7 +41,21 @@ ja:
       </div>
     </div>
 
-    <div class="assets wallpaper is-clearfix">
+    <div id="brand--icon" class="assets logo is-clearfix">
+      <h3>Icon</h3>
+
+      <div class="inner">
+        <picture class="eyecatch">
+          <source type="image/webp" srcset="~static/img/icon.webp">
+          <img src="~assets/img/icon.png" >
+        </picture>
+        <p>Included format: ai, eps, pdf and svg</p>
+        <p><a class="button" href="/download/icon.tar.gz">Download Icon Assets</a></p>
+      </div>
+    </div>
+    </div>
+
+    <div id="brand--wallpaper" class="assets wallpaper is-clearfix">
       <h3>Wallpaper</h3>
 
       <div class="inner">

@@ -12,153 +12,214 @@ ja:
 </i18n>
 
 <template>
-  <div class="container schedule">
-    <h2>Schedule</h2>
+  <div class="schedule">
+    <h2>Schedule @ July 13</h2>
 
     <p>{{ $t('desc') }}</p>
 
-    <table><tbody>
-      <tr>
-        <th class="time" colspan="1" rowspan="1"><p>Time</p></th>
-        <th class="roomA" colspan="1" rowspan="1"><p>Room1</p></th>
-        <th class="roomB" colspan="1" rowspan="1"><p>Room2</p></th></tr>
-      <tr class="common">
-        <td class="time" colspan="1" rowspan="1"><p>10:00-10:10</p></td>
-        <td colspan="2" rowspan="1"><p>Opening talk 🙋</p></td></tr>
-      <tr>
-        <td class="time" colspan="1" rowspan="1"><p>10:10-10:50</p></td>
-        <td class="roomA" colspan="1" rowspan="1"><p>Long talk</p></td>
-        <td class="roomB" colspan="1" rowspan="1"><p>Long talk</p></td></tr>
-      <tr>
-        <td class="time" colspan="1" rowspan="1"><p>10:50-11:10</p></td>
-        <td class="roomA" colspan="1" rowspan="1"><p>Sponsor talk 📢</p></td>
-        <td class="roomB" colspan="1" rowspan="1"><p>Sponsor talk 📢</p></td></tr>
-      <tr>
-        <td class="time" colspan="1" rowspan="1"><p>11:10-11:30</p></td>
-        <td class="roomA" colspan="1" rowspan="1"><p>Sponsor talk 📢</p></td>
-        <td class="roomB" colspan="1" rowspan="1"><p>Sponsor talk 📢</p></td></tr>
-      <tr>
-        <td class="time" colspan="1" rowspan="1"><p>11:30-11:50</p></td>
-        <td class="roomA" colspan="1" rowspan="1"><p>Short talk</p></td>
-        <td class="roomB" colspan="1" rowspan="1"><p>Short talk</p></td></tr>
-      <tr class="common">
-        <td class="time" colspan="1" rowspan="1"><p>11:50-13:20</p></td>
-        <td class="break lunch" colspan="2" rowspan="1"><p>Lunch break 🍜</p></td></tr>
-      <tr>
-        <td class="time" colspan="1" rowspan="1"><p>13:20-13:40</p></td>
-        <td class="roomA" colspan="1" rowspan="1"><p>Sponsor talk 📢</p></td>
-        <td class="roomB" colspan="1" rowspan="1"><p>Sponsor talk 📢</p></td></tr>
-      <tr>
-        <td class="time" colspan="1" rowspan="1"><p>13:40-14:00</p></td>
-        <td class="roomA" colspan="1" rowspan="1"><p>Short talk</p></td>
-        <td class="roomB" colspan="1" rowspan="1"><p>Short talk</p></td></tr>
-      <tr>
-        <td class="time" colspan="1" rowspan="1"><p>14:00-14:20</p></td>
-        <td class="roomA" colspan="1" rowspan="1"><p>Short talk</p></td>
-        <td class="roomB" colspan="1" rowspan="1"><p>Short talk</p></td></tr>
-      <tr>
-        <td class="time" colspan="1" rowspan="1"><p>14:20-15:00</p></td>
-        <td class="roomA" colspan="1" rowspan="1"><p>Long talk</p></td>
-        <td class="roomB" colspan="1" rowspan="1"><p>Long talk</p></td></tr>
-      <tr class="common">
-        <td class="time" colspan="1" rowspan="1"><p>15:00-15:10</p></td>
-        <td class="break" colspan="2" rowspan="1"><p>Break ☕️</p></td></tr>
-      <tr>
-        <td class="time" colspan="1" rowspan="1"><p>15:10-15:30</p></td>
-        <td class="roomA" colspan="1" rowspan="1"><p>Short talk</p></td>
-        <td class="roomB" colspan="1" rowspan="1"><p>Short talk</p></td></tr>
-      <tr>
-        <td class="time" colspan="1" rowspan="1"><p>15:30-15:50</p></td>
-        <td class="roomA" colspan="1" rowspan="1"><p>Short talk</p></td>
-        <td class="roomB" colspan="1" rowspan="1"><p>Short talk</p></td></tr>
-      <tr>
-        <td class="time" colspan="1" rowspan="1"><p>15:50-16:30</p></td>
-        <td class="roomA" colspan="1" rowspan="1"><p>Long talk</p></td>
-        <td class="roomB" colspan="1" rowspan="1"><p>Long talk</p></td></tr>
-      <tr class="common">
-        <td class="time" colspan="1" rowspan="1"><p>16:30-16:50</p></td>
-        <td class="break" colspan="2" rowspan="1"><p>Break ☕️</p></td></tr>
-      <tr>
-        <td class="time" colspan="1" rowspan="1"><p>16:50-17:10</p></td>
-        <td class="roomA" colspan="1" rowspan="1"><p>Sponsor talk 📢</p></td>
-        <td class="roomB" colspan="1" rowspan="1"><p>Sponsor talk 📢</p></td></tr>
-      <tr>
-        <td class="time" colspan="1" rowspan="1"><p>17:10-17:30</p></td>
-        <td class="roomA" colspan="1" rowspan="1"><p>Short talk</p></td>
-        <td class="roomB" colspan="1" rowspan="1"><p>Short talk</p></td></tr>
-      <tr>
-        <td class="time" colspan="1" rowspan="1"><p>17:30-17:50</p></td>
-        <td class="roomA" colspan="1" rowspan="1"><p>Short talk</p></td>
-        <td class="roomB" colspan="1" rowspan="1"><p>Short talk</p></td></tr>
-      <tr class="common">
-        <td class="time" colspan="1" rowspan="1"><p>17:50-18:50</p></td>
-        <td colspan="2" rowspan="1"><p>Networking 🍻</p></td></tr>
-      <tr class="common">
-        <td class="time" colspan="1" rowspan="1"><p>18:50-19:00</p></td>
-        <td colspan="2" rowspan="1"><p>Close 🍽</p></td></tr>
-    </tbody></table>
+    <div class="schedule--box">
+      <div class="row" v-for="(sessions, time) in timetable">
+        <p class="timediv">{{ time }}</p>
+        <div class="is-clearfix">
+          <div class="session" v-bind:class="{single: sessions.length === 1}" v-for="(v, i) in sessions">
+            <p class="session--time">{{ v.start }} - {{ v.stop }}
+              <span class="session--time--duration">({{ v.duration }})</span>
+            </p>
+            <p class="session--title">
+              <nuxt-link class="session--title--anchor" :to="permalink(v.id)" v-if="v.name !== undefined && v.name !== ''">{{ v.title }}</nuxt-link>
+              <span v-else>{{ v.title }}</span>
+            </p>
+            <ul class="session--tags">
+              <li class="tag" v-for="(tag) in v.tags">{{ tag }}</li>
+            </ul>
+            <div class="session--speaker is-clearfix" v-if="v.name !== undefined && v.name !== ''">
+              <img class="session--speaker--avatar" :src="v.avatar" />
+              <p class="session--speaker--name">{{ v.name }}</p>
+              <p class="session--speaker--org">{{ v.organization }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
+import { getTimetable } from '~/lib/event'
+
 @Component
-export default class Schedule extends Vue {}
+export default class Schedule extends Vue {
+  public timetable
+
+  public permalink(id: string): string {
+    return this.localePath({ name: 'speakers-slug', params: { slug: id } })
+  }
+
+  public data() {
+    return {
+      timetable: getTimetable()
+    }
+  }
+}
 </script>
 
 <style scopd>
-.schedule table {
+.schedule--box {
+  margin-top: 2em;
+}
+.row {
+  position: relative;
+  padding: 0 0 2em 7em;
+}
+.timediv {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  font-size: 11px;
+  padding: .5em 1.5em;
+  font-weight: bold;
+  font-family: 'Arvo', serif;
+  border-radius: 5px;
+}
+.session {
+  position: relative;
+  border: 1px solid #CCC;
+  border-radius: 6px;
+  width: 48%;
+  float: left;
+  padding: 1em 1em 0 1.5em;
+}
+.session:first-child {
+  margin-right: 4%;
+}
+.single.session {
   width: 100%;
-  font-size: .8em;
-  opacity: 0.6;
+  float: none;
 }
-.schedule table p {
-  text-align: center;
-  color: #000;
-  font-weight: bold;
-}
-.schedule td,
-.schedule th {
-  text-align: center;
-  background-color: #fff;
-  border-top: 1px solid #e5e5e5;
-}
-.schedule td p,
-.schedule th p {
-  font-weight: normal;
-  color: #111;
-  padding-top: .4em;
-  padding-bottom: .3em;
-}
-.schedule th p {
-  font-weight: bold;
-}
-.schedule .common p {
-  color: #999;
-}
-.schedule .time {
-  background-color: #ddd;
-}
-.schedule .time p {
-  color: #000;
-}
-.schedule .roomB {
-  background-color: #f5f5f5;
-}
-.schedule .common td {
+.session--time:before {
+  content: '●';
+  position: absolute;
+  top: 9px;
+  left: -17px;
+  font-size: 2em;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  padding: 0 10px;
   background-color: #e5e5e5;
+  color: #e5e5e5;
+  font-size: 17px;
 }
-.schedule .common td p {
-  color: #666;
+.session--time {
+  font-size: 11px;
+  font-weight: bold;
+  font-family: 'Arvo', serif;
 }
-@media (min-width: 401px) and (max-width: 500px) {
-  .schedule table {
-    font-size: .6em;
+.session--time--duration {
+  font-weight: normal;
+  padding-left: .5em;
+}
+.session--title {
+  font-weight: bold;
+  font-family: 'Arvo', serif;
+  padding-bottom: .7em;
+  line-height: 1.2;
+}
+.session--title--anchor {
+  font-size: .7em;
+}
+.session--tags {
+  font-family: 'Arvo', serif;
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+.session--tags li {
+  float: left;
+}
+.tag {
+  font-size: .7em;
+  background: #888;
+  border-radius: 3px 0 0 3px;
+  color: #fff;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+.session--speaker {
+  padding: 1em 0;
+  font-family: 'Arvo', serif;
+}
+.session--speaker img {
+  border-radius: 50%;
+  width: 81px;
+  height: 81px;
+  overflow: hidden;
+  background-color: #fff;
+  float: left;
+  padding: .2em;
+  margin-right: 1em;
+}
+.session--speaker--name {
+  padding: 1em 0 .15em;
+  font-size: 1em;
+  font-weight: bold;
+}
+.session--speaker--org {
+  padding: 0;
+  font-size: .8em;
+  color: #00ADD8;
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  .session {
+    width: 100%;
+    float: none;
+    margin-bottom: 1em;
+  }
+  .session:first-child {
+    margin-right: 0;
   }
 }
-@media (max-width: 400px) {
-  .schedule table {
-    font-size: .5em;
+@media (max-width: 500px) {
+  .session {
+    width: 100%;
+    float: none;
+    margin-bottom: 1em;
+  }
+  .session:first-child {
+    margin-right: 0;
+  }
+  .session--time:before {
+    left: -10px;
+    width: 16px;
+    overflow: hidden;
+  }
+  .row {
+    position: relative;
+    padding: 2em 0 0;
+  }
+  .timediv {
+    top: -5px;
+    left: -1em;
+  }
+  .session--title {
+    font-size: 1.2em;
+  }
+  .session--tags li {
+  font-size: .5em;
+  }
+  .session--speaker--name {
+    padding-top: 1.5em;
+    font-size: .9em;
   }
 }
 </style>

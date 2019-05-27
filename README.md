@@ -21,3 +21,12 @@ Style Guide
 --
 
 https://jp.vuejs.org/v2/style-guide/
+
+Update speakers data
+--
+
+1. Download json from https://www.papercall.io/cfps/1911/submissions
+1. `mv ~/Downloads/Go\ Conference\'19\ in\ Fukuoka,\ Japan\ Submissions.json ./submissions.json`
+1. `./bin/speakers.js`
+1. `cat data/speakers.json | jq '.' > speakers.json`
+1. `mv speakers.json ./data`

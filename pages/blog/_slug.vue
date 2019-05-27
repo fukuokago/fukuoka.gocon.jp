@@ -3,6 +3,7 @@
      <div v-if="computedBlog === ''">
        <h2>Blog</h2>
 
+       <ScheduleAndSpeakersArePublished titleTag="h3" />
        <ProposalsFeedbackAndNotice titleTag="h3" />
        <SponsorsArePublished titleTag="h3" />
        <CallForSponsorsIsOpen titleTag="h3" />
@@ -24,9 +25,11 @@ import CallForPapersIsOpen from '~/components/blog/CallForPapersIsOpen.vue'
 import CallForSponsorsIsOpen from '~/components/blog/CallForSponsorsIsOpen.vue'
 import SponsorsArePublished from '~/components/blog/SponsorsArePublished.vue'
 import ProposalsFeedbackAndNotice from '~/components/blog/ProposalsFeedbackAndNotice.vue'
+import ScheduleAndSpeakersArePublished from '~/components/blog/ScheduleAndSpeakersArePublished.vue'
 
 @Component({
   components: {
+    ScheduleAndSpeakersArePublished,
     ProposalsFeedbackAndNotice,
     SponsorsArePublished,
     CallForSponsorsIsOpen,
@@ -40,6 +43,8 @@ export default class PageBlog extends Vue {
 
   get computedBlog() {
     switch (this.slug) {
+      case 'schedule-and-speakers-are-published':
+        return ScheduleAndSpeakersArePublished
       case 'proposals-feedback-and-notice':
         return ProposalsFeedbackAndNotice
       case 'sponsors-are-published':

@@ -1,5 +1,5 @@
 <template>
-  <section class="container draft">
+  <section class="container">
     <Scholarships/>
   </section>
 </template>
