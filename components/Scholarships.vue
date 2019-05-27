@@ -4,7 +4,7 @@ en:
     最近のGo Conferenceではスカラーシップが行われており、福岡で開催されるGo Conference'19 Summerにおいてもスポンサー様の協力のもとスカラーシップを行います。
     学生向けにはなりますが、スカラーシップによって本イベントに参加するハードルを下げ、技術的なインプットを通して様々な体験をしていただきたいと考えております。
   entry: Entry for Scholarships
-  i3systems: i3systems
+  i3systems: i³ Systems, Inc.
   support:
     title: Support
     body:
@@ -39,7 +39,7 @@ ja:
     最近のGo Conferenceではスカラーシップが行われており、福岡で開催されるGo Conference'19 Summerにおいてもスポンサー様の協力のもとスカラーシップを行います。
     学生向けにはなりますが、スカラーシップによって本イベントに参加するハードルを下げ、技術的なインプットを通して様々な体験をしていただきたいと考えております。
   entry: スカラーシップに申込む
-  i3systems: アイキューブドシステムズ様
+  i3systems: 株式会社アイキューブドシステムズ様
   support:
     title: サポート内容
     body:
