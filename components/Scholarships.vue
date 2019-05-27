@@ -23,11 +23,11 @@ en:
       - Being a student as of 13th July, 2019. (Including all degree course and grade. We also welcome students of high school and college of technology.)
       - Who is able to do your own output about attending. (using blog, twitter and GitHub  etc)
   method:
-    title: 応募方法と締切
-    body: 応募にはフォームから「2019年6月23日」までにお申込み下さい。
+    title: Application method and deadline
+    body: Apply by "June 23, 2019" from the following form.
   result:
-    title: 当選発表
-    body: 6月28日迄にメールで結果にかかわらずご連絡いたします。
+    title: Announcement
+    body: The results will be announced by 28th June, 2019 with E-mail whether application is accepted or not.
   disclaimer:
     title: 注意事項および免責事項
     body:
