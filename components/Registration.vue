@@ -1,16 +1,18 @@
 <i18n>
 en:
   desc: |-
-    Participation will be accepted from Connpass.
+    This time, we have prepared some registration types in following.
+    We are efforting for as many people as possible to attend this conference.
+    Please feel free to attend this conference if you have time for 13th July and can visit to Fukuoka!
   entry: Go to Registration page on Connpass
-  scholarships: Scholarships（抽選）
+  scholarships: Scholarships (Lottery)
   types:
-    - 一般枠（抽選）
-    - 早期申込枠（先着）
-    - 遠方枠（先着）
-    - ボランティアスタッフ枠（抽選）
-    - CFP応募枠（抽選）
-    - 女性／ジェンダーマイノリティ枠（先着）
+    - Lottery
+    - First Come First Served
+    - For People from Distance (First Come First Served)
+    - Volunteer Staff (Lottery)
+    - For People who apply proposals (Lottery)
+    - For Women and Gender Minorities (First Come First Served)
 ja:
   desc: |-
     参加受付には、一般枠にあわせていくつかの優待枠を設けております（出来るだけ多くの人が平等にイベント参加できるように努力しています）。
