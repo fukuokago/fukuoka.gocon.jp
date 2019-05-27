@@ -10,7 +10,7 @@ en:
     title: Contents of support
     body:
       - Attending to Go Conference '19 Summer in Fukuoka
-      - Travel assistance (With limitation of amount)
+      - Travel assistance (The upper limit is 50,000 yen in total)
       - Office tour for i3 as scholarship sponsor (The day before)
   date:
     title: Date
@@ -21,7 +21,7 @@ en:
       - Who lives in Japan.
       - For those who need to stay near the venue in advance of the event day, or who need to take express/bullet train or air plane.
       - Being a student as of 13th July, 2019. (Including all degree course and grade. We also welcome students of high school and college of technology.)
-      - Who is able to do your own output about attending. (using blog, twitter and GitHub  etc)
+      - Who is able to do your own output about attending. (using blog, twitter and GitHub etc)
   method:
     title: Application method and deadline
     body: Apply by "June 23, 2019" from the following form.
@@ -46,7 +46,7 @@ ja:
     title: サポート内容
     body:
       - Go Conference '19 Summer in Fukuoka への参加
-      - 交通費・宿泊費（金額に上限あり）
+      - 交通費・宿泊費（合わせて上限5万円）
       - スカラーシップスポンサーである{i3}のオフィス見学（前日）
   date:
     title: 日程
