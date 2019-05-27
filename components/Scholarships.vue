@@ -7,21 +7,21 @@ en:
   entry: Entry for Scholarships
   i3systems: i³ Systems, Inc.
   support:
-    title: Support
+    title: Contents of support
     body:
-      - Go Conference19 Summer in Fukuokaへの参加
-      - 交通費・宿泊費（金額に上限あり）
-      - スカラーシップスポンサーである{i3}のオフィス見学（前日）
+      - Attending to Go Conference '19 Summer in Fukuoka
+      - Travel assistance (With limitation of amount)
+      - Office tour for i3 as scholarship sponsor (The day before)
   date:
     title: Date
     body: July 12th - July 13th, 2019
   conditions:
     title: Entry Conditions
     body:
-      - 日本国内に在住の方
-      - 福岡県または近隣以外にお住まいの方（参加にあたって飛行機や新幹線を使う必要のある方）
-      - 2019年7月13日時点で学生の方で博士、修士、学部、学年は不問（高専生、高校生歓迎）
-      - 参加に対して自分なりのアウトプットをしていただける方（参加ブログ、Twitter実況、GitHubへコードPushなど）
+      - Who lives in Japan.
+      - For those who need to stay near the venue in advance of the event day, or who need to take express/bullet train or air plane.
+      - Being a student as of 13th July, 2019. (Including all degree course and grade. We also welcome students of high school and college of technology.)
+      - Who is able to do your own output about attending. (using blog, twitter and GitHub  etc)
   method:
     title: 応募方法と締切
     body: 応募にはフォームから「2019年6月23日」までにお申込み下さい。
