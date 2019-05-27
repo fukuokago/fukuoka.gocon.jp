@@ -1,8 +1,9 @@
 <i18n>
 en:
   desc: |-
-    最近のGo Conferenceではスカラーシップが行われており、福岡で開催されるGo Conference'19 Summerにおいてもスポンサー様の協力のもとスカラーシップを行います。
-    学生向けにはなりますが、スカラーシップによって本イベントに参加するハードルを下げ、技術的なインプットを通して様々な体験をしていただきたいと考えております。
+    The scholarship program for students is provided by cooperation of sponsor of Go Conference '19 Summer.
+    Students from distance please join and utilize this program.
+    We hope that this program will reduce the hurdles of event attending and provide various experiences through technical knowledge.
   entry: Entry for Scholarships
   i3systems: i³ Systems, Inc.
   support:
@@ -36,8 +37,9 @@ en:
       - カンファレンス当日に学生であることを確認するために学生証などを提示をお願いする場合があります
 ja:
   desc: |-
-    最近のGo Conferenceではスカラーシップが行われており、福岡で開催されるGo Conference'19 Summerにおいてもスポンサー様の協力のもとスカラーシップを行います。
-    学生向けにはなりますが、スカラーシップによって本イベントに参加するハードルを下げ、技術的なインプットを通して様々な体験をしていただきたいと考えております。
+    Go Conference'19 Summerではスポンサー様の協力のもと学生向けのスカラーシッププログラムを提供いたします。
+    遠方にお住まいの学生の方々はぜひご活用ください。
+    このプログラムがイベント参加のハードルを下げ、技術的なインプットを通した様々な体験を提供できること願っています。
   entry: スカラーシップに申込む
   i3systems: 株式会社アイキューブドシステムズ様
   support:
