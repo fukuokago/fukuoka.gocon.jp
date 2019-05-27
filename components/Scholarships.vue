@@ -11,7 +11,7 @@ en:
     body:
       - Attending to Go Conference '19 Summer in Fukuoka
       - Travel assistance (The upper limit is 50,000 yen in total)
-      - Office tour for i3 as scholarship sponsor (The day before)
+      - Office tour for {i3} as scholarship sponsor (The day before)
   date:
     title: Date
     body: July 12th - July 13th, 2019
