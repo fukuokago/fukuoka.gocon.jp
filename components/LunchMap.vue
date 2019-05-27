@@ -12,35 +12,123 @@ ja:
       <p>{{ $t('desc') }}</p>
     </div>
 
-    <GmapMap map-type-id="roadmap" :center="center" :zoom="zoom" :options="options">
-      <GmapInfoWindow :options="infoOptions" :position="infoWindowPos" opened="infoWinOpen" @closeclick="infoWinOpen=false">
+    <GmapMap
+      map-type-id="roadmap"
+      :center="center"
+      :zoom="zoom"
+      :options="options"
+    >
+      <GmapInfoWindow
+        :options="infoOptions"
+        :position="infoWindowPos"
+        opened="infoWinOpen"
+        @closeclick="infoWinOpen = false"
+      >
         <div class="gmap--infowin">
-          <p class="gmap--infoimg"><img :src="infoContent.image" width=200 /></p>
-          <p class="gmap--infotext"><a :href="infoContent.url" target="_blank">{{infoContent.title}}</a></p>
+          <p class="gmap--infoimg">
+            <img :src="infoContent.image" width="200" />
+          </p>
+          <p class="gmap--infotext">
+            <a :href="infoContent.url" target="_blank">{{
+              infoContent.title
+            }}</a>
+          </p>
         </div>
       </GmapInfoWindow>
-      <GmapMarker v-for="(m, index) in markers.ramen" @click="toggleInfoWindow(m, index)"
-        :key="index" :position="m.position" :clickable="true" :draggable="false" :icon="'/eat/ramen.png'"></GmapMarker>
-      <GmapMarker v-for="(m, index) in markers.soba" @click="toggleInfoWindow(m, index)"
-        :key="index" :position="m.position" :clickable="true" :draggable="false" :icon="'/eat/soba.png'"></GmapMarker>
-      <GmapMarker v-for="(m, index) in markers.udon" @click="toggleInfoWindow(m, index)"
-        :key="index" :position="m.position" :clickable="true" :draggable="false" :icon="'/eat/udon.png'"></GmapMarker>
-      <GmapMarker v-for="(m, index) in markers.curry" @click="toggleInfoWindow(m, index)"
-        :key="index" :position="m.position" :clickable="true" :draggable="false" :icon="'/eat/curry.png'"></GmapMarker>
-      <GmapMarker v-for="(m, index) in markers.diner" @click="toggleInfoWindow(m, index)"
-        :key="index" :position="m.position" :clickable="true" :draggable="false" :icon="'/eat/dinner.png'"></GmapMarker>
-      <GmapMarker v-for="(m, index) in markers.tempura" @click="toggleInfoWindow(m, index)"
-        :key="index" :position="m.position" :clickable="true" :draggable="false" :icon="'/eat/tempura.png'"></GmapMarker>
+      <GmapMarker
+        v-for="(m, index) in markers.ramen"
+        @click="toggleInfoWindow(m, index)"
+        :key="index"
+        :position="m.position"
+        :clickable="true"
+        :draggable="false"
+        :icon="'/eat/ramen.png'"
+      ></GmapMarker>
+      <GmapMarker
+        v-for="(m, index) in markers.soba"
+        @click="toggleInfoWindow(m, index)"
+        :key="index"
+        :position="m.position"
+        :clickable="true"
+        :draggable="false"
+        :icon="'/eat/soba.png'"
+      ></GmapMarker>
+      <GmapMarker
+        v-for="(m, index) in markers.udon"
+        @click="toggleInfoWindow(m, index)"
+        :key="index"
+        :position="m.position"
+        :clickable="true"
+        :draggable="false"
+        :icon="'/eat/udon.png'"
+      ></GmapMarker>
+      <GmapMarker
+        v-for="(m, index) in markers.curry"
+        @click="toggleInfoWindow(m, index)"
+        :key="index"
+        :position="m.position"
+        :clickable="true"
+        :draggable="false"
+        :icon="'/eat/curry.png'"
+      ></GmapMarker>
+      <GmapMarker
+        v-for="(m, index) in markers.diner"
+        @click="toggleInfoWindow(m, index)"
+        :key="index"
+        :position="m.position"
+        :clickable="true"
+        :draggable="false"
+        :icon="'/eat/dinner.png'"
+      ></GmapMarker>
+      <GmapMarker
+        v-for="(m, index) in markers.tempura"
+        @click="toggleInfoWindow(m, index)"
+        :key="index"
+        :position="m.position"
+        :clickable="true"
+        :draggable="false"
+        :icon="'/eat/tempura.png'"
+      ></GmapMarker>
     </GmapMap>
 
     <div class="lunchmap--list container">
       <ul>
-        <li><img src="/eat/ramen.png">ラーメン<ul class="colored"> <li v-for="(m) in markers.ramen">{{ m.content.title }}</li> </ul> </li>
-        <li><img src="/eat/soba.png">蕎麦<ul class="colored"> <li v-for="(m) in markers.soba">{{ m.content.title }}</li> </ul> </li>
-        <li><img src="/eat/udon.png">うどん<ul class="colored"> <li v-for="(m) in markers.udon">{{ m.content.title }}</li> </ul> </li>
-        <li><img src="/eat/curry.png">カレー<ul class="colored"> <li v-for="(m) in markers.curry">{{ m.content.title }}</li> </ul> </li>
-        <li><img src="/eat/dinner.png">カフェ・食堂<ul class="colored"> <li v-for="(m) in markers.diner">{{ m.content.title }}</li> </ul> </li>
-        <li><img src="/eat/tempura.png">天ぷら<ul class="colored"> <li v-for="(m) in markers.tempura">{{ m.content.title }}</li> </ul> </li>
+        <li>
+          <img src="/eat/ramen.png" />ラーメン
+          <ul class="colored">
+            <li v-for="m in markers.ramen">{{ m.content.title }}</li>
+          </ul>
+        </li>
+        <li>
+          <img src="/eat/soba.png" />蕎麦
+          <ul class="colored">
+            <li v-for="m in markers.soba">{{ m.content.title }}</li>
+          </ul>
+        </li>
+        <li>
+          <img src="/eat/udon.png" />うどん
+          <ul class="colored">
+            <li v-for="m in markers.udon">{{ m.content.title }}</li>
+          </ul>
+        </li>
+        <li>
+          <img src="/eat/curry.png" />カレー
+          <ul class="colored">
+            <li v-for="m in markers.curry">{{ m.content.title }}</li>
+          </ul>
+        </li>
+        <li>
+          <img src="/eat/dinner.png" />カフェ・食堂
+          <ul class="colored">
+            <li v-for="m in markers.diner">{{ m.content.title }}</li>
+          </ul>
+        </li>
+        <li>
+          <img src="/eat/tempura.png" />天ぷら
+          <ul class="colored">
+            <li v-for="m in markers.tempura">{{ m.content.title }}</li>
+          </ul>
+        </li>
       </ul>
     </div>
   </section>
@@ -98,7 +186,7 @@ export default class Location extends Vue {
 }
 .gmap--infotext {
   font-size: 12px;
-  padding-bottom: .2em;
+  padding-bottom: 0.2em;
   font-weight: bold;
 }
 .gmap--infotext a {
