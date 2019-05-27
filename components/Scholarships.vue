@@ -29,12 +29,12 @@ en:
     title: Announcement
     body: The results will be announced by 28th June, 2019 with E-mail whether application is accepted or not.
   disclaimer:
-    title: 注意事項および免責事項
+    title: Notes and Disclaimers
     body:
-      - 未成年者の応募には保護者の同意が必要です
-      - 参加にあたって授業などを欠席する場合は所属する学校の許可を得て下さい
-      - 期間中に発生しましたいかなる事故などによる損害につきましては責任を負いかねます
-      - カンファレンス当日に学生であることを確認するために学生証などを提示をお願いする場合があります
+      - Parents' consent is required to apply for minors.
+      - Obtain the permission from the school you belong to when you need absent from classes.
+      - We are not responsible for any damage caused by the accident that occurred during the period.
+      - You may be asked to present your student ID card to confirm that you are a student on the day.
 ja:
   desc: |-
     Go Conference'19 Summerではスポンサー様の協力のもと学生向けのスカラーシッププログラムを提供いたします。
