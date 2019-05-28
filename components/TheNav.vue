@@ -1,10 +1,10 @@
 <i18n>
 en:
-  sponsor: Become a Sponsor
-  gocon: Go Conference Tokyo
+  registration: Join us on July 13
+  scholarships: Scholarships
 ja:
-  sponsor: スポンサーになる
-  gocon: Go Conference 東京
+  registration: 7/13のイベントに参加登録する
+  scholarships: スカラーシップ
 </i18n>
 
 <template>
@@ -32,8 +32,8 @@ ja:
       </ul>
 
       <div class="attention">
-        <a class="button is-small is-inverted is-outlined" href="https://docs.google.com/forms/d/17v0fB3UxTLpf6G_th-TMyJTSOBMgVBlPogNk0iubxnQ/">{{ $t('sponsor') }}</a>
-        <a class="button is-small is-inverted is-outlined" href="https://gocon.jp/">{{ $t('gocon') }}</a>
+        <nuxt-link class="button is-small is-inverted is-outlined" :to="localePath('registration')">{{ $t('registration') }}</nuxt-link>
+        <nuxt-link class="button is-small is-inverted is-outlined" :to="localePath('scholarships')">{{ $t('scholarships') }}</nuxt-link>
       </div>
 
       <div class="lang" v-on:click="toggleDrawer()">

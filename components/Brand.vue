@@ -72,6 +72,18 @@ ja:
 
       <div class="inner">
         <picture class="eyecatch">
+          <source type="image/webp" srcset="~static/img/freehand-gopher-noodle.webp">
+          <img src="~assets/img/freehand-gopher-noodle.png" >
+        </picture>
+        <p>Gopher Noodle(freehand)</p>
+        <ul>
+          <li><nuxt-link class="button" :to="localePath({name: 'assets-slug', params: { slug: 'freehand-gopher-noodle-for-phone' }})">For Phone</nuxt-link></li>
+          <li><nuxt-link class="button" :to="localePath({name: 'assets-slug', params: { slug: 'freehand-gopher-noodle-for-laptop' }})">For Laptop</nuxt-link></li>
+        </ul>
+      </div>
+
+      <div class="inner">
+        <picture class="eyecatch">
           <source type="image/webp" srcset="~static/img/gopher-pattern.webp">
           <img src="~assets/img/gopher-pattern.png" >
         </picture>
@@ -104,8 +116,10 @@ ja:
 
 .inner {
   width: 400px;
+  height: 220px;
+  overflow: hidden;
   float: left;
-  padding: 2em 1em 0 0;
+  padding: 1.5em 1em 0 0;
 }
 .eyecatch {
   width: 200px;
@@ -137,6 +151,7 @@ ja:
   .inner,
   .logo .inner {
     width: 100%;
+    height: auto;
     float: none;
     padding-right: 0;
   }
