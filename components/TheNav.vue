@@ -32,8 +32,8 @@ ja:
       </ul>
 
       <div class="attention">
-        <a class="button is-small is-inverted is-outlined" href="https://fukuokago.connpass.com/event/130797/">{{ $t('registration') }}</a>
-        <a class="button is-small is-inverted is-outlined" href="https://docs.google.com/forms/d/1EQognjiUtOYEfifYMtuIlVpz4M98Gp8oqTrLU0OunoU/">{{ $t('scholarships') }}</a>
+        <nuxt-link class="button is-small is-inverted is-outlined" :to="localePath('registration')">{{ $t('registration') }}</nuxt-link>
+        <nuxt-link class="button is-small is-inverted is-outlined" :to="localePath('scholarships')">{{ $t('scholarships') }}</nuxt-link>
       </div>
 
       <div class="lang" v-on:click="toggleDrawer()">
