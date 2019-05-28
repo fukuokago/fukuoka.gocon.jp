@@ -36,7 +36,7 @@ ja:
         </div>
       </GmapInfoWindow>
       <GmapMarker
-        v-for="(m, index) in markers.ramen"
+        v-for="(m, index) in ramens"
         @click="toggleInfoWindow(m, index)"
         :key="index"
         :position="m.position"
@@ -45,7 +45,7 @@ ja:
         :icon="'/eat/ramen.png'"
       ></GmapMarker>
       <GmapMarker
-        v-for="(m, index) in markers.soba"
+        v-for="(m, index) in sobas"
         @click="toggleInfoWindow(m, index)"
         :key="index"
         :position="m.position"
@@ -54,7 +54,7 @@ ja:
         :icon="'/eat/soba.png'"
       ></GmapMarker>
       <GmapMarker
-        v-for="(m, index) in markers.udon"
+        v-for="(m, index) in udons"
         @click="toggleInfoWindow(m, index)"
         :key="index"
         :position="m.position"
@@ -63,7 +63,7 @@ ja:
         :icon="'/eat/udon.png'"
       ></GmapMarker>
       <GmapMarker
-        v-for="(m, index) in markers.curry"
+        v-for="(m, index) in currys"
         @click="toggleInfoWindow(m, index)"
         :key="index"
         :position="m.position"
@@ -72,7 +72,7 @@ ja:
         :icon="'/eat/curry.png'"
       ></GmapMarker>
       <GmapMarker
-        v-for="(m, index) in markers.diner"
+        v-for="(m, index) in dinners"
         @click="toggleInfoWindow(m, index)"
         :key="index"
         :position="m.position"
@@ -81,7 +81,7 @@ ja:
         :icon="'/eat/dinner.png'"
       ></GmapMarker>
       <GmapMarker
-        v-for="(m, index) in markers.tempura"
+        v-for="(m, index) in tempuras"
         @click="toggleInfoWindow(m, index)"
         :key="index"
         :position="m.position"
@@ -90,44 +90,87 @@ ja:
         :icon="'/eat/tempura.png'"
       ></GmapMarker>
     </GmapMap>
-
     <div class="lunchmap--list container">
-      <ul>
-        <li>
-          <img src="/eat/ramen.png" />ラーメン
-          <ul class="colored">
-            <li v-for="m in markers.ramen">{{ m.content.title }}</li>
-          </ul>
+      <input name="eat" type="radio" id="all" value="all" v-model="category" />
+      <label for="all">😋全て</label>
+      <input
+        name="eat"
+        type="radio"
+        id="ramen"
+        value="ramen"
+        v-model="category"
+      />
+      <label for="ramen"
+        ><img class="eat-icon" src="/eat/ramen.png" />ラーメン</label
+      >
+      <input
+        name="eat"
+        type="radio"
+        id="soba"
+        value="soba"
+        v-model="category"
+      />
+      <label for="soba"><img class="eat-icon" src="/eat/soba.png" />蕎麦</label>
+      <input
+        name="eat"
+        type="radio"
+        id="udon"
+        value="udon"
+        v-model="category"
+      />
+      <label for="udon"
+        ><img class="eat-icon" src="/eat/udon.png" />うどん</label
+      >
+      <input
+        name="eat"
+        type="radio"
+        id="curry"
+        value="curry"
+        v-model="category"
+      />
+      <label for="curry"
+        ><img class="eat-icon" src="/eat/curry.png" />カレー</label
+      >
+      <input
+        name="eat"
+        type="radio"
+        id="dinner"
+        value="dinner"
+        v-model="category"
+      />
+      <label for="dinner"
+        ><img class="eat-icon" src="/eat/dinner.png" />カフェ・食堂</label
+      >
+      <input
+        name="eat"
+        type="radio"
+        id="tempura"
+        value="tempura"
+        v-model="category"
+      />
+      <label for="tempura"
+        ><img class="eat-icon" src="/eat/tempura.png" />天ぷら</label
+      >
+    </div>
+    <div class="lunchmap--list container">
+      <ul class="colored">
+        <li v-for="m in ramens" @click="toggleInfoWindow(m, index)">
+          <img class="eat-icon" src="/eat/ramen.png" />{{ m.content.title }}
         </li>
-        <li>
-          <img src="/eat/soba.png" />蕎麦
-          <ul class="colored">
-            <li v-for="m in markers.soba">{{ m.content.title }}</li>
-          </ul>
+        <li v-for="m in sobas" @click="toggleInfoWindow(m, index)">
+          <img class="eat-icon" src="/eat/soba.png" />{{ m.content.title }}
         </li>
-        <li>
-          <img src="/eat/udon.png" />うどん
-          <ul class="colored">
-            <li v-for="m in markers.udon">{{ m.content.title }}</li>
-          </ul>
+        <li v-for="m in udons" @click="toggleInfoWindow(m, index)">
+          <img class="eat-icon" src="/eat/udon.png" />{{ m.content.title }}
         </li>
-        <li>
-          <img src="/eat/curry.png" />カレー
-          <ul class="colored">
-            <li v-for="m in markers.curry">{{ m.content.title }}</li>
-          </ul>
+        <li v-for="m in currys" @click="toggleInfoWindow(m, index)">
+          <img class="eat-icon" src="/eat/curry.png" />{{ m.content.title }}
         </li>
-        <li>
-          <img src="/eat/dinner.png" />カフェ・食堂
-          <ul class="colored">
-            <li v-for="m in markers.diner">{{ m.content.title }}</li>
-          </ul>
+        <li v-for="m in dinners" @click="toggleInfoWindow(m, index)">
+          <img class="eat-icon" src="/eat/dinner.png" />{{ m.content.title }}
         </li>
-        <li>
-          <img src="/eat/tempura.png" />天ぷら
-          <ul class="colored">
-            <li v-for="m in markers.tempura">{{ m.content.title }}</li>
-          </ul>
+        <li v-for="m in tempuras" @click="toggleInfoWindow(m, index)">
+          <img class="eat-icon" src="/eat/tempura.png" />{{ m.content.title }}
         </li>
       </ul>
     </div>
@@ -168,9 +211,47 @@ export default class Location extends Vue {
     this.infoWinOpen = true
   }
 
+  get ramens() {
+    if (this.category != 'ramen' && this.category != 'all') {
+      return []
+    }
+    return markers.ramen
+  }
+  get sobas() {
+    if (this.category != 'soba' && this.category != 'all') {
+      return []
+    }
+    return markers.soba
+  }
+  get udons() {
+    if (this.category != 'udon' && this.category != 'all') {
+      return []
+    }
+    return markers.udon
+  }
+  get currys() {
+    if (this.category != 'curry' && this.category != 'all') {
+      return []
+    }
+    return markers.curry
+  }
+  get dinners() {
+    if (this.category != 'dinner' && this.category != 'all') {
+      return []
+    }
+    return markers.dinner
+  }
+  get tempuras() {
+    if (this.category != 'tempura' && this.category != 'all') {
+      return []
+    }
+    return markers.tempura
+  }
+
   data() {
     return {
-      markers: markers
+      markers: markers,
+      category: 'all'
     }
   }
 }
@@ -192,5 +273,9 @@ export default class Location extends Vue {
 .gmap--infotext a {
   font-size: 12px;
   font-weight: normal;
+}
+.eat-icon {
+  vertical-align: bottom;
+  margin: 0px 10px;
 }
 </style>
