@@ -4,19 +4,16 @@
 
     <RegistrationIsOpen titleTag="h3" />
     <ScheduleAndSpeakersArePublished titleTag="h3" />
-    <ProposalsFeedbackAndNotice titleTag="h3" />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-import ProposalsFeedbackAndNotice from '~/components/blog/ProposalsFeedbackAndNotice.vue'
 import ScheduleAndSpeakersArePublished from '~/components/blog/ScheduleAndSpeakersArePublished.vue'
 import RegistrationIsOpen from '~/components/blog/RegistrationIsOpen.vue'
 
 @Component({
   components: {
-    ProposalsFeedbackAndNotice,
     ScheduleAndSpeakersArePublished,
     RegistrationIsOpen
   }
