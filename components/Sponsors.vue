@@ -1,7 +1,7 @@
 <i18n>
 en:
   description: |-
-    Now call for sponsors is open.
+    Now call for sponsors is open but only scholorships.
     We also welcome suggestions that are not in the sponsored menu.
   cfs_button: Become a Sponsor
   note: Order by order
@@ -77,7 +77,7 @@ en:
       ext: svg
 ja:
   description: |-
-    現在、スポンサーを募集しています。
+    現在、スカラーシップスポンサーのみを募集しています。
     スポンサーメニューにないご提案も歓迎いたします。
   cfs_button: スポンサーになる
   note: お申込み順で掲載しています
