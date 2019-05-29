@@ -65,6 +65,16 @@ en:
       url: https://www.i3-systems.com
       slug: i3systems
       ext: svg
+    - name: LINE
+      desc: |-
+        With LINE communication app as its mainstay, LINE Corporation's business is associated with the development,
+        operation and advertisement of mobile applications and internet services, including communication, contents,
+        and entertainment, and has recently expanded its business to the areas of Fintech and AI.
+        LINE's corporate mission is "Closing the Distance" and strives to bring people of the world closer to each other,
+        to information, and to services.
+      url: https://engineering.linecorp.com/en/
+      slug: line
+      ext: svg
 ja:
   description: |-
     現在、スポンサーを募集しています。
@@ -128,6 +138,14 @@ ja:
         私たちの製品の一つである CLOMO MDM は、多くのお客様にご利用いただいている EMM サービスです。
       url: https://www.i3-systems.com
       slug: i3systems
+      ext: svg
+    - name: LINE
+      desc: |-
+        LINE株式会社は、コミュニケーションアプリ「LINE」を機軸として、
+        コミュニケーション・コンテンツ・エンターテイメントなどモバイルに特化した各種サービスの開発・運営・広告事業に加え、Fintech事業、AI事業を展開しています。
+        ミッションに「CLOSING THE DISTANCE」を掲げ、世界中の人と人、人と情報・サービスとの距離を縮めることを目指しています。
+      url: https://engineering.linecorp.com/ja/
+      slug: line
       ext: svg
 </i18n>
 
