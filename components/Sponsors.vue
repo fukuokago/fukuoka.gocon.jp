@@ -180,7 +180,7 @@ export default class Sponsors extends Vue {
 <style>
 .sponsor {
   width: 280px;
-  height: 480px;
+  height: 500px;
   float: left;
   margin: 0 3em 3em 0;
   padding: 0;
@@ -254,7 +254,9 @@ export default class Sponsors extends Vue {
 @media (max-width: 500px) {
   .sponsor {
     width: 100%;
-    padding: 0 0 1em;
+    height: auto;
+    padding: 0;
+    margin: 0 0 1em;
     overflow: visible;
     float: none;
   }
