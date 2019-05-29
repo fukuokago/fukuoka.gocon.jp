@@ -65,7 +65,7 @@ en:
       url: https://www.i3-systems.com
       slug: i3systems
       ext: svg
-    - name: LINE
+    - name: LINE Corporation
       desc: |-
         With LINE communication app as its mainstay, LINE Corporation's business is associated with the development,
         operation and advertisement of mobile applications and internet services, including communication, contents,
@@ -139,7 +139,7 @@ ja:
       url: https://www.i3-systems.com
       slug: i3systems
       ext: svg
-    - name: LINE
+    - name: LINE株式会社
       desc: |-
         LINE株式会社は、コミュニケーションアプリ「LINE」を機軸として、
         コミュニケーション・コンテンツ・エンターテイメントなどモバイルに特化した各種サービスの開発・運営・広告事業に加え、Fintech事業、AI事業を展開しています。
