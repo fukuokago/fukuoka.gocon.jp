@@ -197,6 +197,7 @@ export default class Location extends Vue {
     disableDefaultUi: true,
     styles: styles
   }
+  public category = 'all'
   public infoWinOpen = false
   public infoWindowPos = null
   public infoContent = { title: null, url: null }
