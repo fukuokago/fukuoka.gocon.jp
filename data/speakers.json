@@ -78,7 +78,7 @@
     "bio": "",
     "twitter": "",
     "url": "https://blog.rhykw.net/",
-    "organization": "",
+    "organization": "GMO Pepabo, Inc.",
     "title": "ホスティングにおけるメールサービスの運用とgolang",
     "abstract": "発表者は共用ホスティングのメールサービスでバックエンドのリニューアルに携わり、リニューアルに際して初の試みとしてnginxとgolangを採用しました。メールサービスを継続的に安定して提供するためどのようにgolangを使っているかを紹介します。",
     "tags": [
