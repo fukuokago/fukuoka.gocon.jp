@@ -21,7 +21,8 @@ ja:
       <div class="row" v-for="(sessions, time) in timetable">
         <p class="timediv">{{ time }}</p>
         <div class="is-clearfix">
-          <div class="session" v-bind:class="{single: sessions.length === 1}" v-for="(v, i) in sessions">
+          <div class="session" v-bind:class="{single: sessions.length === 1, 'sponsor-session': v.sponsor}" v-for="(v, i) in sessions">
+            <p class="session--sponsor" v-if="v.sponsor">Sponsor</p>
             <p class="session--time">{{ v.start }} - {{ v.stop }}
               <span class="session--time--duration">({{ v.duration }})</span>
             </p>
@@ -99,6 +100,22 @@ export default class Schedule extends Vue {
 .single.session {
   width: 100%;
   float: none;
+}
+.sponsor-session {
+  border: 1px solid #00ADD8;
+}
+.session--sponsor {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-weight: bold;
+  font-family: 'Arvo', serif;
+  background-color: #00ADD8;
+  color: #fff;
+  font-size: .7em;
+  padding: .2em 1em;
+  border-radius: 4px;
+  opacity: 0.3;
 }
 .session--time:before {
   content: '●';
