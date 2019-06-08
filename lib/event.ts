@@ -7,6 +7,7 @@ export interface Session {
   stop: string
   duration: string
   type: string
+  room: string
   sponsor: boolean
 }
 
@@ -83,6 +84,7 @@ export function findSession(id: string): Session {
     start: '',
     stop: '',
     duration: '',
+    room: '',
     type: '',
     sponsor: false
   }
