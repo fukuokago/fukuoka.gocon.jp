@@ -309,7 +309,7 @@
   {
     "id": "vvvatanabe",
     "name": "Yuichi Watanabe",
-    "avatar": "https://avatars3.githubusercontent.com/u/9883589?s=400&v=4",
+    "avatar": "https://avatars3.githubusercontent.com/u/9883589?s=500&v=4",
     "bio": "",
     "twitter": "vvvatanabe",
     "url": "https://github.com/vvatanabe",
@@ -322,6 +322,21 @@
       "CGO",
       "SSH",
       "RabbitMQ"
+    ]
+  },
+  {
+    "id": "yujiotani",
+    "name": "Yuji Otani",
+    "avatar": "https://avatars3.githubusercontent.com/u/2609671?s=500&v=4",
+    "bio": "株式会社サーキュレーション CTO。サイバーエージェントでインターネット広告のシステム部門を立ち上げ、子会社の技術責任者に就任。 その後インテリジェンスで技術責任者としてエンジニア組織を立ち上げる。 2017年1月より福岡に移住し、スタートアップCTOを経てサーキュレーションに参画。",
+    "twitter": "",
+    "url": "https://www.facebook.com/yuji.otani.16",
+    "organization": "Circulation, Inc.",
+    "title": "福岡でGoを使った開発ができる会社を調べてみた。",
+    "abstract": "福岡でGoを使った開発をやっている会社を紹介したいと思います。福岡で働くことに興味を持ってくれればいいなと思います！",
+    "tags": [
+      "fukuoka",
+      "work"
     ]
   }
 ]
