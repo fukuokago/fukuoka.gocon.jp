@@ -1,5 +1,32 @@
 [
   {
+    "id": "bomura",
+    "name": "bomura",
+    "avatar": "https://secure.gravatar.com/avatar/7804f47c48e67e82b5b09066e7989852?s=500",
+    "bio": "",
+    "twitter": "",
+    "url": "",
+    "organization": "i³ Systems, Inc",
+    "title": "MDMにおける大量デバイスを対象とした通信を支える技術",
+    "abstract": "「CLOMO」はMDM(Mobile Device Management)を用いてスマートデバイスを管理するためのRuby製のクラウドサービスです。今年度にはクラウド基盤のKubernetesへの移行を進めています。\n弊社は2017年に、働き方改革をCLOMOで支援する「ワーク・スマート」というサービスを提供開始しました。その際、大量デバイスへPush通知を送る機能にフェンリル社のGo製ツール「BoltzEngine」を採用し、クライアントをGoで実装しました。\n本セッションでは、CLOMOとワーク・スマートのサービスと今後のGoの活用についてお話したいと思います。",
+    "tags": [
+      "Rails",
+      "Ruby"
+    ]
+  },
+  {
+    "id": "dxhuy",
+    "name": "Huy Do",
+    "avatar": "https://secure.gravatar.com/avatar/2861223d52d35bc164c691e89eda9c98?s=500",
+    "bio": "I'm software engineer working at LINE's observability team.",
+    "twitter": "dxhuy",
+    "url": "",
+    "organization": "LINE corp",
+    "title": "マイクロサービス時代のhttpクライアント",
+    "abstract": "マイクロサービス時代にはコミュニケーションがもともとhttp1時代より複雑になっています。サービス間のコミュニケーションはタイムアウト、エラーはもちろん、Service Discovery, Fail Over, Load Balanceの色々の問題を向き合う必要があります。\nこの発表では、LINEのObservabilityがマイクロサービスに移行するにあったって、httpパッケージに追加した処理（circuit breaker, load balanceなど）について発表します。そしてマイクロサービスで大変なこと、意識しないといけないことなども含めて話します。",
+    "tags": []
+  },
+  {
     "id": "mohri1219",
     "name": "毛利 啓太",
     "avatar": "https://secure.gravatar.com/avatar/a9f8382f6cdd535370c723eba233a8f7?s=500",

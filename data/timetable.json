@@ -45,8 +45,7 @@
     "sponsor": true,
     "start": "10:50",
     "stop": "11:10",
-    "id": null,
-    "title": "Sponsor Session 📢",
+    "id": "bomura",
     "room": "startupcafe",
     "type": "short"
   },
@@ -104,8 +103,7 @@
     "sponsor": true,
     "start": "13:25",
     "stop": "13:40",
-    "id": null,
-    "title": "LINE Session",
+    "id": "dxhuy",
     "room": "fgn",
     "type": "short"
   },
