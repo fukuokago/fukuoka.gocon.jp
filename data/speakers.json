@@ -1,5 +1,20 @@
 [
   {
+    "id": "heat2048",
+    "name": "ryu",
+    "avatar": "https://avatars1.githubusercontent.com/u/30070392?s=500&v=4",
+    "bio": "I'm software engineer working at GMO Pepabo, inc's infrastructure team.",
+    "twitter": "",
+    "url": "https://github.com/heat1024",
+    "organization": "GMO Pepabo, inc.",
+    "title": "Go初心者がgoroutineで挑んだFTPプロキシ開発",
+    "abstract": "GMOペパボ株式会社では、ロリポップ！レンタルサーバーというサービスを提供しています。\nユーザは、FTPを利用してサーバへファイルを転送することができますが、様々な理由でサーバ移設をすると、接続IPが変わってしまいます。\nそれを解決するべく、ロケーションフリーを実現するFTP Proxyを開発しました。\n\nFTP Proxyは、複雑な並行処理の管理が必須です。Go初心者である私が、FTP Proxy開発に発生した問題とgoroutineを活用した解決に至る話を、goroutineの利点や注意点などを踏まえ、学んだ事を共有したいと思います。",
+    "tags": [
+      "FTP",
+      "goroutine"
+    ]
+  },
+  {
     "id": "bomura",
     "name": "bomura",
     "avatar": "https://ca.slack-edge.com/T02JZ31H6-UK0SD54QP-fbe9bf080bbe-500",
@@ -264,7 +279,7 @@
     "bio": "",
     "twitter": "tsurubee3",
     "url": "https://blog.tsurubee.tech/",
-    "organization": "GMO Pepabo, Inc.",
+    "organization": "GMO Pepabo, inc.",
     "title": "Goでつくる進化計算パッケージ",
     "abstract": "生物の進化や振る舞いを模倣した探索アルゴリズムである進化計算は、幅広い最適化問題に適用可能であることから、様々な分野への応用が進んでいます。進化計算を用いて最適化問題を解くためには、膨大な計算量を要するため、実用時間内で良好な解を得るために計算処理を高速化することが課題の一つであることが知られています。\n発表者は、Goの並行処理機構であるGoroutineを活用して、高速な進化計算アルゴリズムの実装を試みています。発表では、進化計算の概要に始まり、Goによる実装、および最適化計算へのGoroutineの適用の有用性について発表します。\nぜひ皆さんも生物の進化や振る舞いをGoで模倣しましょう！",
     "tags": [
