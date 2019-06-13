@@ -20,48 +20,42 @@ ja:
         </div>
       </GmapInfoWindow>
       <GmapMarker v-for="(m, i) in ramens" @click="toggleInfoWindow(m, i)" :key="i + '-1'" :position="m.position"
-        :clickable="true" :draggable="false" :icon="'/eat/ramen.png'" ></GmapMarker>
+                  :clickable="true" :draggable="false" :icon="getMarker('ramen')" ></GmapMarker>
       <GmapMarker v-for="(m, i) in sobas" @click="toggleInfoWindow(m, i)" :key="i + '-2'" :position="m.position"
-        :clickable="true" :draggable="false" :icon="'/eat/soba.png'" ></GmapMarker>
+        :clickable="true" :draggable="false" :icon="getMarker('soba')" ></GmapMarker>
       <GmapMarker v-for="(m, i) in udons" @click="toggleInfoWindow(m, i)" :key="i + '-3'" :position="m.position"
-        :clickable="true" :draggable="false" :icon="'/eat/udon.png'" ></GmapMarker>
+        :clickable="true" :draggable="false" :icon="getMarker('udon')" ></GmapMarker>
       <GmapMarker v-for="(m, i) in currys" @click="toggleInfoWindow(m, i)" :key="i + '-4'" :position="m.position"
-        :clickable="true" :draggable="false" :icon="'/eat/curry.png'" ></GmapMarker>
+        :clickable="true" :draggable="false" :icon="getMarker('curry')" ></GmapMarker>
       <GmapMarker v-for="(m, i) in dinners" @click="toggleInfoWindow(m, i)" :key="i + '-5'" :position="m.position"
-        :clickable="true" :draggable="false" :icon="'/eat/dinner.png'" ></GmapMarker>
+        :clickable="true" :draggable="false" :icon="getMarker('dinner')" ></GmapMarker>
       <GmapMarker v-for="(m, i) in tempuras" @click="toggleInfoWindow(m, i)" :key="i + '-6'" :position="m.position"
-        :clickable="true" :draggable="false" :icon="'/eat/tempura.png'" ></GmapMarker>
+        :clickable="true" :draggable="false" :icon="getMarker('tempura')" ></GmapMarker>
     </GmapMap>
     <div class="lunchmap--list container">
       <input name="eat" type="radio" id="all" value="all" v-model="category" />
       <label for="all">😋全て</label>
       <input name="eat" type="radio" id="ramen" value="ramen" v-model="category" />
-      <label for="ramen"><img class="eat-icon" src="/eat/ramen.png" />ラーメン</label>
-      <input name="eat" type="radio" id="soba" value="soba" v-model="category" />
-      <label for="soba"><img class="eat-icon" src="/eat/soba.png" />蕎麦</label>
-      <input name="eat" type="radio" id="udon" value="udon" v-model="category" />
-      <label for="udon" ><img class="eat-icon" src="/eat/udon.png" />うどん</label>
-      <input name="eat" type="radio" id="curry" value="curry" v-model="category" />
-      <label for="curry" ><img class="eat-icon" src="/eat/curry.png" />カレー</label>
-      <input name="eat" type="radio" id="dinner" value="dinner" v-model="category" />
-      <label for="dinner" ><img class="eat-icon" src="/eat/dinner.png" />カフェ・食堂</label>
-      <input name="eat" type="radio" id="tempura" value="tempura" v-model="category" />
-      <label for="tempura" ><img class="eat-icon" src="/eat/tempura.png" />天ぷら</label>
+      <label for="ramen"><img class="marker-icon" src="/marker/ramen.svg" />ラーメン</label>
+      <input name="marker" type="radio" id="soba" value="soba" v-model="category" />
+      <label for="soba"><img class="marker-icon" src="/marker/soba.svg" />蕎麦</label>
+      <input name="marker" type="radio" id="udon" value="udon" v-model="category" />
+      <label for="udon" ><img class="marker-icon" src="/marker/udon.svg" />うどん</label>
+      <input name="marker" type="radio" id="curry" value="curry" v-model="category" />
+      <label for="curry" ><img class="marker-icon" src="/marker/curry.svg" />カレー</label>
+      <input name="marker" type="radio" id="dinner" value="dinner" v-model="category" />
+      <label for="dinner" ><img class="marker-icon" src="/marker/dinner.svg" />カフェ・食堂</label>
+      <input name="marker" type="radio" id="tempura" value="tempura" v-model="category" />
+      <label for="tempura" ><img class="marker-icon" src="/marker/tempura.svg" />天ぷら</label>
     </div>
     <div class="lunchmap--list container">
       <ul class="colored">
-        <li v-for="(m, i) in ramens" @click="toggleInfoWindow(m, i)">
-          <img class="eat-icon" src="/eat/ramen.png" />{{ m.content.title }} </li>
-        <li v-for="(m, i) in sobas" @click="toggleInfoWindow(m, i)">
-          <img class="eat-icon" src="/eat/soba.png" />{{ m.content.title }} </li>
-        <li v-for="(m, i) in udons" @click="toggleInfoWindow(m, i)">
-          <img class="eat-icon" src="/eat/udon.png" />{{ m.content.title }} </li>
-        <li v-for="(m, i) in currys" @click="toggleInfoWindow(m, i)">
-          <img class="eat-icon" src="/eat/curry.png" />{{ m.content.title }} </li>
-        <li v-for="(m, i) in dinners" @click="toggleInfoWindow(m, i)">
-          <img class="eat-icon" src="/eat/dinner.png" />{{ m.content.title }} </li>
-        <li v-for="(m, i) in tempuras" @click="toggleInfoWindow(m, i)">
-          <img class="eat-icon" src="/eat/tempura.png" />{{ m.content.title }} </li>
+        <li v-for="(m, i) in ramens" @click="toggleInfoWindow(m, i)"> {{ m.content.title }} </li>
+        <li v-for="(m, i) in sobas" @click="toggleInfoWindow(m, i)"> {{ m.content.title }} </li>
+        <li v-for="(m, i) in udons" @click="toggleInfoWindow(m, i)"> {{ m.content.title }} </li>
+        <li v-for="(m, i) in currys" @click="toggleInfoWindow(m, i)"> {{ m.content.title }} </li>
+        <li v-for="(m, i) in dinners" @click="toggleInfoWindow(m, i)"> {{ m.content.title }} </li>
+        <li v-for="(m, i) in tempuras" @click="toggleInfoWindow(m, i)"> {{ m.content.title }} </li>
       </ul>
     </div>
   </section>
@@ -100,6 +94,14 @@ export default class Location extends Vue {
     this.infoWindowPos = marker.position
     this.infoContent = marker.content
     this.infoWinOpen = true
+  }
+
+  getMarker(name: string) {
+    return {
+      url: require(`~/static/marker/${name}.svg`),
+      size: {width: 40, height: 45, f: 'px', b: 'px'},
+      scaledSize: {width: 40, height: 45, f: 'px', b: 'px'}
+    }
   }
 
   get ramens() {
