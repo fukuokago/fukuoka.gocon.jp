@@ -5,6 +5,7 @@
     "stop": "17:30",
     "id": "staff",
     "title": "Registration 🎫",
+    "room": null,
     "type": "registration"
   },
   {
@@ -13,6 +14,7 @@
     "stop": "10:10",
     "id": "organizer",
     "title": "Opening talk 🙋",
+    "room": "fgn",
     "type": "call"
   },
   {
@@ -20,6 +22,7 @@
     "start": "10:10",
     "stop": "10:50",
     "id": "tenntenn",
+    "room": "fgn",
     "type": "long"
   },
   {
@@ -27,22 +30,31 @@
     "start": "10:10",
     "stop": "10:50",
     "id": "shibu_jp",
+    "room": "startupcafe",
     "type": "long"
   },
   {
     "sponsor": true,
     "start": "10:50",
     "stop": "11:10",
-    "id": null,
-    "title": "Sponsor Session 📢",
+    "id": "vvvatanabe",
+    "room": "fgn",
     "type": "short"
   },
   {
     "sponsor": true,
     "start": "10:50",
     "stop": "11:10",
-    "id": null,
-    "title": "Sponsor Session 📢",
+    "id": "bomura",
+    "room": "startupcafe",
+    "type": "short"
+  },
+  {
+    "sponsor": true,
+    "start": "11:10",
+    "stop": "11:30",
+    "id": "mohri1219",
+    "room": "fgn",
     "type": "short"
   },
   {
@@ -51,14 +63,7 @@
     "stop": "11:30",
     "id": null,
     "title": "Sponsor Session 📢",
-    "type": "short"
-  },
-  {
-    "sponsor": true,
-    "start": "11:10",
-    "stop": "11:30",
-    "id": null,
-    "title": "Sponsor Session 📢",
+    "room": "startupcafe",
     "type": "short"
   },
   {
@@ -66,6 +71,7 @@
     "start": "11:30",
     "stop": "11:50",
     "id": "budougumi0617",
+    "room": "fgn",
     "type": "short"
   },
   {
@@ -73,6 +79,7 @@
     "start": "11:30",
     "stop": "11:50",
     "id": "pyama86",
+    "room": "startupcafe",
     "type": "short"
   },
   {
@@ -81,14 +88,23 @@
     "stop": "13:20",
     "id": null,
     "title": "Lunch Break 🍜",
+    "room": null,
     "type": "break"
   },
   {
     "sponsor": true,
     "start": "13:20",
+    "stop": "13:25",
+    "id": "yujiotani",
+    "room": "fgn",
+    "type": "short"
+  },
+  {
+    "sponsor": true,
+    "start": "13:25",
     "stop": "13:40",
-    "id": null,
-    "title": "Sponsor Session 📢",
+    "id": "dxhuy",
+    "room": "fgn",
     "type": "short"
   },
   {
@@ -97,6 +113,7 @@
     "stop": "13:40",
     "id": null,
     "title": "Sponsor Session 📢",
+    "room": "startupcafe",
     "type": "short"
   },
   {
@@ -104,6 +121,7 @@
     "start": "13:40",
     "stop": "14:00",
     "id": "cohhei",
+    "room": "fgn",
     "type": "short"
   },
   {
@@ -111,6 +129,7 @@
     "start": "13:40",
     "stop": "14:00",
     "id": "tsurubee3",
+    "room": "startupcafe",
     "type": "short"
   },
   {
@@ -118,6 +137,7 @@
     "start": "14:00",
     "stop": "14:20",
     "id": "avvmoto",
+    "room": "fgn",
     "type": "short"
   },
   {
@@ -125,6 +145,7 @@
     "start": "14:00",
     "stop": "14:20",
     "id": "qt_luigi",
+    "room": "startupcafe",
     "type": "short"
   },
   {
@@ -132,6 +153,7 @@
     "start": "14:20",
     "stop": "15:00",
     "id": "denis_makogon",
+    "room": "fgn",
     "type": "long"
   },
   {
@@ -139,6 +161,7 @@
     "start": "14:20",
     "stop": "15:00",
     "id": "ymotongpoo",
+    "room": "startupcafe",
     "type": "long"
   },
   {
@@ -147,6 +170,7 @@
     "stop": "15:10",
     "id": null,
     "title": "Break ☕️",
+    "room": null,
     "type": "break"
   },
   {
@@ -154,6 +178,7 @@
     "start": "15:10",
     "stop": "15:30",
     "id": "po3rin",
+    "room": "fgn",
     "type": "short"
   },
   {
@@ -161,6 +186,7 @@
     "start": "15:10",
     "stop": "15:30",
     "id": "seike460",
+    "room": "startupcafe",
     "type": "short"
   },
   {
@@ -168,6 +194,7 @@
     "start": "15:30",
     "stop": "15:50",
     "id": "pb.hirokawa",
+    "room": "fgn",
     "type": "short"
   },
   {
@@ -175,6 +202,7 @@
     "start": "15:30",
     "stop": "15:50",
     "id": "ikeda.sub",
+    "room": "startupcafe",
     "type": "short"
   },
   {
@@ -182,6 +210,7 @@
     "start": "15:50",
     "stop": "16:30",
     "id": "codehex",
+    "room": "fgn",
     "type": "long"
   },
   {
@@ -189,6 +218,7 @@
     "start": "15:50",
     "stop": "16:30",
     "id": "k1LoW",
+    "room": "startupcafe",
     "type": "long"
   },
   {
@@ -197,14 +227,15 @@
     "stop": "16:50",
     "id": null,
     "title": "Break ☕️",
+    "room": null,
     "type": "break"
   },
   {
     "sponsor": true,
     "start": "16:50",
     "stop": "17:10",
-    "id": null,
-    "title": "Sponsor Session 📢",
+    "id": "heat2048",
+    "room": "fgn",
     "type": "short"
   },
   {
@@ -213,6 +244,7 @@
     "stop": "17:10",
     "id": null,
     "title": "Sponsor Session 📢",
+    "room": "startupcafe",
     "type": "short"
   },
   {
@@ -220,6 +252,7 @@
     "start": "17:10",
     "stop": "17:30",
     "id": "hgsgtk",
+    "room": "fgn",
     "type": "short"
   },
   {
@@ -227,6 +260,7 @@
     "start": "17:10",
     "stop": "17:30",
     "id": "makki_d",
+    "room": "startupcafe",
     "type": "short"
   },
   {
@@ -234,6 +268,7 @@
     "start": "17:30",
     "stop": "17:50",
     "id": "ichikaway",
+    "room": "fgn",
     "type": "short"
   },
   {
@@ -241,7 +276,8 @@
     "start": "17:30",
     "stop": "17:50",
     "id": "__timakin__",
-    "type": "long"
+    "room": "startupcafe",
+    "type": "short"
   },
   {
     "sponsor": false,
@@ -249,6 +285,7 @@
     "stop": "18:50",
     "id": null,
     "title": "Networking 🍻",
+    "room": null,
     "type": "break"
   },
   {
@@ -257,20 +294,7 @@
     "stop": "19:00",
     "id": "organizer",
     "title": "Close 👋",
+    "room": null,
     "type": "call"
-  },
-  {
-    "sponsor": true,
-    "start": "",
-    "stop": "",
-    "id": "mohri1219",
-    "type": "short"
-  },
-  {
-    "sponsor": true,
-    "start": "",
-    "stop": "",
-    "id": "vvvatanabe",
-    "type": "short"
   }
 ]

@@ -21,7 +21,8 @@ ja:
       <div class="row" v-for="(sessions, time) in timetable">
         <p class="timediv">{{ time }}</p>
         <div class="is-clearfix">
-          <div class="session" v-bind:class="{single: sessions.length === 1}" v-for="(v, i) in sessions">
+          <div class="session" v-bind:class="{single: sessions.length === 1 && sessions[0].room === null, 'sponsor-session': v.sponsor}" v-for="(v, i) in sessions">
+            <p class="session--sponsor" v-if="v.sponsor">Sponsor</p>
             <p class="session--time">{{ v.start }} - {{ v.stop }}
               <span class="session--time--duration">({{ v.duration }})</span>
             </p>
@@ -32,6 +33,8 @@ ja:
             <ul class="session--tags">
               <li class="tag" v-for="(tag) in v.tags">{{ tag }}</li>
             </ul>
+            <p class="session--at fgn" v-if="v.room === 'fgn'"><i class="fas fa-map-marker-alt"></i> fgn.</p>
+            <p class="session--at startupcafe" v-if="v.room === 'startupcafe'"><i class="fas fa-map-marker-alt"></i> Startup Cafe</p>
             <div class="session--speaker is-clearfix" v-if="v.name !== undefined && v.name !== ''">
               <img class="session--speaker--avatar" :src="v.avatar" />
               <p class="session--speaker--name">{{ v.name }}</p>
@@ -99,6 +102,34 @@ export default class Schedule extends Vue {
 .single.session {
   width: 100%;
   float: none;
+}
+.sponsor-session {
+  border: 1px solid #00ADD8;
+}
+.session--sponsor {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-weight: bold;
+  font-family: 'Arvo', serif;
+  background-color: #00ADD8;
+  color: #fff;
+  font-size: .7em;
+  padding: .2em 1em;
+  border-radius: 4px;
+  opacity: 0.3;
+}
+.session--at {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: bold;
+  font-family: 'Arvo', serif;
+  color: #333;
+  font-size: .8em;
+}
+.session--at.startupcafe {
+  color: #BF9F00;
 }
 .session--time:before {
   content: '●';

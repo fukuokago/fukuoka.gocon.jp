@@ -1,7 +1,7 @@
 <i18n>
 en:
   description: |-
-    Now call for sponsors is open.
+    Now call for sponsors is open but only scholorships.
     We also welcome suggestions that are not in the sponsored menu.
   cfs_button: Become a Sponsor
   note: Order by order
@@ -65,9 +65,19 @@ en:
       url: https://www.i3-systems.com
       slug: i3systems
       ext: svg
+    - name: LINE Corporation
+      desc: |-
+        With LINE communication app as its mainstay, LINE Corporation's business is associated with the development,
+        operation and advertisement of mobile applications and internet services, including communication, contents,
+        and entertainment, and has recently expanded its business to the areas of Fintech and AI.
+        LINE's corporate mission is "Closing the Distance" and strives to bring people of the world closer to each other,
+        to information, and to services.
+      url: https://engineering.linecorp.com/en/
+      slug: line
+      ext: svg
 ja:
   description: |-
-    現在、スポンサーを募集しています。
+    現在、スカラーシップスポンサーのみを募集しています。
     スポンサーメニューにないご提案も歓迎いたします。
   cfs_button: スポンサーになる
   note: お申込み順で掲載しています
@@ -129,6 +139,14 @@ ja:
       url: https://www.i3-systems.com
       slug: i3systems
       ext: svg
+    - name: LINE株式会社
+      desc: |-
+        LINE株式会社は、コミュニケーションアプリ「LINE」を機軸として、
+        コミュニケーション・コンテンツ・エンターテイメントなどモバイルに特化した各種サービスの開発・運営・広告事業に加え、Fintech事業、AI事業を展開しています。
+        ミッションに「CLOSING THE DISTANCE」を掲げ、世界中の人と人、人と情報・サービスとの距離を縮めることを目指しています。
+      url: https://engineering.linecorp.com/ja/
+      slug: line
+      ext: svg
 </i18n>
 
 <template>
@@ -162,7 +180,7 @@ export default class Sponsors extends Vue {
 <style>
 .sponsor {
   width: 280px;
-  height: 480px;
+  height: 500px;
   float: left;
   margin: 0 3em 3em 0;
   padding: 0;
@@ -236,7 +254,9 @@ export default class Sponsors extends Vue {
 @media (max-width: 500px) {
   .sponsor {
     width: 100%;
-    padding: 0 0 1em;
+    height: auto;
+    padding: 0;
+    margin: 0 0 1em;
     overflow: visible;
     float: none;
   }

@@ -1,5 +1,47 @@
 [
   {
+    "id": "heat2048",
+    "name": "ryu",
+    "avatar": "https://avatars1.githubusercontent.com/u/30070392?s=500&v=4",
+    "bio": "I'm software engineer working at GMO Pepabo, inc's infrastructure team.",
+    "twitter": "",
+    "url": "https://github.com/heat1024",
+    "organization": "GMO Pepabo, inc.",
+    "title": "Go初心者がgoroutineで挑んだFTPプロキシ開発",
+    "abstract": "GMOペパボ株式会社では、ロリポップ！レンタルサーバーというサービスを提供しています。\nユーザは、FTPを利用してサーバへファイルを転送することができますが、様々な理由でサーバ移設をすると、接続IPが変わってしまいます。\nそれを解決するべく、ロケーションフリーを実現するFTP Proxyを開発しました。\n\nFTP Proxyは、複雑な並行処理の管理が必須です。Go初心者である私が、FTP Proxy開発に発生した問題とgoroutineを活用した解決に至る話を、goroutineの利点や注意点などを踏まえ、学んだ事を共有したいと思います。",
+    "tags": [
+      "FTP",
+      "goroutine"
+    ]
+  },
+  {
+    "id": "bomura",
+    "name": "bomura",
+    "avatar": "https://ca.slack-edge.com/T02JZ31H6-UK0SD54QP-fbe9bf080bbe-500",
+    "bio": "元SIerのベンチャー転職組エンジニア。マネジャー見習いとしてプロセスの改善ジャーニー中にCloud Nativeな世界に入ってしまい迷走中。 ファッションはちょっと好き。",
+    "twitter": "https://twitter.com/bontar0",
+    "url": "https://bon.sytes.net/",
+    "organization": "i³ Systems, Inc",
+    "title": "MDMにおける大量デバイスを対象とした通信を支える技術",
+    "abstract": "「CLOMO」はMDM(Mobile Device Management)を用いてスマートデバイスを管理するためのRuby製のクラウドサービスです。今年度にはクラウド基盤のKubernetesへの移行を進めています。\n弊社は2017年に、働き方改革をCLOMOで支援する「ワーク・スマート」というサービスを提供開始しました。その際、大量デバイスへPush通知を送る機能にフェンリル社のGo製ツール「BoltzEngine」を採用し、クライアントをGoで実装しました。\n本セッションでは、CLOMOとワーク・スマートのサービスと今後のGoの活用についてお話したいと思います。",
+    "tags": [
+      "Rails",
+      "Ruby"
+    ]
+  },
+  {
+    "id": "dxhuy",
+    "name": "Huy Do",
+    "avatar": "https://secure.gravatar.com/avatar/2861223d52d35bc164c691e89eda9c98?s=500",
+    "bio": "I'm software engineer working at LINE's observability team.",
+    "twitter": "dxhuy",
+    "url": "",
+    "organization": "LINE corp",
+    "title": "マイクロサービス時代のhttpクライアント",
+    "abstract": "マイクロサービス時代にはコミュニケーションがもともとhttp1時代より複雑になっています。サービス間のコミュニケーションはタイムアウト、エラーはもちろん、Service Discovery, Fail Over, Load Balanceの色々の問題を向き合う必要があります。\nこの発表では、LINEのObservabilityがマイクロサービスに移行するにあったって、httpパッケージに追加した処理（circuit breaker, load balanceなど）について発表します。そしてマイクロサービスで大変なこと、意識しないといけないことなども含めて話します。",
+    "tags": []
+  },
+  {
     "id": "mohri1219",
     "name": "毛利 啓太",
     "avatar": "https://secure.gravatar.com/avatar/a9f8382f6cdd535370c723eba233a8f7?s=500",
@@ -14,7 +56,7 @@
   {
     "id": "shibu_jp",
     "name": "Yoshiki Shibukawa",
-    "avatar": "https://secure.gravatar.com/avatar/d299468335580748cb8d533d2650f9a4?s=500",
+    "avatar": "https://avatars0.githubusercontent.com/u/564612?s=400&v=4",
     "bio": "I am working for Future Corporation. My favorite languages are C++/Python/Go/TypeScript. My favorite backend for OpenCensus is Jaeger.\r\n\r\nI am an author of Real World HTTP (O'Reilly Japan), System Programming in Golang (Lambda Note) and other meny books.",
     "twitter": "shibu_jp",
     "url": "https://github.com/shibukawa",
@@ -74,11 +116,11 @@
   {
     "id": "pb.hirokawa",
     "name": "rhykw",
-    "avatar": "https://secure.gravatar.com/avatar/50641cb66638448146124fffc3f90ccd?s=500",
+    "avatar": "https://avatars3.githubusercontent.com/u/1484327?s=400&v=4",
     "bio": "",
     "twitter": "",
     "url": "https://blog.rhykw.net/",
-    "organization": "",
+    "organization": "GMO Pepabo, Inc.",
     "title": "ホスティングにおけるメールサービスの運用とgolang",
     "abstract": "発表者は共用ホスティングのメールサービスでバックエンドのリニューアルに携わり、リニューアルに際して初の試みとしてnginxとgolangを採用しました。メールサービスを継続的に安定して提供するためどのようにgolangを使っているかを紹介します。",
     "tags": [
@@ -206,8 +248,8 @@
   {
     "id": "avvmoto",
     "name": "井本 裕",
-    "avatar": "https://secure.gravatar.com/avatar/f8e7a1a5f90a13a1dd9fb57ce65cab77?s=500",
-    "bio": "井本 裕／株式会社ディー・エヌ・エー\r\nゲームプラットフォームのサーバーサイド開発に長年携わっていました。\r\n2019年1月からオートモーティブ事業本部に異動し、現在は移動体情報配信システムの開発をしています。",
+    "avatar": "https://ca.slack-edge.com/T02JZ31H6-UJN9Q510U-03fab4eb3597-500",
+    "bio": "株式会社ディー・エヌ・エー\r\nゲームプラットフォームのサーバーサイド開発に長年携わっていました。\r\n2019年1月からオートモーティブ事業本部に異動し、現在は移動体情報配信システムの開発をしています。",
     "twitter": "avvmoto",
     "url": "https://github.com/avvmoto/",
     "organization": "DeNA",
@@ -237,7 +279,7 @@
     "bio": "",
     "twitter": "tsurubee3",
     "url": "https://blog.tsurubee.tech/",
-    "organization": "GMO Pepabo, Inc.",
+    "organization": "GMO Pepabo, inc.",
     "title": "Goでつくる進化計算パッケージ",
     "abstract": "生物の進化や振る舞いを模倣した探索アルゴリズムである進化計算は、幅広い最適化問題に適用可能であることから、様々な分野への応用が進んでいます。進化計算を用いて最適化問題を解くためには、膨大な計算量を要するため、実用時間内で良好な解を得るために計算処理を高速化することが課題の一つであることが知られています。\n発表者は、Goの並行処理機構であるGoroutineを活用して、高速な進化計算アルゴリズムの実装を試みています。発表では、進化計算の概要に始まり、Goによる実装、および最適化計算へのGoroutineの適用の有用性について発表します。\nぜひ皆さんも生物の進化や振る舞いをGoで模倣しましょう！",
     "tags": [
@@ -309,7 +351,7 @@
   {
     "id": "vvvatanabe",
     "name": "Yuichi Watanabe",
-    "avatar": "https://secure.gravatar.com/avatar/27985720407b3813061e8a302508f06c?s=500",
+    "avatar": "https://avatars3.githubusercontent.com/u/9883589?s=500&v=4",
     "bio": "",
     "twitter": "vvvatanabe",
     "url": "https://github.com/vvatanabe",
@@ -322,6 +364,21 @@
       "CGO",
       "SSH",
       "RabbitMQ"
+    ]
+  },
+  {
+    "id": "yujiotani",
+    "name": "Yuji Otani",
+    "avatar": "https://avatars3.githubusercontent.com/u/2609671?s=500&v=4",
+    "bio": "株式会社サーキュレーション CTO。サイバーエージェントでインターネット広告のシステム部門を立ち上げ、子会社の技術責任者に就任。 その後インテリジェンスで技術責任者としてエンジニア組織を立ち上げる。 2017年1月より福岡に移住し、スタートアップCTOを経てサーキュレーションに参画。",
+    "twitter": "",
+    "url": "https://www.facebook.com/yuji.otani.16",
+    "organization": "Circulation, Inc.",
+    "title": "福岡でGoを使った開発ができる会社を調べてみた。",
+    "abstract": "福岡でGoを使った開発をやっている会社を紹介したいと思います。福岡で働くことに興味を持ってくれればいいなと思います！",
+    "tags": [
+      "fukuoka",
+      "work"
     ]
   }
 ]
