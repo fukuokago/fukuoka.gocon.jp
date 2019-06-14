@@ -1,21 +1,28 @@
 <i18n>
 en:
+  lunchmap: Lunch Map
   desc: |-
     The event is 1 day only and the number of tracks is two.
-    We will provide a map of the store for nice lunch.
+    We use two adjacent venues, Fukuoka Growth Next event space and Startup Cafe.
+    For those who are not usually in Fukuoka or Tenjin area,
+    We created a 🍴 {lunchmap} that maps shops where you can eat delicious lunches.
+    Please use all means.
     From the afternoon we will have a Relax mode while drinking and snacks.
 ja:
+  lunchmap: ランチマップ
   desc: |-
-    イベントは、１日限りでトラック数は２つです。
-    普段福岡または天神界隈にいない方のために、美味しいランチが食べれるお店をマッピングしたランチマップを作成いたします。
-    午後からはアルコールや軽食をとりながらのRelaxモードを予定しています。
+    イベントは、１日限りでトラック数は２つです。Fukuoka Growth NextのイベントスペースとStartup Cafeの隣り合った２会場となります。
+    普段、福岡または天神界隈にいない方のために、美味しいランチが食べれるお店をマッピングした🍴 {lunchmap}を作成しました。ぜひ、ご活用ください。
+    午後からは、アルコールや軽食をとりながらのRelaxモードを予定しています。
 </i18n>
 
 <template>
   <div class="schedule">
     <h2>Schedule @ July 13</h2>
 
-    <p>{{ $t('desc') }}</p>
+    <i18n path="desc" tag="p">
+      <nuxt-link place="lunchmap" :to="localePath('lunchmap')">{{ $t('lunchmap') }}</nuxt-link>
+    </i18n>
 
     <div class="schedule--box">
       <div class="row" v-for="(sessions, time) in timetable">

@@ -1,8 +1,14 @@
 <i18n>
 en:
-  desc: Map for have lunch near the venue.
+  desc: |-
+    This Map 🗺 for have delicious lunches near the venue.
+    From the navigation on the left, narrow down the genre of food and select a restaurant.
+    There is no guarantee that you will be able to eat at the target store, so please make your own judgment. 💁
 ja:
-  desc: 会場近くでランチが食べれるオススメの飲食店マップ🍴です。
+  desc: |-
+    会場近くでオススメのランチが食べれる飲食店をまとめたランチマップ🗺 です。
+    左のナビゲーションから、食事のジャンルを絞り込んでお店を選択してください。
+    必ず目的のお店で食べれるかは保証できないので各自ご判断ください。💁
 </i18n>
 
 <template>
@@ -91,6 +97,11 @@ ja:
           </li>
         </ul>
       </div>
+    </div>
+
+    <div class="lunchmap--footer container">
+      <p class="lunch-time">
+        <span class="lunch-time--title">Lunch Time:</span> 11:50 AM - 1:20 PM <span class="lunch-time--duration">(1 hours, 30 min)</span></p>
     </div>
   </section>
 </template>
@@ -234,5 +245,23 @@ export default class Location extends Vue {
   width: 30px;
   vertical-align: middle;
   margin-right: .5em;
+}
+.lunchmap--footer {
+  margin: 2em auto 0;
+  clear: both;
+}
+.lunch-time {
+  text-align: center;
+  font-family: 'Arvo', serif;
+  font-weight: bold;
+}
+.lunch-time--title {
+  color: #CE3262;
+  font-size: .7em;
+  font-weight: normal;
+}
+.lunch-time--duration {
+  font-size: .6em;
+  font-weight: normal;
 }
 </style>
