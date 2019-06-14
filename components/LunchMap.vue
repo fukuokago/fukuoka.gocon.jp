@@ -2,7 +2,7 @@
 en:
   desc: Map for have lunch near the venue.
 ja:
-  desc: 会場近くでランチが食べれるオススメの飲食店マップ🍴です。並んでてお店に入れない、またはお店が開いてない等あるかもしれません。自己責任でお願いします。💁
+  desc: 会場近くでランチが食べれるオススメの飲食店マップ🍴です。
 </i18n>
 
 <template>
@@ -12,65 +12,100 @@ ja:
       <p>{{ $t('desc') }}</p>
     </div>
 
-    <GmapMap map-type-id="roadmap" :center="center" :zoom="zoom" :options="options" >
-      <GmapInfoWindow :options="infoOptions" :position="infoWindowPos" :opened="infoWinOpen" @closeclick="infoWinOpen = false" >
-        <div class="gmap--infowin">
-          <p class="gmap--infoimg"> <img :src="infoContent.image" width="200" /> </p>
-          <p class="gmap--infotext"> <a :href="infoContent.url" target="_blank">{{ infoContent.title }}</a> </p>
-        </div>
-      </GmapInfoWindow>
-      <GmapMarker v-for="(m, i) in ramens" @click="toggleInfoWindow(m, i)" :key="i + '-1'" :position="m.position"
-                  :clickable="true" :draggable="false" :icon="getMarker('ramen')" ></GmapMarker>
-      <GmapMarker v-for="(m, i) in sobas" @click="toggleInfoWindow(m, i)" :key="i + '-2'" :position="m.position"
-        :clickable="true" :draggable="false" :icon="getMarker('soba')" ></GmapMarker>
-      <GmapMarker v-for="(m, i) in udons" @click="toggleInfoWindow(m, i)" :key="i + '-3'" :position="m.position"
-        :clickable="true" :draggable="false" :icon="getMarker('udon')" ></GmapMarker>
-      <GmapMarker v-for="(m, i) in currys" @click="toggleInfoWindow(m, i)" :key="i + '-4'" :position="m.position"
-        :clickable="true" :draggable="false" :icon="getMarker('curry')" ></GmapMarker>
-      <GmapMarker v-for="(m, i) in dinners" @click="toggleInfoWindow(m, i)" :key="i + '-5'" :position="m.position"
-        :clickable="true" :draggable="false" :icon="getMarker('dinner')" ></GmapMarker>
-      <GmapMarker v-for="(m, i) in tempuras" @click="toggleInfoWindow(m, i)" :key="i + '-6'" :position="m.position"
-        :clickable="true" :draggable="false" :icon="getMarker('tempura')" ></GmapMarker>
-    </GmapMap>
-    <div class="lunchmap--list container">
-      <input name="eat" type="radio" id="all" value="all" v-model="category" />
-      <label for="all">😋全て</label>
-      <input name="eat" type="radio" id="ramen" value="ramen" v-model="category" />
-      <label for="ramen"><img class="marker-icon" src="/marker/ramen.svg" />ラーメン</label>
-      <input name="marker" type="radio" id="soba" value="soba" v-model="category" />
-      <label for="soba"><img class="marker-icon" src="/marker/soba.svg" />蕎麦</label>
-      <input name="marker" type="radio" id="udon" value="udon" v-model="category" />
-      <label for="udon" ><img class="marker-icon" src="/marker/udon.svg" />うどん</label>
-      <input name="marker" type="radio" id="curry" value="curry" v-model="category" />
-      <label for="curry" ><img class="marker-icon" src="/marker/curry.svg" />カレー</label>
-      <input name="marker" type="radio" id="dinner" value="dinner" v-model="category" />
-      <label for="dinner" ><img class="marker-icon" src="/marker/dinner.svg" />カフェ・食堂</label>
-      <input name="marker" type="radio" id="tempura" value="tempura" v-model="category" />
-      <label for="tempura" ><img class="marker-icon" src="/marker/tempura.svg" />天ぷら</label>
-    </div>
-    <div class="lunchmap--list container">
-      <ul class="colored">
-        <li v-for="(m, i) in ramens" @click="toggleInfoWindow(m, i)"> {{ m.content.title }} </li>
-        <li v-for="(m, i) in sobas" @click="toggleInfoWindow(m, i)"> {{ m.content.title }} </li>
-        <li v-for="(m, i) in udons" @click="toggleInfoWindow(m, i)"> {{ m.content.title }} </li>
-        <li v-for="(m, i) in currys" @click="toggleInfoWindow(m, i)"> {{ m.content.title }} </li>
-        <li v-for="(m, i) in dinners" @click="toggleInfoWindow(m, i)"> {{ m.content.title }} </li>
-        <li v-for="(m, i) in tempuras" @click="toggleInfoWindow(m, i)"> {{ m.content.title }} </li>
-      </ul>
+    <div class="lunchmap--body">
+      <GmapMap map-type-id="roadmap" :center="center" :zoom="zoom" :options="options" >
+        <GmapInfoWindow :options="infoOptions" :position="infoWindowPos" :opened="infoWinOpen" @closeclick="infoWinOpen = false" >
+          <div class="gmap--infowin">
+            <p class="gmap--infoimg"> <img :src="infoContent.image" width="200" /> </p>
+            <p class="gmap--infotext"> <a :href="infoContent.url" target="_blank">{{ infoContent.title }}</a> </p>
+          </div>
+        </GmapInfoWindow>
+        <GmapMarker v-for="(m, i) in fgn" @click="toggleInfoWindow(m, i)" :key="i + '-0'" :position="m.position"
+          :clickable="true" :draggable="false"></GmapMarker>
+        <GmapMarker v-for="(m, i) in getMarkers('ramen')" @click="toggleInfoWindow(m, i)" :key="i + '-1'" :position="m.position"
+          :clickable="true" :draggable="false" :icon="getMarkerIcon('ramen')" ></GmapMarker>
+        <GmapMarker v-for="(m, i) in getMarkers('soba')" @click="toggleInfoWindow(m, i)" :key="i + '-2'" :position="m.position"
+          :clickable="true" :draggable="false" :icon="getMarkerIcon('soba')" ></GmapMarker>
+        <GmapMarker v-for="(m, i) in getMarkers('udon')" @click="toggleInfoWindow(m, i)" :key="i + '-3'" :position="m.position"
+          :clickable="true" :draggable="false" :icon="getMarkerIcon('udon')" ></GmapMarker>
+        <GmapMarker v-for="(m, i) in getMarkers('curry')" @click="toggleInfoWindow(m, i)" :key="i + '-4'" :position="m.position"
+          :clickable="true" :draggable="false" :icon="getMarkerIcon('curry')" ></GmapMarker>
+        <GmapMarker v-for="(m, i) in getMarkers('dinner')" @click="toggleInfoWindow(m, i)" :key="i + '-5'" :position="m.position"
+          :clickable="true" :draggable="false" :icon="getMarkerIcon('dinner')" ></GmapMarker>
+        <GmapMarker v-for="(m, i) in getMarkers('tempura')" @click="toggleInfoWindow(m, i)" :key="i + '-6'" :position="m.position"
+          :clickable="true" :draggable="false" :icon="getMarkerIcon('tempura')" ></GmapMarker>
+      </GmapMap>
+
+      <div class="lunchmap--body--list">
+        <ul class="lunchmap--body--list--ul">
+          <li class="lunchmap--body--list--ul--li" v-if="isShowGenre('ramen')">
+            <img class="marker" src="~/static/marker/ramen.svg" />
+            <span class="genre clickable" v-on:click="category='ramen'">ラーメン</span>
+            <ul class="lunchmap--body--list--ul--li--ul">
+              <li class="lunchmap--body--list--ul--li--ul--li button" v-for="(m, i) in getMarkers('ramen')"
+                @click="toggleInfoWindow(m, i)"><span class="clickable"> {{ m.content.title }} </span></li>
+            </ul>
+          </li>
+          <li class="lunchmap--body--list--ul--li" v-if="isShowGenre('soba')">
+            <img class="marker" src="~/static/marker/soba.svg" />
+            <span class="genre clickable" v-on:click="category='soba'">蕎麦</span>
+            <ul class="lunchmap--body--list--ul--li--ul">
+              <li class="lunchmap--body--list--ul--li--ul--li button" v-for="(m, i) in getMarkers('soba')"
+                @click="toggleInfoWindow(m, i)"><span class="clickable"> {{ m.content.title }} </span></li>
+            </ul>
+          </li>
+          <li class="lunchmap--body--list--ul--li" v-if="isShowGenre('udon')">
+            <img class="marker" src="~/static/marker/udon.svg" />
+            <span class="genre clickable" v-on:click="category='udon'">うどん</span>
+            <ul class="lunchmap--body--list--ul--li--ul">
+              <li class="lunchmap--body--list--ul--li--ul--li button" v-for="(m, i) in getMarkers('udon')"
+                @click="toggleInfoWindow(m, i)"><span class="clickable"> {{ m.content.title }} </span></li>
+            </ul>
+          </li>
+          <li class="lunchmap--body--list--ul--li" v-if="isShowGenre('curry')">
+            <img class="marker" src="~/static/marker/curry.svg" />
+            <span class="genre clickable" v-on:click="category='curry'">カレー</span>
+            <ul class="lunchmap--body--list--ul--li--ul">
+              <li class="lunchmap--body--list--ul--li--ul--li button" v-for="(m, i) in getMarkers('curry')"
+                @click="toggleInfoWindow(m, i)"><span class="clickable"> {{ m.content.title }} </span></li>
+            </ul>
+          </li>
+          <li class="lunchmap--body--list--ul--li" v-if="isShowGenre('dinner')">
+            <img class="marker" src="~/static/marker/dinner.svg" />
+            <span class="genre clickable" v-on:click="category='dinner'">カフェ・食堂</span>
+            <ul class="lunchmap--body--list--ul--li--ul">
+              <li class="lunchmap--body--list--ul--li--ul--li button" v-for="(m, i) in getMarkers('dinner')"
+                @click="toggleInfoWindow(m, i)"><span class="clickable"> {{ m.content.title }} </span></li>
+            </ul>
+          </li>
+          <li class="lunchmap--body--list--ul--li" v-if="isShowGenre('tempura')">
+            <img class="marker" src="~/static/marker/tempura.svg" />
+            <span class="genre clickable" v-on:click="category='tempura'">天ぷら</span>
+            <ul class="lunchmap--body--list--ul--li--ul">
+              <li class="lunchmap--body--list--ul--li--ul--li button" v-for="(m, i) in getMarkers('tempura')"
+                @click="toggleInfoWindow(m, i)"><span class="clickable"> {{ m.content.title }} </span></li>
+            </ul>
+          </li>
+          <li class="lunchmap--body--list--ul--li"  v-if="category !== 'all'">
+            <span class="genre clickable" v-on:click="category='all'">すべて表示</span>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 </template>
 
 <script lang="ts">
-const styles = require('~/static/googlemap-styles/eat.json')
+const styles = require('~/static/googlemap-styles/nolabel.json')
 const markers = require('~/static/eat.json')
 import { Component, Vue } from 'nuxt-property-decorator'
 const fgn = { lat: 33.5888978, lng: 130.394886 }
+const info = { image: '', title: 'Fukuoka Growth Next', url: 'https://growth-next.com/' }
 
 @Component
 export default class Location extends Vue {
   public center = fgn
-  public zoom = 16
+  public zoom = 17
   public options = {
     zoomControl: true,
     mapTypeControl: false,
@@ -96,7 +131,11 @@ export default class Location extends Vue {
     this.infoWinOpen = true
   }
 
-  getMarker(name: string) {
+  isShowGenre(name: string) {
+    return this.category === 'all' || this.category === name
+  }
+
+  getMarkerIcon(name: string) {
     return {
       url: require(`~/static/marker/${name}.svg`),
       size: {width: 40, height: 45, f: 'px', b: 'px'},
@@ -104,47 +143,18 @@ export default class Location extends Vue {
     }
   }
 
-  get ramens() {
-    if (this.category != 'ramen' && this.category != 'all') {
+  getMarkers(genre: string) {
+    if (this.category != genre && this.category != 'all') {
       return []
     }
-    return markers.ramen
-  }
-  get sobas() {
-    if (this.category != 'soba' && this.category != 'all') {
-      return []
-    }
-    return markers.soba
-  }
-  get udons() {
-    if (this.category != 'udon' && this.category != 'all') {
-      return []
-    }
-    return markers.udon
-  }
-  get currys() {
-    if (this.category != 'curry' && this.category != 'all') {
-      return []
-    }
-    return markers.curry
-  }
-  get dinners() {
-    if (this.category != 'dinner' && this.category != 'all') {
-      return []
-    }
-    return markers.dinner
-  }
-  get tempuras() {
-    if (this.category != 'tempura' && this.category != 'all') {
-      return []
-    }
-    return markers.tempura
+    return markers[genre]
   }
 
   data() {
     return {
       markers: markers,
-      category: 'all'
+      category: 'all',
+      fgn: [ { position: fgn, content: info } ]
     }
   }
 }
@@ -152,7 +162,8 @@ export default class Location extends Vue {
 
 <style scoped>
 .vue-map-container {
-  width: 100%;
+  margin-left: 20%;
+  width: 80%;
   height: 700px;
 }
 .gmap--infowin {
@@ -170,5 +181,58 @@ export default class Location extends Vue {
 .eat-icon {
   vertical-align: bottom;
   margin: 0px 10px;
+}
+.lunchmap--body {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+.lunchmap--body--nav {
+  display: hidden;
+}
+.lunchmap--body--list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 700px;
+  overflow: auto;
+  overflow-x: hidden;
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+}
+.lunchmap--body--list--ul {
+  margin: 0;
+  padding: 2em 2em 0;
+  font-size: 12px;
+  font-weight: bold;
+}
+.lunchmap--body--list--ul--li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 1.7em;
+}
+.lunchmap--body--list--ul--li--ul {
+  margin: 0;
+  padding: 1em 0 2em;
+  font-size: 12px;
+  font-weight: normal;
+}
+.lunchmap--body--list--ul--li--ul--li {
+  margin: 0 .5em .5em 0;
+  font-size: 12px;
+}
+.clickable {
+  cursor: pointer;
+}
+.genre.clickable:hover {
+  color: #CE3262;
+}
+.marker {
+  width: 30px;
+  vertical-align: middle;
+  margin-right: .5em;
 }
 </style>
