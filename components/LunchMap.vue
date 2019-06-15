@@ -27,7 +27,7 @@ ja:
           </div>
         </GmapInfoWindow>
         <GmapMarker v-for="(m, i) in fgn" @click="toggleInfoWindow(m, i)" :key="i + '-0'" :position="m.position"
-          :clickable="true" :draggable="false"></GmapMarker>
+          :clickable="true" :draggable="false" :icon="getMarkerIcon('gocon')"></GmapMarker>
         <GmapMarker v-for="(m, i) in getMarkers('ramen')" @click="toggleInfoWindow(m, i)" :key="i + '-1'" :position="m.position"
           :clickable="true" :draggable="false" :icon="getMarkerIcon('ramen')" ></GmapMarker>
         <GmapMarker v-for="(m, i) in getMarkers('soba')" @click="toggleInfoWindow(m, i)" :key="i + '-2'" :position="m.position"
@@ -126,7 +126,7 @@ const styles = require('~/static/googlemap-styles/nolabel.json')
 const markers = require('~/static/eat/data.json')
 import { Component, Vue } from 'nuxt-property-decorator'
 const fgn = { lat: 33.5888978, lng: 130.394886 }
-const info = { image: '', title: 'Fukuoka Growth Next', url: 'https://growth-next.com/' }
+const info = { cache: '/img/newfgn.jpg', title: 'Fukuoka Growth Next', url: 'https://growth-next.com/' }
 
 @Component
 export default class Location extends Vue {
