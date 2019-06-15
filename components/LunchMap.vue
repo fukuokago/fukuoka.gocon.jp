@@ -7,7 +7,7 @@ en:
 ja:
   desc: |-
     会場近くでオススメのランチが食べれる飲食店をまとめたランチマップ🗺 です。
-    左のナビゲーションから、食事のジャンルを絞り込んでお店を選択してください。
+    左（または下）のナビゲーションから、食事のジャンルを絞り込んでお店を選択してください。
     必ず目的のお店で食べれるかは保証できないので各自ご判断ください。💁
 </i18n>
 
@@ -288,5 +288,28 @@ export default class Location extends Vue {
 .lunch-time--duration {
   font-size: .6em;
   font-weight: normal;
+}
+@media (max-width: 1200px) {
+  .vue-map-container {
+    margin-left: 0;
+    width: 100%;
+    height: 500px;
+  }
+  .lunchmap--body {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+  }
+  .gmap--infoimg {
+    width: 150px;
+    height: 150px;
+  }
+  .lunchmap--body--list {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border: none;
+  }
 }
 </style>
