@@ -2,9 +2,10 @@
 en:
   registration: Join us on July 13
   scholarships: Scholarships
+  lunchmap: Lunch Map
 ja:
-  registration: 7/13のイベントに参加登録する
-  scholarships: スカラーシップ
+  registration: イベントに参加登録する
+  lunchmap: ランチマップ
 </i18n>
 
 <template>
@@ -31,9 +32,9 @@ ja:
         </li>
       </ul>
 
-      <div class="attention">
+      <div class="attention" v-on:click="toggleDrawer()">
         <nuxt-link class="button is-small is-inverted is-outlined" :to="localePath('registration')">{{ $t('registration') }}</nuxt-link>
-        <nuxt-link class="button is-small is-inverted is-outlined" :to="localePath('scholarships')">{{ $t('scholarships') }}</nuxt-link>
+        <nuxt-link class="button is-small is-inverted is-outlined" :to="localePath('lunchmap')">{{ $t('lunchmap') }}</nuxt-link>
       </div>
 
       <div class="lang" v-on:click="toggleDrawer()">

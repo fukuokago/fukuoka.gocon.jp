@@ -4,11 +4,13 @@ en:
   place: "@The Fukuoka Growth Next, in Japan"
   registration: Join us on July 13
   scholarships: Scholarships
+  lunchmap: Lunch Map
 ja:
   date: July 13th
   place: "@The Fukuoka Growth Next, in Japan"
-  registration: 7/13のイベントに参加登録する
+  registration: イベントに参加登録する
   scholarships: スカラーシップ
+  lunchmap: ランチマップ
 </i18n>
 
 <template>
@@ -33,7 +35,7 @@ ja:
 
     <div class="attention">
       <nuxt-link class="button is-small is-inverted is-outlined" :to="localePath('registration')">{{ $t('registration') }}</nuxt-link>
-      <nuxt-link class="button is-small is-inverted is-outlined" :to="localePath('scholarships')">{{ $t('scholarships') }}</nuxt-link>
+      <nuxt-link class="button is-small is-inverted is-outlined" :to="localePath('lunchmap')">{{ $t('lunchmap') }}</nuxt-link>
     </div>
 
     <p class="day"><span class="date">{{$t('date')}}</span> <span class="place">{{$t('place')}}</span></p>
