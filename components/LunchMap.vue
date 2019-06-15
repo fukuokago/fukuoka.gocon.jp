@@ -22,7 +22,7 @@ ja:
       <GmapMap map-type-id="roadmap" :center="center" :zoom="zoom" :options="options" >
         <GmapInfoWindow :options="infoOptions" :position="infoWindowPos" :opened="infoWinOpen" @closeclick="infoWinOpen = false" >
           <div class="gmap--infowin">
-            <div class="gmap--infoimg" :style="{ backgroundImage: 'url(' + infoContent.image + ')' }"></div>
+            <div class="gmap--infoimg" :style="{ backgroundImage: 'url(' + infoContent.cache + ')' }"></div>
             <p class="gmap--infotext"> <a :href="infoContent.url" target="_blank">{{ infoContent.title }} </a> <i class="gmap--link fas fa-external-link-alt"></i></p>
           </div>
         </GmapInfoWindow>
