@@ -68,7 +68,7 @@ ja:
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-const styles = require('~/static/googlemap-styles.json')
+const styles = require('~/static/googlemap-styles/location.json')
 const fgn = { lat: 33.5888978, lng: 130.394886 }
 const info = { type: 'Venue', title: 'Fukuoka Growth Next', url: 'https://growth-next.com/' }
 
