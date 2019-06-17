@@ -237,6 +237,9 @@ export default class Location extends Vue {
   overflow-x: hidden;
   background-color: #fff;
   border-right: 1px solid #ccc;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
 }
 .lunchmap--body--list--ul {
   margin: 0;
