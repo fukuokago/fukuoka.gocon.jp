@@ -1,5 +1,17 @@
 [
   {
+    "id": "yaaah93",
+    "name": "Yasuhiro Hayashida",
+    "avatar": "https://lh3.googleusercontent.com/qNUz9uRqWRQ61eknCEsH90Lv486fOzQHKrg9XJ17EG5mIJfoT7bENvDDoqqp1FVrFMllSw=s500",
+    "bio": "福岡でエンジニアやってます。フロントエンドもバックエンドも浅く広くやってます。",
+    "twitter": "yaaah93",
+    "url": "",
+    "organization": "teamLab",
+    "title": "Goを使ったマイクロサービスの構築事例",
+    "abstract": "Go言語を使ったマイクロサービスの構築事例を紹介します。\nインフラまわりの話しなんかもできたらと考えています。",
+    "tags": []
+  },
+  {
     "id": "heat2048",
     "name": "ryu",
     "avatar": "https://avatars1.githubusercontent.com/u/30070392?s=500&v=4",
