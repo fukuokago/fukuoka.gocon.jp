@@ -295,6 +295,18 @@
         "image": "https://tblg.k-img.com/restaurant/images/Rvw/80367/150x150_square_80367316.jpg",
         "cache": "/eat/cache/fee3e33b69544e54fb40067b3fe14841dbecd515.jpg"
       }
+    },
+    {
+      "position": {
+        "lat": 33.58962,
+        "lng": 130.39063
+      },
+      "content": {
+        "title": "まぐろ料理紀文",
+        "url": "https://tabelog.com/fukuoka/A4001/A400103/40000132/",
+        "image": "https://tblg.k-img.com/resize/660x370c/restaurant/images/Rvw/95946/95946932.jpg?token=0fd300f&api=v2",
+        "cache": "/eat/cache/afd892692e09e0682b44a34e7c2c7b565e1c3e79.jpg"
+      }
     }
   ],
   "ramen": [
@@ -416,6 +428,18 @@
         "url": "https://tabelog.com/fukuoka/A4001/A400103/40035496/",
         "image": "https://tblg.k-img.com/resize/660x370c/restaurant/images/Rvw/65402/65402783.jpg?token=f8476e6&api=v2",
         "cache": "/eat/cache/132f53a9fcdab76d0b7175fecd7c212f86ce5ec5.jpg"
+      }
+    },
+    {
+      "position": {
+        "lat": 33.5941426,
+        "lng": 130.4000493
+      },
+      "content": {
+        "title": "太宰府 八ちゃんラーメン 天神店",
+        "url": "https://tabelog.com/fukuoka/A4001/A400103/40040409/",
+        "image": "https://tblg.k-img.com/restaurant/images/Rvw/98161/150x150_square_98161687.jpg",
+        "cache": "/eat/cache/0d6dc008f4600fb816b6d91182b79ca02a3aaa86.jpg"
       }
     }
   ]
