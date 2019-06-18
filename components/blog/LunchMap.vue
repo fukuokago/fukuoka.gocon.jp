@@ -3,7 +3,12 @@ en:
   title: 'Lunch map is released.'
   date: 'June 16, 2019'
   body:
-    - Lunch map is released.
+    - We has released a lunch map which lists our recommendation restaurants for lunch!
+    - Our event "Go Conference 19 Summer in Fukuoka" hopes you to learn from each other through Go and to have fun at Fukuoka.
+      Let's enjoy tasty foods at Fukuoka!
+      (By the way, My recommendations are Hacchan ramen, Kubo-curry, Matsushima and Kibun).
+    - We welcome to attend from distance.
+      We are looking forward your apply while make increase slots for distance.
 ja:
   title: 'ランチマップを公開しました'
   date: '2019-06-18'
