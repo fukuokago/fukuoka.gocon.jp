@@ -3,6 +3,7 @@
      <div v-if="computedBlog === ''">
        <h2>Blog</h2>
 
+       <LunchMap titleTag="h3" />
        <RegistrationIsOpen titleTag="h3" />
        <ScheduleAndSpeakersArePublished titleTag="h3" />
        <ProposalsFeedbackAndNotice titleTag="h3" />
@@ -28,9 +29,11 @@ import SponsorsArePublished from '~/components/blog/SponsorsArePublished.vue'
 import ProposalsFeedbackAndNotice from '~/components/blog/ProposalsFeedbackAndNotice.vue'
 import ScheduleAndSpeakersArePublished from '~/components/blog/ScheduleAndSpeakersArePublished.vue'
 import RegistrationIsOpen from '~/components/blog/RegistrationIsOpen.vue'
+import LunchMap from '~/components/blog/LunchMap.vue'
 
 @Component({
   components: {
+    LunchMap,
     RegistrationIsOpen,
     ScheduleAndSpeakersArePublished,
     ProposalsFeedbackAndNotice,
@@ -46,6 +49,8 @@ export default class PageBlog extends Vue {
 
   get computedBlog() {
     switch (this.slug) {
+      case 'lunch-map':
+        return LunchMap
       case 'registration-is-open':
         return RegistrationIsOpen
       case 'schedule-and-speakers-are-published':

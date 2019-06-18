@@ -2,20 +2,20 @@
   <div class="latest-news">
     <h2>Latest News</h2>
 
+    <LunchMap titleTag="h3" />
     <RegistrationIsOpen titleTag="h3" />
-    <ScheduleAndSpeakersArePublished titleTag="h3" />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-import ScheduleAndSpeakersArePublished from '~/components/blog/ScheduleAndSpeakersArePublished.vue'
 import RegistrationIsOpen from '~/components/blog/RegistrationIsOpen.vue'
+import LunchMap from '~/components/blog/LunchMap.vue'
 
 @Component({
   components: {
-    ScheduleAndSpeakersArePublished,
-    RegistrationIsOpen
+    RegistrationIsOpen,
+    LunchMap
   }
 })
 export default class LatestNews extends Vue {}
