@@ -1,5 +1,19 @@
 [
   {
+    "id": "b4b4r07",
+    "name": "b4b4r07",
+    "avatar": "https://secure.gravatar.com/avatar/8238c3c0be55b887aa9d6d59bfefa504?s=500",
+    "bio": "I'm a software engineer in Mercari, Microservices Platform team.",
+    "twitter": "b4b4r07",
+    "url": "https://tellme.tokyo",
+    "organization": "Mercari",
+    "title": "Cloud Functions in Go at Mercari",
+    "abstract": "This talk introduces how to use Cloud Functions in Go, more concretely, how to divide the packages, how to deploy it, how to manage these functions, and so on.\nIn this session, in addition above, it introduces the actual use-cases in Mercari.",
+    "tags": [
+      "GCP"
+    ]
+  },
+  {
     "id": "yaaah93",
     "name": "Yasuhiro Hayashida",
     "avatar": "https://lh3.googleusercontent.com/qNUz9uRqWRQ61eknCEsH90Lv486fOzQHKrg9XJ17EG5mIJfoT7bENvDDoqqp1FVrFMllSw=s500",
