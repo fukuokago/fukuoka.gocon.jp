@@ -201,13 +201,13 @@ img.eyecatch {
   }
   .fgn {
     width: 200px;
-    height: 100px;
+    height: 150px;
     float: left;
     margin: 1em;
   }
   .fgn--inner {
     width: 200px;
-    height: 100px;
+    height: 150px;
   }
   .location--desc {
     padding-top: 0;

@@ -41,6 +41,7 @@
     "tslint-config-prettier": "^1.17.0",
     "typescript": "^3.2.4",
     "vue-lazyload": "^1.2.6",
+    "vue-light-gallery": "^1.0.1",
     "vue-parallax-js": "^0.2.3",
     "vue-tweet-embed": "^2.3.0",
     "vue2-google-maps": "^0.10.6",
