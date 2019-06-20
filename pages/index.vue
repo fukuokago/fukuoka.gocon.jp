@@ -15,7 +15,7 @@ ja:
     <Location/>
     <div class="container">
       <Sponsors isSimple="true" />
-      <p class="goto-sponsors"><nuxt-link :to="localePath('sponsors')" class="button large is-inverted is-outlined">🏢 {{ $t('sponsors') }}</nuxt-link></p>
+      <p class="goto-detail"><nuxt-link :to="localePath('sponsors')" class="button large is-inverted is-outlined">🏢 {{ $t('sponsors') }}</nuxt-link></p>
     </div>
     <Fukuoka/>
     <div class="container">
@@ -54,7 +54,7 @@ export default class PageIndex extends Vue {
 </script>
 
 <style scoped>
-.goto-sponsors {
+.goto-detail {
   text-align: center;
 }
 </style>

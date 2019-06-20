@@ -1,9 +1,12 @@
 <i18n>
 en:
-  fgn: An entrance that leaves an impression of the elementary school gates and school buildings
+  fgn: The fgn solid logo facing the front entrance and located on the left has a large impact.
   desc: |-
     GoConference'19 Summer in Fukuoka will take place at the Fukuoka Growth Next, a building which renovated elementary school, in Fukuoka, JP.
-    The Fukuoka Growth Next is currently under construction for the 5/31 (Fri) renewal.
+    The Fukuoka Growth Next has recently been renewed on 5/31 (Fri) and has a modern,
+    stylish finish, while retaining the antique feel of the old building.
+    For details, please see the venue information.
+  venue: Venue Information
   access:
     title: How to Access
     list:
@@ -13,10 +16,12 @@ en:
       - 🙅‍ There is no parking lot or bicycle parking lot, 💁‍so please come by public transportation
   subwaytable: Time Table for Tenjin Station
 ja:
-  fgn: 小学校の校門や校舎の面影を残す入口（だが今は取り壊されている）
+  fgn: 正面入り口を向いて左に位置するfgnの立体ロゴがインパクト大。
   desc: |-
     Go Conference'19 Summer in Fukuoka は、福岡天神の中心に位置する、旧大名小学校を活用した官民共働型スタートアップ支援施設 {fgn} で開催されます。
-    Fukuoka Growth Nextは、現在 5/31（金）のリニューアルにむけて工事中となっております。
+    Fukuoka Growth Nextは、先日の5/31（金）にリニューアルされ、古い建物のアンティーク感は残しつつ、モダンでスタイリッシュな仕上がりになっています。
+    詳しくは、会場案内をご覧ください。
+  venue: 会場案内を見る
   access:
     title: アクセス方法
     list:
@@ -45,8 +50,8 @@ ja:
     <picture class="fgn">
       <figure class="fukuoka-growth-next">
         <div class="fgn--inner">
-          <source type="image/webp" srcset="~static/img/fgn.webp">
-          <img class="eyecatch" src="~assets/img/fgn.jpg" alt="fgn" />
+          <source type="image/webp" srcset="~static/img/newfgn.webp">
+          <img class="eyecatch" src="~assets/img/newfgn.jpg" alt="fgn" />
         </div>
         <figcaption>{{ $t('fgn') }}</figcaption>
         <small>Photo by <a rel="https://growth-next.com/en/event/1038">Fukuoka Growth Next</a></small>
@@ -57,6 +62,9 @@ ja:
       <i18n path="desc" tag="p">
         <a place="fgn" href="https://growth-next.com/">Fukuoka Growth Next</a>
       </i18n>
+
+      <p class="goto-detail"><nuxt-link :to="localePath('venue')" class="button large is-inverted is-outlined">🏫 {{ $t('venue') }}</nuxt-link></p>
+
       <h3>{{ $t('access.title') }}</h3>
       <ul class="colored">
         <li v-for="(val, i) in $t('access.list')">{{ val }}</li>
@@ -116,7 +124,6 @@ export default class Location extends Vue {
   width: 50%;
   height: 500px;
   float: left;
-  z-index: 9999;
 }
 .fgn {
   width: 50%;
@@ -174,6 +181,9 @@ img.eyecatch {
 .gmap--infotext a {
   font-size: 12px;
   font-weight: normal;
+}
+.goto-detail {
+  text-align: center;
 }
 @media (max-width: 1000px) {
   .fukuoka-city figcaption {

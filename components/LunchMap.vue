@@ -124,9 +124,10 @@ ja:
 <script lang="ts">
 const styles = require('~/static/googlemap-styles/nolabel.json')
 const markers = require('~/static/eat/data.json')
+const imagePath = require('~/assets/img/newfgn.jpg')
 import { Component, Vue } from 'nuxt-property-decorator'
 const fgn = { lat: 33.5888978, lng: 130.394886 }
-const info = { cache: '/img/newfgn.jpg', title: 'Fukuoka Growth Next', url: 'https://growth-next.com/' }
+const info = { cache: imagePath, title: 'Fukuoka Growth Next', url: 'https://growth-next.com/' }
 
 @Component
 export default class Location extends Vue {
