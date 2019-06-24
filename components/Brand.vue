@@ -55,6 +55,21 @@ ja:
     </div>
     </div>
 
+    <div class="brand--slide is-clearfix">
+      <h3>Slide</h3>
+
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT_QLQzWq58AOI2TyW59NM0kXelHOThBLLtOnrxor1tDMA21UddPfxTHMk2gAeiYQfuvr2xtv9umHXm/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+      <div class="brand--slide--inner">
+        <h3>Google Slide</h3>
+        <p>Look at the preview right there</p>
+        <p><a class="button" href="https://docs.google.com/presentation/d/1qQ51kVEvvE_s8Ntj-s93B8sYIF3smRhfFUFkJ0nKv0k/copy">Copy Slide</a></p>
+        <h3>Mac Keynote</h3>
+        <p>Included font: Arvo by <a href="http://files.korkork.com/">Anton Koovit</a></p>
+        <p><a class="button" href="/download/keynote.tar.gz">Download Theme</a></p>
+      </div>
+    </div>
+
     <div id="brand--wallpaper" class="assets wallpaper is-clearfix">
       <h3>Wallpaper</h3>
 
@@ -147,6 +162,23 @@ ja:
 .inner li {
   margin-bottom: .5em;
 }
+.brand--slide {
+  padding: 1em 0 2em;
+}
+.brand--slide iframe {
+  border: 3px solid #fff;
+  width: 742px;
+  height: 450px;
+  float: left;
+  margin-top: 1em;
+}
+.brand--slide--inner {
+  float: left;
+  padding: 0 0 0 2em;
+}
+.punch-viewer-container {
+  height: 700px;
+}
 @media (max-width: 400px) {
   .inner,
   .logo .inner {
@@ -161,6 +193,18 @@ ja:
   }
   .logo .eyecatch img {
     width: 100%;
+  }
+  .brand--slide iframe {
+    width: 100%;
+    height: 220px;
+    float: none;
+  }
+  .brand--slide--inner {
+    float: none;
+    padding: 0;
+  }
+  .punch-viewer-container {
+    height: auto;
   }
 }
 </style>
