@@ -1,5 +1,17 @@
 [
   {
+    "id": "C_Ruins",
+    "name": "Hikaru Watanabe",
+    "avatar": "https://avatars2.githubusercontent.com/u/2362084?s=500&v=4",
+    "bio": "A Go/Ruby programmer working at DeNA Co, Ltd.\r\nWorking for server-side applications of MOV, the application to hail a taxi.",
+    "twitter": "C_Ruins",
+    "url": "https://github.com/xruins",
+    "organization": "DeNA Co, Ltd.",
+    "title": "Deep \"delve\" into Delve : the debugger for the Go",
+    "abstract": "Delve ( https://github.com/go-delve/delve ) はGo用のデバッガとして広く知られています。\n本セッションではDelveによりプログラムのデバッグを行う際、Delveがどのようなロジックで動作しているかや、その周辺技術についてお話しします。",
+    "tags": []
+  },
+  {
     "id": "b4b4r07",
     "name": "b4b4r07",
     "avatar": "https://secure.gravatar.com/avatar/8238c3c0be55b887aa9d6d59bfefa504?s=500",
