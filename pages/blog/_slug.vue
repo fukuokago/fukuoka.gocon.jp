@@ -3,6 +3,7 @@
      <div v-if="computedBlog === ''">
        <h2>Blog</h2>
 
+       <PressRelease titleTag="h3" />
        <LunchMap titleTag="h3" />
        <RegistrationIsOpen titleTag="h3" />
        <ScheduleAndSpeakersArePublished titleTag="h3" />
@@ -30,9 +31,11 @@ import ProposalsFeedbackAndNotice from '~/components/blog/ProposalsFeedbackAndNo
 import ScheduleAndSpeakersArePublished from '~/components/blog/ScheduleAndSpeakersArePublished.vue'
 import RegistrationIsOpen from '~/components/blog/RegistrationIsOpen.vue'
 import LunchMap from '~/components/blog/LunchMap.vue'
+import PressRelease from '~/components/blog/PressRelease.vue'
 
 @Component({
   components: {
+    PressRelease,
     LunchMap,
     RegistrationIsOpen,
     ScheduleAndSpeakersArePublished,
@@ -49,6 +52,8 @@ export default class PageBlog extends Vue {
 
   get computedBlog() {
     switch (this.slug) {
+      case 'press-release':
+        return PressRelease
       case 'lunch-map':
         return LunchMap
       case 'registration-is-open':

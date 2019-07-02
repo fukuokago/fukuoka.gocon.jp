@@ -15,7 +15,7 @@ import LunchMap from '~/components/blog/LunchMap.vue'
 @Component({
   components: {
     RegistrationIsOpen,
-    LunchMap
+    LunchMap,
   }
 })
 export default class LatestNews extends Vue {}
