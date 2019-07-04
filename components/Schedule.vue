@@ -28,7 +28,7 @@ ja:
       <div class="row" v-for="(sessions, time) in timetable">
         <p class="timediv">{{ time }}</p>
         <div class="is-clearfix">
-          <div class="session" v-bind:class="{single: sessions.length === 1 && sessions[0].room === null, 'sponsor-session': v.sponsor}" v-for="(v, i) in sessions">
+          <div class="session" v-bind:class="{single: sessions.length === 1 && sessions[0].room === null, 'sponsor-session': v.sponsor, 'special-session': v.note}" v-for="(v, i) in sessions">
             <p class="session--sponsor" v-if="v.sponsor">Sponsor</p>
             <p class="session--time">{{ v.start }} - {{ v.stop }}
               <span class="session--time--duration">({{ v.duration }})</span>
@@ -37,6 +37,7 @@ ja:
               <nuxt-link class="session--title--anchor" :to="permalink(v.id)" v-if="v.name !== undefined && v.name !== ''">{{ v.title }}</nuxt-link>
               <span v-else>{{ v.title }}</span>
             </p>
+            <p class="session--note" v-if="v.note">{{ v.note }}</p>
             <ul class="session--tags">
               <li class="tag" v-for="(tag) in v.tags">{{ tag }}</li>
             </ul>
@@ -113,6 +114,9 @@ export default class Schedule extends Vue {
 .sponsor-session {
   border: 1px solid #00ADD8;
 }
+.special-session {
+  border: 1px solid #CE3262;
+}
 .session--sponsor {
   position: absolute;
   bottom: 5px;
@@ -168,6 +172,10 @@ export default class Schedule extends Vue {
 }
 .session--title--anchor {
   font-size: .7em;
+}
+.session--note {
+  font-size: .75em;
+  color: #333;
 }
 .session--tags {
   font-family: 'Arvo', serif;

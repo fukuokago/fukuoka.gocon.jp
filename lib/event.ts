@@ -9,6 +9,7 @@ export interface Session {
   type: string
   room: string
   sponsor: boolean
+  note: string
 }
 
 export interface Speaker {
@@ -86,7 +87,8 @@ export function findSession(id: string): Session {
     duration: '',
     room: '',
     type: '',
-    sponsor: false
+    sponsor: false,
+    note: '',
   }
 }
 

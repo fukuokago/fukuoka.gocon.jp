@@ -11,75 +11,76 @@
   {
     "sponsor": false,
     "start": "10:00",
-    "stop": "10:10",
-    "id": "organizer",
-    "title": "Opening talk 🙋",
-    "room": "fgn",
-    "type": "call"
-  },
-  {
-    "sponsor": false,
-    "start": "10:10",
-    "stop": "10:50",
+    "stop": "10:40",
     "id": "tenntenn",
     "room": "fgn",
     "type": "long"
   },
   {
     "sponsor": false,
-    "start": "10:10",
-    "stop": "10:50",
+    "start": "10:00",
+    "stop": "10:40",
     "id": "shibu_jp",
     "room": "startupcafe",
     "type": "long"
   },
   {
     "sponsor": true,
-    "start": "10:50",
-    "stop": "11:10",
+    "start": "10:40",
+    "stop": "11:00",
     "id": "vvvatanabe",
     "room": "fgn",
     "type": "short"
   },
   {
     "sponsor": true,
-    "start": "10:50",
-    "stop": "11:10",
+    "start": "10:40",
+    "stop": "11:00",
     "id": "bomura",
     "room": "startupcafe",
     "type": "short"
   },
   {
     "sponsor": true,
-    "start": "11:10",
-    "stop": "11:30",
+    "start": "11:00",
+    "stop": "11:20",
     "id": "mohri1219",
     "room": "fgn",
     "type": "short"
   },
   {
     "sponsor": true,
-    "start": "11:10",
-    "stop": "11:30",
+    "start": "11:00",
+    "stop": "11:20",
     "id": "yaaah93",
     "room": "startupcafe",
     "type": "short"
   },
   {
     "sponsor": false,
-    "start": "11:30",
-    "stop": "11:50",
+    "start": "11:20",
+    "stop": "11:40",
     "id": "budougumi0617",
     "room": "fgn",
     "type": "short"
   },
   {
     "sponsor": false,
-    "start": "11:30",
-    "stop": "11:50",
+    "start": "11:20",
+    "stop": "11:30",
     "id": "pyama86",
     "room": "startupcafe",
     "type": "short"
+  },
+  {
+    "sponsor": false,
+    "start": "11:40",
+    "stop": "11:50",
+    "id": null,
+    "title": "Special Session 🎁 ",
+    "note": "諸事情により登壇者を明かせません。また、登壇者の都合によりなくなる可能性があります。",
+    "room": "fgn",
+    "type": "call"
   },
   {
     "sponsor": false,
