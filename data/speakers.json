@@ -1,5 +1,17 @@
 [
   {
+    "id": "songmu",
+    "name": "Masayuki Matsuki",
+    "avatar": "https://secure.gravatar.com/avatar/07ecb4f6c2111bff7ab4f0412edc773d?s=500",
+    "bio": "",
+    "twitter": "songmu",
+    "url": "https://songmu.jp/riji",
+    "organization": "Nature Japan 株式会社",
+    "title": "Goでコマンドラインツールを量産する僕の方法",
+    "abstract": "これまで40を超えるツールやプログラムをGitHub上に公開した中で培ってきたノウハウや、現状のプラクティスについてお話します。\n\n私は、40個を超えるGoのツールやライブラリをGitHubに公開しており、もはや趣味と言えるほどです。積極的にGoを書くようになって5年ほどが経ちましたが、その中でツールの書き方も変遷を辿ってきました。\r\n\r\n最近ようやくプラクティスが固まりつつあるためそれについてお話 します。Goでコマンドラインツールやプログラムを書く上での以下のようなトピックを取り上げます。\r\n\r\n- パッケージ構成\r\n- 公開インターフェースについて\r\n- 利用ツールとライブラリ\r\n- シグナルハンドリング\r\n- プロセス間通信\r\n\r\nまた、ツールを作る上で考えていることや、アイデアを実現する方法についてもお話できればと思います。",
+    "tags": []
+  },
+  {
     "id": "C_Ruins",
     "name": "Hikaru Watanabe",
     "avatar": "https://avatars2.githubusercontent.com/u/2362084?s=500&v=4",
