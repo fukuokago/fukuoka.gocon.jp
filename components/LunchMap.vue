@@ -124,6 +124,7 @@ ja:
         <li><a href="https://www.instagram.com/daimyosoftcream_jp/">DAIMYO SOFTCREAM</a></li>
         <li><a href="https://www.instagram.com/icepinchclub/">ICE PINCH CLUB</a></li>
         <li><a href="https://www.instagram.com/kohakudo/">kohakudo</a></li>
+        <li><a href="https://kaiten-portal.jp/media/fukuoka/restaurant/sophieadimanchehukuoka/">Sophie a dimanche</a> by 開店ポータル</li>
         <li><a href="https://tabelog.com/fukuoka/A4001/A400104/40028365/">パティスリー ラ ジョエル</a></li>
         <li><a href="https://www.instagram.com/nishidoripudding/">西通りプリン</a></li>
       </ul>
