@@ -102,7 +102,7 @@ ja:
       <h4 v-if="titleTag === 'h3'" >{{ $t('summary.title') }}</h4>
       <h3 v-else>{{ $t('summary.title') }}</h3>
 
-      <ul class="colored">
+      <ul class="colored press--conf-summary">
         <li v-for="l in $t('summary.body')">{{ l }}</li>
       </ul>
 
@@ -205,5 +205,25 @@ export default class PressRelease extends Vue {
   padding: 2em 0 3em;
   color: #ccc;
   letter-spacing: 1em;
+}
+@media (max-width: 500px) {
+   .press-release {
+     padding: 1em .5em 0;
+   }
+  .press-contact-info {
+    font-size: .7em;
+    margin: 2em 0 1em auto;
+  }
+  .press-eyecatch {
+    width: 100%;
+    margin: 2em auto 1em;
+  }
+  .press-eyecatch figcaption {
+    font-size: .7em;
+  }
+  .press--conf-summary {
+    margin-left: 0;
+    font-size: .8em;
+  }
 }
 </style>
