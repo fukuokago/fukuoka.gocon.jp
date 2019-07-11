@@ -11,7 +11,7 @@ en:
     Go Conference '19 Summer in Fukuoka, Japan's largest event on Go, a programming language, will be held on July 13, 2019 (Sat) in Fukuoka.
   body: |-
     The Go Conference has been held since 2013, and this is the seventh year.
-    This is the 13th time this year's first local event will be held in Fukuoka,
+    This is the 13th time this year's first local event will be held in Fukuoka-City,
     where The Engineer Friendly City Fukuoka*1 will be unveiled.
     Go attracts many engineers, including unique features not found in other programming languages*2 and container technology-related software that realizes distributed systems*3.
     A total of 29 sessions are scheduled by the Go engineers in Fukuoka, as well as by speakers from around the country,
@@ -20,17 +20,17 @@ en:
     - 1：Efforts that lead to visualization of the engineer community, increased motivation for engineers, and collaboration between engineers and companies, schools, and students in multiple industries. https://efc.isit.or.jp/about
     - 2：Go was developed by Google and released as open source in 2009. Simple, reliable and efficient software construction. https://golang.org/
     - 3：Go is used to implement Docker, Kubernetes, and Prometheus, which support distributed systems.
-  caption: A image of Go Conference'19 Summer in Fukuoka
+  caption: A image of Go Conference'19 Summer in Fukuoka where Gopher(mascot of Go) has ramen on his head.
   summary:
     title: Overview of Conference
     body:
       - Name：Go Conference'19 Summer in Fukuoka
       - Date：Saturday July 13th, 2019
-      - Venue：Fukuoka Growth Next (Event hall, Startup Cafe)
+      - Venue：Fukuoka Growth Next and Fukuoka-City Startup Cafe
       - Fee：Free
       - Capacity：200 seats
       - Organizer：Go Conference'19 Summer in Fukuoka Committee
-      - Sponsores：GMO Pepabo, Circulation, teamLab, DeNA, Fusic, Nulab, Mercari, i³Systems and LINE
+      - Sponsores：Fukuoka Growth Next, Fukuoka-City Startup Cafe, GMO Pepabo, Circulation, teamLab, DeNA, Fusic, Nulab, Mercari, i³Systems and LINE
       - Official：https://fukuoka.gocon.jp/
       - Join：https://fukuokago.connpass.com/event/130797/
 ja:
@@ -42,28 +42,28 @@ ja:
     name: Go Conference'19 Summer in Fukuoka 運営委員会（GMOペパボ内）
     address: 810-0001 福岡市中央区天神2-7-21 天神プライム8F
   subhead: |-
-    プログラミング言語Go（以下、Go）に関する国内最大級のイベント「Go Conference'19 Summer in Fukuoka」が、2019年7月13日（土）に、福岡で開催されます。
+    プログラミング言語Goに関する国内最大級のイベント「Go Conference'19 Summer in Fukuoka」が、2019年7月13日（土）に、福岡で開催されます。
   body: |-
-    「Go Conference」は、2013年から開催し今年が7年目になります。13回目となる今回、初めての地方開催を「エンジニアフレンドリーシティ*1」をうち出す福岡で行います。
-    Goは、他のプログラム言語にないユニークな特徴を持ち*2、分散システムを実現するコンテナ技術関連のソフトウェアに採用されるなど*3、多くのエンジニアを魅了しています。
+    「Go Conference」は、2013年から開催し今年が7年目になります。13回目となる今回、初めての地方開催を「エンジニアフレンドリーシティ福岡*1」をうち出す福岡市で行います。
+    プログラミング言語Goは、他のプログラム言語にないユニークな特徴を持ち*2、分散システムを実現するコンテナ技術関連のソフトウェアに採用されるなど*3、多くのエンジニアを魅了しています。
     福岡のGoエンジニアはもちろん、東京をはじめ全国からの登壇者により全29セッションを予定しており、来場者は、150〜200名となる見込みです。
   annotation:
     - 注1：エンジニアコミュニティの見える化や、エンジニアのモチベーションアップ、また、エンジニアと多業種の企業や学校、学生との連携等に繋がる取組み。 https://efc.isit.or.jp/about
     - 注2：GoはGoogleによって開発され2009年にオープンソースとして公開された。シンプルで信頼性があり、効率的にソフトウェアを構築することができる。 https://golang.org/
     - 注3：分散システムを支えるDockerやKubernetes、Prometheusの実装にGoが使われている。
-  caption: Go Conference'19 Summer in Fukuokaのアイキャッチ画像
+  caption: GoのマスコットであるGopherがラーメンを頭に乗せている Go Conference'19 Summer in Fukuokaのアイキャッチ画像
   summary:
     title: カンファレンス概要
     body:
       - 名称：Go Conference'19 Summer in Fukuoka
-      - 日時：2019年7月13日（土）
-      - 会場：Fukuoka Growth Next（イベントホール、Startup Cafe）
+      - 日時：2019年7月13日（土） 10:00から19:00まで
+      - 会場：Fukuoka Growth Next、福岡市スタートアップカフェ
       - 参加費：無料
       - 定員：200名
       - 主催：Go Conference'19 Summer in Fukuoka 運営委員会
-      - 協賛：GMOペパボ、サーキュレーション、チームラボ、ディー・エヌ・エー、Fusic、ヌーラボ、メルカリ、アイキューブドシステムズ、LINE（申込み順）
+      - 協賛：Fukuoka Growth Next, 福岡市スタートアップカフェ、GMOペパボ、サーキュレーション、チームラボ、ディー・エヌ・エー、Fusic、ヌーラボ、メルカリ、アイキューブドシステムズ、LINE（申込み順）
       - 公式サイト：https://fukuoka.gocon.jp/ja/
-      - 申し込みサイト：https://fukuokago.connpass.com/event/130797/
+      - 申込みサイト：https://fukuokago.connpass.com/event/130797/
 </i18n>
 
 <template>
