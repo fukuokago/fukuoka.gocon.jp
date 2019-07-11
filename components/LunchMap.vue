@@ -117,6 +117,16 @@ ja:
         <li><a href="http://r.gnavi.co.jp/g-interview/entry/gohan/2589">博多～天神周辺のおすすめグルメ！観光しながら名物からB級まで福岡グルメを食べ歩く30選</a> by gnavi.co.jp</li>
         <li><a href="https://tech.smarthr.jp/entry/2019/03/21/121514">【保存版】自腹でつくる博多グルメマップ #RubyKaigi 2019</a> by smarthr.jp</li>
       </ul>
+
+      <h2>Sweeeeeeets</h2>
+      <p>余裕があればご当地のスイーツを召し上がれ!!!!!</p>
+      <ul class="colored">
+        <li><a href="https://www.instagram.com/daimyosoftcream_jp/">DAIMYO SOFTCREAM</a></li>
+        <li><a href="https://www.instagram.com/icepinchclub/">ICE PINCH CLUB</a></li>
+        <li><a href="https://www.instagram.com/kohakudo/">kohakudo</a></li>
+        <li><a href="https://tabelog.com/fukuoka/A4001/A400104/40028365/">パティスリー ラ ジョエル</a></li>
+        <li><a href="https://www.instagram.com/nishidoripudding/">西通りプリン</a></li>
+      </ul>
     </div>
   </section>
 </template>
