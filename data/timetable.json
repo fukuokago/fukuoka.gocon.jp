@@ -280,19 +280,19 @@
   {
     "sponsor": false,
     "start": "17:50",
-    "stop": "18:50",
+    "stop": "18:00",
+    "id": "organizer",
+    "title": "Closing Session 👋",
+    "room": null,
+    "type": "call"
+  },
+  {
+    "sponsor": false,
+    "start": "18:00",
+    "stop": "19:00",
     "id": null,
     "title": "Networking 🍻",
     "room": null,
     "type": "break"
-  },
-  {
-    "sponsor": false,
-    "start": "18:50",
-    "stop": "19:00",
-    "id": "organizer",
-    "title": "Close 👋",
-    "room": null,
-    "type": "call"
   }
 ]
