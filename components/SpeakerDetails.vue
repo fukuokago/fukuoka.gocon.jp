@@ -21,6 +21,42 @@
         </ul>
         <p class="session-head">Abstract:</p>
         <div class="session-abstract" v-html="$md.render(speaker.abstract)"></div>
+
+        <div v-if="speaker.deck.indexOf('speakerdeck.com') !== -1">
+          <p class="session-head">Slide:</p>
+          <iframe class="session-slide speakerdeck" :src="'//speakerdeck.com/player/' + speaker.deckid" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true" allowtransparency="true" frameborder="0"></iframe>
+          <p class="session-slide-link"><a :href="speaker.deck">{{ speaker.deck }}</a></p>
+        </div>
+
+        <div v-else-if="speaker.deck.indexOf('google.com') !== -1">
+          <p class="session-head">Slide:</p>
+          <iframe class="session-slide googleslide" :src="'//docs.google.com/presentation/d/' + speaker.deckid + '/embed?start=false&loop=false&delayms=3000'" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+          <p class="session-slide-link"><a :href="speaker.deck">{{ speaker.deck }}</a></p>
+        </div>
+
+        <div v-else-if="speaker.deck.indexOf('slideshare.net') !== -1">
+          <p class="session-head">Slide:</p>
+          <iframe class="session-slide slideshare" :src="'//www.slideshare.net/slideshow/embed_code/key/' + speaker.deckid" allowfullscreen> </iframe>
+          <p class="session-slide-link"><a :href="speaker.deck">{{ speaker.deck }}</a></p>
+        </div>
+
+        <div v-else-if="speaker.deck.indexOf('youtube.com') !== -1">
+          <p class="session-head">Video:</p>
+          <iframe class="session-slide youtube" :src="'//www.youtube.com/embed/' + speaker.deckid" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="session-slide-link"><a :href="speaker.deck">{{ speaker.deck }}</a></p>
+        </div>
+
+        <div v-else-if="speaker.deck.indexOf('slides.com') !== -1">
+          <p class="session-head">Slide:</p>
+          <iframe class="session-slide slidescom" :src="speaker.deck + '/embed'" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <p class="session-slide-link"><a :href="speaker.deck">{{ speaker.deck }}</a></p>
+        </div>
+
+        <div v-else-if="speaker.deck.indexOf('//') !== -1">
+          <p class="session-head">Slide:</p>
+          <p class="session-slide-link"><a :href="speaker.deck">{{ speaker.deck }}</a></p>
+        </div>
+
         <p class="session-head">Time:</p>
         <p class="session-time">{{ session.start }} - {{ session.stop }}
           <span class="speaker--session-time-duration">({{ session.duration }})</span>
@@ -163,6 +199,32 @@ export default class SpeakerDetails extends Vue {
   color: #fff;
   background-color: #000;
 }
+.session-slide {
+  width: 100%;
+  border:0;
+  padding:0;
+  margin:0;
+  background:transparent;
+}
+.googleslide {
+  min-height: 408px;
+}
+.speakerdeck {
+  min-height: 380px;
+}
+.slidescom {
+  min-height: 500px;
+}
+.slideshare {
+  min-height: 540px;
+}
+.youtube {
+  min-height: 380px;
+}
+.session-slide-link {
+  font-size: .8em;
+  padding: 1em 0 2em;
+}
 @media (max-width: 500px) {
   .speaker-details--speaker .speaker-name {
     font-size: 1em;
@@ -189,6 +251,22 @@ export default class SpeakerDetails extends Vue {
   }
   .speaker-details--session .session-time {
     font-size: .7em;
+  }
+  .googleslide,
+  .speakerdeck,
+  .slidescom,
+  .slideshare,
+  .youtube {
+    min-height: 80px;
+  }
+}
+@media (max-width: 1000px) {
+  .googleslide,
+  .speakerdeck,
+  .slidescom,
+  .slideshare,
+  .youtube {
+    min-height: 195px;
   }
 }
 </style>
