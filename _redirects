@@ -1,0 +1,4 @@
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect default Netlify subdomain to primary domain
+https://boring-lumiere-232406.netlify.com/* https://fukuoka.gocon.jp/:splat 301!
