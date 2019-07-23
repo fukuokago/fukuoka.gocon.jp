@@ -23,7 +23,7 @@ ja:
 
     <p v-for="p in $t('body')">{{ p }}</p>
     <p class="anchors">
-      <nuxt-link class="button is-inverted is-outlined" :to="localePath('event-report')">{{ $t('report') }}</nuxt-link>
+      <nuxt-link class="button is-inverted is-outlined" :to="localePath('report')">{{ $t('report') }}</nuxt-link>
     </p>
   </article>
 </template>

@@ -57,6 +57,7 @@ export default class TheNav extends Vue {
     private drawer = false
 
     public links = [
+      { slug: '', to: 'report', label: 'Report' },
       { slug: '', to: 'venue', label: 'Venue' },
       //{ slug: '', to: 'location', label: 'Location' },
       { slug: '', to: 'schedule', label: 'Schedule' },
