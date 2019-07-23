@@ -37,7 +37,6 @@ ja:
       <nuxt-link class="button is-inverted is-outlined" :to="localePath('registration')">{{ $t('registration') }}</nuxt-link>
     </p>
   </article>
-  </article>
 </template>
 
 <script lang="ts">
