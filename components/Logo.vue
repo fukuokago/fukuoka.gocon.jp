@@ -1,15 +1,22 @@
 <i18n>
 en:
   schedule: 'July 13th (10:00-19:00) @ The Fukuoka Growth Next | Fukuoka, Japan'
+  end: 'This Conference has ended. Please see {link}. 📸'
+  report: the report page
 ja:
   schedule: '7月13日 10:00-19:00 | 福岡市中央区天神の Fukuoka Growth Next で開催'
+  end: 'このConferenceは終了しました！ 📸 {link} をご覧ください。'
+  report: レポートページ
 </i18n>
 
 <template>
   <span :class="[color, 'logo']">
       <nuxt-link :to="localePath('index')"><span class="go">Go</span> <span class="one">Conference <sup>‘19</sup></span></nuxt-link>
     <i class="subtitle" v-if="isSubtitle">Summer in Fukuoka</i>
-    <i class="schedule" v-if="isSubtitle">{{$t('schedule') }}</i>
+    <i18n path="end" tag="i" class="schedule" v-if="isSubtitle">
+      <nuxt-link place="link" :to="localePath('report')">{{ $t('report') }}</nuxt-link>
+    </i18n>
+    </i>
   </span>
 </template>
 
@@ -90,5 +97,9 @@ export default class TheLogo extends Vue {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+.logo i.schedule a {
+  color: #fff;
+  border-bottom: 1px dotted #fff;
 }
 </style>
