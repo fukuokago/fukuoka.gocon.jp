@@ -18,9 +18,6 @@ ja:
       <p class="goto-detail"><nuxt-link :to="localePath('sponsors')" class="button large is-inverted is-outlined">🏢 {{ $t('sponsors') }}</nuxt-link></p>
     </div>
     <Fukuoka/>
-    <div class="container">
-      <Schedule/>
-    </div>
   </section>
 </template>
 
@@ -31,7 +28,6 @@ import Location from '~/components/Location.vue'
 import News from '~/components/News.vue'
 import Sponsors from '~/components/Sponsors.vue'
 import Fukuoka from '~/components/Fukuoka.vue'
-import Schedule from '~/components/Schedule.vue'
 
 @Component({
   components: {
@@ -39,8 +35,7 @@ import Schedule from '~/components/Schedule.vue'
     Location,
     News,
     Sponsors,
-    Fukuoka,
-    Schedule
+    Fukuoka
   }
 })
 export default class PageIndex extends Vue {
