@@ -211,8 +211,8 @@
     "organization": "GMO Pepabo, Inc.",
     "title": "ホスティングにおけるメールサービスの運用とgolang",
     "abstract": "発表者は共用ホスティングのメールサービスでバックエンドのリニューアルに携わり、リニューアルに際して初の試みとしてnginxとgolangを採用しました。メールサービスを継続的に安定して提供するためどのようにgolangを使っているかを紹介します。",
-    "deck": "",
-    "deckid": "",
+    "deck": "https://speakerdeck.com/rhykw/email-hosting-service-with-golang",
+    "deckid": "a7c910fe532b4de6b62931d8b7231bb3",
     "tags": [
       "nginx",
       "postfix",
@@ -254,24 +254,6 @@
     "deckid": "a0cda067f89e48adbba833f73b7b53ca",
     "tags": [
       "middleware"
-    ]
-  },
-  {
-    "id": "denis_makogon",
-    "name": "Denys Makogon",
-    "avatar": "https://secure.gravatar.com/avatar/eed6f5ca181818d23754d9f00986f54e?s=500",
-    "bio": "Software enthusiast focused on developing and designing platform and software as a service application for clouds. He’s a principal software developer in Oracle, concentrating on product development along with bringing well-designed and production ready integration with clouds solutions, contributor to various open source projects, cloud-related technologies along having fun with IoT devices and photography.\r\nDenis is a regular attendee and speaker at OpenStack summits (Atlanta, Austin, Paris, Barcelona, Boston) and PyCon Hong Kong 2016, 2017, PyCon Italy 2018, PyCon Japan 2018, DeComplile.De 2018. Co-author of OpenStack Application development, OpenStack Trove Essentials.\r\n",
-    "twitter": "denis_makogon",
-    "url": "https://medium.com/@denismakogon",
-    "organization": "Oracle",
-    "title": "Let's do some serverless with Go",
-    "abstract": "This talk is all about doing serverless and Go with some comparison to other programming languages like Java and Python. This talk would be very useful for people deciding on serverless as a technology to use. In this talk we'd some coding, doing some serverless functions, math, etc.",
-    "deck": "",
-    "deckid": "",
-    "tags": [
-      "serverless",
-      "clouds",
-      "oracle"
     ]
   },
   {
