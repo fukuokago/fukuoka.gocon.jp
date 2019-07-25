@@ -4,11 +4,11 @@ en:
   date: 'July 25, 2019'
   body:
     - With a lot of cooperation, we were able to successfully finish the Go Conference's first regional event in Fukuoka.
-      Although it was unfortunately rainy on the   day, I am grateful to the many visitors coming from inside and outside the prefecture.
+      Although it was unfortunately rainy on the day, We are grateful to the many visitors coming from inside and outside the prefecture.
       All the members of the executive committee worked together to prepare for the event with the desire to create a conference with lots of learning and enjoyment.
-      I think that there was a point that did not reach, but the voice “I was glad to participate” in the questionnaire is very encouraging.
+      We think that there was a point that did not reach, but the voice “I was glad to participate” in the questionnaire is very encouraging.
       How was the content unique to Fukuoka, such as the platform of Mayor Takashima and the lunch map? In addition to the mission to make the event a success, the management actually had the back theme of conveying the attraction of Fukuoka.
-      As far as judging from the atmosphere and Twitter of the place, I feel that you enjoyed the event.
+      As far as judging from the atmosphere and Twitter of the place, We feel that you enjoyed the event.
       We hope that we can keep up the Go community in Fukuoka so that we can hold the Go Conference again in Fukuoka and we can enhance it.
       Thank you very much for all the sponsors and speakers who supported us.
       Then thank you for the autumn Go Conference!
