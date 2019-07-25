@@ -98,8 +98,8 @@
     "organization": "i³ Systems, Inc",
     "title": "MDMにおける大量デバイスを対象とした通信を支える技術",
     "abstract": "「CLOMO」はMDM(Mobile Device Management)を用いてスマートデバイスを管理するためのRuby製のクラウドサービスです。今年度にはクラウド基盤のKubernetesへの移行を進めています。\n弊社は2017年に、働き方改革をCLOMOで支援する「ワーク・スマート」というサービスを提供開始しました。その際、大量デバイスへPush通知を送る機能にフェンリル社のGo製ツール「BoltzEngine」を採用し、クライアントをGoで実装しました。\n本セッションでは、CLOMOとワーク・スマートのサービスと今後のGoの活用についてお話したいと思います。",
-    "deck": "",
-    "deckid": "",
+    "deck": "https://speakerdeck.com/bon10/technology-to-support-communications-for-many-devices-in-mdm",
+    "deckid": "2ccea4864d6343f89171e650dba8b134",
     "tags": [
       "Rails",
       "Ruby"
