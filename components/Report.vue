@@ -1,12 +1,14 @@
 <i18n>
 en:
   desc: |-
+    hello
   desc2: |-
-  1f: |-
+    hello
 ja:
   desc: |-
+    ああああ
   desc2: |-
-  1f: |-
+    ああああ
 </i18n>
 
 <template>
@@ -18,24 +20,38 @@ ja:
     </div>
 
     <div class="report-photos is-clearfix">
-      <LightGallery :images="images0" :index="index0" :disable-scroll="false" @close="index0 = null" />
-      <div class="report-photo" v-for="(thumb, thumbIndex0) in images0" :key="thumbIndex0" @click="index0 = thumbIndex0" >
-        <img :src="thumb.url.replace(/src/, 'thumb')">
-      </div>
+    <div class="container">
+      <h3>Photos</h3>
+    </div>
+      <LightGallery :images="images" :index="index" :disable-scroll="false" @close="index = null" />
+      <div class="report-photo" v-for="(thumb, thumbIndex) in images" :key="thumbIndex" @click="index = thumbIndex" ><img :src="thumb.url.replace(/src/, 'thumb')"></div>
     </div>
 
     <div class="container">
       <h3>Scholarships</h3>
       <ul class="colored">
-          </li><a href="">aaa</a></li>
+        <li><a href="http://bit.ly/32PZHxy">Go Conference’19 summer in Fukuokaに行ってきた</a> by tomocy</li>
+        <li><a href="http://bit.ly/2GnQPFJ">Go Conference in Fukuokaに参加してきました！</a> by pirohiropiro</li>
+        <li><a href="http://bit.ly/2Zk7rFX">Go Conference in Fukuoka に参加してきました！</a> by dobuzora</li>
       </ul>
     </div>
 
     <div class="container">
       <h3>Blog written by everyone</h3>
       <ul class="colored">
-          </li><a href="">aaa</a></li>
+        <li><a href="http://bit.ly/2JRe9gY">Go Conference Fukuoka 2019から刺激を受けてanalysis toolを作った</a> by nakamura244</li>
+        <li><a href="http://bit.ly/2K6Gxeb">初心者がGo Conference’19 Summer in Fukuokaに行って、飛び込みLTしてきた</a> by sinofseven</li>
+        <li><a href="http://bit.ly/2Mew2s2">[発表資料] GoCon Fukuokaでgoogle/wireを使った Goらしいアーキテクチャへの取り組みを発表した #gocon</a> by <budougumi0617/li>
+        <li><a href="http://bit.ly/2JOLglC">Go Conference'19 Summer in Fukuokaで登壇してきた</a> by songmu</li>
+        <li><a href="http://bit.ly/2Gtnr0V">Go Conference'19 Summer in Fukuoka にて登壇、費用対効果のいいユニットテストの考え方と実践について話しました #gocon</a> by hgsgtk</li>
+        <li><a href="http://bit.ly/2GreXqS">ＧＯ ｃｏｎｆｅｒｅｎｃｅ’１９ ｓｕｍｍｅｒ ｉｎ ｆｕｋｕｏｋａに出席しました</a> by 福岡市政だより</li>
+        <li><a href="http://bit.ly/2YotsWC">Go Conference '19 Summer in Fukuoka にて登壇とスタッフしてきました #gocon</a> by seike460</li>
+        <li><a href="http://bit.ly/30Ze5BR">Go Conference’19 Summer in Fukuoka、スタッフとして参加しました</a> by kunit</li>
       </ul>
+    </div>
+
+    <div class="container">
+      <h3>Tweeeeeeet!</h3>
     </div>
   </section>
 </template>
@@ -43,24 +59,21 @@ ja:
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
 
+interface Image {
+  title: string
+  url: string
+}
+
 @Component
 export default class report extends Vue {
   public data() {
-    return {
-      images0: [
-        { title: 'Welcome to fgn', url: '/report/src/fgn-0.jpg' },
-        { title: 'Really elementary school', url: '/report/src/fgn-1.jpg' },
-        { title: 'Howlt Coffee Terrace', url: '/report/src/fgn-2.jpg' },
-        { title: 'Pizza???', url: '/report/src/fgn-3.jpg' },
-        { title: 'Go! Smart City Fukuoka', url: '/report/src/fgn-4.jpg' },
-        { title: 'Hi, Receptionist', url: '/report/src/fgn-5.jpg' },
-        { title: 'The staff of fgn is here', url: '/report/src/fgn-7.jpg' },
-        { title: 'fgn is not a screen but nine multi-displays!', url: '/report/src/fgn-8.jpg' },
-        { title: 'From behind', url: '/report/src/fgn-9.jpg' },
-        { title: 'A beer server, coffee server, or food will be prepared at this desk', url: '/report/src/fgn-20.jpg' },
-      ],
-      index0: null
+    let images: Image[] = []
+    for (let i = 1; i <= 76; i++) {
+      const n = i < 10 ? `0${i}` : i
+      images.push({ title: '', url: `/report/src/gocon-${n}.jpg` })
     }
+    const index = null
+    return { images, index }
   }
 }
 </script>
@@ -74,7 +87,7 @@ export default class report extends Vue {
   line-height: 1;
 }
 .report-photo {
-  width: 20%;
+  width: 10%;
   height: auto;
   float: left;
   overflow: hidden;
