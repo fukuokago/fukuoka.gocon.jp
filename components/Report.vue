@@ -1,30 +1,38 @@
 <i18n>
 en:
   desc: |-
-    Go Conference'19 Summer in Fukuokaの開催レポートです。
-    参加者へのアンケートを集計した結果や、カメラマン{atani}によるイベントの写真を掲載いたします。
-    総括は{blog}に書いています。ぜひご覧ください。
-    また、{schedule}のタイトルリンクから表示される登壇者詳細のページに、
-    ほぼ全ての発表スライドが埋め込まれています。参加できなかった方にご覧いただければと思います。
+    It is a report of Go Conference '19 Summer in Fukuoka.
+    We will post the results of the questionnaire for the participants and the photos of the events by {atani}.
+    The summary is written in {blog}. Please take a look.
+    Also, almost all presentation slides are embedded in the speaker's details page displayed from the {schedule} title link.
+    I hope you can see it if you can not participate.
   overview:
     venue:
-      title: 会場
-      body: Growth Next Fukuoka と 福岡市Startup Cafe
+      title: Venue
+      body: Growth Next Fukuoka and Fukuoka Startup Cafe
     date:
-      title: 日時
-      body: "2019年07月13日(土) 09:30 から {last} 19:30 まで"
+      title: Date
+      body: "Sat July 13th, 2019, Start: 09:30, End: {last} 19:30"
     attendee:
-      title: 参加者数
-      body: "{limit} 157人（登壇者やスタッフ含む）"
-    note: 当日はあいにくの☔️（お昼前後は土砂降りに近い）で、キャンセルや無断欠席がありました。スペシャルセッションには、福岡市の{mayor}が登壇しました。イベント終了後、シームレスに懇親会を開催できました。懇親会では、LT大会などで盛り上がり予定より終了時刻を30分延長しました。
-  gophers-go: 最後にダサく「Go~!」って撮ったGopher集合写真。意外とみんな笑顔。
-  scholarship: スカラーシッププログラムを実施し、全国から選ばれた学生３名が参加し、アウトプットとしてブログを書いてくれました。是非ご覧ください。
-  blog: いろんな方がブログに、登壇報告やスタッフの感想などを書いてくれています。中にはイベントに刺激を受けてCLIツールを作ったという記事があり、主催者としては嬉しい限りです。
-  tweet: イベントが盛り上がったのがわかるTweetを独断と偏見でピックアップしておきます。
+      title: Count
+      body: "{limit} 157 (Speakers and Staffs included)"
+    note: Unfortunately, it was ☔️ on the day (close to the downpour before and after noon), and there were cancellations and absences without notice. The special session was held by the mayor of {mayor}, Fukuoka. After the event, we were able to hold a social gathering seamlessly. In the banquet, the end time was extended by 30 minutes from the schedule that is going up in LT competitions and so on.
+  gophers-go: The Gopher group photo I took at the end, "Go ~!" Surprisingly everyone smiles.
+  scholarship: Conducted a scholarship program, and three students from all over the country participated and wrote blogs as output. Please take a look.
+  blog: Many people have written on-the-bed reports and staff's comments on the blog. There is an article that I was inspired by the event and created a CLI tool, and I am happy as a organizer.
   survey:
-    rate: 回答率
-    desc: イベント参加者にアンケートを実施し集計した結果です。回答率は約5割。セッション数が多いイベントのため、スピーカーやスポンサースタッフの数も多い結果となっています。
-  summary: 総括を見る
+    rate: Response rate
+    desc: It is the result of conducting the questionnaire to the event participant and totaling. The response rate is about 50%. Due to the high number of sessions, the number of speakers and sponsors is also high.
+    attendees: The number of attendees from outside Fukuoka is higher than expected, and the proportion of beginners is a high impression.
+    jobtype: The participants are mostly engineers, this time three students from the Scholarships program.
+    goodsession: Among the sessions that attendees felt good were the following (except Special Session).
+    histogram: Participants considered the five sessions good at median. This is close to 20% of all sessions.
+    goodreason: I classified the reasons for the session that I thought was good. Participants tend to feel “good” for sessions that have a lot of learning.
+    again: Some of the general participants and sponsors want to go on stage next time. Also, almost everyone seems to want to participate again.
+    feedback: Many of the participants were satisfied with the operation, giving up, giving, and giving thanks. As for the improvement, it seems that there was much content that I wanted time between sessions.
+  jobtype: Job Type
+  attendees: The Attendees
+  summary: Go to Summary
 ja:
   desc: |-
     Go Conference'19 Summer in Fukuokaの開催レポートです。
@@ -46,10 +54,18 @@ ja:
   gophers-go: 最後にダサく「Go~!」って撮ったGopher集合写真。意外とみんな笑顔。
   scholarship: スカラーシッププログラムを実施し、全国から選ばれた学生３名が参加し、アウトプットとしてブログを書いてくれました。是非ご覧ください。
   blog: いろんな方がブログに、登壇報告やスタッフの感想などを書いてくれています。中にはイベントに刺激を受けてCLIツールを作ったという記事があり、主催者としては嬉しい限りです。
-  tweet: イベントが盛り上がったのがわかるTweetを独断と偏見でピックアップしておきます。
   survey:
     rate: 回答率
     desc: イベント参加者にアンケートを実施し集計した結果です。回答率は約5割。セッション数が多いイベントのため、スピーカーやスポンサースタッフの数も多い結果となっています。
+    attendees: 福岡以外からの参加者が想定より多く、初心者の割合は高い印象です。
+    jobtype: 参加者はほぼエンジニアで、今回はScholarshipsプログラムによって3人の学生が参加しています。
+    goodsession: 参加者が良かった思うセッションで評価の高いものは以下でした (Special Sessionは除く)。
+    histogram: 参加者は、中央値で5つのセッションを良かったと考えています。これは、全セッションの2割近い値です。
+    goodreason: 良かったと思うセッションの理由を分類しました。参加者は、学びが多いセッションに「良い」と感じる傾向があります。
+    again: 一般参加者やスポンサーの一部は、次は登壇したいと考えていています。また、ほぼ全員がまた参加したいと考えているようです。
+    feedback: 多くの参加者は、運営に満足しており、褒める、労い、感謝が目立ちました。改善に関しては、セッション間のゆとり時間がほしいという内容が多かったようです。
+  jobtype: 職種はなんですか？
+  attendees: 参加者について
   summary: 総括を見る
 </i18n>
 
@@ -100,18 +116,18 @@ ja:
       <img src="~/static/report/graph/type.svg" />
 
       <div class="survey">
-        <h4>The Attendees</h4>
-        <p>福岡以外からの参加者が想定より多く、初心者の割合は高い印象です。</p>
+        <h4>{{ $t('attendees') }}</h4>
+        <p>{{ $t('survey.attendees') }}</p>
         <img src="~/static/report/graph/from.svg" />
         <img src="~/static/report/graph/level.svg" />
 
-        <h4>Job Type</h4>
-        <p>参加者はほぼエンジニアで、今回はScholarshipsプログラムによって3人の学生が参加しています。</p>
+        <h4>{{ $t('jobtype') }}</h4>
+        <p>{{ $t('survey.jobtype') }}</p>
         <img src="~/static/report/graph/job.svg" />
         <img src="~/static/report/graph/job-other.svg" />
 
         <h4>High Rating Sessions 🏆</h4>
-        <p>参加者が良かった思うセッションで評価の高いものは以下でした (Special Sessionは除く)。</p>
+        <p>{{ $t('survey.goodsession') }}</p>
         <ul class="high-rating-sessions">
           <li class="high-rating-session--1st"><span class="high-rating-session--number">1</span> <nuxt-link class="high-rating-session--title" :to="localePath({ name: 'speakers-slug', params: { slug: 'ichikaway' } })">Hello, Worldまで3ヶ月 Go言語でファミコンエミュレータ実装</nuxt-link> by <span class="high-rating-session--speaker">cakephper</span></li>
           <li class="high-rating-session--2nd"><span class="high-rating-session--number">2</span> <nuxt-link class="high-rating-session--title" :to="localePath({ name: 'speakers-slug', params: { slug: 'tenntenn' } })">Goによる静的解析のはじめかた</nuxt-link> by <span class="high-rating-session--speaker">tenntenn</span></li>
@@ -121,11 +137,11 @@ ja:
         </ul>
 
         <h4>Count of Good Session</h4>
-        <p>参加者は、中央値で5つのセッションを良かったと考えています。これは、全セッションの2割近い値です。</p>
+        <p>{{ $t('survey.histogram') }}</p>
         <img src="~/static/report/graph/goodhistogram.svg" />
 
         <h4>Reason Type of Good Session</h4>
-        <p>良かったと思うセッションの理由を分類すると右のようになりました。参加者は、学びが多いセッションに「良い」と感じる傾向があります。</p>
+        <p>{{ $t('survey.goodreason') }}</p>
         <img src="~/static/report/graph/good-session-type.svg" />
 
         <h4>Reason Sample</h4>
@@ -141,16 +157,16 @@ ja:
         </ul>
 
         <h4>Attending Again?</h4>
-        <p>一般参加者やスポンサーの一部は、次は登壇したいと考えていています。また、ほぼ全員がまた参加したいと考えているようです。</p>
+        <p>{{ $t('survey.again') }}</p>
         <img src="~/static/report/graph/reattendee.svg" />
 
         <h4>Feedback Type</h4>
-        <p>多くの参加者は、運営に満足しており、褒める、労い、感謝が目立ちました。改善に関しては、セッション間のゆとり時間がほしいという内容が多かったようです。</p>
+        <p>{{ $t('survey.feedback') }}</p>
         <img src="~/static/report/graph/feedback-type.svg" />
 
         <h4>Feedback Sample</h4>
         <ul>
-            <li>熱量が高くて素晴らしいカンファレンスでした。個人的には懇親会LTが無い方が多くの方とお話できるので好きです。（懇親会LTを否定しているわけではありません）尖った発表が多くて、知らないことが知れて良かったです。<span class="type">（褒める）</span></li>
+          <li>熱量が高くて素晴らしいカンファレンスでした。個人的には懇親会LTが無い方が多くの方とお話できるので好きです。（懇親会LTを否定しているわけではありません）尖った発表が多くて、知らないことが知れて良かったです。<span class="type">（褒める）</span></li>
           <li>はじめての参加でしたが、Goへの興味がますます増えました。<span class="type">（褒める）</span></li>
           <li>最初スケジュールがタイトで慌ただしそうに思ったけど、終わって見ると逆にテンポよかったと思う。会場の椅子をもう少しゆとりのある配置にすると入れ替えの出入りが楽だったと思った。生ハムとてもおいしかったけど食べ過ぎると塩分やばいのでほどほどで我慢したのが心残りだった（<span class="type">改善）</span></li>
           <li>クロークがあれば、良いと思いました。私は出張でスーツケースで参加したのですが、身動きがとり辛かったです。遠方枠もあるので、大きな荷物でも参加しやすくなると良いと思いました。<span class="type">（改善）</span></li>
@@ -192,7 +208,50 @@ ja:
 
     <div class="container">
       <h3>Tweeeeeeet!</h3>
-      <p>{{ $t('tweet') }}</p>
+    </div>
+    <div class="tweets is-clearfix">
+      <Tweet id="1149990208235954176" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149985705197621248" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149974855942467584" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149944224671862784" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149940928833978369" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149933055349420033" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149931848945946630" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149931061087854592" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149930303579815941" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149928786181275651" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149927840021798912" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149925635701133312" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149918479329267712" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149911817142956032" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149911795529687040" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149907597639573504" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149906074494836736" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149905569798430720" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149886006516043777" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149880967105925120" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149878860810342400" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149873276744687616" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149872608176816128" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149872550249259008" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149871912664723456" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1150042529234137088" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149871783912198144" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149870210284843008" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149869710281826304" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149863794471890945" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149861882028646401" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149860072534577153" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149859779478601728" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149859143726977024" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149855931401773062" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149850177542299648" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149849969295183872" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149847919702376448" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149845836706144258" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149843984895733760" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149842930011529217" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
+      <Tweet id="1149587073591984130" :options="{ cards: 'visible' }"><div class="tweet"></div></Tweet>
     </div>
 
     <div class="container">
@@ -203,13 +262,18 @@ ja:
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
+import { Tweet } from 'vue-tweet-embed'
 
 interface Image {
   title: string
   url: string
 }
 
-@Component
+@Component({
+  components: {
+    Tweet
+  }
+})
 export default class report extends Vue {
   public data() {
     let images: Image[] = []
@@ -349,6 +413,28 @@ export default class report extends Vue {
 }
 .goto-summary {
   text-align: center;
+}
+.tweets {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  height: 500px;
+  white-space: nowrap;
+  margin-bottom: 1em;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+.tweets > div {
+  width: 280px;
+  height: 500px;
+  margin: 0 0 0 2em;
+  overflow: hidden;
+  display:inline-block;
+  margin-right: 1%;
+  width: 19%;
+  vertical-align: top;
+  white-space: normal;
 }
 @media (max-width: 800px) {
   .report-photo {
