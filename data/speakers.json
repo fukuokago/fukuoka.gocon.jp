@@ -299,8 +299,8 @@
     "organization": "",
     "title": "How to Write Go CLI Tools",
     "abstract": "I show some tips and tricks for writing CLI tools by Go. (Notes on writing CLI tools in my case. Findings obtained when wrote CLI tools at my work.) This gives you the following benefits: (Know-how to write CLI tools. Persuasive material to introduce Go to your workplace.)",
-    "deck": "https://www.slideshare.net/qt-luigi/how-to-write-go-cli-tools",
-    "deckid": "LwD3OfyYc4vVBu",
+    "deck": "https://talks.godoc.org/github.com/qt-luigi/talks/2019/go-cli-tools.slide",
+    "deckid": "",
     "tags": [
       "tools"
     ]

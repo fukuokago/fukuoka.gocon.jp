@@ -34,6 +34,12 @@
           <p class="session-slide-link"><a :href="speaker.deck">{{ speaker.deck }}</a></p>
         </div>
 
+        <div v-else-if="speaker.deck.indexOf('godoc.org') !== -1 || speaker.deck.indexOf('song.mu') !== -1">
+          <p class="session-head">Slide:</p>
+          <iframe class="session-slide googleslide" :src="speaker.deck" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+          <p class="session-slide-link"><a :href="speaker.deck">{{ speaker.deck }}</a></p>
+        </div>
+
         <div v-else-if="speaker.deck.indexOf('slideshare.net') !== -1">
           <p class="session-head">Slide:</p>
           <iframe class="session-slide slideshare" :src="'//www.slideshare.net/slideshow/embed_code/key/' + speaker.deckid" allowfullscreen> </iframe>
