@@ -32,6 +32,13 @@ en:
     feedback: Many of the participants were satisfied with the operation, giving up, giving, and giving thanks. As for the improvement, it seems that there was much content that I wanted time between sessions.
   jobtype: Job Type
   attendees: The Attendees
+  highrating: High Rating Sessions
+  histogram: Histogram of Good Session Count
+  reason-type: Reason type of Good Session
+  reason-sample: Reason Sample
+  feedback-type: Feedback Type to Organizer
+  feedback-sample: Feedback Sample
+  again: Attending Again?
   summary: Go to Summary
 ja:
   desc: |-
@@ -66,6 +73,13 @@ ja:
     feedback: 多くの参加者は、運営に満足しており、褒める、労い、感謝が目立ちました。改善に関しては、セッション間のゆとり時間がほしいという内容が多かったようです。
   jobtype: 職種はなんですか？
   attendees: 参加者について
+  highrating: 評価の高いセッション
+  histogram: 良いセッション数ヒストグラム
+  reason-type: 良い理由の分類
+  reason-sample: 良い理由のサンプル
+  feedback-type: 運営へフィードバックの分類
+  feedback-sample: フィードバックのサンプル
+  again: また参加したいですか？
   summary: 総括を見る
 </i18n>
 
@@ -109,24 +123,25 @@ ja:
       </i18n>
     </div>
 
-    <div class="container">
+    <div class="container survey">
       <h3>The Attendees Survey 📫</h3>
       <p>{{ $t('survey.desc') }}</p>
       <p class="rate"><span class="rate-title">{{ $t('survey.rate') }}:</span><span class="molecule">80</span>/<span class="denominator">157</span></p>
-      <img src="~/static/report/graph/type.svg" />
+      <img class="graph" src="~/static/report/graph/type.svg" />
 
       <div class="survey">
         <h4>{{ $t('attendees') }}</h4>
         <p>{{ $t('survey.attendees') }}</p>
-        <img src="~/static/report/graph/from.svg" />
-        <img src="~/static/report/graph/level.svg" />
+        <img class="graph" src="~/static/report/graph/from.svg" />
+        <img class="graph" src="~/static/report/graph/level.svg" />
 
         <h4>{{ $t('jobtype') }}</h4>
         <p>{{ $t('survey.jobtype') }}</p>
-        <img src="~/static/report/graph/job.svg" />
-        <img src="~/static/report/graph/job-other.svg" />
+        <img class="graph" src="~/static/report/graph/job.svg" />
+        <img class="graph" src="~/static/report/graph/job-other.svg" />
 
-        <h4>High Rating Sessions 🏆</h4>
+
+        <h4>{{ $t('highrating') }} 🏆</h4>
         <p>{{ $t('survey.goodsession') }}</p>
         <ul class="high-rating-sessions">
           <li class="high-rating-session--1st"><span class="high-rating-session--number">1</span> <nuxt-link class="high-rating-session--title" :to="localePath({ name: 'speakers-slug', params: { slug: 'ichikaway' } })">Hello, Worldまで3ヶ月 Go言語でファミコンエミュレータ実装</nuxt-link> by <span class="high-rating-session--speaker">cakephper</span></li>
@@ -136,16 +151,16 @@ ja:
           <li class="high-rating-session--3rd"><span class="high-rating-session--number">3</span> <nuxt-link class="high-rating-session--title" :to="localePath({ name: 'speakers-slug', params: { slug: '__timakin__' } })">Golang BFF with GraphQL and gRPC</nuxt-link> by <span class="high-rating-session--speaker">timakin</span></li>
         </ul>
 
-        <h4>Count of Good Session</h4>
+        <h4>{{ $t('histogram') }}</h4>
         <p>{{ $t('survey.histogram') }}</p>
-        <img src="~/static/report/graph/goodhistogram.svg" />
+        <img class="graph" src="~/static/report/graph/goodhistogram.svg" />
 
-        <h4>Reason Type of Good Session</h4>
+        <h4>{{ $t('reason-type') }}</h4>
         <p>{{ $t('survey.goodreason') }}</p>
-        <img src="~/static/report/graph/good-session-type.svg" />
+        <img class="graph" src="~/static/report/graph/good-session-type.svg" />
 
-        <h4>Reason Sample</h4>
-        <ul>
+        <h4>{{ $t('reason-sample') }}</h4>
+        <ul class="survey-sample">
           <li> 話し方が上手く伝えたい内容が伝わりやすかった方、使ったことの無いが、今後ぜひ使っていきたいパッケージや機能を紹介してくださった方が多く、非常に勉強になりました。<span class="type">（楽しい）</span></li>
           <li> 楽しむことの大切さを改めて認識できたから<span class="type">（楽しい）</span></li>
           <li> 実際に業務課題を解決するためのたくさんのヒントを得ることができた。<span class="type">（学びがある）</span></li>
@@ -156,23 +171,27 @@ ja:
           <li> 身近、および、自分自身がやってみたいテーマだった<span class="type">（興味深い）</span></li>
         </ul>
 
-        <h4>Attending Again?</h4>
-        <p>{{ $t('survey.again') }}</p>
-        <img src="~/static/report/graph/reattendee.svg" />
-
-        <h4>Feedback Type</h4>
+        <h4>{{ $t('feedback-type') }}</h4>
         <p>{{ $t('survey.feedback') }}</p>
-        <img src="~/static/report/graph/feedback-type.svg" />
+        <img class="graph" src="~/static/report/graph/feedback-type.svg" />
 
-        <h4>Feedback Sample</h4>
-        <ul>
+        <h4>{{ $t('feedback-sample') }}</h4>
+        <ul class="survey-sample">
           <li>熱量が高くて素晴らしいカンファレンスでした。個人的には懇親会LTが無い方が多くの方とお話できるので好きです。（懇親会LTを否定しているわけではありません）尖った発表が多くて、知らないことが知れて良かったです。<span class="type">（褒める）</span></li>
           <li>はじめての参加でしたが、Goへの興味がますます増えました。<span class="type">（褒める）</span></li>
           <li>最初スケジュールがタイトで慌ただしそうに思ったけど、終わって見ると逆にテンポよかったと思う。会場の椅子をもう少しゆとりのある配置にすると入れ替えの出入りが楽だったと思った。生ハムとてもおいしかったけど食べ過ぎると塩分やばいのでほどほどで我慢したのが心残りだった（<span class="type">改善）</span></li>
           <li>クロークがあれば、良いと思いました。私は出張でスーツケースで参加したのですが、身動きがとり辛かったです。遠方枠もあるので、大きな荷物でも参加しやすくなると良いと思いました。<span class="type">（改善）</span></li>
           <li>とても快適で学びの多いカンファレンスでした。ありがとうございました！！<span class="type">（感謝）</span></li>
         </ul>
+
+        <h4>{{ $t('again') }}</h4>
+        <p>{{ $t('survey.again') }}</p>
+        <img class="graph" src="~/static/report/graph/reattendee.svg" />
       </div>
+    </div>
+
+    <div class="container">
+      <h3>Photos 📸</h3>
     </div>
 
     <div class="report-photos is-clearfix">
@@ -319,6 +338,9 @@ export default class report extends Vue {
   display: block;
   width: 100%;
 }
+.report .survey {
+  margin-bottom: 3em;
+}
 .report h4 {
   margin: 2em 0 .5em;
   font-size: 1.5em;
@@ -426,19 +448,36 @@ export default class report extends Vue {
   overflow-scrolling: touch;
 }
 .tweets > div {
-  width: 280px;
   height: 500px;
   margin: 0 0 0 2em;
   overflow: hidden;
   display:inline-block;
-  margin-right: 1%;
-  width: 19%;
+  width: 20%;
   vertical-align: top;
   white-space: normal;
 }
 @media (max-width: 800px) {
   .report-photo {
     width: 25%;
+  }
+  .report .rate {
+    float: none;
+    margin: 0;
+  }
+  .report .graph {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .survey-sample {
+    font-size: .8em;
+  }
+  .report .colored {
+    margin: 0;
+  }
+  .tweets > div {
+    margin-left: 1em;
+    width: 70%;
   }
 }
 </style>
