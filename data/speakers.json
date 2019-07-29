@@ -98,8 +98,8 @@
     "organization": "i³ Systems, Inc",
     "title": "MDMにおける大量デバイスを対象とした通信を支える技術",
     "abstract": "「CLOMO」はMDM(Mobile Device Management)を用いてスマートデバイスを管理するためのRuby製のクラウドサービスです。今年度にはクラウド基盤のKubernetesへの移行を進めています。\n弊社は2017年に、働き方改革をCLOMOで支援する「ワーク・スマート」というサービスを提供開始しました。その際、大量デバイスへPush通知を送る機能にフェンリル社のGo製ツール「BoltzEngine」を採用し、クライアントをGoで実装しました。\n本セッションでは、CLOMOとワーク・スマートのサービスと今後のGoの活用についてお話したいと思います。",
-    "deck": "",
-    "deckid": "",
+    "deck": "https://speakerdeck.com/bon10/technology-to-support-communications-for-many-devices-in-mdm",
+    "deckid": "2ccea4864d6343f89171e650dba8b134",
     "tags": [
       "Rails",
       "Ruby"
@@ -211,8 +211,8 @@
     "organization": "GMO Pepabo, Inc.",
     "title": "ホスティングにおけるメールサービスの運用とgolang",
     "abstract": "発表者は共用ホスティングのメールサービスでバックエンドのリニューアルに携わり、リニューアルに際して初の試みとしてnginxとgolangを採用しました。メールサービスを継続的に安定して提供するためどのようにgolangを使っているかを紹介します。",
-    "deck": "",
-    "deckid": "",
+    "deck": "https://speakerdeck.com/rhykw/email-hosting-service-with-golang",
+    "deckid": "a7c910fe532b4de6b62931d8b7231bb3",
     "tags": [
       "nginx",
       "postfix",
@@ -254,24 +254,6 @@
     "deckid": "a0cda067f89e48adbba833f73b7b53ca",
     "tags": [
       "middleware"
-    ]
-  },
-  {
-    "id": "denis_makogon",
-    "name": "Denys Makogon",
-    "avatar": "https://secure.gravatar.com/avatar/eed6f5ca181818d23754d9f00986f54e?s=500",
-    "bio": "Software enthusiast focused on developing and designing platform and software as a service application for clouds. He’s a principal software developer in Oracle, concentrating on product development along with bringing well-designed and production ready integration with clouds solutions, contributor to various open source projects, cloud-related technologies along having fun with IoT devices and photography.\r\nDenis is a regular attendee and speaker at OpenStack summits (Atlanta, Austin, Paris, Barcelona, Boston) and PyCon Hong Kong 2016, 2017, PyCon Italy 2018, PyCon Japan 2018, DeComplile.De 2018. Co-author of OpenStack Application development, OpenStack Trove Essentials.\r\n",
-    "twitter": "denis_makogon",
-    "url": "https://medium.com/@denismakogon",
-    "organization": "Oracle",
-    "title": "Let's do some serverless with Go",
-    "abstract": "This talk is all about doing serverless and Go with some comparison to other programming languages like Java and Python. This talk would be very useful for people deciding on serverless as a technology to use. In this talk we'd some coding, doing some serverless functions, math, etc.",
-    "deck": "",
-    "deckid": "",
-    "tags": [
-      "serverless",
-      "clouds",
-      "oracle"
     ]
   },
   {
@@ -317,8 +299,8 @@
     "organization": "",
     "title": "How to Write Go CLI Tools",
     "abstract": "I show some tips and tricks for writing CLI tools by Go. (Notes on writing CLI tools in my case. Findings obtained when wrote CLI tools at my work.) This gives you the following benefits: (Know-how to write CLI tools. Persuasive material to introduce Go to your workplace.)",
-    "deck": "https://www.slideshare.net/qt-luigi/how-to-write-go-cli-tools",
-    "deckid": "LwD3OfyYc4vVBu",
+    "deck": "https://talks.godoc.org/github.com/qt-luigi/talks/2019/go-cli-tools.slide",
+    "deckid": "",
     "tags": [
       "tools"
     ]
